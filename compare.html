@@ -42,10 +42,7 @@
       <a href="index.html#docs">Documentation</a>
     </nav>
     <button class="nav__menu-btn" type="button" aria-controls="primary-links" aria-expanded="false"><span class="m">Menu</span><span class="x">Close</span></button>
-    <div class="nav__actions btn-group">
-      <a class="btn btn--dark btn--sm" href="#">Log In</a>
-      <a class="btn btn--primary btn--sm" href="#">Sign Up</a>
-    </div>
+    <!-- nav auth (Log In / Sign Up) removed 2026-09-29 -->
   </div>
 </header>
 
@@ -67,6 +64,7 @@
           <span class="sel__key">Player B:</span>
           <select id="sel-b" data-slot="1" aria-label="Player B"></select>
         </label>
+        <!-- Swap control hidden for now (2026-09-29):
         <button class="btn btn--ghost btn--sm cmp-swap" type="button" id="swap-btn" aria-label="Swap players">
           <svg class="cmp-swap__ico" viewBox="0 0 14 14" width="14" height="14" aria-hidden="true" focusable="false" shape-rendering="crispEdges">
             <g fill="currentColor"><rect x="0" y="3" width="10" height="2"/><rect x="9" y="1" width="1" height="6"/><rect x="10" y="2" width="1" height="4"/><rect x="11" y="3" width="1" height="2"/>
@@ -74,6 +72,8 @@
           </svg>
           Swap
         </button>
+        -->
+
         <span class="tag">Sample data</span>
       </div>
     </div>
@@ -195,11 +195,7 @@
         </div>
       </div>
       <div class="footer__side">
-        <div class="footer__side-top">
-          <a href="#">X / Twitter <span class="social-ico">X</span></a>
-          <a href="#">LinkedIn <span class="social-ico">in</span></a>
-          <a href="#">Discord <span class="social-ico">D</span></a>
-        </div>
+        <!-- footer social row (X / LinkedIn / Discord) removed 2026-09-29 -->
         <div class="footer__side-canvas">
           <canvas class="dendrite footer__canvas-br" data-dendrite data-origin="bottom" data-x="0.55" data-trunks="1" data-markers="2" data-growth="1200" data-density="1.1" data-trunk-width="4" data-stretch="1.2" width="300" height="260" aria-hidden="true"></canvas>
         </div>
