@@ -23,6 +23,7 @@ import common as C, metrics as M
 warnings.filterwarnings("ignore")
 
 S = C.S
+MIN = [f"y_s{i}_minutes" for i in range(1, 6)]
 V = C.pick_value_curve()
 FAMILIES_BASE = ("col_", "intl_", "hs_", "pre_", "cons_", "bio_")
 SHRINK = ["col_ts_pct", "col_efg_pct", "col_fg2_pct", "col_fg3_pct", "col_ft_pct", "col_ast_pct", "col_stl_pct", "col_blk_pct",
@@ -47,8 +48,9 @@ def load_train():
     t = pd.read_csv(f"{C.V4}/train_2000_2018.csv", low_memory=False)
     idn = C.identity()[["pid", "actual_pick"]]
     t = t.merge(idn, on="pid", how="left")
-    for c in S:
-        t[c] = pd.to_numeric(t[c], errors="coerce")
+    for c in S + MIN:
+        if c in t.columns:
+            t[c] = pd.to_numeric(t[c], errors="coerce")
     return t
 
 
@@ -56,7 +58,7 @@ def load_tests():
     out = {}
     for y in C.TEST_YEARS:
         d = pd.read_csv(f"{C.V4}/tests/test_{y}_inputs.csv", low_memory=False)
-        a = C.answers(y)[["pid", "actual_pick", "was_drafted"] + S]
+        a = C.answers(y)[["pid", "actual_pick", "was_drafted"] + S + [c for c in MIN if c in C.answers(y).columns]]
         out[y] = d.drop(columns=[c for c in d.columns if c.startswith("y_") or c in ("actual_pick",)], errors="ignore").merge(a, on="pid", how="left", suffixes=("", "_ans"))
     return out
 
@@ -70,9 +72,19 @@ HW = {"uniform": [1, 1, 1, 1, 1], "disc85": [.85 ** i for i in range(5)], "disc7
       "late": [0.6, 0.8, 1.0, 1.0, 1.0], "back": [0.5, 0.75, 1.0, 1.25, 1.5], "cum3": [1, 1, 1, 0, 0]}
 
 
-def label(df, k_by_year, hw="disc85", clip=40, kind="gaussrank"):
-    """Within-class Gaussian-rank of discounted WAR, using for class c only its first k_by_year[c] seasons."""
+MIN = [f"y_s{i}_minutes" for i in range(1, 6)]
+
+
+def label(df, k_by_year, hw="disc85", clip=40, kind="gaussrank", floor0=0, minw=0.0):
+    """Within-class Gaussian-rank of discounted WAR, using for class c only its first k_by_year[c] seasons.
+    floor0: clip each season's WAR at 0 before discounting (negative WAR = played a lot, badly, often on a
+    bad team). minw: add minw * minutes/1000 per season (a value label that credits playing time)."""
     X = df[S].fillna(0).values.astype(float)
+    if floor0:
+        X = np.clip(X, 0, None)
+    if minw:
+        Mn = df[[c for c in MIN]].apply(pd.to_numeric, errors="coerce").fillna(0).values.astype(float) if all(c in df.columns for c in MIN) else np.zeros_like(X)
+        X = X + minw * Mn / 1000.0
     w = np.array(HW[hw], float)
     v = np.zeros(len(df))
     for i, (c) in enumerate(df.draft_year.values):
@@ -257,7 +269,7 @@ def walk_forward(g, cols, fold_years=range(2012, 2019), verbose=True):
         pr, cq = fit_prior(tr, cols)
         Btr, Bte = build(tr, pr, cq, cols, g), build(te, pr, cq, cols, g)
         fc = feature_cols(cols, g)
-        ylab = label(tr, kby, g.get("hw", "disc85"), g.get("clip", 40))
+        ylab = label(tr, kby, g.get("hw", "disc85"), g.get("clip", 40), g.get("floor0", 0), g.get("minw", 0.0))
         if g.get("consres", 0):
             ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
         t0 = time.time()
@@ -309,7 +321,7 @@ def blind(g, cols, wts, mode="strict", verbose=True):
     if mode == "strict":
         tr = base_tr.reset_index(drop=True); kby = {int(c): 5 for c in tr.draft_year.unique()}
         pr, cq = fit_prior(tr, cols); Btr = build(tr, pr, cq, cols, g); fc = feature_cols(cols, g)
-        ylab = label(tr, kby, g.get("hw", "disc85"), g.get("clip", 40))
+        ylab = label(tr, kby, g.get("hw", "disc85"), g.get("clip", 40), g.get("floor0", 0), g.get("minw", 0.0))
         if g.get("consres", 0): ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
         fitted = (Btr, fc, ylab)
     for Y in years:
@@ -319,7 +331,7 @@ def blind(g, cols, wts, mode="strict", verbose=True):
             tr = pd.concat(parts, ignore_index=True)
             kby = {int(c): int(min(5, Y - c)) for c in tr.draft_year.unique()}
             pr, cq = fit_prior(tr, cols); Btr = build(tr, pr, cq, cols, g); fc = feature_cols(cols, g)
-            ylab = label(tr, kby, g.get("hw", "disc85"), g.get("clip", 40))
+            ylab = label(tr, kby, g.get("hw", "disc85"), g.get("clip", 40), g.get("floor0", 0), g.get("minw", 0.0))
             if g.get("consres", 0): ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
         else:
             Btr, fc, ylab = fitted
@@ -344,7 +356,7 @@ def blind(g, cols, wts, mode="strict", verbose=True):
 
 
 def run(name, g, do_blind=True, weight_objective="spearman", extra=("sc_", "tc_")):
-    cols = families(extra)
+    cols = families(tuple(g.get("extra", list(extra))))
     t0 = time.time()
     print(f"== {name}: {g}  ({len(cols)} input cols)", flush=True)
     F = walk_forward(g, cols)
