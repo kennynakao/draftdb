@@ -1,0 +1,1 @@
+== base_tabicl: {'members': ['xgb', 'ridge', 'tabicl'], 'hw': 'disc85', 'clip': 40, 'M': 400.0, 'intl_mask': 1, 'risk': 'q25', 'bag': 3, 'ridge_alpha': 300.0, 'topk': 100, 'win': 2007}  (300 input cols)

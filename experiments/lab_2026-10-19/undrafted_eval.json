@@ -1,0 +1,528 @@
+{
+ "strict": {
+  "2019": {
+   "n_full": 137,
+   "n_drafted": 58,
+   "n_undrafted": 79,
+   "spearman_full_model": 0.2716310879463945,
+   "spearman_full_teams": 0.199839197208085,
+   "spearman_drafted_model": 0.49964625180719185,
+   "spearman_drafted_teams": 0.40213479344181613,
+   "undrafted_in_model_top_n": 24,
+   "undrafted_war_in_model_top_n": 39.131447247959784,
+   "gems": [
+    {
+     "name": "Luguentz Dort",
+     "war": 11.6,
+     "war_rank_full": 11,
+     "model_rank_vs_drafted": 51,
+     "n_drafted": 58
+    },
+    {
+     "name": "Max Strus",
+     "war": 11.0,
+     "war_rank_full": 12,
+     "model_rank_vs_drafted": 46,
+     "n_drafted": 58
+    },
+    {
+     "name": "Caleb Martin",
+     "war": 10.4,
+     "war_rank_full": 13,
+     "model_rank_vs_drafted": 29,
+     "n_drafted": 58
+    },
+    {
+     "name": "John Konchar",
+     "war": 8.5,
+     "war_rank_full": 14,
+     "model_rank_vs_drafted": 7,
+     "n_drafted": 58
+    },
+    {
+     "name": "Naz Reid",
+     "war": 8.5,
+     "war_rank_full": 15,
+     "model_rank_vs_drafted": 54,
+     "n_drafted": 58
+    },
+    {
+     "name": "Garrison Mathews",
+     "war": 8.3,
+     "war_rank_full": 16,
+     "model_rank_vs_drafted": 49,
+     "n_drafted": 58
+    },
+    {
+     "name": "Javonte Green",
+     "war": 6.4,
+     "war_rank_full": 23,
+     "model_rank_vs_drafted": 14,
+     "n_drafted": 58
+    },
+    {
+     "name": "Jordan McLaughlin",
+     "war": 5.9,
+     "war_rank_full": 25,
+     "model_rank_vs_drafted": 22,
+     "n_drafted": 58
+    },
+    {
+     "name": "Dean Wade",
+     "war": 5.4,
+     "war_rank_full": 26,
+     "model_rank_vs_drafted": 15,
+     "n_drafted": 58
+    },
+    {
+     "name": "Terence Davis",
+     "war": 5.3,
+     "war_rank_full": 27,
+     "model_rank_vs_drafted": 27,
+     "n_drafted": 58
+    },
+    {
+     "name": "Gabe Vincent",
+     "war": 3.9,
+     "war_rank_full": 29,
+     "model_rank_vs_drafted": 54,
+     "n_drafted": 58
+    },
+    {
+     "name": "Kendrick Nunn",
+     "war": 3.1,
+     "war_rank_full": 33,
+     "model_rank_vs_drafted": 49,
+     "n_drafted": 58
+    },
+    {
+     "name": "Juan Toscano-Anderson",
+     "war": 2.3,
+     "war_rank_full": 35,
+     "model_rank_vs_drafted": 38,
+     "n_drafted": 58
+    }
+   ]
+  },
+  "2020": {
+   "n_full": 112,
+   "n_drafted": 58,
+   "n_undrafted": 54,
+   "spearman_full_model": 0.2655933469463528,
+   "spearman_full_teams": 0.31565794444338763,
+   "spearman_drafted_model": 0.263516528243061,
+   "spearman_drafted_teams": 0.35021071088006406,
+   "undrafted_in_model_top_n": 23,
+   "undrafted_war_in_model_top_n": 3.698111232908652,
+   "gems": [
+    {
+     "name": "Jae'Sean Tate",
+     "war": 7.2,
+     "war_rank_full": 15,
+     "model_rank_vs_drafted": 40,
+     "n_drafted": 58
+    },
+    {
+     "name": "Naji Marshall",
+     "war": 6.6,
+     "war_rank_full": 18,
+     "model_rank_vs_drafted": 37,
+     "n_drafted": 58
+    },
+    {
+     "name": "Facundo Campazzo",
+     "war": 5.4,
+     "war_rank_full": 24,
+     "model_rank_vs_drafted": 26,
+     "n_drafted": 58
+    }
+   ]
+  },
+  "2021": {
+   "n_full": 233,
+   "n_drafted": 56,
+   "n_undrafted": 177,
+   "spearman_full_model": 0.3690274617594002,
+   "spearman_full_teams": 0.3292851585214003,
+   "spearman_drafted_model": 0.7246753246753248,
+   "spearman_drafted_teams": 0.4084073820915926,
+   "undrafted_in_model_top_n": 30,
+   "undrafted_war_in_model_top_n": 51.076676091104794,
+   "gems": [
+    {
+     "name": "Austin Reaves",
+     "war": 23.0,
+     "war_rank_full": 5,
+     "model_rank_vs_drafted": 24,
+     "n_drafted": 56
+    },
+    {
+     "name": "Sam Hauser",
+     "war": 13.4,
+     "war_rank_full": 11,
+     "model_rank_vs_drafted": 40,
+     "n_drafted": 56
+    },
+    {
+     "name": "Jose Alvarado",
+     "war": 9.5,
+     "war_rank_full": 14,
+     "model_rank_vs_drafted": 23,
+     "n_drafted": 56
+    },
+    {
+     "name": "Jordan Goodwin",
+     "war": 6.7,
+     "war_rank_full": 20,
+     "model_rank_vs_drafted": 17,
+     "n_drafted": 56
+    },
+    {
+     "name": "Jay Huff",
+     "war": 5.3,
+     "war_rank_full": 27,
+     "model_rank_vs_drafted": 13,
+     "n_drafted": 56
+    },
+    {
+     "name": "Jock Landale",
+     "war": 5.0,
+     "war_rank_full": 28,
+     "model_rank_vs_drafted": 47,
+     "n_drafted": 56
+    },
+    {
+     "name": "Justin Champagnie",
+     "war": 3.8,
+     "war_rank_full": 29,
+     "model_rank_vs_drafted": 11,
+     "n_drafted": 56
+    },
+    {
+     "name": "Lindy Waters III",
+     "war": 2.4,
+     "war_rank_full": 33,
+     "model_rank_vs_drafted": 47,
+     "n_drafted": 56
+    },
+    {
+     "name": "Brandon Williams",
+     "war": 2.2,
+     "war_rank_full": 34,
+     "model_rank_vs_drafted": 51,
+     "n_drafted": 56
+    }
+   ]
+  },
+  "2022": {
+   "n_full": 97,
+   "n_drafted": 52,
+   "n_undrafted": 45,
+   "spearman_full_model": 0.3350978731364059,
+   "spearman_full_teams": 0.129568127366289,
+   "spearman_drafted_model": 0.5035218787939182,
+   "spearman_drafted_teams": 0.2623580636899172,
+   "undrafted_in_model_top_n": 16,
+   "undrafted_war_in_model_top_n": 13.11,
+   "gems": [
+    {
+     "name": "Julian Champagnie",
+     "war": 8.9,
+     "war_rank_full": 7,
+     "model_rank_vs_drafted": 43,
+     "n_drafted": 52
+    },
+    {
+     "name": "Keon Ellis",
+     "war": 8.8,
+     "war_rank_full": 8,
+     "model_rank_vs_drafted": 20,
+     "n_drafted": 52
+    },
+    {
+     "name": "Scotty Pippen Jr.",
+     "war": 4.8,
+     "war_rank_full": 17,
+     "model_rank_vs_drafted": 40,
+     "n_drafted": 52
+    },
+    {
+     "name": "Dru Smith",
+     "war": 4.2,
+     "war_rank_full": 18,
+     "model_rank_vs_drafted": 24,
+     "n_drafted": 52
+    },
+    {
+     "name": "Simone Fontecchio",
+     "war": 2.9,
+     "war_rank_full": 23,
+     "model_rank_vs_drafted": 40,
+     "n_drafted": 52
+    }
+   ]
+  },
+  "2023": {
+   "n_full": 101,
+   "n_drafted": 56,
+   "n_undrafted": 45,
+   "spearman_full_model": 0.30771426382219386,
+   "spearman_full_teams": 0.0702120723252759,
+   "spearman_drafted_model": 0.4350070078865554,
+   "spearman_drafted_teams": 0.1106307353328877,
+   "undrafted_in_model_top_n": 21,
+   "undrafted_war_in_model_top_n": 6.020000000000002,
+   "gems": [
+    {
+     "name": "Collin Gillespie",
+     "war": 7.5,
+     "war_rank_full": 6,
+     "model_rank_vs_drafted": 20,
+     "n_drafted": 56
+    },
+    {
+     "name": "Craig Porter Jr.",
+     "war": 4.8,
+     "war_rank_full": 11,
+     "model_rank_vs_drafted": 15,
+     "n_drafted": 56
+    }
+   ]
+  },
+  "2024": {
+   "n_full": 114,
+   "n_drafted": 55,
+   "n_undrafted": 59,
+   "spearman_full_model": 0.23917215165590253,
+   "spearman_full_teams": 0.20386949491926434,
+   "spearman_drafted_model": 0.3514449636345539,
+   "spearman_drafted_teams": 0.13403326556845988,
+   "undrafted_in_model_top_n": 17,
+   "undrafted_war_in_model_top_n": -0.7500000000000002,
+   "gems": []
+  },
+  "2025": {
+   "n_full": 106,
+   "n_drafted": 57,
+   "n_undrafted": 49,
+   "spearman_full_model": 0.12086215010344825,
+   "spearman_full_teams": 0.11004391867935799,
+   "spearman_drafted_model": 0.30784688685054934,
+   "spearman_drafted_teams": 0.17640862779925506,
+   "undrafted_in_model_top_n": 19,
+   "undrafted_war_in_model_top_n": -3.0099999999999993,
+   "gems": []
+  }
+ },
+ "expanding": {
+  "2020": {
+   "n_full": 112,
+   "n_drafted": 58,
+   "n_undrafted": 54,
+   "spearman_full_model": 0.30365594779610455,
+   "spearman_full_teams": 0.31565794444338763,
+   "spearman_drafted_model": 0.3472376032158485,
+   "spearman_drafted_teams": 0.35021071088006406,
+   "undrafted_in_model_top_n": 24,
+   "undrafted_war_in_model_top_n": 11.006271352791984,
+   "gems": [
+    {
+     "name": "Jae'Sean Tate",
+     "war": 7.2,
+     "war_rank_full": 15,
+     "model_rank_vs_drafted": 35,
+     "n_drafted": 58
+    },
+    {
+     "name": "Naji Marshall",
+     "war": 6.6,
+     "war_rank_full": 18,
+     "model_rank_vs_drafted": 22,
+     "n_drafted": 58
+    },
+    {
+     "name": "Facundo Campazzo",
+     "war": 5.4,
+     "war_rank_full": 24,
+     "model_rank_vs_drafted": 24,
+     "n_drafted": 58
+    }
+   ]
+  },
+  "2021": {
+   "n_full": 233,
+   "n_drafted": 56,
+   "n_undrafted": 177,
+   "spearman_full_model": 0.361963886216378,
+   "spearman_full_teams": 0.3292851585214003,
+   "spearman_drafted_model": 0.705958748543753,
+   "spearman_drafted_teams": 0.4084073820915926,
+   "undrafted_in_model_top_n": 34,
+   "undrafted_war_in_model_top_n": 50.465836678181304,
+   "gems": [
+    {
+     "name": "Austin Reaves",
+     "war": 23.0,
+     "war_rank_full": 5,
+     "model_rank_vs_drafted": 18,
+     "n_drafted": 56
+    },
+    {
+     "name": "Sam Hauser",
+     "war": 13.4,
+     "war_rank_full": 11,
+     "model_rank_vs_drafted": 37,
+     "n_drafted": 56
+    },
+    {
+     "name": "Jose Alvarado",
+     "war": 9.5,
+     "war_rank_full": 14,
+     "model_rank_vs_drafted": 19,
+     "n_drafted": 56
+    },
+    {
+     "name": "Jordan Goodwin",
+     "war": 6.7,
+     "war_rank_full": 20,
+     "model_rank_vs_drafted": 14,
+     "n_drafted": 56
+    },
+    {
+     "name": "Jay Huff",
+     "war": 5.3,
+     "war_rank_full": 27,
+     "model_rank_vs_drafted": 8,
+     "n_drafted": 56
+    },
+    {
+     "name": "Jock Landale",
+     "war": 5.0,
+     "war_rank_full": 28,
+     "model_rank_vs_drafted": 52,
+     "n_drafted": 56
+    },
+    {
+     "name": "Justin Champagnie",
+     "war": 3.8,
+     "war_rank_full": 29,
+     "model_rank_vs_drafted": 7,
+     "n_drafted": 56
+    },
+    {
+     "name": "Lindy Waters III",
+     "war": 2.4,
+     "war_rank_full": 33,
+     "model_rank_vs_drafted": 34,
+     "n_drafted": 56
+    },
+    {
+     "name": "Brandon Williams",
+     "war": 2.2,
+     "war_rank_full": 34,
+     "model_rank_vs_drafted": 45,
+     "n_drafted": 56
+    }
+   ]
+  },
+  "2022": {
+   "n_full": 97,
+   "n_drafted": 52,
+   "n_undrafted": 45,
+   "spearman_full_model": 0.35758918737686296,
+   "spearman_full_teams": 0.129568127366289,
+   "spearman_drafted_model": 0.5042795245647208,
+   "spearman_drafted_teams": 0.2623580636899172,
+   "undrafted_in_model_top_n": 22,
+   "undrafted_war_in_model_top_n": 14.1,
+   "gems": [
+    {
+     "name": "Julian Champagnie",
+     "war": 8.9,
+     "war_rank_full": 7,
+     "model_rank_vs_drafted": 38,
+     "n_drafted": 52
+    },
+    {
+     "name": "Keon Ellis",
+     "war": 8.8,
+     "war_rank_full": 8,
+     "model_rank_vs_drafted": 12,
+     "n_drafted": 52
+    },
+    {
+     "name": "Scotty Pippen Jr.",
+     "war": 4.8,
+     "war_rank_full": 17,
+     "model_rank_vs_drafted": 43,
+     "n_drafted": 52
+    },
+    {
+     "name": "Dru Smith",
+     "war": 4.2,
+     "war_rank_full": 18,
+     "model_rank_vs_drafted": 18,
+     "n_drafted": 52
+    },
+    {
+     "name": "Simone Fontecchio",
+     "war": 2.9,
+     "war_rank_full": 23,
+     "model_rank_vs_drafted": 43,
+     "n_drafted": 52
+    }
+   ]
+  },
+  "2023": {
+   "n_full": 101,
+   "n_drafted": 56,
+   "n_undrafted": 45,
+   "spearman_full_model": 0.32064481452674526,
+   "spearman_full_teams": 0.0702120723252759,
+   "spearman_drafted_model": 0.45693485569104925,
+   "spearman_drafted_teams": 0.1106307353328877,
+   "undrafted_in_model_top_n": 23,
+   "undrafted_war_in_model_top_n": 5.380000000000001,
+   "gems": [
+    {
+     "name": "Collin Gillespie",
+     "war": 7.5,
+     "war_rank_full": 6,
+     "model_rank_vs_drafted": 16,
+     "n_drafted": 56
+    },
+    {
+     "name": "Craig Porter Jr.",
+     "war": 4.8,
+     "war_rank_full": 11,
+     "model_rank_vs_drafted": 16,
+     "n_drafted": 56
+    }
+   ]
+  },
+  "2024": {
+   "n_full": 114,
+   "n_drafted": 55,
+   "n_undrafted": 59,
+   "spearman_full_model": 0.3339804798049203,
+   "spearman_full_teams": 0.20386949491926434,
+   "spearman_drafted_model": 0.46731130154861494,
+   "spearman_drafted_teams": 0.13403326556845988,
+   "undrafted_in_model_top_n": 18,
+   "undrafted_war_in_model_top_n": -0.7100000000000002,
+   "gems": []
+  },
+  "2025": {
+   "n_full": 106,
+   "n_drafted": 57,
+   "n_undrafted": 49,
+   "spearman_full_model": 0.15960917866215424,
+   "spearman_full_teams": 0.11004391867935799,
+   "spearman_drafted_model": 0.3358830583735779,
+   "spearman_drafted_teams": 0.17640862779925506,
+   "undrafted_in_model_top_n": 18,
+   "undrafted_war_in_model_top_n": -1.9299999999999997,
+   "gems": []
+  }
+ }
+}

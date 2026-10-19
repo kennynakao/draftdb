@@ -1,0 +1,349 @@
+<meta charset="utf-8">
+<title>DraftDB Test Bench</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* layout: one reading column (max 1120px); summary tiles first, then one section per question, charts beside their tables */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#14171c; --ink2:#4d5563; --muted:#878e9a; --grid:#e4e7ec; --rule:#c9cfd9; --border:rgba(20,23,28,.10);
+  --model:#2a78d6; --teams:#eb6834; --colin:#1baf7a; --ridge:#eda100; --good:#0ca30c; --bad:#d03b3b; --soft:#eef3fa;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --bg:#111317; --surface:#191c21; --ink:#edf0f4; --ink2:#c2c7d0; --muted:#8a919c; --grid:#2a2e36; --rule:#3a404a; --border:rgba(255,255,255,.10);
+  --model:#3987e5; --teams:#d95926; --colin:#199e70; --ridge:#c98500; --good:#0ca30c; --bad:#e05a5a; --soft:#1d2635; color-scheme:dark } }
+:root[data-theme="dark"]{ --bg:#111317; --surface:#191c21; --ink:#edf0f4; --ink2:#c2c7d0; --muted:#8a919c; --grid:#2a2e36; --rule:#3a404a; --border:rgba(255,255,255,.10);
+  --model:#3987e5; --teams:#d95926; --colin:#199e70; --ridge:#c98500; --good:#0ca30c; --bad:#e05a5a; --soft:#1d2635; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+.wrap{max-width:1120px;margin:0 auto}
+h1{font-size:clamp(26px,4vw,36px);font-weight:600;letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance}
+h2{font-size:20px;font-weight:600;margin:0 0 4px;text-wrap:balance}
+h3{font-size:15px;font-weight:600;margin:0 0 6px}
+p{margin:0 0 10px;max-width:72ch}
+.lede{color:var(--ink2);font-size:16px;max-width:76ch}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+section{margin-top:44px;padding-top:22px;border-top:1px solid var(--rule)}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 16px;min-width:0}
+.tile .lbl{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tile .big{font-size:30px;font-weight:600;line-height:1.15;margin-top:4px}
+.tile .vs{color:var(--ink2);font-size:13.5px;margin-top:4px}
+.tile .edge{font-family:var(--mono);font-size:13px;margin-top:6px}
+.pos{color:var(--good)} .neg{color:var(--bad)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 16px;min-width:0}
+.card h3{margin-bottom:2px}
+.note{color:var(--ink2);font-size:13.5px}
+.tbl{overflow-x:auto;min-width:0}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--grid);white-space:nowrap;font-variant-numeric:tabular-nums}
+th{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);text-align:right}
+th:first-child,td:first-child{text-align:left}
+td.l,th.l{text-align:left}
+tr.hl td{background:var(--soft)}
+.chip{display:inline-block;font-family:var(--mono);font-size:11px;padding:1px 7px;border-radius:999px;border:1px solid var(--border);color:var(--ink2);margin-left:6px;vertical-align:middle}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--ink2);margin:6px 0 2px}
+svg text{font-family:var(--sans);font-size:12px;fill:var(--ink2)}
+svg .grid line{stroke:var(--grid);stroke-width:1}
+svg .axis{stroke:var(--rule);stroke-width:1}
+svg .lbl{fill:var(--muted);font-size:11.5px}
+svg .mark:hover{opacity:.85}
+.tip{position:fixed;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--border);border-radius:6px;padding:6px 9px;font-size:12.5px;box-shadow:0 4px 14px rgba(0,0,0,.12);display:none;z-index:9;max-width:260px}
+.check{display:grid;grid-template-columns:auto 1fr;gap:10px 14px;align-items:start}
+.check .n{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:3px}
+.check .what{font-weight:600}
+.check .did{color:var(--ink2);font-size:13.5px}
+.caveat{border-left:3px solid var(--ridge);padding:8px 12px;background:var(--surface);border-radius:0 6px 6px 0;font-size:13.5px;color:var(--ink2)}
+.foot{margin-top:40px;color:var(--muted);font-size:12.5px}
+a{color:var(--model)}
+button.tgl{font:inherit;font-size:12.5px;padding:3px 10px;border:1px solid var(--border);background:var(--surface);color:var(--ink2);border-radius:6px;cursor:pointer}
+button.tgl:focus-visible{outline:2px solid var(--model);outline-offset:2px}
+button.tgl[aria-pressed="true"]{background:var(--soft);color:var(--ink)}
+@media (prefers-reduced-motion:no-preference){ .tile,.card{transition:border-color .15s} }
+</style>
+<div class="wrap">
+  <p class="eyebrow">DraftDB · redraft model · scoring audit</p>
+  <h1>DraftDB Test Bench</h1>
+  <p class="lede">The 2019–2025 draft classes re-scored under the metrics Kirk asked for: a sequential redraft that takes each player once, a pick-value-weighted order score, mock-consensus and small-regression baselines, the undrafted pool, and the horizon noise of early-career WAR. Plus a local re-implementation of the engine to test what those metrics suggest changing. Generated <span id="gen"></span>.</p>
+
+  <section id="headline">
+    <p class="eyebrow">Headline, expanding window, 7 classes</p>
+    <div class="grid g4" id="tiles"></div>
+    <p class="note" style="margin-top:10px">Each tile pairs the model (expanding window, the published headline) with the real draft order on the same players. "Order accuracy" is the repo's Spearman correlation. "Pick-value order" weights every slot by the expected 5-season WAR of that pick (the curve below), so it scores the board the way a front office pays for it. "WAR above slot" is the same idea in WAR units, relative to a random order.</p>
+  </section>
+
+  <section id="asks">
+    <p class="eyebrow">Kirk's notes and what was done about each</p>
+    <div class="check" id="checklist"></div>
+  </section>
+
+  <section id="sequential">
+    <p class="eyebrow">1 · Sequential redraft</p>
+    <h2>Each player can only be taken once</h2>
+    <p>The team pages compared every real pick with the model's best player still on the board, independently per pick, so one high-WAR player could be the model's answer at ten different slots. Here the real draft is replayed in pick order and the team on the clock takes the model's highest-ranked player still available. Same 385 players, different slots, so the league total is unchanged; what moves is which slots hold the WAR.</p>
+    <div class="grid g2">
+      <div class="card"><h3>WAR landed by pick range, all seven classes</h3><div class="legend"><span><i class="sw" style="background:var(--teams)"></i>Real picks</span><span><i class="sw" style="background:var(--model)"></i>Model, sequential</span></div><div id="chart_bins"></div><p class="note">The model's gains are at picks 6–10 and 31–45; the teams keep the edge at picks 1–5 and in the last fifteen slots, where the players the model ranked last produced negative WAR.</p></div>
+      <div class="card"><h3>Golden State, the example from the review</h3><div id="warriors"></div></div>
+    </div>
+    <div class="card" style="margin-top:16px"><h3>Every team, same slots: real picks vs the model's sequential picks <span class="chip">2019–2025, WAR to date</span></h3>
+      <p class="note">"Slot value" is what those picks were expected to return under the pick-value curve; surplus is WAR minus slot value. Sorted by the model's advantage.</p>
+      <div class="tbl" id="teams_tbl"></div></div>
+  </section>
+
+  <section id="pickvalue">
+    <p class="eyebrow">2 · Pick-value weighting</p>
+    <h2>A swap at picks 2 and 12 is not a swap at 40 and 45</h2>
+    <p>Spearman treats every rank swap alike. The empirical pick-value curve (isotonic fit of 5-season WAR on overall pick, 2000–2018 classes) gives each slot a weight; the value of an order is the slot-weighted WAR, scaled so the perfect order is 100 and the reverse order 0. The same curve prices each team's picks in the table above.</p>
+    <div class="grid g2">
+      <div class="card"><h3>Expected 5-season WAR by pick</h3><div id="chart_curve"></div></div>
+      <div class="card"><h3>Pick-value order by class</h3><div class="legend"><span><i class="sw" style="background:var(--teams)"></i>NBA teams</span><span><i class="sw" style="background:var(--model)"></i>Model, expanding (strict for 2019)</span></div><div id="chart_vo"></div></div>
+    </div>
+    <div class="card" style="margin-top:16px"><div class="tbl" id="class_tbl"></div><p class="note" id="class_note"></p></div>
+  </section>
+
+  <section id="horizon">
+    <p class="eyebrow">3 · Early-career WAR is noisy, and the noise is not neutral</p>
+    <h2>The real draft looks better the longer you wait</h2>
+    <p>On the 2007–2018 classes, where five seasons are complete, the real draft order correlates with first-season WAR at 0.07 and with five-season WAR at 0.32. Teams draft for years three to five; a model trained on a front-weighted label (0.85 discount per season) is judged on the seasons it was built to predict. Classes 2023–2025 are scored on one to three seasons, which favours the model.</p>
+    <div class="grid g2">
+      <div class="card"><h3>2007–2018 classes: agreement with the final 5-season ranking, and the teams' score, by seasons observed</h3><div class="legend"><span><i class="sw" style="background:var(--colin)"></i>k-season WAR rank vs 5-season rank</span><span><i class="sw" style="background:var(--teams)"></i>Real draft order vs k-season WAR</span></div><div id="chart_hz"></div></div>
+      <div class="card"><h3>2019–2021, complete windows: who leads at each horizon</h3><div class="tbl" id="hz_tbl"></div><p class="note">Order accuracy (Spearman) and pick-value order, model strict vs teams, scored on the first k seasons. In 2019 and 2020 the teams overtake the model on pick-value once four or five seasons are in; in 2021 the model holds.</p></div>
+    </div>
+  </section>
+
+  <section id="baselines">
+    <p class="eyebrow">4 · Baselines and incremental signal</p>
+    <h2>What the model adds over the public consensus and over a small regression</h2>
+    <div class="grid g2">
+      <div class="card"><div class="tbl" id="base_tbl"></div><p class="note">Each board is scored on the players it covers; "teams" in the same row is the real draft on that same subset. Mock consensus = mean rank across the dated publisher mocks (Tankathon, CBS, ESPN best-available, NBADraft.net, Sporting News, NBA Draft Room; last Wayback capture before each draft).</p></div>
+      <div class="card"><h3>Blending the model with the consensus</h3><div class="legend"><span><i class="sw" style="background:var(--model)"></i>vs mock consensus</span><span><i class="sw" style="background:var(--ridge)"></i>vs 14-feature ridge</span></div><div id="chart_blend"></div><p class="note">Spearman of a rank blend, share of model from 0 to 1, mean over the classes. A rising line to the right means the second board adds nothing once the model is in; a hump would mean it does. The ridge-plus-consensus baseline, 14 inputs fit on 2007–2018, matches the full model on pick-value order (73.1 vs 72.3) while trailing on Spearman (0.38 vs 0.50).</p></div>
+    </div>
+    <div class="card" style="margin-top:16px"><h3>Partial correlations by class</h3><div class="tbl" id="partial_tbl"></div><p class="note">Model given consensus: the model's rank correlation with WAR after the consensus has been regressed out of both, and the reverse. Blind classes, reported, never used to select.</p></div>
+  </section>
+
+  <section id="undrafted">
+    <p class="eyebrow">5 · Undrafted players</p>
+    <h2>Where the gems would have landed</h2>
+    <p>The vault scores drafted players only. The test files also hold the undrafted players who later reached the NBA, plus early entrants who stayed in, so the engine built here can place them on the board. Caveat: that undrafted set was assembled knowing who made the NBA, so it is enriched for success and the expanded-pool numbers are not a clean benchmark.</p>
+    <div class="grid g2">
+      <div class="card"><h3>Undrafted players with 2+ WAR, model rank among that class's drafted pool</h3><div class="tbl" id="gems_tbl"></div></div>
+      <div class="card"><h3>Expanded pool: drafted plus the undrafted rows</h3><div class="tbl" id="und_tbl"></div><p class="note">Spearman on the full pool, with every undrafted player at pick 61 for the teams. "Undrafted in model top-n": how many of the model's first n (n = players drafted) were never drafted, and the WAR they produced.</p></div>
+    </div>
+  </section>
+
+  <section id="experiments">
+    <p class="eyebrow">6 · Engine experiments</p>
+    <h2>Does anything move the pick-value metric?</h2>
+    <p>A compact re-implementation of the pipeline (data v4.22, the champion's input families, international-line mask, shrinkage, shoot/prod features, Gaussian-rank label, ridge-on-top-100 + quantile XGBoost, fold-learned rank weights) run on this Mac. Selection is on the seven season-consistent walk-forward folds 2012–2018 only; the strict and expanding columns are one blind look each, reported for every variant, never used to choose.</p>
+    <div class="card"><div class="tbl" id="exp_tbl"></div><p class="note" id="exp_note"></p></div>
+  </section>
+
+  <section id="robust">
+    <p class="eyebrow">7 · Robustness</p>
+    <div class="grid g2">
+      <div class="card"><h3>Alternate outcomes, mean Spearman over 7 classes</h3><div class="tbl" id="alt_tbl"></div><p class="note">WAR floored at zero removes the penalty for high picks who played a lot on bad teams; minutes reward whoever got on the floor, which follows draft slot, so the teams lead there by construction.</p></div>
+      <div class="card"><h3>Paired bootstrap, model (expanding) minus teams, per class</h3><div class="tbl" id="boot_tbl"></div><p class="note">95% intervals from resampling players within a class (400 draws). On Spearman the model's lead clears zero in five of seven classes; on pick-value order in three.</p></div>
+    </div>
+  </section>
+
+  <section id="methods">
+    <p class="eyebrow">Methods and limits</p>
+    <div class="card note">
+      <p><b>Data.</b> Public repo answers (WAR per season through 2025–26), draft history from stats.nba.com, the identity file for names, data v4.22 inputs for the engine. Horizon per class: 2019–2021 five seasons, 2022 four, 2023 three, 2024 two, 2025 one. Players who never played score 0.</p>
+      <p><b>Boards.</b> Current model strict from <code>model/board_current_2019_2025.csv</code>; the expanding board reconstructed from the team-card audit ranks (385 of 392 drafted players); Colin's strict board parsed from his README tables (393 of 413 names matched).</p>
+      <p><b>Pick-value curve.</b> Isotonic (non-increasing) regression of 5-season WAR on overall pick for drafted players 2000–2018, lightly smoothed, floored at zero. Pick 1 ≈ 21 WAR, pick 10 ≈ 8, pick 30 ≈ 5, pick 50 ≈ 2.</p>
+      <p><b>Engine.</b> TabICL was omitted from the queue runs (15 s per fit on CPU); the XGBoost + ridge pair reproduces the box's own ablation of that pair (strict 0.44 vs 0.395, expanding 0.47 vs 0.475). Fold objectives average horizons k = 1..5 as the box does.</p>
+      <p><b>Noise.</b> One class's Spearman has a standard error near 0.13; a seven-class mean about 0.05. Differences of two or three points between boards are inside that.</p>
+    </div>
+  </section>
+  <p class="foot">Built from tools/lab/evaluate_boards.py, tools/lab/engine.py and tools/lab/build_dashboard.py; outputs in experiments/lab_2026-10-19/. Names appear only for display; every computation is keyed by pid.</p>
+</div>
+<div class="tip" id="tip"></div>
+<script id="data" type="application/json">/*__DATA__*/</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = (id) => document.getElementById(id);
+const fmt = (x, d=1) => (x === null || x === undefined || Number.isNaN(x)) ? '–' : Number(x).toFixed(d);
+const sgn = (x, d=1) => (x === null || x === undefined) ? '–' : ((x >= 0 ? '+' : '') + Number(x).toFixed(d));
+const cls = (x) => x > 0 ? 'pos' : (x < 0 ? 'neg' : '');
+const esc = (s) => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+$('gen').textContent = D.generated;
+const tip = $('tip');
+function showTip(e, html){ tip.innerHTML = html; tip.style.display='block'; moveTip(e); }
+function moveTip(e){ const x = e.clientX + 12, y = e.clientY + 12; tip.style.left = Math.min(x, window.innerWidth - tip.offsetWidth - 8) + 'px'; tip.style.top = Math.min(y, window.innerHeight - tip.offsetHeight - 8) + 'px'; }
+function hideTip(){ tip.style.display='none'; }
+const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+
+// ---------------------------------------------------------------- tiles
+(function(){
+  const m = D.tiles.model_expanding, t = D.tiles.teams;
+  const tiles = [
+    {lbl:'Order accuracy (Spearman)', v:fmt(m.spearman,3), vs:`teams ${fmt(m.teams_sp,3)} on the same players`, e:(m.spearman-m.teams_sp), d:3, how:'rank correlation × 1'},
+    {lbl:'Pick-value order', v:fmt(m.vo_pick,1), vs:`teams ${fmt(m.teams_vo,1)} · perfect 100, random ≈ 50`, e:(m.vo_pick-m.teams_vo), d:1},
+    {lbl:'WAR above slot', v:fmt(m.was,0), vs:`teams ${fmt(D.tiles.model_expanding.was !== null ? (D.per_class.filter(r=>r.model_expanding).reduce((a,r)=>a+r.teams.was,0)/D.per_class.filter(r=>r.model_expanding).length) : t.was,0)} · WAR units, mean per class`, e:(m.was - D.per_class.filter(r=>r.model_expanding).reduce((a,r)=>a+r.teams.was,0)/D.per_class.filter(r=>r.model_expanding).length), d:0},
+    {lbl:'Top-10 hits per class', v:fmt(m.top10,1), vs:`teams ${fmt(t.top10,1)} of 10`, e:(m.top10-t.top10), d:1},
+  ];
+  $('tiles').innerHTML = tiles.map(x => `<div class="tile"><div class="lbl">${x.lbl}</div><div class="big">${x.v}</div><div class="vs">${x.vs}</div><div class="edge ${cls(x.e)}">${sgn(x.e, x.d)} vs teams</div></div>`).join('');
+})();
+
+// ---------------------------------------------------------------- checklist
+(function(){
+  const seq = D.seq_league, w = D.warriors, pc = D.per_class;
+  const nExp = D.experiments.length;
+  const rows = [
+    ['Summed WAR counted the same player on several cards', `Replaced by a sequential redraft: the real draft replayed in pick order, each player taken once. Golden State goes from "${fmt(w.old_model,0)} vs ${fmt(w.old_actual,0)}" to ${fmt(w.seq.model,0)} vs ${fmt(w.seq.actual,0)} WAR at the same ${w.seq.n} slots. League-wide the model's pick beats the team's at ${seq.model_better} of ${seq.n_slots} slots and loses at ${seq.team_better}.`],
+    ['Rank swaps weighted equally', `Added a pick-value-weighted order score and a WAR-above-slot measure from an empirical pick-value curve. The model's lead over the teams falls from ${sgn(D.tiles.model_expanding.spearman - D.tiles.model_expanding.teams_sp, 2)} Spearman to ${sgn(D.tiles.model_expanding.vo_pick - D.tiles.model_expanding.teams_vo, 1)} points of pick-value order; the strict model and a 14-input ridge sit in the same band.`],
+    ['Compare against mock consensus and other baselines', `Six dated publisher mocks, their mean, the legacy consensus column, RSCI, raw production and two small ridge fits. The consensus scores ${fmt(D.tiles.consensus_multisite.spearman,2)} Spearman (teams ${fmt(D.tiles.consensus_multisite.teams_sp,2)}); the model keeps a strong partial correlation given the consensus, the consensus adds nothing given the model.`],
+    ['Only drafted players are ranked', `The engine scores the undrafted rows too. Austin Reaves ranks 18th–24th among the 56 drafted players of 2021; Dort, Naz Reid and Strus are missed (ranks 46–54). The undrafted set is outcome-selected, so the expanded-pool Spearman (model ${fmt(D.undrafted.expanding ? Object.values(D.undrafted.expanding).reduce((a,r)=>a+r.sp_model,0)/Object.keys(D.undrafted.expanding).length : 0,2)} vs teams ${fmt(D.undrafted.expanding ? Object.values(D.undrafted.expanding).reduce((a,r)=>a+r.sp_teams,0)/Object.keys(D.undrafted.expanding).length : 0,2)}) is indicative only.`],
+    ['Early-career WAR is noisy', `Quantified on the complete classes: a one-season ranking agrees with the five-season ranking at ${fmt(D.horizon_train.war1_vs_war5,2)}, two seasons at ${fmt(D.horizon_train.war2_vs_war5,2)}, three at ${fmt(D.horizon_train.war3_vs_war5,2)}. The real draft's own score rises from ${fmt(D.horizon_train.teams_at_k1,2)} at one season to ${fmt(D.horizon_train.teams_at_k5,2)} at five, so short horizons are biased against the teams, not just noisy. ${nExp} engine variants were run on both metrics.`],
+  ];
+  $('checklist').innerHTML = rows.map((r,i) => `<div class="n">${i+1}</div><div><div class="what">${r[0]}</div><div class="did">${r[1]}</div></div>`).join('');
+})();
+
+// ---------------------------------------------------------------- svg helpers
+function svgEl(tag, attrs, parent){ const e = document.createElementNS('http://www.w3.org/2000/svg', tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+function chart(container, w, h){ const s = svgEl('svg', {viewBox:`0 0 ${w} ${h}`, width:'100%', role:'img'}); container.appendChild(s); return s; }
+function yTicks(min, max, n=5){ const span = max - min, step = Math.pow(10, Math.floor(Math.log10(span / n))); const m = [1,2,2.5,5,10].map(k=>k*step).find(k => span / k <= n) || step*10; const t=[]; for (let v = Math.ceil(min/m)*m; v <= max + 1e-9; v += m) t.push(+v.toFixed(6)); return t; }
+
+function groupedBars(container, cats, series, opts={}){
+  const W = 520, H = opts.h || 260, L = 44, R = 8, T = 10, B = 34;
+  const svg = chart(container, W, H);
+  const all = series.flatMap(s => s.values); const lo = Math.min(0, ...all), hi = Math.max(0, ...all);
+  const ticks = yTicks(lo, hi); const y0 = Math.min(lo, ticks[0]), y1 = Math.max(hi, ticks[ticks.length-1]);
+  const y = v => T + (H - T - B) * (1 - (v - y0) / (y1 - y0));
+  const g = svgEl('g', {class:'grid'}, svg);
+  ticks.forEach(t => { svgEl('line', {x1:L, x2:W-R, y1:y(t), y2:y(t)}, g); const tx = svgEl('text', {x:L-6, y:y(t)+4, 'text-anchor':'end', class:'lbl'}, svg); tx.textContent = opts.fmt ? opts.fmt(t) : t; });
+  svgEl('line', {x1:L, x2:W-R, y1:y(0), y2:y(0), class:'axis'}, svg);
+  const n = cats.length, k = series.length, bw = (W - L - R) / n, inner = bw * 0.72, barw = (inner - 2*(k-1)) / k;
+  cats.forEach((c, i) => {
+    const x0 = L + i*bw + (bw - inner)/2;
+    series.forEach((s, j) => {
+      const v = s.values[i]; const xx = x0 + j*(barw+2); const top = Math.min(y(v), y(0)), hh = Math.abs(y(v)-y(0));
+      const r = svgEl('rect', {x:xx, y:top, width:barw, height:Math.max(hh, 0), rx:2, fill:s.color, class:'mark'}, svg);
+      r.addEventListener('mousemove', e => showTip(e, `<b>${esc(c)}</b><br>${esc(s.name)}: ${opts.fmt ? opts.fmt(v) : fmt(v,1)}`)); r.addEventListener('mouseleave', hideTip);
+    });
+    const t = svgEl('text', {x:x0 + inner/2, y:H-B+16, 'text-anchor':'middle', class:'lbl'}, svg); t.textContent = c;
+  });
+  if (opts.ylabel){ const t = svgEl('text', {x:L, y:H-4, class:'lbl'}, svg); t.textContent = opts.ylabel; }
+}
+
+function lineChart(container, xs, series, opts={}){
+  const W = 520, H = opts.h || 240, L = 44, R = 12, T = 12, B = 34;
+  const svg = chart(container, W, H);
+  const all = series.flatMap(s => s.values.filter(v => v !== null)); const lo = opts.ymin ?? Math.min(...all), hi = opts.ymax ?? Math.max(...all);
+  const ticks = yTicks(lo, hi); const y0 = Math.min(lo, ticks[0]), y1 = Math.max(hi, ticks[ticks.length-1]);
+  const x = i => L + (W - L - R) * (xs.length > 1 ? i / (xs.length - 1) : 0.5);
+  const y = v => T + (H - T - B) * (1 - (v - y0) / (y1 - y0));
+  const g = svgEl('g', {class:'grid'}, svg);
+  ticks.forEach(t => { svgEl('line', {x1:L, x2:W-R, y1:y(t), y2:y(t)}, g); const tx = svgEl('text', {x:L-6, y:y(t)+4, 'text-anchor':'end', class:'lbl'}, svg); tx.textContent = opts.fmt ? opts.fmt(t) : t; });
+  svgEl('line', {x1:L, x2:W-R, y1:H-B, y2:H-B, class:'axis'}, svg);
+  const every = Math.ceil(xs.length / (opts.maxLabels || 12));
+  xs.forEach((c, i) => { if (i % every === 0 || i === xs.length-1){ const t = svgEl('text', {x:x(i), y:H-B+16, 'text-anchor':'middle', class:'lbl'}, svg); t.textContent = c; } });
+  series.forEach(s => {
+    const pts = s.values.map((v, i) => v === null ? null : [x(i), y(v)]).filter(Boolean);
+    svgEl('path', {d: pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' '), fill:'none', stroke:s.color, 'stroke-width':2, 'stroke-linejoin':'round'}, svg);
+    s.values.forEach((v, i) => { if (v === null) return; const c = svgEl('circle', {cx:x(i), cy:y(v), r:(opts.dots===false?0:3.5), fill:s.color, stroke:css('--surface'), 'stroke-width':2, class:'mark'}, svg);
+      const hit = svgEl('circle', {cx:x(i), cy:y(v), r:12, fill:'transparent'}, svg);
+      hit.addEventListener('mousemove', e => showTip(e, `<b>${esc(xs[i])}</b><br>${esc(s.name)}: ${opts.fmt ? opts.fmt(v) : fmt(v,2)}`)); hit.addEventListener('mouseleave', hideTip); });
+    if (s.label){ const last = s.values.length-1; const t = svgEl('text', {x:x(last)-4, y:y(s.values[last])-8, 'text-anchor':'end'}, svg); t.textContent = s.label; }
+  });
+  if (opts.ylabel){ const t = svgEl('text', {x:L, y:H-4, class:'lbl'}, svg); t.textContent = opts.ylabel; }
+}
+
+// ---------------------------------------------------------------- sequential
+groupedBars($('chart_bins'), D.seq_bins.map(b => 'picks ' + b.bin), [
+  {name:'Real picks', color:css('--teams'), values:D.seq_bins.map(b => b.actual)},
+  {name:'Model, sequential', color:css('--model'), values:D.seq_bins.map(b => b.model)},
+], {ylabel:'WAR to date, summed over 2019–2025', fmt:v=>fmt(v,0)});
+
+(function(){
+  const w = D.warriors, s = w.seq;
+  let h = `<table><thead><tr><th class="l">Method</th><th>Real picks</th><th>Model</th><th>Slot value</th></tr></thead><tbody>
+    <tr><td class="l">Team pages (best available, repeats allowed)</td><td>${fmt(w.old_actual,1)}</td><td>${fmt(w.old_model,1)}</td><td>–</td></tr>
+    <tr class="hl"><td class="l">Sequential redraft, ${s.n} slots</td><td>${fmt(s.actual,1)}</td><td>${fmt(s.model,1)}</td><td>${fmt(s.slot,1)}</td></tr></tbody></table>`;
+  h += `<p class="note" style="margin-top:8px">The gap halves but the verdict stands: the Warriors' picks returned ${fmt(s.actual - s.slot,0)} WAR below their slot value; the model's picks at those slots ${sgn(s.model - s.slot,0)}. Pick by pick:</p>`;
+  h += `<div class="tbl"><table><thead><tr><th>Year</th><th>Pick</th><th class="l">Real pick</th><th>WAR</th><th class="l">Model's pick</th><th>WAR</th></tr></thead><tbody>`;
+  h += D.warriors_picks.map(p => `<tr><td>${p.year}</td><td>${p.pick}</td><td class="l">${esc(p.actual)}</td><td>${fmt(p.actual_war,1)}</td><td class="l">${esc(p.model)}</td><td class="${cls(p.model_war - p.actual_war)}">${fmt(p.model_war,1)}</td></tr>`).join('') + '</tbody></table></div>';
+  $('warriors').innerHTML = h;
+})();
+
+(function(){
+  const rows = D.seq_teams;
+  $('teams_tbl').innerHTML = `<table><thead><tr><th class="l">Team</th><th>Picks</th><th>Real WAR</th><th>Model WAR</th><th>Slot value</th><th>Real surplus</th><th>Model surplus</th><th>Δ model − real</th><th>Slots won / lost</th></tr></thead><tbody>` +
+    rows.map(r => `<tr><td class="l">${esc(r.team)}</td><td>${r.n}</td><td>${fmt(r.actual,1)}</td><td>${fmt(r.model,1)}</td><td>${fmt(r.slot,1)}</td><td class="${cls(r.actual-r.slot)}">${sgn(r.actual - r.slot,1)}</td><td class="${cls(r.model-r.slot)}">${sgn(r.model - r.slot,1)}</td><td class="${cls(r.delta)}">${sgn(r.delta,1)}</td><td>${r.mb} / ${r.tb}</td></tr>`).join('') + '</tbody></table>';
+})();
+
+// ---------------------------------------------------------------- pick value
+lineChart($('chart_curve'), D.curve.map((_, i) => i+1), [{name:'Expected 5-season WAR', color:css('--model'), values:D.curve}], {ylabel:'WAR, first five seasons', dots:false, maxLabels:12, fmt:v=>fmt(v,0), ymin:0});
+(function(){
+  const pc = D.per_class;
+  groupedBars($('chart_vo'), pc.map(r => String(r.year)), [
+    {name:'NBA teams', color:css('--teams'), values:pc.map(r => r.teams.vo_pick)},
+    {name:'Model', color:css('--model'), values:pc.map(r => (r.model_expanding || r.model_strict).vo_pick)},
+  ], {ylabel:'pick-value order, 100 = perfect', fmt:v=>fmt(v,0)});
+  $('class_tbl').innerHTML = `<table><thead><tr><th>Class</th><th>Seasons</th><th>n</th><th>Teams Sp.</th><th>Model strict Sp.</th><th>Model exp. Sp.</th><th>Colin Sp.</th><th>Teams PV</th><th>Model strict PV</th><th>Model exp. PV</th><th>Colin PV</th><th>Ridge+cons PV</th></tr></thead><tbody>` +
+    pc.map(r => { const e = r.model_expanding || {}; return `<tr><td>${r.year}</td><td>${r.k}</td><td>${r.n}</td><td>${fmt(r.teams.spearman,2)}</td><td>${fmt(r.model_strict.spearman,2)}</td><td>${fmt(e.spearman,2)}</td><td>${fmt(r.colin.spearman,2)}</td><td>${fmt(r.teams.vo_pick,1)}</td><td class="${cls(r.model_strict.vo_pick-r.teams.vo_pick)}">${fmt(r.model_strict.vo_pick,1)}</td><td class="${cls((e.vo_pick??0)-r.teams.vo_pick)}">${fmt(e.vo_pick,1)}</td><td class="${cls(r.colin.vo_pick-r.teams.vo_pick)}">${fmt(r.colin.vo_pick,1)}</td><td class="${cls(r.ridge_lite_cons.vo_pick-r.teams.vo_pick)}">${fmt(r.ridge_lite_cons.vo_pick,1)}</td></tr>`; }).join('') + '</tbody></table>';
+  const wins = pc.filter(r => r.model_expanding).filter(r => r.model_expanding.vo_pick > r.teams.vo_pick).length, tot = pc.filter(r => r.model_expanding).length;
+  $('class_note').textContent = `Sp. = Spearman, PV = pick-value order. On pick-value the expanding model beats the teams in ${wins} of ${tot} classes it covers; the two five-season classes it loses (2019, 2020) are the ones where the teams' top-five picks held up.`;
+})();
+
+// ---------------------------------------------------------------- horizon
+(function(){
+  const ks = [1,2,3,4,5];
+  lineChart($('chart_hz'), ks.map(k => k + ' season' + (k>1?'s':'')), [
+    {name:'k-season vs 5-season WAR rank', color:css('--colin'), values:ks.map(k => D.horizon_train['war'+k+'_vs_war5'])},
+    {name:'Real draft order vs k-season WAR', color:css('--teams'), values:ks.map(k => D.horizon_train['teams_at_k'+k])},
+  ], {ylabel:'Spearman', fmt:v=>fmt(v,2), ymin:0, ymax:1});
+  let h = `<table><thead><tr><th>Class</th><th>k</th><th>Model Sp.</th><th>Teams Sp.</th><th>Model PV</th><th>Teams PV</th><th class="l">Pick-value leader</th></tr></thead><tbody>`;
+  for (const y in D.horizon_test){ for (const k in D.horizon_test[y]){ const v = D.horizon_test[y][k]; h += `<tr><td>${y}</td><td>${k}</td><td>${fmt(v.model,2)}</td><td>${fmt(v.teams,2)}</td><td>${fmt(v.vo_model,1)}</td><td>${fmt(v.vo_teams,1)}</td><td class="l ${v.vo_model>v.vo_teams?'pos':'neg'}">${v.vo_model>v.vo_teams?'model':'teams'}</td></tr>`; } }
+  $('hz_tbl').innerHTML = h + '</tbody></table>';
+})();
+
+// ---------------------------------------------------------------- baselines
+(function(){
+  $('base_tbl').innerHTML = `<table><thead><tr><th class="l">Board</th><th>Classes</th><th>Spearman</th><th>Teams</th><th>Pick-value</th><th>Teams</th><th>Won Sp. / PV</th></tr></thead><tbody>` +
+    D.baselines.map(r => `<tr class="${['model_expanding','model_strict','colin','ridge_lite_cons','consensus_multisite'].includes(r.name)?'hl':''}"><td class="l">${esc(r.label)}</td><td>${r.n}</td><td>${fmt(r.spearman,3)}</td><td>${fmt(r.teams_sp,3)}</td><td>${fmt(r.vo_pick,1)}</td><td>${fmt(r.teams_vo,1)}</td><td>${r.wins_sp} / ${r.wins_vo} of ${r.n}</td></tr>`).join('') + '</tbody></table>';
+  lineChart($('chart_blend'), D.blend.map(b => b.a.toFixed(1)), [
+    {name:'model + mock consensus', color:css('--model'), values:D.blend.map(b => b.sp)},
+    {name:'model + ridge baseline', color:css('--ridge'), values:D.blend_ridge.map(b => b.sp)},
+  ], {ylabel:'Spearman of the blend · x = share of model', fmt:v=>fmt(v,2)});
+  $('partial_tbl').innerHTML = `<table><thead><tr><th>Class</th><th>n</th><th>Model alone</th><th>Consensus alone</th><th>Model | consensus</th><th>Consensus | model</th></tr></thead><tbody>` +
+    D.partial.map(p => `<tr><td>${p.year}</td><td>${p.n}</td><td>${fmt(p.model,2)}</td><td>${fmt(p.cons,2)}</td><td class="${cls(p.partial_model_given_cons)}">${fmt(p.partial_model_given_cons,2)}</td><td class="${cls(p.partial_cons_given_model)}">${fmt(p.partial_cons_given_model,2)}</td></tr>`).join('') + '</tbody></table>';
+})();
+
+// ---------------------------------------------------------------- undrafted
+(function(){
+  const S = D.undrafted.strict || {}, E = D.undrafted.expanding || {};
+  let h = `<table><thead><tr><th>Class</th><th class="l">Player</th><th>WAR</th><th>Rank in full class</th><th>Model rank vs drafted (strict)</th><th>(expanding)</th></tr></thead><tbody>`;
+  for (const y in S){ const em = {}; (E[y]?.gems || []).forEach(g => em[g.name] = g.model_rank_vs_drafted);
+    S[y].gems.forEach(g => { h += `<tr><td>${y}</td><td class="l">${esc(g.name)}</td><td>${fmt(g.war,1)}</td><td>${g.war_rank_full} of ${S[y].n_full}</td><td>${g.model_rank_vs_drafted} of ${S[y].n_drafted}</td><td>${em[g.name] ?? '–'}</td></tr>`; }); }
+  $('gems_tbl').innerHTML = h + '</tbody></table>';
+  let u = `<table><thead><tr><th>Class</th><th>Drafted</th><th>Undrafted rows</th><th>Model Sp. (full)</th><th>Teams Sp. (full)</th><th>Model Sp. (drafted)</th><th>Teams Sp. (drafted)</th><th>Undrafted in model top-n</th><th>Their WAR</th></tr></thead><tbody>`;
+  const src = Object.keys(E).length ? E : S;
+  for (const y in src){ const r = src[y]; u += `<tr><td>${y}</td><td>${r.n_drafted}</td><td>${r.n_undrafted}</td><td>${fmt(r.sp_model,2)}</td><td>${fmt(r.sp_teams,2)}</td><td>${fmt(r.sp_model_d,2)}</td><td>${fmt(r.sp_teams_d,2)}</td><td>${r.und_top}</td><td>${fmt(r.und_war,1)}</td></tr>`; }
+  $('und_tbl').innerHTML = u + '</tbody></table>';
+})();
+
+// ---------------------------------------------------------------- experiments
+(function(){
+  const base = D.experiments.find(e => e.name === 'base');
+  const rows = D.experiments.slice().sort((a,b) => (b.wf_vo ?? -1) - (a.wf_vo ?? -1));
+  $('exp_tbl').innerHTML = `<table><thead><tr><th class="l">Variant</th><th class="l">Change vs base</th><th>Folds Sp.</th><th>Folds PV</th><th>Folds won Sp. / PV</th><th>Strict Sp.</th><th>Strict PV</th><th>Expanding Sp.</th><th>Expanding PV</th></tr></thead><tbody>` +
+    rows.map(e => `<tr class="${e.name==='base'?'hl':''}"><td class="l">${esc(e.name)}</td><td class="l">${esc(e.change)}</td><td class="${base&&e.name!=='base'?cls(e.wf_sp-base.wf_sp):''}">${fmt(e.wf_sp,3)}</td><td class="${base&&e.name!=='base'?cls(e.wf_vo-base.wf_vo):''}">${fmt(e.wf_vo,1)}</td><td>${e.folds_won_sp ?? '–'} / ${e.folds_won_vo ?? '–'} of 7</td><td>${fmt(e.strict_sp,3)}</td><td>${fmt(e.strict_vo,1)}</td><td>${fmt(e.exp_sp,3)}</td><td>${fmt(e.exp_vo,1)}</td></tr>`).join('') + '</tbody></table>';
+  if (base) $('exp_note').textContent = `Base = the champion's recipe without TabICL. Teams on the same classes: strict Spearman ${fmt(base.strict_teams_sp,3)} / pick-value ${fmt(base.strict_teams_vo,1)}; expanding ${fmt(base.exp_teams_sp,3)} / ${fmt(base.exp_teams_vo,1)}. Fold columns average horizons k = 1..5 over the 2012–2018 folds; a change needs to win most folds on both metrics before a blind look means anything. Colour = better or worse than base on the folds.`;
+})();
+
+// ---------------------------------------------------------------- robustness
+(function(){
+  const a = D.alt, names = {model_strict:'Model strict', model_expanding:'Model expanding', colin:'Colin', consensus_multisite:'Mock consensus', teams:'NBA teams'};
+  $('alt_tbl').innerHTML = `<table><thead><tr><th class="l">Outcome</th>${Object.keys(names).map(n => `<th>${names[n]}</th>`).join('')}</tr></thead><tbody>` +
+    [['war','WAR (headline)', {model_strict:D.tiles.model_strict.spearman, model_expanding:D.tiles.model_expanding.spearman, colin:D.tiles.colin.spearman, consensus_multisite:D.tiles.consensus_multisite.spearman, teams:D.tiles.teams.spearman}], ['war_pos','WAR floored at 0', a.war_pos], ['minutes','Minutes played', a.minutes]].map(([k,l,v]) => `<tr><td class="l">${l}</td>${Object.keys(names).map(n => `<td>${fmt(v[n],3)}</td>`).join('')}</tr>`).join('') + '</tbody></table>';
+  const bs = D.boot['model_expanding:spearman'] || [], bv = D.boot['model_expanding:vo_pick'] || [];
+  const yrs = D.per_class.filter(r => r.model_expanding).map(r => r.year);
+  $('boot_tbl').innerHTML = `<table><thead><tr><th>Class</th><th>Δ Spearman 95% CI</th><th>P(model &gt; teams)</th><th>Δ pick-value 95% CI</th><th>P(model &gt; teams)</th></tr></thead><tbody>` +
+    yrs.map((y,i) => `<tr><td>${y}</td><td class="${bs[i]&&bs[i].lo>0?'pos':''}">${bs[i]?`${sgn(bs[i].lo,2)} to ${sgn(bs[i].hi,2)}`:'–'}</td><td>${bs[i]?fmt(bs[i].p,2):'–'}</td><td class="${bv[i]&&bv[i].lo>0?'pos':''}">${bv[i]?`${sgn(bv[i].lo,1)} to ${sgn(bv[i].hi,1)}`:'–'}</td><td>${bv[i]?fmt(bv[i].p,2):'–'}</td></tr>`).join('') + '</tbody></table>';
+})();
+</script>
