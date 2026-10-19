@@ -215,3 +215,29 @@ Research: `docs/research/` (ten ranked reports on proven and novel pre-draft pre
 **Update, 2026-09-10 22:00 local — the second reliability variant, verified.** Eight bootstrap contexts with a milder uncertainty-gated shrink toward the consensus (0.25) also passed the gate (+0.017, 6 of 7; confirmed +0.018, 5 of 7) and the panel's 8-column all-missing control stayed at noise (+0.004, 3 of 7), so the gate is healthy. On three seed sets it verifies at 42.0% strict (41.8 to 42.3) / 48.9% expanding (47.8 to 49.5), against the champion's 41.8 / 50.6: a tie on strict and 1.7 points lower on expanding. Not adopted. The last gate-passed variant (twelve contexts, full shrink) is still verifying; the three siblings so far all land within seed noise of the champion or below it, which is the pattern of a fold gain that does not transfer.
 
 **Update, 2026-09-10 22:40 local — the reliability line, closed.** The last gate-passed variant (twelve bootstrap contexts, full uncertainty-gated shrink toward the consensus) verifies at 37.0% strict (36.5 to 37.7) / 43.6% expanding (42.9 to 44.4) on three seed sets, seven points under the champion on expanding. The three shrink variants now line up by shrink strength: 0.25 gives 48.9, 0.5 gives 47.2, 1.0 gives 43.6, all under 50.6. So the more the prediction is pulled toward the consensus where the model is unsure, the worse the sealed classes score, even though every one of them raised the 2012 to 2018 folds. The uncertainty signal is real (it predicts error) but the consensus it shrinks toward is worse than the model on exactly the players where the model is unsure. It stays a per-player confidence tag and nothing else. With this, every collected block and every modeling lever on the current data has a verified number against it; the champion remains gen99 at 41.8 / 50.6.
+
+## 2026-10-19 — review response: new metrics, sequential redraft, and a local variant queue
+
+An outside review (a front-office analyst) asked for rank swaps weighted by pick value, a mock-consensus baseline, a redraft that does not repeat players, a look at undrafted players and a note on early-career WAR. The metrics and results are in [`METRICS.md`](METRICS.md); the plan that follows is in [`MAKE_IT_BETTER.md`](MAKE_IT_BETTER.md). This entry records the engine variants run the same day.
+
+**Setup.** A local CPU re-implementation of the engine (XGBoost + ridge; `tools/lab/engine.py`), seven season-consistent walk-forward folds 2012-2018, selection on the folds only, one blind look each at the strict and expanding protocols on 2019-2025. Spearman and pick-value order (100 perfect, about 50 random). The blind looks are reported for every variant and used to select none.
+
+| variant | folds Spearman (folds won of 7) | folds pick-value | strict Spearman / pick-value | expanding Spearman / pick-value |
+|---|---|---|---|---|
+| base | 0.354 | 65.8 | 0.441 / 71.6 | 0.470 / 73.7 |
+| risk=mean (squared error instead of quantile 0.25 XGBoost) | 0.374 (3) | 65.2 | 0.432 / 74.1 | 0.487 / 75.5 |
+| top-weighted training rows, 0.5 | 0.372 | 66.4 | 0.387 | 0.416 |
+| consensus top-3 anchored | 0.341 (0) | 63.7 | | 0.469 / 75.8 |
+| consensus prior + residual, 0.5 | 0.293 | | | |
+| label horizon weights (uniform / 0.70 / late / back) | 0.341-0.353 | | | |
+| two new features (consensus through the pick-value curve; combine participation flags) | +0.016 to +0.024 over base | | did not transfer | did not transfer |
+
+Rows with an empty cell were not carried to that column in this note. The full table, with the other variants (top-weight 1.0, XGBoost depth 4, ridge only, XGBoost only, top-5 anchor, residual 1.0), is in `experiments/lab_2026-10-19/experiments.jsonl` and on [`lab.html`](../lab.html).
+
+**Reading.**
+- Fold gains did not transfer. Top-weighting the training rows, the combine flags and the consensus-through-curve feature each lifted the folds by 0.016-0.024 and none carried to the blind classes (top-weighted 0.5: strict 0.387 and expanding 0.416 against 0.441 and 0.470 for base).
+- The quantile objective. Squared error in place of quantile 0.25 in the XGBoost member raises the folds from 0.354 to 0.374 (3 of 7) and the blind looks from 0.441 to 0.432 strict (pick-value 71.6 to 74.1) and 0.470 to 0.487 expanding (73.7 to 75.5). It won only 3 of 7 folds, so it would not clear the gate's 6-of-7 rule; it is a hypothesis for a full re-run on the box, not an adoption.
+- The anchors. Pinning the consensus top three into the model's top five loses every fold (0 of 7, 0.341, pick-value 63.7) but leaves the blind expanding Spearman unchanged (0.469) and raises pick-value from 73.7 to 75.8. One look and gate-negative; it agrees with the sequential redraft, where the teams keep picks 1-5.
+- Blending the consensus in as a prior with a learned residual is worse everywhere (0.293 on the folds at weight 0.5). Label horizon weights (uniform, 0.70, late, back) all fall below base on the folds (0.341-0.353).
+
+**Pointer.** Boards, per-variant JSON, the sequential redraft tables, the undrafted evaluation and the queue logs are in `experiments/lab_2026-10-19/`.

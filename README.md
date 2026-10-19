@@ -26,7 +26,26 @@ How many of each order's first N picks were actually among the true best N by WA
 | top-10 hits (of 70) | 30 | 31 |
 | top-20 hits (of 140) | 80 | 76 |
 
-At the top of the board the model and the teams are a dead heat. The 18-point gap in order accuracy is earned in the middle and bottom of the draft: ordering picks 15 to 58, avoiding lottery busts, finding second-round value. The correlation treats a swap at picks 40 and 45 the same as a swap at picks 2 and 12; the value-of-order metric below weights the top more, and there the gap is about 5 points. The training label is a within-class rank that rewards every position equally, so nothing in the objective says the top ten matter more — a top-weighted label and a star-probability member are the next things being tested.
+At the top of the board the model and the teams are a dead heat. The 18-point gap in order accuracy is earned in the middle and bottom of the draft: ordering picks 15 to 58, avoiding lottery busts, finding second-round value. The correlation treats a swap at picks 40 and 45 the same as a swap at picks 2 and 12. Scored with an empirical pick-value curve instead (below), the gap is about 3 points.
+
+### Scored the way a front office scores it (added 2026-10-19)
+
+An outside review (October 2026) asked for a comparison that counts each player once, a metric that weights the top of the draft, baselines beyond the real draft order, the undrafted pool, and care with early-career WAR. All five were measured on the same seven classes; definitions are in [`docs/METRICS.md`](docs/METRICS.md), every table and chart is on [`lab.html`](lab.html), the follow-up plan is [`docs/MAKE_IT_BETTER.md`](docs/MAKE_IT_BETTER.md).
+
+| board | order accuracy (Spearman) | teams, same players | pick-value order (100 perfect, ~50 random) | teams | WAR above slot | teams |
+|---|---|---|---|---|---|---|
+| current model, expanding | 0.496 | 0.254 | 72.3 | 69.6 | 676 | 667 |
+| current model, strict | 0.418 | 0.263 | 73.2 | 69.9 | 731 | 683 |
+| Colin baseline, strict | 0.522 | 0.262 | 73.8 | 70.0 | 732 | 683 |
+| 14-input ridge + mock consensus (fit 2007–2018) | 0.378 | 0.263 | 73.1 | 69.9 | 742 | 683 |
+| mock consensus, 2–6 dated publishers | 0.231 | 0.263 | 70.2 | 69.9 | 682 | 683 |
+
+- *Pick-value order* weights each slot by the expected five-season WAR of that pick (isotonic fit on the 2000–2018 classes: pick 1 ≈ 21 WAR, 10 ≈ 8, 30 ≈ 5, 50 ≈ 2; `data/pick_value_curve.json`). The 24-point Spearman lead becomes a 3-point lead, and a ridge on 14 inputs matches the full model on the pick-weighted metrics: the stack is buying middle-and-late ordering.
+- *Sequential redraft* (the real draft replayed in pick order, each player taken once) now drives the [team pages](teams/index.html). At the same 385 slots the model's pick beats the real pick 173 times and loses 198; it gains at picks 6–10 and 31–45, the teams keep 1–5 and 46–60. Golden State, the review's example, goes from "101 vs 18" to 52 vs 16 WAR at slots worth 70.
+- *Horizon.* On the complete 2007–2018 classes the real draft order correlates 0.07 with first-season WAR and 0.32 with five-season WAR; a one-season ranking agrees with the five-season ranking at 0.60, two seasons 0.82, three 0.91. The 2023–2025 numbers lean toward a front-weighted model and will move.
+- *Consensus.* The model's partial correlation with WAR given the mock consensus is 0.18–0.66 by class; the consensus given the model is about zero. The model is not consensus plus noise.
+- *Undrafted.* Scoring every test row, Austin Reaves would have gone in the first round (18th–24th of 56); Dort, Naz Reid and Strus are missed. The undrafted rows were collected knowing who reached the NBA, so this is indicative only.
+- *Engine variants* (22, local CPU re-implementation, folds first, one blind look each): nothing passes; dropping the quantile objective in the XGBoost member is the one lead worth a GPU retest (`docs/EXPERIMENTS.md`, 2026-10-19 entry).
 
 ## Per class
 
@@ -174,7 +193,9 @@ The previously shipped model is kept as `model/BEST_MODEL.json` (XGBoost + TabIC
 | `model/board_preds_v3.csv` | the model's score for every drafted player in every test class (pid-keyed) |
 | `code/` | `honest.py` (leak-proof feature engine and members), `vault.py` (hash-locked outcomes, ledger), `tripwire.py` (18 cheat attempts that must be blocked), `evolve3.py` (search + genome definitions), `overnight.py`, `eval_v3.py`, `ablate_v3.py`, `apply_patches.py`, `dash.py` + `stack.html` (dashboard) |
 | `experiments/` | the ledger, the overnight queue log, the evolution history, the ablations |
-| `docs/` | methods, experiments, data rebuild report, label definitions |
+| `docs/` | methods, experiments, data rebuild report, label definitions; `METRICS.md` (pick-value order, sequential redraft, horizon), `MAKE_IT_BETTER.md` (next steps), `CHANGELOG.md` |
+| `tools/lab/`, `experiments/lab_2026-10-19/`, `lab.html` | the evaluation lab (metrics, sequential redraft, CPU engine, variant queue), its outputs, and the test-bench page |
+| `data/build_team_cards_sequential.py`, `data/pick_value_curve.json`, `model/board_expanding_2019_2025.csv` | the team-page builder (one player, one slot), the pick-value curve, the expanding-window board |
 
 Player names are not in this repository: every row is keyed by an anonymous `pid`. The name key is kept off the training machine so the model can never see it.
 

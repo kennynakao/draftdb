@@ -54,6 +54,7 @@
       <p class="runs-hero__sub">We re-ran every draft since 2019 with a tabular model using everything publicly knowable before draft night — college and international box scores, measurements, recruiting and scouting-report grades, and the final mock-draft consensus. Then we checked whose order better matched how the players actually turned out: the model, or the NBA teams that made the real picks. Players are ranked by <strong>WAR</strong>, the wins they were worth over the NBA seasons they have played so far.</p>
       <div class="stat-grid" id="stat-grid"><!-- built by js/runs.js --></div>
       <p class="stat-note">Order accuracy: how closely a draft order matches the players' actual WAR ranking (Spearman rank correlation as a percentage). 100% is a perfect order, 0% is no relationship. Averaged over the seven test drafts only.</p>
+      <p class="stat-note">Pick-value order (new, 2026-10-19): the same board scored with each slot weighted by the expected five-season WAR of that pick, so a swap at picks 2 and 12 costs more than one at 40 and 45. Expanding model 72 against 70 for the real draft; see the table below.</p>
     </div>
   </section>
 
@@ -61,7 +62,59 @@
     <div class="container">
       <h2 class="runs-h2">How it was tested <span class="hash">#</span></h2>
       <div class="years" id="years"><!-- built by js/runs.js --></div>
-      <p class="runs-p"><strong>Training: 2010–2018. Test: 2019–2025.</strong> The model is trained once on the 2010–2018 classes — every drafted player plus every undrafted player who reached the NBA — and never sees a test class. Every test draft is scored on the NBA seasons its players have completed so far: 2019 to 2021 on five seasons, 2022 on four, 2023 on three, 2024 on two, 2025 on one. Model selection used walk-forward folds inside the training window only (train on 2010 to y&minus;1, predict class y). Test outcomes sit in a hash-locked vault; every look at them is written to an append-only ledger. Nothing from a draft's own year or later is ever visible to the model.</p>
+      <p class="runs-p"><strong>Training: 2007–2018. Test: 2019–2025.</strong> The model is trained once on the 2007–2018 classes — every drafted player plus every undrafted player who reached the NBA — and never sees a test class. Every test draft is scored on the NBA seasons its players have completed so far: 2019 to 2021 on five seasons, 2022 on four, 2023 on three, 2024 on two, 2025 on one. Model selection used walk-forward folds inside the training window only (train on 2007 to y&minus;1, predict class y). Test outcomes sit in a hash-locked vault; every look at them is written to an append-only ledger. Nothing from a draft's own year or later is ever visible to the model.</p>
+    </div>
+  </section>
+
+  <section class="section--tight frame" id="front-office">
+    <div class="container">
+      <h2 class="runs-h2">Scored the way a front office scores it <span class="hash">#</span></h2>
+      <p class="runs-p">An outside review, from a front-office analyst, raised five points; four of them changed how we score. The team pages summed WAR while counting one player on several cards, so they now replay the real draft once, in pick order, with each player taken once. Rank swaps were weighted equally, which under-weights the top of the draft, so each slot is now weighted by what that pick is worth. We added mock consensus and single-publisher boards as baselines. And one-season WAR is noisy, so the horizon table below shows how much the verdict depends on seasons played. Same seven classes, same players throughout.</p>
+      <div class="rtable-wrap">
+        <table class="rtable">
+          <thead>
+            <tr><th>Board</th><th>Spearman</th><th>Teams, same players</th><th>Pick-value order</th><th>Teams</th><th>WAR above slot</th><th>Teams</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>NBA teams (real draft)</td><td>0.263</td><td>&mdash;</td><td>69.9</td><td>&mdash;</td><td>683</td><td>&mdash;</td></tr>
+            <tr><td>DraftDB model, expanding window</td><td>0.496</td><td>0.254</td><td>72.3</td><td>69.6</td><td>676</td><td>667</td></tr>
+            <tr><td>DraftDB model, strict</td><td>0.418</td><td>0.263</td><td>73.2</td><td>69.9</td><td>731</td><td>683</td></tr>
+            <tr><td>Colin baseline, strict</td><td>0.522</td><td>0.262</td><td>73.8</td><td>70.0</td><td>732</td><td>683</td></tr>
+            <tr><td>14-input ridge + consensus</td><td>0.378</td><td>0.263</td><td>73.1</td><td>69.9</td><td>742</td><td>683</td></tr>
+            <tr><td>12-input ridge, no consensus</td><td>0.347</td><td>0.263</td><td>66.0</td><td>69.9</td><td>538</td><td>683</td></tr>
+            <tr><td>Mock consensus (2&ndash;6 publishers)</td><td>0.231</td><td>0.263</td><td>70.2</td><td>69.9</td><td>682</td><td>683</td></tr>
+            <tr><td>RSCI recruiting rank</td><td>0.248</td><td>0.443</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>College / intl. impact alone</td><td>0.337</td><td>0.241</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="runs-foot-note">Spearman is the order accuracy above as a fraction. Pick-value order: 100 perfect, 0 reversed, about 50 random. WAR above slot: slot-weighted WAR against a random order, mean per class. Single publishers on the players they cover: CBS 0.298 (teams 0.300 on that subset), Tankathon 0.240 (0.285), ESPN best-available 0.197 (0.251). RSCI and college/intl. cover subsets, so their teams column is the real draft on those players. Three tests: the model&rsquo;s Spearman lead clears zero in 5 of 7 classes, its pick-value lead in 3 (2021, 2024, 2025), by paired bootstrap within class.</p>
+
+      <p class="runs-p"><strong>Sequential redraft.</strong> Replay the real draft in pick order; at each slot the team on the clock takes the model&rsquo;s highest-ranked player still available, and no player is taken twice. Of 385 slots with a model pick, the model&rsquo;s player is better at 173, the team&rsquo;s at 198, and 14 tie.</p>
+      <div class="rtable-wrap">
+        <table class="rtable">
+          <thead>
+            <tr><th>Real picks</th><th>Teams&rsquo; WAR</th><th>Model&rsquo;s WAR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1&ndash;5</td><td>379</td><td>342</td></tr>
+            <tr><td>6&ndash;10</td><td>135</td><td>210</td></tr>
+            <tr><td>11&ndash;20</td><td>284</td><td>292</td></tr>
+            <tr><td>21&ndash;30</td><td>165</td><td>153</td></tr>
+            <tr><td>31&ndash;45</td><td>97</td><td>169</td></tr>
+            <tr><td>46&ndash;60</td><td>53</td><td>&minus;36</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="runs-p">The teams keep the top five and the last fifteen; the model gains at picks 6&ndash;10 and 31&ndash;45. Golden State, which the team pages showed as 101 against 18 WAR, is 52.1 against 15.9 over the same 12 slots under the sequential rule; the slot value of those picks is 70.3.</p>
+
+      <p class="runs-p"><strong>Horizon.</strong> On the complete 2007&ndash;2018 classes, a k-season WAR ranking agrees with the five-season ranking at 0.60 (k=1), 0.82 (2), 0.91 (3) and 0.97 (4), and the real draft order correlates with k-season WAR at 0.07, 0.19, 0.24, 0.29 and 0.32 (k=5). The 2023&ndash;2025 classes, with one to three seasons, therefore lean toward the model. On 2019 and 2020 the teams overtake the model on pick-value once four or five seasons are in; 2021 holds.</p>
+
+      <p class="runs-p"><strong>Consensus.</strong> The model is not consensus plus noise. Given the mock consensus, the model&rsquo;s partial Spearman with WAR is 0.18 to 0.66 by class; given the model, the consensus&rsquo;s is about zero in five of seven classes (range &minus;0.17 to 0.22). A rank blend of the two improves steadily as the model&rsquo;s share rises. A 14-input ridge matches the full model on the pick-weighted metrics, and the 24-point Spearman lead becomes about 3 points of pick-value order.</p>
+
+      <p class="runs-p"><strong>Undrafted players.</strong> The board ranks drafted players only. Scoring every test row with the engine puts Austin Reaves (23.0 WAR, 5th in the whole 2021 class) 18th to 24th among the 56 drafted players of that class, and John Konchar, Jay Huff, Justin Champagnie and Keon Ellis in the first round. It misses Luguentz Dort (51st), Naz Reid (54th), Max Strus (46th) and Sam Hauser (37th&ndash;40th). Caveat: the undrafted rows were collected knowing who reached the NBA, so this is indicative only, not a score.</p>
+
+      <p class="runs-foot-note">Full tables and charts: <a href="lab.html">lab.html</a>; definitions: <a href="https://github.com/kennynakao/draftdb/blob/main/docs/METRICS.md" rel="noopener">docs/METRICS.md</a>; the follow-up plan: <a href="https://github.com/kennynakao/draftdb/blob/main/docs/MAKE_IT_BETTER.md" rel="noopener">docs/MAKE_IT_BETTER.md</a></p>
     </div>
   </section>
 
@@ -72,7 +125,7 @@
       <h2 class="runs-h2 runs-h2--sp">Per class, shipped model <span class="hash">#</span></h2>
       <div id="class-root"><!-- built by js/runs.js --></div>
       <p class="runs-foot-note">
-        Value of the order = WAR delivered by each draft slot, weighted linearly by slot, scaled so the perfect order is 100% and the worst is 0% (random = 50%). Shipped model: XGBoost + TabICL rank stack on data v3. Every formula, every permutation tried and the data rebuild are documented in the repository: <a href="https://github.com/Spoofyy-1/draftdb" rel="noopener">github.com/Spoofyy-1/draftdb</a> (docs/METHODS.md, docs/EXPERIMENTS.md).
+        Value of the order (linear) = WAR delivered by each draft slot, weighted linearly by slot, scaled so the perfect order is 100% and the worst is 0% (random = 50%); it is kept here for continuity, and the pick-value-weighted version in the table above is the one to use. Shipped model: XGBoost + TabICL rank stack on data v3. Every formula, every permutation tried and the data rebuild are documented in the repository: <a href="https://github.com/Spoofyy-1/draftdb" rel="noopener">github.com/Spoofyy-1/draftdb</a> (docs/METHODS.md, docs/EXPERIMENTS.md).
       </p>
     </div>
   </section>

@@ -55,7 +55,7 @@
       var t = v <= DATA.years.train[1] ? 'training class' : (v <= DATA.years.test[1] ? 'test class (blind)' : 'no outcomes yet — board only');
       var c = el('span', cls, String(v)); c.title = t; y.appendChild(c);
     }
-    var lg = el('div', 'years__legend'); lg.innerHTML = '<span class="yr yr--train yr--mini">2010</span> training &nbsp; <span class="yr yr--test yr--mini">2019</span> test, scored blind &nbsp; <span class="yr yr--pending yr--mini">2026</span> no outcomes yet'; y.appendChild(lg);
+    var lg = el('div', 'years__legend'); lg.innerHTML = '<span class="yr yr--train yr--mini">2007</span> training &nbsp; <span class="yr yr--test yr--mini">2019</span> test, scored blind &nbsp; <span class="yr yr--pending yr--mini">2026</span> no outcomes yet'; y.appendChild(lg);
   }
 
   function runsTable() {
