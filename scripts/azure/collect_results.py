@@ -27,7 +27,14 @@ if acct:
         os.makedirs(out, exist_ok=True)
         subprocess.check_call(["az", "storage", "blob", "download-batch", "--destination", out, "--source", "ml-artifacts", "--pattern",
                                f"results/{exe}/*", "--connection-string", conn, "-o", "none"], stderr=subprocess.DEVNULL)
-        print(f"downloaded results/{exe} into {out}"); sys.exit(0)
+        # download-batch keeps the blob path; flatten results/<exe>/* into out-dir
+        import shutil
+        src = os.path.join(out, "results", exe)
+        if os.path.isdir(src):
+            for f in os.listdir(src):
+                shutil.move(os.path.join(src, f), os.path.join(out, f))
+            shutil.rmtree(os.path.join(out, "results"), ignore_errors=True)
+        print(f"downloaded results/{exe} into {out} ({len(os.listdir(out))} files)"); sys.exit(0)
     print("no results in blob storage yet; falling back to Log Analytics")
 rg = os.environ.get("AZURE_RESOURCE_GROUP", "ml-training-rg"); job = os.environ.get("AZURE_TRAINING_JOB", "a100-training")
 env = os.environ.get("AZURE_CONTAINERAPPS_ENV", "ml-training-env")
