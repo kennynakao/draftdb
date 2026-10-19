@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*-
 """DraftDB — build the 30 NBA team pages from data/team_cards.json.
 
+The cards come from a sequential redraft (data/build_team_cards_sequential.py): the
+real draft is replayed in overall-pick order, the team on the clock takes the model's
+highest-ranked player still available, and every player is taken exactly once. The
+pages therefore compare the team's pick with the model's pick at the same slot, and
+add the expected WAR of the slot (the 2000-2018 pick-value curve) as a yardstick.
+
 Rewrites, for every team present in the dataset:
 
     site/teams/<slug>.html      one page per franchise, its own accent colour
@@ -341,9 +347,18 @@ def team_labels(team):
     return " ".join(parts[:-1]) or name, parts[-1], name
 
 
+# Under the sequential redraft the model's pick can be a lower-ranked player than the
+# team's pick only because the better-ranked one was already taken earlier in the replay,
+# which is not agreement. The old "model agreed" rule therefore stays off; the "same
+# player" case (model_choice == actual) is handled by same_player().
+AGREED_RULE_ACTIVE = False
+
+
 def agreed_pick(actual, model):
     """The team's pick outranked every alternative on the model's board at this slot: the model agreed with the team."""
     ar, mr = to_num((actual or {}).get("model_rank")), to_num((model or {}).get("model_rank"))
+    if not AGREED_RULE_ACTIVE:
+        return False
     return bool(model) and ar is not None and mr is not None and ar < mr
 
 
@@ -455,8 +470,8 @@ def pick_card(team_name, year, pick, idx):
                        rows=rows_html(left_rows), note=left_note)
 
     # ---- right: the model's choice ----
-    sub = ('\n    <div class="pickcard__sub">Its top-ranked player still on the board '
-           'at this slot</div>')
+    sub = ('\n    <div class="pickcard__sub">Its pick in a sequential redraft: the highest-ranked '
+           'player still available at this slot, each player taken once</div>')
     if not model:
         right_body = ('    <p class="pickcard__name">No board entry</p>\n'
                       '    <p class="pk-note">The model has no scored board entry for this slot, '
@@ -484,8 +499,8 @@ def pick_card(team_name, year, pick, idx):
             ("Seasons scored", whole(model.get("seasons_scored"))),
         ]
         right_body = ('    <h3 class="pickcard__name">{}</h3>\n{}\n'
-                      '    <p class="pk-note">Same player: the model&rsquo;s board had him at the top '
-                      'of what was still available at this slot.</p>').format(
+                      '    <p class="pk-note">Same player: the model&rsquo;s board also had him as the best '
+                      'still available at this slot.</p>').format(
             esc(model.get("name")), rows_html(right_rows))
     else:
         right_rows = [
@@ -585,6 +600,8 @@ def hero_section(team, meta, years_with_picks):
             whole(mb, "0"), whole(tb, "0"), whole(ti, "0")),
          "won by the model / by the team / even{}".format(
              " &middot; {} where the model agreed with the team".format(whole(ag)) if (ag or 0) > 0 else ""), ""),
+        ('Slot value', war(s.get("slot_value_total")),
+         "expected WAR of those picks (2000&ndash;2018 pick-value curve)", ""),
     ]
     tiles_html = "\n".join(
         '        <div class="tstat{cls}">\n'
@@ -596,7 +613,7 @@ def hero_section(team, meta, years_with_picks):
     first_round = ""
     if fr:
         first_round = (" First round only: the team&rsquo;s picks {ta} WAR against the model&rsquo;s "
-                       "{tm} WAR summed over cards, {mb} {cards} to the model and {tb} to the team.").format(
+                       "{tm} WAR at the same slots, {mb} {cards} to the model and {tb} to the team.").format(
             ta=war(fr.get("war_actual_total")), tm=war(fr.get("war_model_total")),
             mb=whole(fr.get("model_better"), "0"),
             cards=plural(int(to_num(fr.get("model_better")) or 0), "card"),
@@ -610,7 +627,7 @@ def hero_section(team, meta, years_with_picks):
     <div class="container">
       <div class="team-hero__eyebrow"><span class="team-swatch"></span>{name} &middot; 2019&ndash;2025 drafts</div>
       <h1 class="team-hero__title">{name}</h1>
-      <p class="team-verdict">Across the 2019&ndash;2025 drafts, pick by pick, the model&rsquo;s top available player out-produced the team&rsquo;s selection on <b>{mb} of {ncards} cards</b>; the team&rsquo;s pick did better on <b>{tb}</b>{agtxt}. Summed over cards, the model&rsquo;s choices have <b>{model} WAR</b> to date against <b>{actual}</b> for the team&rsquo;s picks &mdash; the same alternative can appear on several cards, so the sums compare choices, not rosters.</p>
+      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order, each player taken once. At the {name}{poss} own slots the model&rsquo;s pick out-produced the team&rsquo;s selection on <b>{mb} of {ncards} cards</b>; the team&rsquo;s pick did better on <b>{tb}</b>{agtxt}. At those slots the model&rsquo;s picks have <b>{model} WAR</b> to date against <b>{actual}</b> for the team&rsquo;s picks; the slots themselves were worth <b>{slot} WAR</b> under the pick-value curve.</p>
       <div class="tstat-grid">
 {tiles}
       </div>
@@ -622,6 +639,8 @@ def hero_section(team, meta, years_with_picks):
     </div>
   </section>""".format(
         name=esc(name), model=war(s.get("war_model_total")), actual=war(s.get("war_actual_total")),
+        slot=war(s.get("slot_value_total")),
+        poss=("&rsquo;" if str(name).endswith("s") else "&rsquo;s"),
         mb=whole(mb, "0"), tb=whole(tb, "0"), agtxt=(", and on {} the model had the same player at the top of its board".format(whole(ag)) if (ag or 0) > 0 else ""),
         tiles=tiles_html, npicks=whole(n_picks, "0"), ncards=whole(n_cards, "0"),
         boards=esc(meta.get("boards_used")), label=esc(meta.get("model", {}).get("label")),
@@ -639,9 +658,12 @@ HONEST_ITEMS = [
     "A model rank is a <b>within-class ranking of drafted players only</b>. It is an ordering of that "
     "year&rsquo;s board, not a grade against every player in basketball, and a player with no rank was "
     "simply not scored.",
-    "The model&rsquo;s choice is the top-ranked player <b>still on the board</b> at that slot, from a "
-    "board built only from what was knowable before the draft. It is not a claim that anyone knew how "
-    "the careers would turn out.",
+    "The model&rsquo;s choice is its pick in a <b>sequential redraft</b>: the draft replayed in pick order "
+    "with each player taken once, from a board built only from what was knowable before the draft. It is "
+    "not a claim that anyone knew how the careers would turn out.",
+    "<b>Early-career WAR rewards early producers.</b> On the complete 2007&ndash;2018 classes the real draft "
+    "order correlates 0.07 with first-season WAR and 0.32 with five-season WAR; teams draft for years three "
+    "to five, so cards for the 2023&ndash;2025 classes lean toward the model.",
     "<b>A single card is noisy.</b> One pick can go either way for reasons no model or front office "
     "could see coming. The seven-class mean is the real test; the individual cards are how you read it.",
 ]
@@ -830,7 +852,7 @@ def index_page(doc, meta, by_slug, accents, prefix):
     <div class="container">
       <div class="team-hero__eyebrow"><span class="team-swatch"></span>30 teams &middot; 2019&ndash;2025 drafts</div>
       <h1 class="team-hero__title">Every team&rsquo;s draft, re-run.</h1>
-      <p class="team-verdict">Across the 2019&ndash;2025 drafts, pick by pick, the model&rsquo;s top available player out-produced the team&rsquo;s selection on <b>{mb} of {nc} cards</b> and the team&rsquo;s pick did better on <b>{tb}</b>. Summed over cards the model&rsquo;s choices have <b>{wm} WAR</b> to date against <b>{wa}</b> for the teams&rsquo; picks; the same alternative can appear on several cards, so the sums compare choices, not rosters. Open a team to see the pick-by-pick cards.</p>
+      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order with each player taken once. The model&rsquo;s pick out-produced the team&rsquo;s selection on <b>{mb} of {nc} cards</b> and the team&rsquo;s pick did better on <b>{tb}</b>. At the same slots the model&rsquo;s picks have <b>{wm} WAR</b> to date against <b>{wa}</b> for the teams&rsquo; picks. Open a team to see the pick-by-pick cards.</p>
       <div class="tstat-grid">
 {tiles}
       </div>

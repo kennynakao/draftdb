@@ -38,7 +38,10 @@
       <a href="../index.html#docs">Documentation</a>
     </nav>
     <button class="nav__menu-btn" type="button" aria-controls="primary-links" aria-expanded="false"><span class="m">Menu</span><span class="x">Close</span></button>
-    <!-- nav auth (Log In / Sign Up) removed 2026-09-29 -->
+    <div class="nav__actions btn-group">
+      <a class="btn btn--dark btn--sm" href="#">Log In</a>
+      <a class="btn btn--primary btn--sm" href="#">Sign Up</a>
+    </div>
   </div>
 </header>
 
@@ -47,7 +50,7 @@
     <div class="container">
       <div class="team-hero__eyebrow"><span class="team-swatch"></span>Dallas Mavericks &middot; 2019&ndash;2025 drafts</div>
       <h1 class="team-hero__title">Dallas Mavericks</h1>
-      <p class="team-verdict">Across the 2019&ndash;2025 drafts, pick by pick, the model&rsquo;s top available player out-produced the team&rsquo;s selection on <b>4 of 6 cards</b>; the team&rsquo;s pick did better on <b>1</b>, and on 1 the model had the same player at the top of its board. Summed over cards, the model&rsquo;s choices have <b>26.0 WAR</b> to date against <b>20.8</b> for the team&rsquo;s picks &mdash; the same alternative can appear on several cards, so the sums compare choices, not rosters.</p>
+      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order, each player taken once. At the Dallas Mavericks&rsquo; own slots the model&rsquo;s pick out-produced the team&rsquo;s selection on <b>2 of 6 cards</b>; the team&rsquo;s pick did better on <b>3</b>, and on 1 the model had the same player at the top of its board. At those slots the model&rsquo;s picks have <b>20.1 WAR</b> to date against <b>20.8</b> for the team&rsquo;s picks; the slots themselves were worth <b>50.1 WAR</b> under the pick-value curve.</p>
       <div class="tstat-grid">
         <div class="tstat">
           <div class="tstat__k">WAR to date &middot; team picks</div>
@@ -56,24 +59,29 @@
         </div>
         <div class="tstat tstat--model">
           <div class="tstat__k">WAR to date &middot; model picks</div>
-          <div class="tstat__v">26.0</div>
+          <div class="tstat__v">20.1</div>
           <div class="tstat__sub">the same slots, taken in the model&rsquo;s board order</div>
         </div>
         <div class="tstat">
           <div class="tstat__k">Comparison cards</div>
-          <div class="tstat__v">4<span class="sl">/</span>1<span class="sl">/</span>0</div>
+          <div class="tstat__v">2<span class="sl">/</span>3<span class="sl">/</span>0</div>
           <div class="tstat__sub">won by the model / by the team / even &middot; 1 where the model agreed with the team</div>
+        </div>
+        <div class="tstat">
+          <div class="tstat__k">Slot value</div>
+          <div class="tstat__v">50.1</div>
+          <div class="tstat__sub">expected WAR of those picks (2000&ndash;2018 pick-value curve)</div>
         </div>
       </div>
       <div class="team-hero__meta"><span><b>Team</b> Dallas Mavericks</span><span><b>Picks</b> 7</span><span><b>Cards</b> 6</span><span><b>Boards</b> expanding</span><span><b>Model</b> EVO gen11 + international-line mask + NBADraft.net grades + Torvik league context + ridge on top columns</span></div>
-      <p class="team-foot-note">WAR to date is counted over at most a player&rsquo;s first five NBA seasons, so the 2022&ndash;2025 classes are still accruing and are only comparable within their own year. First round only: the team&rsquo;s picks 20.7 WAR against the model&rsquo;s 18.8 WAR summed over cards, 2 cards to the model and 1 to the team.</p>
+      <p class="team-foot-note">WAR to date is counted over at most a player&rsquo;s first five NBA seasons, so the 2022&ndash;2025 classes are still accruing and are only comparable within their own year. First round only: the team&rsquo;s picks 20.8 WAR against the model&rsquo;s 16.9 WAR at the same slots, 1 card to the model and 2 to the team.</p>
       <nav class="ynav" aria-label="Jump to a draft class">
         <a href="#y2019">2019</a>
         <a href="#y2020">2020</a>
         <a href="#y2021" class="is-empty">2021</a>
         <a href="#y2022">2022</a>
         <a href="#y2023">2023</a>
-        <a href="#y2024" class="is-empty">2024</a>
+        <a href="#y2024">2024</a>
         <a href="#y2025">2025</a>
       </nav>
     </div>
@@ -82,7 +90,7 @@
     <div class="container">
       <div class="draft-year__head">
         <h2 class="draft-year__title" id="y2019-h">2019 draft</h2>
-        <span class="draft-year__meta">1 pick &middot; team 0.0 WAR &middot; model 1.9 WAR</span>
+        <span class="draft-year__meta">1 pick &middot; team 0.0 WAR &middot; model 3.7 WAR</span>
       </div>
 <article class="pickcard pickcard--model" id="p2019-37">
   <header class="pickcard__head">
@@ -108,19 +116,19 @@
     <p class="pk-note">23 games &middot; 160 minutes</p>
   </section>
   <div class="pickcard__mid">
-    <div class="vbadge__delta">+1.9</div>
+    <div class="vbadge__delta">+3.7</div>
     <div class="vbadge__unit">WAR, model &minus; team</div>
     <div class="vbadge__label">Model&rsquo;s pick outperformed</div>
   </div>
   <section class="pickcard__side" aria-label="Our model chose">
     <div class="pickcard__who">Our model chose</div>
-    <div class="pickcard__sub">Its top-ranked player still on the board at this slot</div>
-    <h3 class="pickcard__name">Bol Bol</h3>
+    <div class="pickcard__sub">Its pick in a sequential redraft: the highest-ranked player still available at this slot, each player taken once</div>
+    <h3 class="pickcard__name">Talen Horton-Tucker</h3>
     <dl class="pk-rows">
-      <div class="pk-row"><dt>Model rank, 2019 class</dt><dd>No.&nbsp;5</dd></div>
-      <div class="pk-row"><dt>Actually drafted</dt><dd>44th overall <span class="q">&middot;</span> Miami Heat</dd></div>
-      <div class="pk-row"><dt>College or club</dt><dd>Oregon</dd></div>
-      <div class="pk-row"><dt>WAR to date</dt><dd>1.9</dd></div>
+      <div class="pk-row"><dt>Model rank, 2019 class</dt><dd>No.&nbsp;38</dd></div>
+      <div class="pk-row"><dt>Actually drafted</dt><dd>46th overall <span class="q">&middot;</span> Orlando Magic</dd></div>
+      <div class="pk-row"><dt>College or club</dt><dd>Iowa State</dd></div>
+      <div class="pk-row"><dt>WAR to date</dt><dd>3.7</dd></div>
       <div class="pk-row"><dt>Seasons scored</dt><dd>5</dd></div>
     </dl>
   </section>
@@ -133,9 +141,9 @@
     <div class="container">
       <div class="draft-year__head">
         <h2 class="draft-year__title" id="y2020-h">2020 draft</h2>
-        <span class="draft-year__meta">2 picks &middot; team 2.2 WAR &middot; model 10.6 WAR</span>
+        <span class="draft-year__meta">2 picks &middot; team 2.2 WAR &middot; model -0.9 WAR</span>
       </div>
-<article class="pickcard pickcard--model" id="p2020-18">
+<article class="pickcard pickcard--team" id="p2020-18">
   <header class="pickcard__head">
       <span class="sq sq--sm" aria-hidden="true"></span>
       <span class="label">Pick 18 overall</span>
@@ -159,26 +167,26 @@
     <p class="pk-note">291 games &middot; 6,546 minutes</p>
   </section>
   <div class="pickcard__mid">
-    <div class="vbadge__delta">+3.1</div>
+    <div class="vbadge__delta">-2.6</div>
     <div class="vbadge__unit">WAR, model &minus; team</div>
-    <div class="vbadge__label">Model&rsquo;s pick outperformed</div>
+    <div class="vbadge__label">Team&rsquo;s pick outperformed</div>
   </div>
   <section class="pickcard__side" aria-label="Our model chose">
     <div class="pickcard__who">Our model chose</div>
-    <div class="pickcard__sub">Its top-ranked player still on the board at this slot</div>
-    <h3 class="pickcard__name">Xavier Tillman</h3>
+    <div class="pickcard__sub">Its pick in a sequential redraft: the highest-ranked player still available at this slot, each player taken once</div>
+    <h3 class="pickcard__name">Zeke Nnaji</h3>
     <dl class="pk-rows">
-      <div class="pk-row"><dt>Model rank, 2020 class</dt><dd>No.&nbsp;4</dd></div>
-      <div class="pk-row"><dt>Actually drafted</dt><dd>35th overall <span class="q">&middot;</span> Sacramento Kings</dd></div>
-      <div class="pk-row"><dt>College or club</dt><dd>Michigan State</dd></div>
-      <div class="pk-row"><dt>WAR to date</dt><dd>5.3</dd></div>
+      <div class="pk-row"><dt>Model rank, 2020 class</dt><dd>No.&nbsp;18</dd></div>
+      <div class="pk-row"><dt>Actually drafted</dt><dd>22nd overall <span class="q">&middot;</span> Denver Nuggets</dd></div>
+      <div class="pk-row"><dt>College or club</dt><dd>Arizona</dd></div>
+      <div class="pk-row"><dt>WAR to date</dt><dd>-0.4</dd></div>
       <div class="pk-row"><dt>Seasons scored</dt><dd>5</dd></div>
     </dl>
   </section>
   </div>
   <div class="pickcard__foot">Best available in hindsight: <b>Desmond Bane</b> (26.9 WAR) &middot; went 30th overall to Boston Celtics</div>
 </article>
-<article class="pickcard pickcard--model" id="p2020-31">
+<article class="pickcard pickcard--team" id="p2020-31">
   <header class="pickcard__head">
       <span class="sq sq--sm" aria-hidden="true"></span>
       <span class="label">Pick 31 overall</span>
@@ -202,20 +210,20 @@
     <p class="pk-note">13 games &middot; 59 minutes</p>
   </section>
   <div class="pickcard__mid">
-    <div class="vbadge__delta">+5.1</div>
+    <div class="vbadge__delta">-0.6</div>
     <div class="vbadge__unit">WAR, model &minus; team</div>
-    <div class="vbadge__label">Model&rsquo;s pick outperformed</div>
+    <div class="vbadge__label">Team&rsquo;s pick outperformed</div>
   </div>
   <section class="pickcard__side" aria-label="Our model chose">
     <div class="pickcard__who">Our model chose</div>
-    <div class="pickcard__sub">Its top-ranked player still on the board at this slot</div>
-    <h3 class="pickcard__name">Xavier Tillman</h3>
+    <div class="pickcard__sub">Its pick in a sequential redraft: the highest-ranked player still available at this slot, each player taken once</div>
+    <h3 class="pickcard__name">Leandro Bolmaro</h3>
     <dl class="pk-rows">
-      <div class="pk-row"><dt>Model rank, 2020 class</dt><dd>No.&nbsp;4</dd></div>
-      <div class="pk-row"><dt>Actually drafted</dt><dd>35th overall <span class="q">&middot;</span> Sacramento Kings</dd></div>
-      <div class="pk-row"><dt>College or club</dt><dd>Michigan State</dd></div>
-      <div class="pk-row"><dt>WAR to date</dt><dd>5.3</dd></div>
-      <div class="pk-row"><dt>Seasons scored</dt><dd>5</dd></div>
+      <div class="pk-row"><dt>Model rank, 2020 class</dt><dd>No.&nbsp;31</dd></div>
+      <div class="pk-row"><dt>Actually drafted</dt><dd>23rd overall <span class="q">&middot;</span> New York Knicks</dd></div>
+      <div class="pk-row"><dt>College or club</dt><dd>FC Barcelona Basquet (Spain)</dd></div>
+      <div class="pk-row"><dt>WAR to date</dt><dd>-0.5</dd></div>
+      <div class="pk-row"><dt>Seasons scored</dt><dd>2</dd></div>
     </dl>
   </section>
   </div>
@@ -236,7 +244,7 @@
     <div class="container">
       <div class="draft-year__head">
         <h2 class="draft-year__title" id="y2022-h">2022 draft</h2>
-        <span class="draft-year__meta">1 pick &middot; team -0.1 WAR &middot; model 5.1 WAR</span>
+        <span class="draft-year__meta">1 pick &middot; team -0.1 WAR &middot; model 1.7 WAR</span>
       </div>
 <article class="pickcard pickcard--model" id="p2022-26">
   <header class="pickcard__head">
@@ -262,20 +270,20 @@
     <p class="pk-note">96 games &middot; 788 minutes</p>
   </section>
   <div class="pickcard__mid">
-    <div class="vbadge__delta">+5.2</div>
+    <div class="vbadge__delta">+1.8</div>
     <div class="vbadge__unit">WAR, model &minus; team</div>
     <div class="vbadge__label">Model&rsquo;s pick outperformed</div>
   </div>
   <section class="pickcard__side" aria-label="Our model chose">
     <div class="pickcard__who">Our model chose</div>
-    <div class="pickcard__sub">Its top-ranked player still on the board at this slot</div>
-    <h3 class="pickcard__name">Andrew Nembhard</h3>
+    <div class="pickcard__sub">Its pick in a sequential redraft: the highest-ranked player still available at this slot, each player taken once</div>
+    <h3 class="pickcard__name">Karlo Matković</h3>
     <dl class="pk-rows">
-      <div class="pk-row"><dt>Model rank, 2022 class</dt><dd>No.&nbsp;6</dd></div>
-      <div class="pk-row"><dt>Actually drafted</dt><dd>31st overall <span class="q">&middot;</span> Indiana Pacers</dd></div>
-      <div class="pk-row"><dt>College or club</dt><dd>Gonzaga</dd></div>
-      <div class="pk-row"><dt>WAR to date</dt><dd>5.1</dd></div>
-      <div class="pk-row"><dt>Seasons scored</dt><dd>4</dd></div>
+      <div class="pk-row"><dt>Model rank, 2022 class</dt><dd>No.&nbsp;26</dd></div>
+      <div class="pk-row"><dt>Actually drafted</dt><dd>52nd overall <span class="q">&middot;</span> New Orleans Pelicans</dd></div>
+      <div class="pk-row"><dt>College or club</dt><dd>Mega Mozzart (Serbia)</dd></div>
+      <div class="pk-row"><dt>WAR to date</dt><dd>1.7</dd></div>
+      <div class="pk-row"><dt>Seasons scored</dt><dd>2</dd></div>
     </dl>
   </section>
   </div>
@@ -287,7 +295,7 @@
     <div class="container">
       <div class="draft-year__head">
         <h2 class="draft-year__title" id="y2023-h">2023 draft</h2>
-        <span class="draft-year__meta">1 pick &middot; team 13.7 WAR &middot; model 5.7 WAR</span>
+        <span class="draft-year__meta">1 pick &middot; team 13.7 WAR &middot; model 10.7 WAR</span>
       </div>
 <article class="pickcard pickcard--team" id="p2023-10">
   <header class="pickcard__head">
@@ -313,19 +321,19 @@
     <p class="pk-note">227 games &middot; 5,614 minutes</p>
   </section>
   <div class="pickcard__mid">
-    <div class="vbadge__delta">-8.0</div>
+    <div class="vbadge__delta">-3.0</div>
     <div class="vbadge__unit">WAR, model &minus; team</div>
     <div class="vbadge__label">Team&rsquo;s pick outperformed</div>
   </div>
   <section class="pickcard__side" aria-label="Our model chose">
     <div class="pickcard__who">Our model chose</div>
-    <div class="pickcard__sub">Its top-ranked player still on the board at this slot</div>
-    <h3 class="pickcard__name">Dereck Lively II</h3>
+    <div class="pickcard__sub">Its pick in a sequential redraft: the highest-ranked player still available at this slot, each player taken once</div>
+    <h3 class="pickcard__name">Ausar Thompson</h3>
     <dl class="pk-rows">
-      <div class="pk-row"><dt>Model rank, 2023 class</dt><dd>No.&nbsp;2</dd></div>
-      <div class="pk-row"><dt>Actually drafted</dt><dd>12th overall <span class="q">&middot;</span> Oklahoma City Thunder</dd></div>
-      <div class="pk-row"><dt>College or club</dt><dd>Duke</dd></div>
-      <div class="pk-row"><dt>WAR to date</dt><dd>5.7</dd></div>
+      <div class="pk-row"><dt>Model rank, 2023 class</dt><dd>No.&nbsp;10</dd></div>
+      <div class="pk-row"><dt>Actually drafted</dt><dd>5th overall <span class="q">&middot;</span> Detroit Pistons</dd></div>
+      <div class="pk-row"><dt>College or club</dt><dd>Overtime Elite</dd></div>
+      <div class="pk-row"><dt>WAR to date</dt><dd>10.7</dd></div>
       <div class="pk-row"><dt>Seasons scored</dt><dd>3</dd></div>
     </dl>
   </section>
@@ -338,18 +346,52 @@
     <div class="container">
       <div class="draft-year__head">
         <h2 class="draft-year__title" id="y2024-h">2024 draft</h2>
-        <span class="draft-year__meta">No selection</span>
+        <span class="draft-year__meta">1 pick &middot; team -0.1 WAR &middot; model 0.0 WAR</span>
       </div>
-    <div class="nopick"><span class="sq" aria-hidden="true"></span>No selection in 2024.</div>
+<article class="pickcard pickcard--tie" id="p2024-58">
+  <header class="pickcard__head">
+      <span class="sq sq--sm" aria-hidden="true"></span>
+      <span class="label">Pick 58 overall</span>
+      <span class="pickcard__sep" aria-hidden="true">/</span>
+      <span class="label">Round 2</span>
+      <span class="pickcard__sep" aria-hidden="true">/</span>
+      <span class="label">2024 draft</span>
+  </header>
+  <div class="pickcard__body">
+  <section class="pickcard__side" aria-label="The Dallas Mavericks picked">
+    <div class="pickcard__who">The <b>Dallas Mavericks</b> picked</div>
+    <h3 class="pickcard__name">Ariel Hukporti</h3>
+    <dl class="pk-rows">
+      <div class="pk-row"><dt>Overall pick</dt><dd>58th</dd></div>
+      <div class="pk-row"><dt>Round</dt><dd>2</dd></div>
+      <div class="pk-row"><dt>College or club</dt><dd>MHP Riesen (Germany)</dd></div>
+      <div class="pk-row"><dt>WAR to date</dt><dd>-0.1</dd></div>
+      <div class="pk-row"><dt>Seasons scored</dt><dd>2</dd></div>
+      <div class="pk-row"><dt>Model rank, 2024 class</dt><dd>not scored</dd></div>
+    </dl>
+    <p class="pk-note">79 games &middot; 714 minutes</p>
+  </section>
+  <div class="pickcard__mid">
+    <div class="vbadge__delta">&mdash;</div>
+    <div class="vbadge__unit">WAR, model &minus; team</div>
+    <div class="vbadge__label">Not scored</div>
+  </div>
+  <section class="pickcard__side" aria-label="Our model chose">
+    <div class="pickcard__who">Our model chose</div>
+    <p class="pickcard__name">No board entry</p>
+    <p class="pk-note">The model has no scored board entry for this slot, so this pick is shown without a comparison.</p>
+  </section>
+  </div>
+</article>
     </div>
   </section>
   <section class="draft-year frame" id="y2025" aria-labelledby="y2025-h">
     <div class="container">
       <div class="draft-year__head">
         <h2 class="draft-year__title" id="y2025-h">2025 draft</h2>
-        <span class="draft-year__meta">1 pick &middot; team 5.0 WAR &middot; model 2.7 WAR</span>
+        <span class="draft-year__meta">1 pick &middot; team 5.0 WAR &middot; model 5.0 WAR</span>
       </div>
-<article class="pickcard pickcard--agree" id="p2025-1">
+<article class="pickcard pickcard--tie" id="p2025-1">
   <header class="pickcard__head">
       <span class="sq sq--sm" aria-hidden="true"></span>
       <span class="label">Pick 1 overall</span>
@@ -373,20 +415,21 @@
     <p class="pk-note">70 games &middot; 2,345 minutes</p>
   </section>
   <div class="pickcard__mid">
-    <div class="vbadge__delta">&#10003;</div>
-    <div class="vbadge__unit">same player</div>
-    <div class="vbadge__label">Model agreed</div>
+    <div class="vbadge__delta">0.0</div>
+    <div class="vbadge__unit">WAR, model &minus; team</div>
+    <div class="vbadge__label">Same pick</div>
   </div>
   <section class="pickcard__side" aria-label="Our model chose">
     <div class="pickcard__who">Our model chose</div>
-    <div class="pickcard__sub">Its top-ranked player still on the board at this slot</div>
+    <div class="pickcard__sub">Its pick in a sequential redraft: the highest-ranked player still available at this slot, each player taken once</div>
     <h3 class="pickcard__name">Cooper Flagg</h3>
     <dl class="pk-rows">
       <div class="pk-row"><dt>Model rank, 2025 class</dt><dd>No.&nbsp;1</dd></div>
+      <div class="pk-row"><dt>College or club</dt><dd>Duke</dd></div>
       <div class="pk-row"><dt>WAR to date</dt><dd>5.0</dd></div>
       <div class="pk-row"><dt>Seasons scored</dt><dd>1</dd></div>
     </dl>
-    <p class="pk-note">The team&rsquo;s pick was also the model&rsquo;s top-ranked player still on the board at this slot. Next on its board: Collin Murray-Boyles (rank No.&nbsp;2, 2.7 WAR to date, 9th overall <span class="q">&middot;</span> Toronto Raptors).</p>
+    <p class="pk-note">Same player: the model&rsquo;s board also had him as the best still available at this slot.</p>
   </section>
   </div>
   <div class="pickcard__foot">Best available in hindsight: <b>Kon Knueppel</b> (7.4 WAR) &middot; went 4th overall to Charlotte Hornets</div>
@@ -402,7 +445,8 @@
           <li><span class="sq" aria-hidden="true"></span><span>WAR to date is counted over <b>at most a player&rsquo;s first five NBA seasons</b>. It is a running total, not a career, and it says nothing about what either player does next.</span></li>
           <li><span class="sq" aria-hidden="true"></span><span>The recent classes are scored on <b>one or two seasons</b>. Those cards will move, and some of them will flip, as more seasons are played.</span></li>
           <li><span class="sq" aria-hidden="true"></span><span>A model rank is a <b>within-class ranking of drafted players only</b>. It is an ordering of that year&rsquo;s board, not a grade against every player in basketball, and a player with no rank was simply not scored.</span></li>
-          <li><span class="sq" aria-hidden="true"></span><span>The model&rsquo;s choice is the top-ranked player <b>still on the board</b> at that slot, from a board built only from what was knowable before the draft. It is not a claim that anyone knew how the careers would turn out.</span></li>
+          <li><span class="sq" aria-hidden="true"></span><span>The model&rsquo;s choice is its pick in a <b>sequential redraft</b>: the draft replayed in pick order with each player taken once, from a board built only from what was knowable before the draft. It is not a claim that anyone knew how the careers would turn out.</span></li>
+          <li><span class="sq" aria-hidden="true"></span><span><b>Early-career WAR rewards early producers.</b> On the complete 2007&ndash;2018 classes the real draft order correlates 0.07 with first-season WAR and 0.32 with five-season WAR; teams draft for years three to five, so cards for the 2023&ndash;2025 classes lean toward the model.</span></li>
           <li><span class="sq" aria-hidden="true"></span><span><b>A single card is noisy.</b> One pick can go either way for reasons no model or front office could see coming. The seven-class mean is the real test; the individual cards are how you read it.</span></li>
           <li><span class="sq" aria-hidden="true"></span><span><b>How WAR is measured here:</b> Realized WAR to date: y_early_war from the answers files, summed over the player&#x27;s NBA seasons scored so far, at most five (2019-2021 classes have complete five-season windows; 2022-2025 are partial and still accruing, so compare within a draft year, not across). Players who never appeared in the NBA score 0. A handful of draft-and-stash picks have no pre-draft or outcome record in our data at all; they are shown with WAR 0 and flagged in team_cards_audit.csv (war_note).</span></li>
         </ul>
@@ -462,7 +506,7 @@
         <a class="link" href="index.html">Teams</a>
       </div>
       <div style="margin-top:26px;font-size:14px;color:var(--text-2)">&copy; 2026 DraftDB Labs, Inc</div>
-      <div class="footer__gen">Generated from data/team_cards.json on 2026-09-10</div>
+      <div class="footer__gen">Generated from data/team_cards.json on 2026-10-19</div>
     </div>
   </div>
   <div class="footer__end"></div>
