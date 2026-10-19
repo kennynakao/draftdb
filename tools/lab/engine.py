@@ -179,9 +179,15 @@ def member(m, Xtr, ytr, Xte, g, wtr=None):
     if m == "tabicl":
         from tabicl import TabICLRegressor
         import torch; torch.set_num_threads(8)
-        r = TabICLRegressor(n_estimators=g.get("icl_n", 8), device="cpu", random_state=g.get("seed", 42), outlier_threshold=2.0)
-        r.fit(Xtr.astype(float).values, ytr)
-        return r.predict(Xte.astype(float).values)
+        # device from the environment (TABICL_DEVICE=cuda on the A100 job); icl_bag averages over
+        # feature permutations / random states, as the box does after the permutation-lottery fix
+        dev = os.environ.get("TABICL_DEVICE", "cpu")
+        preds = []
+        for b in range(int(g.get("icl_bag", 1))):
+            r = TabICLRegressor(n_estimators=g.get("icl_n", 8), device=dev, random_state=g.get("seed", 42) + 100 * b, outlier_threshold=2.0)
+            r.fit(Xtr.astype(float).values, ytr)
+            preds.append(r.predict(Xte.astype(float).values))
+        return np.mean(preds, axis=0)
     raise ValueError(m)
 
 

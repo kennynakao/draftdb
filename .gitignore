@@ -8,3 +8,8 @@ Thumbs.db
 
 # throwaway preview output from tools/build_team_pages.py --out tools/_preview
 tools/_preview/
+
+# Azure (non-secret names and the data bundle for the trainer image live outside git)
+.azure-training.env
+.azure-last-execution
+infra/trainer/bundle/

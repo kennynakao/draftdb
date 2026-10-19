@@ -26,6 +26,11 @@ QUEUES = {
   ("anchor5", {"anchor_k": 5}),
   ("anchor3_wobj_vopick", {"anchor_k": 3, "wobj": "vo_pick"}),
  ],
+ "G": [   # the GPU queue: the champion's TabICL recipe (32 estimators, 3 permutations) with and without the quantile objective
+  ("tabicl32_only", {"members": ["tabicl"], "icl_n": 32, "icl_bag": 3}),
+  ("base_tabicl32", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3}),
+  ("risk_mean_tabicl32", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "risk": "mean"}),
+ ],
  "B": [
   ("base_tabicl", {"members": ["xgb", "ridge", "tabicl"]}),
  ],
