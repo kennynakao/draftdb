@@ -269,7 +269,7 @@ def walk_forward(g, cols, fold_years=range(2012, 2019), verbose=True):
         pr, cq = fit_prior(tr, cols)
         Btr, Bte = build(tr, pr, cq, cols, g), build(te, pr, cq, cols, g)
         fc = feature_cols(cols, g)
-        ylab = label(tr, kby, g.get("hw", "disc85"), g.get("clip", 40), g.get("floor0", 0), g.get("minw", 0.0))
+        ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0))
         if g.get("consres", 0):
             ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
         t0 = time.time()
@@ -321,7 +321,7 @@ def blind(g, cols, wts, mode="strict", verbose=True):
     if mode == "strict":
         tr = base_tr.reset_index(drop=True); kby = {int(c): 5 for c in tr.draft_year.unique()}
         pr, cq = fit_prior(tr, cols); Btr = build(tr, pr, cq, cols, g); fc = feature_cols(cols, g)
-        ylab = label(tr, kby, g.get("hw", "disc85"), g.get("clip", 40), g.get("floor0", 0), g.get("minw", 0.0))
+        ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0))
         if g.get("consres", 0): ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
         fitted = (Btr, fc, ylab)
     for Y in years:
@@ -331,7 +331,7 @@ def blind(g, cols, wts, mode="strict", verbose=True):
             tr = pd.concat(parts, ignore_index=True)
             kby = {int(c): int(min(5, Y - c)) for c in tr.draft_year.unique()}
             pr, cq = fit_prior(tr, cols); Btr = build(tr, pr, cq, cols, g); fc = feature_cols(cols, g)
-            ylab = label(tr, kby, g.get("hw", "disc85"), g.get("clip", 40), g.get("floor0", 0), g.get("minw", 0.0))
+            ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0))
             if g.get("consres", 0): ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
         else:
             Btr, fc, ylab = fitted

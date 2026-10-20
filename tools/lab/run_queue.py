@@ -52,6 +52,7 @@ QUEUES = {
   ("h_plus_mock", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "extra": ["sc_", "tc_", "mock_"]}),
   ("h_plus_dv", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "extra": ["sc_", "tc_", "dv_"]}),
   ("h_plus_wts", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "extra": ["sc_", "tc_", "wts_"]}),
+  ("h_plus_tv_vcons", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "extra": ["sc_", "tc_", "tv_", "vcons_"]}),
  ],
  "B": [
   ("base_tabicl", {"members": ["xgb", "ridge", "tabicl"]}),
