@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-20 — H7: the clean undrafted universe
+
+| change | files | what and why |
+|---|---|---|
+| Early-entry collector | `DraftDB-Data/early_entry_collect.py`, `early_entry_raw/` (cached NBA releases with provenance), `early_entry_{2019..2025}.csv` | The league's initial early-entry lists, every withdrawal release and the post-deadline remaining lists (nba.com/news, pr.nba.com; Hoops Rumors' copy of the 2021 final list), parsed from HTML tables, bullet rows and padded columns, reconciled to the league's stated counts for all seven years. |
+| Universe builder | `DraftDB-Data/universe_build.py`, `v4_build/universe_v422/` (inputs, outcomes, rebuilt-row checks, summary, README), `identity/universe_names.csv` | The pre-draft universe per class from pre-draft sources only (entrants + D-I seniors at 40% of minutes who did not play again in Y+1 + EuroLeague/EuroCup 22-year-olds); rows rebuilt from Torvik, RSCI and the Torvik-context builder where no v4.22 row exists, verified against real rows; 0-WAR outcomes for players who never played. |
+| Clean-universe evaluation | `tools/lab/evaluate_undrafted.py` (new), `experiments/lab_2026-10-19/undrafted_eval.json` | Reproduces the earlier outcome-selected check from the saved base boards and adds `clean_strict` (the universe scored by the strict engine), `clean_strict_uniform` (every college player on a rebuilt row) and `consistency` (real vs rebuilt rows swapped into the pool). Result: on the full pool the strict board ties the real draft (Spearman 0.100 vs 0.106, pick-value 67.8 vs 68.8) and would have spent 35 of 60 picks per class on undrafted seniors who produced 10.3 WAR against 26.5 for the drafted players displaced; 9 gems found, 11 missed. |
+| Dashboard | `tools/lab/build_dashboard.py`, `tools/lab/dashboard_template.html`, `lab.html` | Section 5b: the universe rule, the per-class table, gems found and missed, and every undrafted player the model's first 60 would have taken with what he produced. |
+| Docs | `docs/METRICS.md` (clean-universe rule and results), `docs/EXPERIMENTS.md` (2026-10-20 H7 entry), `docs/MAKE_IT_BETTER.md` (H7 done, the undrafted line in section 1 replaced), `README.md`, `runs.html`, `tools/lab/README.md`, `DraftDB-Data/README.md` | The undrafted claim now rests on a universe built with no outcome information; the old "indicative only" numbers stay as the earlier check. |
+
+Not changed: the champion model, its verified numbers, the vault, the ledger, the team pages.
+
 ## 2026-10-20 — H6 top-of-board specialist tested on the A100 and closed
 
 | change | files | what and why |

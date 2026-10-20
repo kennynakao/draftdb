@@ -49,7 +49,9 @@ The curve is flat from about pick 15 to 29, which is why ordering that stretch w
 
 **Paired bootstrap.** Within a class, resample the players with replacement (400 draws), score both boards on each resample and take the difference. A lead "clears zero" if the 95% interval of the difference excludes 0. Done per class for Spearman and for pick-value order, model against the real draft.
 
-**Expanded pool.** The default pool is drafted players. For the undrafted check, undrafted players who reached the NBA are added and the real draft is given pick 61 for all of them, so the teams are ranked below every drafted player. The undrafted rows were collected knowing who reached the NBA, so this is indicative only and no score is quoted from it.
+**Expanded pool (outcome-selected, the earlier check).** The default pool is drafted players. The first undrafted check added the test files' undrafted rows, who were collected knowing who reached the NBA, and gave the real draft pick 61 for all of them. That pool is enriched for success, so it is indicative only and no score is quoted from it.
+
+**Clean universe (H7, 2026-10-20).** The pre-draft universe of class Y is built with no knowledge of later NBA participation. A player is in it if, before draft night, he was (a) on the league's final early-entry list for Y, college or international (the NBA's initial list minus every withdrawal release, reconciled to the league's stated remaining counts; `DraftDB-Data/early_entry_collect.py`); or (b) a Division-I senior in season Y with at least 40% of his team's minutes and 10 games (Torvik), minus the seniors who played Division-I basketball again in Y+1, who had eligibility left and so were not in that year's pool; or (c) a EuroLeague or EuroCup player listed at age 22 (automatic international eligibility) who was in no earlier class and had no NBA record. Every drafted player is in by definition, since the draft enumerates them; the few drafted outside (a)–(c) (G League Ignite, Overtime Elite, domestic leagues abroad) are counted. Undrafted players enter only through (a)–(c), and Torvik's post-draft `pick` column is never read. The test files' undrafted rows that the rule does not reach are dropped: on inspection they are players who had left college years earlier and were assigned to the class of their NBA debut, which is exactly the outcome selection the rule removes. Inputs: the v4.22 row where one exists, otherwise a row rebuilt from the same public sources (Torvik for the college line, verified column by column against the real rows; RSCI for the recruiting rank; the Torvik-context builder for the tc_ block; the EuroLeague exports for the intl_ block). Players with no Division-I or EuroLeague season (non-D-I colleges, domestic leagues abroad) are listed but not scored. The strict engine (train 2007–2018, base recipe, fold-learned weights) scores the pool; nothing was selected on 2019–2025. The real draft gets pick 61 for every undrafted player; WAR is summed over the class horizon k, so an undrafted player who never played scores 0. Two checks accompany the numbers: a consistency check (drafted college players scored on their real rows and again with rebuilt rows swapped into the pool) and a uniform-rows sensitivity (every college player scored on a rebuilt row). Results in section 4 and on `lab.html`; the builder and its outputs are in the private data repo (`universe_build.py`, `v4_build/universe_v422/`).
 
 **Horizon.** Test classes carry one to five seasons of WAR. To see what that does, on the complete 2007-2018 classes a k-season WAR ranking is compared with the five-season one, and the real draft order is compared with each k-season ranking:
 
@@ -96,6 +98,21 @@ The expanding model beats the teams on pick-value in 4 of 7 classes. Under the p
 Sequential redraft, 385 slots with a model pick: the model's player is better at 173, the team's at 198, 14 tie. By pick range (real picks' WAR against the model's): 1-5, 379 vs 342; 6-10, 135 vs 210; 11-20, 284 vs 292; 21-30, 165 vs 153; 31-45, 97 vs 169; 46-60, 53 vs -36. Golden State: the earlier method gave 101 vs 18; sequential gives 52.1 vs 15.9 over 12 slots whose slot value is 70.3.
 
 Alternate outcomes (mean Spearman): WAR floored at 0, model expanding 0.496, teams 0.359, Colin 0.528. Minutes played: teams 0.596, model 0.34 (minutes follow draft slot).
+
+**Clean universe (H7, strict board, every undrafted player at pick 61 for the teams).** Rule in section 3; the per-class table and the gems are in [`EXPERIMENTS.md`](EXPERIMENTS.md) (2026-10-20) and on `lab.html`.
+
+| class | k | scored (drafted / undrafted) | Spearman model | teams | pick-value model | teams | undrafted in model top 60 (played) | their WAR | WAR of the drafted players displaced |
+|---|---|---|---|---|---|---|---|---|---|
+| 2019 | 5 | 688 (58 / 630) | 0.093 | 0.125 | 61.2 | 67.4 | 38 (9) | 12.8 | 41.5 |
+| 2020 | 5 | 674 (58 / 616) | 0.088 | 0.223 | 49.5 | 66.7 | 36 (5) | 0.3 | 107.4 |
+| 2021 | 5 | 334 (56 / 278) | 0.305 | 0.360 | 78.1 | 72.7 | 33 (15) | 48.9 | 38.0 |
+| 2022 | 4 | 620 (52 / 568) | 0.106 | 0.071 | 71.0 | 69.6 | 38 (6) | 8.9 | 27.4 |
+| 2023 | 3 | 657 (56 / 601) | 0.047 | −0.063 | 59.9 | 74.3 | 34 (7) | 2.7 | −6.8 |
+| 2024 | 2 | 648 (55 / 593) | 0.080 | 0.061 | 74.8 | 59.5 | 30 (6) | −0.5 | −7.3 |
+| 2025 | 1 | 823 (57 / 766) | −0.016 | −0.033 | 80.3 | 71.4 | 37 (6) | −0.8 | −14.9 |
+| mean | | | 0.100 | 0.106 | 67.8 | 68.8 | 35.1 (7.7) | 10.3 | 26.5 |
+
+Consistency: drafted college players scored on their real rows and again with rows rebuilt from Torvik swapped into the pool keep the same count in the first 60 within three (Spearman between the two scorings 0.77–0.96); with every college player on a rebuilt row the means are 0.098 Spearman, 34.6 undrafted in the first 60, 9.3 WAR.
 
 ## 5. How to read it
 

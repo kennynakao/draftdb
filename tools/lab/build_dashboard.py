@@ -76,9 +76,26 @@ D["boot"] = {k: [dict(lo=r3(b["diff_ci"][0]), hi=r3(b["diff_ci"][1]), p=r3(b["p_
 # undrafted
 D["undrafted"] = {}
 for mode, res in U.items():
+    if mode not in ("strict", "expanding"):
+        continue
     D["undrafted"][mode] = {int(y): dict(n_full=r["n_full"], n_drafted=r["n_drafted"], n_undrafted=r["n_undrafted"], sp_model=r3(r["spearman_full_model"]), sp_teams=r3(r["spearman_full_teams"]),
                                        sp_model_d=r3(r["spearman_drafted_model"]), sp_teams_d=r3(r["spearman_drafted_teams"]), und_top=r["undrafted_in_model_top_n"], und_war=r1(r["undrafted_war_in_model_top_n"]),
                                        gems=r["gems"]) for y, r in res.items()}
+# clean universe (H7): built with no knowledge of later NBA participation, scored by the strict engine
+CU = U.get("clean_strict", {})
+D["clean"] = {int(y): dict(k=r["k"], n_universe=r["n_universe"], n_scored=r["n_scored"], n_drafted=r["n_drafted"], n_undrafted=r["n_undrafted"],
+                           n_no_inputs=r["n_no_inputs"], n_no_outcome=r["n_reached_nba_no_outcome"], n_test_rows=r["n_from_test_rows"], n_rebuilt=r["n_rebuilt"],
+                           n_entrants=r["n_entrants"], n_seniors=r["n_seniors_rule"], n_seniors_returned=r["n_seniors_returned"], n_intl22=r["n_intl22"],
+                           drafted_outside_rule=r["drafted_outside_rule"], n_dropped=sum(d["n"] for d in r["existing_test_rows_dropped"]),
+                           sp_model=r3(r["spearman_full_model"]), sp_teams=r3(r["spearman_full_teams"]), pv_model=r1(r["vo_pick_full_model"]), pv_teams=r1(r["vo_pick_full_teams"]),
+                           sp_model_d=r3(r["spearman_drafted_model"]), sp_teams_d=r3(r["spearman_drafted_teams"]),
+                           und_top=r["undrafted_in_model_top_n"], und_top_played=r["undrafted_in_top_n_with_war"], und_war=r1(r["undrafted_war_in_model_top_n"]),
+                           displaced_n=r["displaced_drafted_n"], displaced_war=r1(r["displaced_drafted_war"]), und_war_total=r1(r["undrafted_war_total"]), und_with_war=r["undrafted_with_war"],
+                           gems_found=r["gems_found"], gems_missed=r["gems_missed"], top_list=r["undrafted_in_top_n_list"],
+                           consistency=U.get("consistency", {}).get(str(y)))
+              for y, r in CU.items()}
+D["clean_defs"] = U.get("definitions", {})
+
 # experiments
 def gdiff(g):
     return ", ".join(f"{k}={v}" for k, v in g.items() if BASE_G.get(k) != v) or "base"

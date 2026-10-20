@@ -12,6 +12,7 @@
    "undrafted_war_in_model_top_n": 39.131447247959784,
    "gems": [
     {
+     "pid": "P37457bff4f",
      "name": "Luguentz Dort",
      "war": 11.6,
      "war_rank_full": 11,
@@ -19,6 +20,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "P82887a653c",
      "name": "Max Strus",
      "war": 11.0,
      "war_rank_full": 12,
@@ -26,6 +28,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "P9537391b0e",
      "name": "Caleb Martin",
      "war": 10.4,
      "war_rank_full": 13,
@@ -33,6 +36,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "Ped12aa913a",
      "name": "John Konchar",
      "war": 8.5,
      "war_rank_full": 14,
@@ -40,6 +44,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "P8df31bfe17",
      "name": "Naz Reid",
      "war": 8.5,
      "war_rank_full": 15,
@@ -47,6 +52,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "P7d0e11d7f1",
      "name": "Garrison Mathews",
      "war": 8.3,
      "war_rank_full": 16,
@@ -54,6 +60,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "P4043f1171e",
      "name": "Javonte Green",
      "war": 6.4,
      "war_rank_full": 23,
@@ -61,6 +68,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "P2061b46d22",
      "name": "Jordan McLaughlin",
      "war": 5.9,
      "war_rank_full": 25,
@@ -68,6 +76,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "Pe19880ee92",
      "name": "Dean Wade",
      "war": 5.4,
      "war_rank_full": 26,
@@ -75,6 +84,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "P47c5a2733b",
      "name": "Terence Davis",
      "war": 5.3,
      "war_rank_full": 27,
@@ -82,6 +92,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "P9406d39f17",
      "name": "Gabe Vincent",
      "war": 3.9,
      "war_rank_full": 29,
@@ -89,6 +100,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "Pbec5e357b6",
      "name": "Kendrick Nunn",
      "war": 3.1,
      "war_rank_full": 33,
@@ -96,6 +108,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "P63de5d6c2a",
      "name": "Juan Toscano-Anderson",
      "war": 2.3,
      "war_rank_full": 35,
@@ -116,6 +129,7 @@
    "undrafted_war_in_model_top_n": 3.698111232908652,
    "gems": [
     {
+     "pid": "P12d4263452",
      "name": "Jae'Sean Tate",
      "war": 7.2,
      "war_rank_full": 15,
@@ -123,6 +137,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "Pc09cd8c6d0",
      "name": "Naji Marshall",
      "war": 6.6,
      "war_rank_full": 18,
@@ -130,6 +145,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "Pba89c73461",
      "name": "Facundo Campazzo",
      "war": 5.4,
      "war_rank_full": 24,
@@ -150,6 +166,7 @@
    "undrafted_war_in_model_top_n": 51.076676091104794,
    "gems": [
     {
+     "pid": "P41bcb3bebd",
      "name": "Austin Reaves",
      "war": 23.0,
      "war_rank_full": 5,
@@ -157,6 +174,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "Pcf11d56327",
      "name": "Sam Hauser",
      "war": 13.4,
      "war_rank_full": 11,
@@ -164,6 +182,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "Pd89d8db6f9",
      "name": "Jose Alvarado",
      "war": 9.5,
      "war_rank_full": 14,
@@ -171,6 +190,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P4583d7bf3c",
      "name": "Jordan Goodwin",
      "war": 6.7,
      "war_rank_full": 20,
@@ -178,6 +198,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P479c1cba2f",
      "name": "Jay Huff",
      "war": 5.3,
      "war_rank_full": 27,
@@ -185,6 +206,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P64f9a357ca",
      "name": "Jock Landale",
      "war": 5.0,
      "war_rank_full": 28,
@@ -192,6 +214,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P85bbbd5241",
      "name": "Justin Champagnie",
      "war": 3.8,
      "war_rank_full": 29,
@@ -199,6 +222,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P0d7f7c89fd",
      "name": "Lindy Waters III",
      "war": 2.4,
      "war_rank_full": 33,
@@ -206,6 +230,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P46419801dd",
      "name": "Brandon Williams",
      "war": 2.2,
      "war_rank_full": 34,
@@ -226,6 +251,7 @@
    "undrafted_war_in_model_top_n": 13.11,
    "gems": [
     {
+     "pid": "P6521ad0003",
      "name": "Julian Champagnie",
      "war": 8.9,
      "war_rank_full": 7,
@@ -233,6 +259,7 @@
      "n_drafted": 52
     },
     {
+     "pid": "P19ae0a39ff",
      "name": "Keon Ellis",
      "war": 8.8,
      "war_rank_full": 8,
@@ -240,6 +267,7 @@
      "n_drafted": 52
     },
     {
+     "pid": "P8d79cd923c",
      "name": "Scotty Pippen Jr.",
      "war": 4.8,
      "war_rank_full": 17,
@@ -247,6 +275,7 @@
      "n_drafted": 52
     },
     {
+     "pid": "Pc064a30c43",
      "name": "Dru Smith",
      "war": 4.2,
      "war_rank_full": 18,
@@ -254,6 +283,7 @@
      "n_drafted": 52
     },
     {
+     "pid": "P719dac14cb",
      "name": "Simone Fontecchio",
      "war": 2.9,
      "war_rank_full": 23,
@@ -274,6 +304,7 @@
    "undrafted_war_in_model_top_n": 6.020000000000002,
    "gems": [
     {
+     "pid": "P441a89e79f",
      "name": "Collin Gillespie",
      "war": 7.5,
      "war_rank_full": 6,
@@ -281,6 +312,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P88b17e8559",
      "name": "Craig Porter Jr.",
      "war": 4.8,
      "war_rank_full": 11,
@@ -327,6 +359,7 @@
    "undrafted_war_in_model_top_n": 11.006271352791984,
    "gems": [
     {
+     "pid": "P12d4263452",
      "name": "Jae'Sean Tate",
      "war": 7.2,
      "war_rank_full": 15,
@@ -334,6 +367,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "Pc09cd8c6d0",
      "name": "Naji Marshall",
      "war": 6.6,
      "war_rank_full": 18,
@@ -341,6 +375,7 @@
      "n_drafted": 58
     },
     {
+     "pid": "Pba89c73461",
      "name": "Facundo Campazzo",
      "war": 5.4,
      "war_rank_full": 24,
@@ -361,6 +396,7 @@
    "undrafted_war_in_model_top_n": 50.465836678181304,
    "gems": [
     {
+     "pid": "P41bcb3bebd",
      "name": "Austin Reaves",
      "war": 23.0,
      "war_rank_full": 5,
@@ -368,6 +404,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "Pcf11d56327",
      "name": "Sam Hauser",
      "war": 13.4,
      "war_rank_full": 11,
@@ -375,6 +412,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "Pd89d8db6f9",
      "name": "Jose Alvarado",
      "war": 9.5,
      "war_rank_full": 14,
@@ -382,6 +420,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P4583d7bf3c",
      "name": "Jordan Goodwin",
      "war": 6.7,
      "war_rank_full": 20,
@@ -389,6 +428,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P479c1cba2f",
      "name": "Jay Huff",
      "war": 5.3,
      "war_rank_full": 27,
@@ -396,6 +436,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P64f9a357ca",
      "name": "Jock Landale",
      "war": 5.0,
      "war_rank_full": 28,
@@ -403,6 +444,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P85bbbd5241",
      "name": "Justin Champagnie",
      "war": 3.8,
      "war_rank_full": 29,
@@ -410,6 +452,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P0d7f7c89fd",
      "name": "Lindy Waters III",
      "war": 2.4,
      "war_rank_full": 33,
@@ -417,6 +460,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P46419801dd",
      "name": "Brandon Williams",
      "war": 2.2,
      "war_rank_full": 34,
@@ -437,6 +481,7 @@
    "undrafted_war_in_model_top_n": 14.1,
    "gems": [
     {
+     "pid": "P6521ad0003",
      "name": "Julian Champagnie",
      "war": 8.9,
      "war_rank_full": 7,
@@ -444,6 +489,7 @@
      "n_drafted": 52
     },
     {
+     "pid": "P19ae0a39ff",
      "name": "Keon Ellis",
      "war": 8.8,
      "war_rank_full": 8,
@@ -451,6 +497,7 @@
      "n_drafted": 52
     },
     {
+     "pid": "P8d79cd923c",
      "name": "Scotty Pippen Jr.",
      "war": 4.8,
      "war_rank_full": 17,
@@ -458,6 +505,7 @@
      "n_drafted": 52
     },
     {
+     "pid": "Pc064a30c43",
      "name": "Dru Smith",
      "war": 4.2,
      "war_rank_full": 18,
@@ -465,6 +513,7 @@
      "n_drafted": 52
     },
     {
+     "pid": "P719dac14cb",
      "name": "Simone Fontecchio",
      "war": 2.9,
      "war_rank_full": 23,
@@ -485,6 +534,7 @@
    "undrafted_war_in_model_top_n": 5.380000000000001,
    "gems": [
     {
+     "pid": "P441a89e79f",
      "name": "Collin Gillespie",
      "war": 7.5,
      "war_rank_full": 6,
@@ -492,6 +542,7 @@
      "n_drafted": 56
     },
     {
+     "pid": "P88b17e8559",
      "name": "Craig Porter Jr.",
      "war": 4.8,
      "war_rank_full": 11,
@@ -523,6 +574,6298 @@
    "undrafted_in_model_top_n": 18,
    "undrafted_war_in_model_top_n": -1.9299999999999997,
    "gems": []
+  }
+ },
+ "clean_strict": {
+  "2019": {
+   "k": 5,
+   "n_universe": 703,
+   "n_scored": 688,
+   "n_drafted": 58,
+   "n_undrafted": 630,
+   "n_no_inputs": 15,
+   "n_reached_nba_no_outcome": 0,
+   "n_from_test_rows": 114,
+   "n_rebuilt": 574,
+   "sources": {
+    "senior": 593,
+    "early_entry": 82,
+    "early_entry+senior": 16,
+    "intl_22": 10,
+    "drafted_outside_rule": 2
+   },
+   "n_seniors_rule": 644,
+   "n_seniors_returned": 16,
+   "n_entrants": 98,
+   "n_intl22": 11,
+   "drafted_outside_rule": 2,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 10,
+     "with_war": 9
+    },
+    {
+     "path": "college_declared",
+     "declared_only": 1,
+     "n": 3,
+     "with_war": 0
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 5,
+     "with_war": 5
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 5,
+     "with_war": 5
+    }
+   ],
+   "spearman_full_model": 0.09322075003745246,
+   "spearman_full_teams": 0.12543022258230968,
+   "vo_pick_full_model": 61.21720483996465,
+   "vo_pick_full_teams": 67.3667372542979,
+   "spearman_drafted_model": 0.49226368082684807,
+   "spearman_drafted_teams": 0.40213479344181613,
+   "undrafted_in_model_top_n": 38,
+   "undrafted_war_in_model_top_n": 12.834388863491133,
+   "undrafted_in_top_n_with_war": 9,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "Ped12aa913a",
+     "name": "John Konchar",
+     "war": 8.5,
+     "model_rank": 7,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 14,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P20a99f84fd",
+     "name": "Juwan Morgan",
+     "war": -0.6,
+     "model_rank": 12,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 670,
+     "n_drafted_below": 14
+    },
+    {
+     "pid": "P48e78aee32",
+     "name": "Sagaba Konate",
+     "war": 0.0,
+     "model_rank": 15,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ud295966fde",
+     "name": "Cameron Jackson",
+     "war": 0.0,
+     "model_rank": 16,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "P519f028bfb",
+     "name": "Shamorie Ponds",
+     "war": -0.1,
+     "model_rank": 17,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 652,
+     "n_drafted_below": 21
+    },
+    {
+     "pid": "Ufe98800a6d",
+     "name": "Kevarrius Hayes",
+     "war": 0.0,
+     "model_rank": 19,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Pe19880ee92",
+     "name": "Dean Wade",
+     "war": 5.4,
+     "model_rank": 21,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 24,
+     "n_drafted_below": 41
+    },
+    {
+     "pid": "U8e5f988b8d",
+     "name": "CJ Massinburg",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ub91897feec",
+     "name": "Ethan Happ",
+     "war": 0.0,
+     "model_rank": 26,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U8f0dd4e367",
+     "name": "Paschal Chukwu",
+     "war": 0.0,
+     "model_rank": 27,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U83d09be2bc",
+     "name": "Ebuka Izundu",
+     "war": 0.0,
+     "model_rank": 28,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Pbafaf944fd",
+     "name": "Dedric Lawson",
+     "war": 0.0,
+     "model_rank": 30,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Uce8d424fee",
+     "name": "Zach Hankins",
+     "war": 0.0,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "P3e9c3ca3d7",
+     "name": "Jeremiah Martin",
+     "war": 0.1,
+     "model_rank": 32,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 48,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P5a277fef0e",
+     "name": "DaQuan Jeffries",
+     "war": -0.5,
+     "model_rank": 33,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 668,
+     "n_drafted_below": 15
+    },
+    {
+     "pid": "Pca926e63d0",
+     "name": "Josh Reaves",
+     "war": -0.1,
+     "model_rank": 34,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 653,
+     "n_drafted_below": 21
+    },
+    {
+     "pid": "U46ca3b0e88",
+     "name": "Kenny Goins",
+     "war": 0.0,
+     "model_rank": 36,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Pbda39b05ec",
+     "name": "Tariq Owens",
+     "war": -0.1,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 657,
+     "n_drafted_below": 20
+    },
+    {
+     "pid": "Udb3ae80760",
+     "name": "Jason Burnell",
+     "war": 0.0,
+     "model_rank": 38,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U70febb1cb4",
+     "name": "Elijah Thomas",
+     "war": 0.0,
+     "model_rank": 39,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U7ff9269d8c",
+     "name": "Ed Polite Jr.",
+     "war": 0.0,
+     "model_rank": 41,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ucc35295333",
+     "name": "Jakeenan Gant",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U183d13540c",
+     "name": "Dererk Pardon",
+     "war": 0.0,
+     "model_rank": 44,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ucee442a46f",
+     "name": "Jordan Hunter",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ub6a1ba67a3",
+     "name": "Isaiah Martin",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U4426833ef4",
+     "name": "Jordan Murphy",
+     "war": 0.0,
+     "model_rank": 47,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ue5dcfab735",
+     "name": "Jonathan Galloway",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ue0acea3f70",
+     "name": "Jacquil Taylor",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Pf0f9e6d8f5",
+     "name": "Donta Hall",
+     "war": 0.1,
+     "model_rank": 50,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 51,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ub20b9824b6",
+     "name": "Aric Holman",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U77b8269462",
+     "name": "Ishmael Lane",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U1aad84a3ac",
+     "name": "Kavell Bigby-Williams",
+     "war": 0.0,
+     "model_rank": 53,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U89e06083dd",
+     "name": "Daishon Smith",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U642a930614",
+     "name": "Romone Saunders",
+     "war": 0.0,
+     "model_rank": 55,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U25308a84fd",
+     "name": "Dylan Osetkowski",
+     "war": 0.0,
+     "model_rank": 56,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U7c42479dad",
+     "name": "Christian Cunningham",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Uffbff0995c",
+     "name": "Grady Eifert",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U317d1cc89e",
+     "name": "Alex Peacock",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    }
+   ],
+   "displaced_drafted_war": 41.542212759244975,
+   "displaced_drafted_n": 36,
+   "undrafted_war_total": 66.95800302057613,
+   "undrafted_with_war": 38,
+   "gems_found": [
+    {
+     "pid": "Ped12aa913a",
+     "name": "John Konchar",
+     "war": 8.5,
+     "model_rank": 7,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 14,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "Pe19880ee92",
+     "name": "Dean Wade",
+     "war": 5.4,
+     "model_rank": 21,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 24,
+     "n_drafted_below": 41
+    }
+   ],
+   "gems_missed": [
+    {
+     "pid": "P37457bff4f",
+     "name": "Luguentz Dort",
+     "war": 11.6,
+     "model_rank": 334,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 11,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P82887a653c",
+     "name": "Max Strus",
+     "war": 11.0,
+     "model_rank": 220,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 12,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P9537391b0e",
+     "name": "Caleb Martin",
+     "war": 10.4,
+     "model_rank": 65,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 13,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P8df31bfe17",
+     "name": "Naz Reid",
+     "war": 8.5,
+     "model_rank": 409,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 15,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P7d0e11d7f1",
+     "name": "Garrison Mathews",
+     "war": 8.3,
+     "model_rank": 292,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 16,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P47c5a2733b",
+     "name": "Terence Davis",
+     "war": 5.3,
+     "model_rank": 66,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 25,
+     "n_drafted_below": 41
+    }
+   ],
+   "drafted_top_n_hits": 22
+  },
+  "2020": {
+   "k": 5,
+   "n_universe": 684,
+   "n_scored": 674,
+   "n_drafted": 58,
+   "n_undrafted": 616,
+   "n_no_inputs": 9,
+   "n_reached_nba_no_outcome": 1,
+   "n_from_test_rows": 94,
+   "n_rebuilt": 580,
+   "sources": {
+    "senior": 589,
+    "early_entry": 66,
+    "early_entry+senior": 20,
+    "intl_22": 5,
+    "drafted_outside_rule": 4
+   },
+   "n_seniors_rule": 671,
+   "n_seniors_returned": 25,
+   "n_entrants": 86,
+   "n_intl22": 5,
+   "drafted_outside_rule": 4,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 11,
+     "with_war": 11
+    },
+    {
+     "path": "college_declared",
+     "declared_only": 1,
+     "n": 2,
+     "with_war": 0
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 2,
+     "with_war": 2
+    }
+   ],
+   "spearman_full_model": 0.08792107763466943,
+   "spearman_full_teams": 0.22341397649474154,
+   "vo_pick_full_model": 49.453724305809224,
+   "vo_pick_full_teams": 66.69346861205823,
+   "spearman_drafted_model": 0.22476852563905386,
+   "spearman_drafted_teams": 0.35021071088006406,
+   "undrafted_in_model_top_n": 36,
+   "undrafted_war_in_model_top_n": 0.28160605971194597,
+   "undrafted_in_top_n_with_war": 5,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "Pe6009787c4",
+     "name": "Freddie Gillespie",
+     "war": 0.1,
+     "model_rank": 10,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 37,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P80eaeaa85d",
+     "name": "Nate Hinton",
+     "war": -0.1,
+     "model_rank": 12,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 645,
+     "n_drafted_below": 18
+    },
+    {
+     "pid": "U3336c47692",
+     "name": "Dwayne Sutton",
+     "war": 0.0,
+     "model_rank": 13,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U6fae0eb6f9",
+     "name": "Dennis Tunstall",
+     "war": 0.0,
+     "model_rank": 16,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "P076dcdb147",
+     "name": "Devon Dotson",
+     "war": 0.4,
+     "model_rank": 17,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 33,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Ubc863c8a53",
+     "name": "Tyrique Jones",
+     "war": 0.0,
+     "model_rank": 18,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "P98391b949f",
+     "name": "Killian Tillie",
+     "war": 0.1,
+     "model_rank": 21,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 39,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U87ca6c418f",
+     "name": "Max Mahoney",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U6b263872fc",
+     "name": "Sha'markus Kennedy",
+     "war": 0.0,
+     "model_rank": 24,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U4c6b71e80b",
+     "name": "AJ Brodeur",
+     "war": 0.0,
+     "model_rank": 25,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U7d3751f7c2",
+     "name": "Christian Vital",
+     "war": 0.0,
+     "model_rank": 26,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U7189466f8d",
+     "name": "Chris Harris Jr.",
+     "war": 0.0,
+     "model_rank": 27,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U8e64ff0b48",
+     "name": "Jonah Radebaugh",
+     "war": 0.0,
+     "model_rank": 28,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Uaf977ffe4b",
+     "name": "Jahlil Tripp",
+     "war": 0.0,
+     "model_rank": 30,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U71b916101c",
+     "name": "Trey Landers",
+     "war": 0.0,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U2e6873e348",
+     "name": "Isaiah Tisdale",
+     "war": 0.0,
+     "model_rank": 32,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ufde68c27f2",
+     "name": "Scottie James",
+     "war": 0.0,
+     "model_rank": 33,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Uf192c076bf",
+     "name": "James Dickey",
+     "war": 0.0,
+     "model_rank": 34,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U20ee50c479",
+     "name": "David Bell",
+     "war": 0.0,
+     "model_rank": 35,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Pd3cfd798be",
+     "name": "Kaleb Wesson",
+     "war": 0.0,
+     "model_rank": 36,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ub4348b0a93",
+     "name": "Dantez Walton",
+     "war": 0.0,
+     "model_rank": 38,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Uf04631c7b6",
+     "name": "Kyrin Galloway",
+     "war": 0.0,
+     "model_rank": 39,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Uf4b3340f4d",
+     "name": "Mike Watkins",
+     "war": 0.0,
+     "model_rank": 41,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U30c4f5dcab",
+     "name": "Tahjai Teague",
+     "war": 0.0,
+     "model_rank": 42,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "P51e6803c0a",
+     "name": "Nate Pierre-Louis",
+     "war": 0.0,
+     "model_rank": 44,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Uf135d10615",
+     "name": "Jared Savage",
+     "war": 0.0,
+     "model_rank": 47,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Pc2faa1488c",
+     "name": "Sean McDermott",
+     "war": -0.3,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 650,
+     "n_drafted_below": 17
+    },
+    {
+     "pid": "U57987045c4",
+     "name": "Justinian Jessup",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U708d2837cf",
+     "name": "Mason Peatling",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U7f61ebae1e",
+     "name": "Tre Scott",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ud7b31d6b1c",
+     "name": "De'Riante Jenkins",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ub3cae97ce4",
+     "name": "Tres Tinkle",
+     "war": 0.0,
+     "model_rank": 55,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "P9b1073be42",
+     "name": "Lamine Diane",
+     "war": 0.0,
+     "model_rank": 56,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U27a881e3d3",
+     "name": "Austin Wiley",
+     "war": 0.0,
+     "model_rank": 57,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ue197d0537f",
+     "name": "Donnell Gresham Jr.",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U9d1e33df6c",
+     "name": "Cletrell Pope",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    }
+   ],
+   "displaced_drafted_war": 107.3825992808202,
+   "displaced_drafted_n": 34,
+   "undrafted_war_total": 3.5330693695129414,
+   "undrafted_with_war": 20,
+   "gems_found": [],
+   "gems_missed": [
+    {
+     "pid": "Pc09cd8c6d0",
+     "name": "Naji Marshall",
+     "war": 6.6,
+     "model_rank": 136,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 17,
+     "n_drafted_below": 42
+    }
+   ],
+   "drafted_top_n_hits": 24
+  },
+  "2021": {
+   "k": 5,
+   "n_universe": 353,
+   "n_scored": 334,
+   "n_drafted": 56,
+   "n_undrafted": 278,
+   "n_no_inputs": 19,
+   "n_reached_nba_no_outcome": 0,
+   "n_from_test_rows": 192,
+   "n_rebuilt": 142,
+   "sources": {
+    "senior": 121,
+    "early_entry+senior": 112,
+    "early_entry": 103,
+    "intl_22": 11,
+    "drafted_outside_rule": 6
+   },
+   "n_seniors_rule": 655,
+   "n_seniors_returned": 409,
+   "n_entrants": 217,
+   "n_intl22": 11,
+   "drafted_outside_rule": 6,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 22,
+     "with_war": 22
+    },
+    {
+     "path": "college_declared",
+     "declared_only": 1,
+     "n": 4,
+     "with_war": 0
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 12,
+     "with_war": 12
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    }
+   ],
+   "spearman_full_model": 0.3047640830906044,
+   "spearman_full_teams": 0.35983664787820124,
+   "vo_pick_full_model": 78.08022551988996,
+   "vo_pick_full_teams": 72.69474474210604,
+   "spearman_drafted_model": 0.7439507860560493,
+   "spearman_drafted_teams": 0.4084073820915926,
+   "undrafted_in_model_top_n": 33,
+   "undrafted_war_in_model_top_n": 48.88222190529792,
+   "undrafted_in_top_n_with_war": 15,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "Uf58893883c",
+     "name": "Sterling Manley",
+     "war": 0.0,
+     "model_rank": 11,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pc4eb6bb8ac",
+     "name": "Cameron Krutwig",
+     "war": 0.0,
+     "model_rank": 12,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P85bbbd5241",
+     "name": "Justin Champagnie",
+     "war": 3.8,
+     "model_rank": 13,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 28,
+     "n_drafted_below": 34
+    },
+    {
+     "pid": "Pd7fcef8bed",
+     "name": "Aamir Simms",
+     "war": 0.0,
+     "model_rank": 14,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P479c1cba2f",
+     "name": "Jay Huff",
+     "war": 5.3,
+     "model_rank": 17,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 27,
+     "n_drafted_below": 34
+    },
+    {
+     "pid": "P130d4826ef",
+     "name": "McKinley Wright IV",
+     "war": -0.1,
+     "model_rank": 21,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 304,
+     "n_drafted_below": 15
+    },
+    {
+     "pid": "P4583d7bf3c",
+     "name": "Jordan Goodwin",
+     "war": 6.7,
+     "model_rank": 23,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 20,
+     "n_drafted_below": 40
+    },
+    {
+     "pid": "P9badd97dfe",
+     "name": "Joel Ayayi",
+     "war": -0.0,
+     "model_rank": 25,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 300,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pe0ad9b9ce5",
+     "name": "Oscar da Silva",
+     "war": 0.0,
+     "model_rank": 26,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pd74e65b4cd",
+     "name": "Mark Vital",
+     "war": 0.0,
+     "model_rank": 30,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P40d023c55e",
+     "name": "Terry Taylor",
+     "war": 0.1,
+     "model_rank": 32,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 46,
+     "n_drafted_below": 19
+    },
+    {
+     "pid": "Uf6e246bec0",
+     "name": "Brad Greene",
+     "war": 0.0,
+     "model_rank": 33,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pc9a85d9349",
+     "name": "Aaron Henry",
+     "war": -0.2,
+     "model_rank": 35,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 309,
+     "n_drafted_below": 15
+    },
+    {
+     "pid": "P8379cd574e",
+     "name": "Steffon Mitchell",
+     "war": 0.0,
+     "model_rank": 36,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pd89d8db6f9",
+     "name": "Jose Alvarado",
+     "war": 9.5,
+     "model_rank": 37,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 14,
+     "n_drafted_below": 45
+    },
+    {
+     "pid": "P2e77fdcd5f",
+     "name": "Justin Gorham",
+     "war": 0.0,
+     "model_rank": 38,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pd0398785b7",
+     "name": "Micah Potter",
+     "war": 1.1,
+     "model_rank": 39,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 37,
+     "n_drafted_below": 27
+    },
+    {
+     "pid": "Ue75301d738",
+     "name": "Michael Hughes",
+     "war": 0.0,
+     "model_rank": 40,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P02bad696ed",
+     "name": "Isaiah Miller",
+     "war": 0.0,
+     "model_rank": 41,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Paf9449af91",
+     "name": "Jordan Schakel",
+     "war": 0.1,
+     "model_rank": 42,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 47,
+     "n_drafted_below": 19
+    },
+    {
+     "pid": "P64527f643b",
+     "name": "Ruot Monyyong",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P9cb019ad12",
+     "name": "JaQuori McLaughlin",
+     "war": -0.0,
+     "model_rank": 44,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 302,
+     "n_drafted_below": 15
+    },
+    {
+     "pid": "P41bcb3bebd",
+     "name": "Austin Reaves",
+     "war": 23.0,
+     "model_rank": 45,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 5,
+     "n_drafted_below": 52
+    },
+    {
+     "pid": "Pe77b8e73a4",
+     "name": "Anthony Tarke",
+     "war": 0.0,
+     "model_rank": 47,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pa74bde45e0",
+     "name": "Brandon Rachal",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Uca8d9e34c8",
+     "name": "KALAITZAKIS, PANAGIOTIS",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "intl_22",
+     "route": "euro_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pff95561f44",
+     "name": "Moses Wright",
+     "war": -0.0,
+     "model_rank": 51,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 299,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pda7b1a3831",
+     "name": "Ian DuBose",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pa8621489c8",
+     "name": "DeJon Jarreau",
+     "war": -0.4,
+     "model_rank": 53,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 315,
+     "n_drafted_below": 14
+    },
+    {
+     "pid": "P6bb68789bc",
+     "name": "Marcus Zegarowski",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pa617e8f0a5",
+     "name": "Hasahn French",
+     "war": 0.0,
+     "model_rank": 56,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "U322bfecbd8",
+     "name": "Corey Douglas Jr.",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pcfa1d05a1c",
+     "name": "Carlik Jones",
+     "war": -0.1,
+     "model_rank": 60,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 303,
+     "n_drafted_below": 15
+    }
+   ],
+   "displaced_drafted_war": 38.04125711722193,
+   "displaced_drafted_n": 29,
+   "undrafted_war_total": 59.5308995750827,
+   "undrafted_with_war": 32,
+   "gems_found": [
+    {
+     "pid": "P41bcb3bebd",
+     "name": "Austin Reaves",
+     "war": 23.0,
+     "model_rank": 45,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 5,
+     "n_drafted_below": 52
+    },
+    {
+     "pid": "Pd89d8db6f9",
+     "name": "Jose Alvarado",
+     "war": 9.5,
+     "model_rank": 37,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 14,
+     "n_drafted_below": 45
+    },
+    {
+     "pid": "P4583d7bf3c",
+     "name": "Jordan Goodwin",
+     "war": 6.7,
+     "model_rank": 23,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 20,
+     "n_drafted_below": 40
+    },
+    {
+     "pid": "P479c1cba2f",
+     "name": "Jay Huff",
+     "war": 5.3,
+     "model_rank": 17,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 27,
+     "n_drafted_below": 34
+    },
+    {
+     "pid": "P85bbbd5241",
+     "name": "Justin Champagnie",
+     "war": 3.8,
+     "model_rank": 13,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 28,
+     "n_drafted_below": 34
+    }
+   ],
+   "gems_missed": [
+    {
+     "pid": "Pcf11d56327",
+     "name": "Sam Hauser",
+     "war": 13.4,
+     "model_rank": 86,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 11,
+     "n_drafted_below": 47
+    },
+    {
+     "pid": "P46419801dd",
+     "name": "Brandon Williams",
+     "war": 2.2,
+     "model_rank": 141,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 32,
+     "n_drafted_below": 31
+    }
+   ],
+   "drafted_top_n_hits": 27
+  },
+  "2022": {
+   "k": 4,
+   "n_universe": 628,
+   "n_scored": 620,
+   "n_drafted": 52,
+   "n_undrafted": 568,
+   "n_no_inputs": 8,
+   "n_reached_nba_no_outcome": 0,
+   "n_from_test_rows": 87,
+   "n_rebuilt": 533,
+   "sources": {
+    "senior": 468,
+    "early_entry": 83,
+    "early_entry+senior": 64,
+    "intl_22": 9,
+    "drafted_outside_rule": 3,
+    "early_entry+intl_22+senior": 1
+   },
+   "n_seniors_rule": 881,
+   "n_seniors_returned": 327,
+   "n_entrants": 149,
+   "n_intl22": 12,
+   "drafted_outside_rule": 3,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 4,
+     "with_war": 3
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    }
+   ],
+   "spearman_full_model": 0.10609784969876386,
+   "spearman_full_teams": 0.07050746919663894,
+   "vo_pick_full_model": 70.97332595997587,
+   "vo_pick_full_teams": 69.60839314498294,
+   "spearman_drafted_model": 0.4762230000853752,
+   "spearman_drafted_teams": 0.2623580636899172,
+   "undrafted_in_model_top_n": 38,
+   "undrafted_war_in_model_top_n": 8.95,
+   "undrafted_in_top_n_with_war": 6,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "Ud159837f14",
+     "name": "Trevion Williams",
+     "war": 0.0,
+     "model_rank": 11,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "P821b19c2a1",
+     "name": "Kenneth Lofton Jr.",
+     "war": 0.3,
+     "model_rank": 12,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 35,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P328e73174e",
+     "name": "Jacob Gilyard",
+     "war": 0.3,
+     "model_rank": 14,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 36,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U0c9cef417c",
+     "name": "Justin Bean",
+     "war": 0.0,
+     "model_rank": 16,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "P50d6953351",
+     "name": "Orlando Robinson",
+     "war": 0.3,
+     "model_rank": 17,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 37,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U3a07da896e",
+     "name": "Myles Johnson",
+     "war": 0.0,
+     "model_rank": 21,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U40cc352ca8",
+     "name": "Marcus Bingham Jr.",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U83645af882",
+     "name": "Hall Elisias",
+     "war": 0.0,
+     "model_rank": 27,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "P19ae0a39ff",
+     "name": "Keon Ellis",
+     "war": 8.8,
+     "model_rank": 28,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 8,
+     "n_drafted_below": 46
+    },
+    {
+     "pid": "Uf21c212247",
+     "name": "Fabian White Jr.",
+     "war": 0.0,
+     "model_rank": 29,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ub96a2cc36b",
+     "name": "Brison Gresham",
+     "war": 0.0,
+     "model_rank": 30,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U8e6da5ec90",
+     "name": "Eliel Nsoseme",
+     "war": 0.0,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U6fa959992b",
+     "name": "Jalyn Hinton",
+     "war": 0.0,
+     "model_rank": 32,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ubb7554867d",
+     "name": "Ike Obiagu",
+     "war": 0.0,
+     "model_rank": 33,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U42db754695",
+     "name": "Jaylan Gainey",
+     "war": 0.0,
+     "model_rank": 35,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ub4d523d5df",
+     "name": "Payton Willis",
+     "war": 0.0,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U6c8a09dc6c",
+     "name": "Tevin Brown",
+     "war": 0.0,
+     "model_rank": 38,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U92631472e0",
+     "name": "Abdul Ado",
+     "war": 0.0,
+     "model_rank": 39,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ufdcad14754",
+     "name": "Thomas Kithier",
+     "war": 0.0,
+     "model_rank": 40,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U6bbb6c3366",
+     "name": "Nick Muszynski",
+     "war": 0.0,
+     "model_rank": 41,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U63426174ea",
+     "name": "Anthony Polite",
+     "war": 0.0,
+     "model_rank": 42,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U49bc777f04",
+     "name": "Kur Kuath",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "P13f00227af",
+     "name": "Darius Days",
+     "war": 0.1,
+     "model_rank": 44,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 39,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U4b513fa993",
+     "name": "Sam Waardenburg",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U5211cc1baa",
+     "name": "Darius Lee",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Uc5d068cc42",
+     "name": "Yauhen Massalski",
+     "war": 0.0,
+     "model_rank": 47,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U549a15451a",
+     "name": "Isaiah Whaley",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U52b14f170e",
+     "name": "Ty Flowers",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "P98f4c6dfa5",
+     "name": "Justin Minaya",
+     "war": -0.8,
+     "model_rank": 50,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 609,
+     "n_drafted_below": 11
+    },
+    {
+     "pid": "U0e3c433c51",
+     "name": "Johnny McCants",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U44cc14c8cd",
+     "name": "Matthias Tass",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ue616b46db5",
+     "name": "Brady Manek",
+     "war": 0.0,
+     "model_rank": 53,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ua726b7b670",
+     "name": "George Conditt IV",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "early_entry+intl_22+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U77e244546f",
+     "name": "David McCormack",
+     "war": 0.0,
+     "model_rank": 55,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Uee2d91d0f2",
+     "name": "Luka Brajkovic",
+     "war": 0.0,
+     "model_rank": 56,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U7d5892814f",
+     "name": "John Fulkerson",
+     "war": 0.0,
+     "model_rank": 57,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U9cd6446c16",
+     "name": "Gaige Prim",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U3c26b28029",
+     "name": "Terrell Brown",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    }
+   ],
+   "displaced_drafted_war": 27.35,
+   "displaced_drafted_n": 30,
+   "undrafted_war_total": 22.729999999999997,
+   "undrafted_with_war": 25,
+   "gems_found": [
+    {
+     "pid": "P19ae0a39ff",
+     "name": "Keon Ellis",
+     "war": 8.8,
+     "model_rank": 28,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 8,
+     "n_drafted_below": 46
+    }
+   ],
+   "gems_missed": [
+    {
+     "pid": "P6521ad0003",
+     "name": "Julian Champagnie",
+     "war": 8.9,
+     "model_rank": 167,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 7,
+     "n_drafted_below": 46
+    },
+    {
+     "pid": "P8d79cd923c",
+     "name": "Scotty Pippen Jr.",
+     "war": 4.8,
+     "model_rank": 130,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 17,
+     "n_drafted_below": 38
+    }
+   ],
+   "drafted_top_n_hits": 22
+  },
+  "2023": {
+   "k": 3,
+   "n_universe": 666,
+   "n_scored": 657,
+   "n_drafted": 56,
+   "n_undrafted": 601,
+   "n_no_inputs": 8,
+   "n_reached_nba_no_outcome": 1,
+   "n_from_test_rows": 84,
+   "n_rebuilt": 573,
+   "sources": {
+    "senior": 560,
+    "early_entry": 62,
+    "early_entry+senior": 30,
+    "intl_22": 9,
+    "drafted_outside_rule": 5
+   },
+   "n_seniors_rule": 933,
+   "n_seniors_returned": 328,
+   "n_entrants": 92,
+   "n_intl22": 10,
+   "drafted_outside_rule": 5,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 8,
+     "with_war": 8
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 2,
+     "with_war": 2
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 7,
+     "with_war": 7
+    }
+   ],
+   "spearman_full_model": 0.04670373053950878,
+   "spearman_full_teams": -0.06250739725283977,
+   "vo_pick_full_model": 59.88482655738021,
+   "vo_pick_full_teams": 74.25792692250965,
+   "spearman_drafted_model": 0.433651759381126,
+   "spearman_drafted_teams": 0.1106307353328877,
+   "undrafted_in_model_top_n": 34,
+   "undrafted_war_in_model_top_n": 2.6799999999999997,
+   "undrafted_in_top_n_with_war": 7,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "U94a287c38b",
+     "name": "Jake Stephens",
+     "war": 0.0,
+     "model_rank": 9,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Uc4a3e7ec4f",
+     "name": "Charles Bediako",
+     "war": 0.0,
+     "model_rank": 13,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Pe8ffde2213",
+     "name": "Oscar Tshiebwe",
+     "war": 0.3,
+     "model_rank": 14,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 26,
+     "n_drafted_below": 31
+    },
+    {
+     "pid": "U6e5f01a69e",
+     "name": "DeAndre Williams",
+     "war": 0.0,
+     "model_rank": 15,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "P88b17e8559",
+     "name": "Craig Porter Jr.",
+     "war": 4.8,
+     "model_rank": 18,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 10,
+     "n_drafted_below": 47
+    },
+    {
+     "pid": "Ue42dc163ea",
+     "name": "Brandon Brown",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U0c036fd430",
+     "name": "Jack Nunge",
+     "war": 0.0,
+     "model_rank": 23,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U3a172ad564",
+     "name": "Kyle Bowen",
+     "war": 0.0,
+     "model_rank": 25,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U858637fbec",
+     "name": "Myles Burns",
+     "war": 0.0,
+     "model_rank": 28,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Pc451072a63",
+     "name": "D'Moi Hodge",
+     "war": -0.1,
+     "model_rank": 29,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 615,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Uafbf632502",
+     "name": "Ja'von Franklin",
+     "war": 0.0,
+     "model_rank": 30,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U62d6b03e90",
+     "name": "Malik Miller",
+     "war": 0.0,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Ub3226702aa",
+     "name": "Tra'Von Fagan",
+     "war": 0.0,
+     "model_rank": 32,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U054e87fc5a",
+     "name": "Nathaniel Pollard Jr.",
+     "war": 0.0,
+     "model_rank": 33,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U5eaab20971",
+     "name": "Terence Lewis II",
+     "war": 0.0,
+     "model_rank": 34,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U46038f2202",
+     "name": "Osun Osunniyi",
+     "war": 0.0,
+     "model_rank": 35,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U49faded30f",
+     "name": "Terrion Murdix",
+     "war": 0.0,
+     "model_rank": 36,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U074705f07d",
+     "name": "Josh Roberts",
+     "war": 0.0,
+     "model_rank": 38,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "P1424b0c02d",
+     "name": "Leaky Black",
+     "war": -0.7,
+     "model_rank": 39,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 637,
+     "n_drafted_below": 15
+    },
+    {
+     "pid": "U689a8352e3",
+     "name": "Khalil Shabazz",
+     "war": 0.0,
+     "model_rank": 40,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "P41704425e7",
+     "name": "Nathan Mensah",
+     "war": -1.0,
+     "model_rank": 41,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 643,
+     "n_drafted_below": 12
+    },
+    {
+     "pid": "U0f7b0a7b8f",
+     "name": "Manny Bates",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U7b92babcdc",
+     "name": "Darius McGhee",
+     "war": 0.0,
+     "model_rank": 44,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U1ff3aba23e",
+     "name": "Chris Brandon",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U6d8d4155b0",
+     "name": "Nadir Hifi",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "early_entry",
+     "route": "euro_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Pf92c037d4b",
+     "name": "Markquis Nowell",
+     "war": 0.1,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 30,
+     "n_drafted_below": 31
+    },
+    {
+     "pid": "Ua0872ad07f",
+     "name": "Isaiah Wilkins",
+     "war": 0.0,
+     "model_rank": 50,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U06a33e0bd1",
+     "name": "KJ Williams",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "P5d94de4385",
+     "name": "Colin Castleton",
+     "war": -0.7,
+     "model_rank": 53,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 639,
+     "n_drafted_below": 14
+    },
+    {
+     "pid": "U7d08cbdbe0",
+     "name": "Nelson Phillips",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Uf66eb8b1a6",
+     "name": "Taylor Funk",
+     "war": 0.0,
+     "model_rank": 57,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Ubae6b3c60c",
+     "name": "Justyn Mutts",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Uf26a0c237c",
+     "name": "Cam Burrell",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U4f3b250959",
+     "name": "Nick Ongenda",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    }
+   ],
+   "displaced_drafted_war": -6.75,
+   "displaced_drafted_n": 30,
+   "undrafted_war_total": -2.97,
+   "undrafted_with_war": 24,
+   "gems_found": [
+    {
+     "pid": "P88b17e8559",
+     "name": "Craig Porter Jr.",
+     "war": 4.8,
+     "model_rank": 18,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 10,
+     "n_drafted_below": 47
+    }
+   ],
+   "gems_missed": [],
+   "drafted_top_n_hits": 26
+  },
+  "2024": {
+   "k": 2,
+   "n_universe": 664,
+   "n_scored": 648,
+   "n_drafted": 55,
+   "n_undrafted": 593,
+   "n_no_inputs": 15,
+   "n_reached_nba_no_outcome": 1,
+   "n_from_test_rows": 95,
+   "n_rebuilt": 553,
+   "sources": {
+    "senior": 574,
+    "early_entry": 58,
+    "early_entry+senior": 19,
+    "intl_22": 9,
+    "drafted_outside_rule": 4
+   },
+   "n_seniors_rule": 916,
+   "n_seniors_returned": 296,
+   "n_entrants": 77,
+   "n_intl22": 10,
+   "drafted_outside_rule": 4,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 9,
+     "with_war": 9
+    },
+    {
+     "path": "college_declared",
+     "declared_only": 1,
+     "n": 2,
+     "with_war": 0
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 4,
+     "with_war": 4
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 4,
+     "with_war": 4
+    }
+   ],
+   "spearman_full_model": 0.08008977403688002,
+   "spearman_full_teams": 0.06089655114227881,
+   "vo_pick_full_model": 74.77144186648907,
+   "vo_pick_full_teams": 59.54810091745435,
+   "spearman_drafted_model": 0.38514269446657046,
+   "spearman_drafted_teams": 0.13403326556845988,
+   "undrafted_in_model_top_n": 30,
+   "undrafted_war_in_model_top_n": -0.4900000000000001,
+   "undrafted_in_top_n_with_war": 6,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "U510cb05831",
+     "name": "Alex Sobel",
+     "war": 0.0,
+     "model_rank": 11,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U71637ff555",
+     "name": "DJ Burns Jr.",
+     "war": 0.0,
+     "model_rank": 13,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U6274a9925f",
+     "name": "Max Fiedler",
+     "war": 0.0,
+     "model_rank": 14,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ue1d0db4a83",
+     "name": "Drew Cisse",
+     "war": 0.0,
+     "model_rank": 15,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P816913601a",
+     "name": "N'Faly Dante",
+     "war": 0.1,
+     "model_rank": 19,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 38,
+     "n_drafted_below": 27
+    },
+    {
+     "pid": "U8afec52dec",
+     "name": "Shahada Wells",
+     "war": 0.0,
+     "model_rank": 20,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U4206d2e629",
+     "name": "Tyreek Smith",
+     "war": 0.0,
+     "model_rank": 24,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U748566ea64",
+     "name": "Drew Pember",
+     "war": 0.0,
+     "model_rank": 25,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P2c7c71307b",
+     "name": "Reece Beekman",
+     "war": -0.8,
+     "model_rank": 27,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 641,
+     "n_drafted_below": 7
+    },
+    {
+     "pid": "U81c62e52d9",
+     "name": "Kalib Boone",
+     "war": 0.0,
+     "model_rank": 30,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ua7c1c60232",
+     "name": "Josiah-Jordan James",
+     "war": 0.0,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Pd3d2fde686",
+     "name": "Isaiah Crawford",
+     "war": -0.0,
+     "model_rank": 33,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 608,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U6275a07428",
+     "name": "Laolu Oke",
+     "war": 0.0,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P66484e16cb",
+     "name": "Jalen Bridges",
+     "war": -0.1,
+     "model_rank": 38,
+     "source": "early_entry+senior",
+     "route": "test_row",
+     "war_rank_full": 623,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pe8e75a6d90",
+     "name": "Jahmir Young",
+     "war": -0.1,
+     "model_rank": 39,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 612,
+     "n_drafted_below": 21
+    },
+    {
+     "pid": "U89c573bc20",
+     "name": "Brock Cunningham",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ud285a1bc56",
+     "name": "Luis Rodriguez",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U5dd0997a08",
+     "name": "Robert Ford III",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U7cffb63f34",
+     "name": "Qudus Wahab",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U4d34d832bc",
+     "name": "Armando Bacot",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U4dfae9d8cb",
+     "name": "Quentin Millora-Brown",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U1ccd4f17e9",
+     "name": "Warren Washington",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U6f85aac0b8",
+     "name": "Joshua Morgan",
+     "war": 0.0,
+     "model_rank": 53,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U75c5309fae",
+     "name": "RUBSTAVICIUS, MANTAS",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "intl_22",
+     "route": "euro_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U82160ac8e6",
+     "name": "Shykeim Phillips",
+     "war": 0.0,
+     "model_rank": 55,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ue266541d21",
+     "name": "KiAndre Gaddy",
+     "war": 0.0,
+     "model_rank": 56,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P1c44c138bb",
+     "name": "Mohamed Diarra",
+     "war": 0.0,
+     "model_rank": 57,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Pf99c720027",
+     "name": "Spencer Jones",
+     "war": 0.4,
+     "model_rank": 58,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 24,
+     "n_drafted_below": 34
+    },
+    {
+     "pid": "U21d339c351",
+     "name": "HIFI, NADIR",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "intl_22",
+     "route": "euro_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ue719a76a1c",
+     "name": "Chase Claxton",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    }
+   ],
+   "displaced_drafted_war": -7.300000000000002,
+   "displaced_drafted_n": 25,
+   "undrafted_war_total": 0.6499999999999995,
+   "undrafted_with_war": 30,
+   "gems_found": [],
+   "gems_missed": [],
+   "drafted_top_n_hits": 30
+  },
+  "2025": {
+   "k": 1,
+   "n_universe": 836,
+   "n_scored": 823,
+   "n_drafted": 57,
+   "n_undrafted": 766,
+   "n_no_inputs": 9,
+   "n_reached_nba_no_outcome": 4,
+   "n_from_test_rows": 90,
+   "n_rebuilt": 733,
+   "sources": {
+    "senior": 776,
+    "early_entry": 38,
+    "intl_22": 10,
+    "early_entry+senior": 8,
+    "drafted_outside_rule": 4
+   },
+   "n_seniors_rule": 1035,
+   "n_seniors_returned": 231,
+   "n_entrants": 46,
+   "n_intl22": 11,
+   "drafted_outside_rule": 4,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 11,
+     "with_war": 11
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 2,
+     "with_war": 2
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    }
+   ],
+   "spearman_full_model": -0.015538824626164023,
+   "spearman_full_teams": -0.03305906758705148,
+   "vo_pick_full_model": 80.33482778537626,
+   "vo_pick_full_teams": 71.44989994425735,
+   "spearman_drafted_model": 0.3406958470376206,
+   "spearman_drafted_teams": 0.17640862779925506,
+   "undrafted_in_model_top_n": 37,
+   "undrafted_war_in_model_top_n": -0.75,
+   "undrafted_in_top_n_with_war": 6,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "Pd559eb82c1",
+     "name": "Andersson Garcia",
+     "war": -0.3,
+     "model_rank": 8,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 801,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "U3a04c2457c",
+     "name": "Taye Fields",
+     "war": 0.0,
+     "model_rank": 14,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Peb9997d32a",
+     "name": "Chris Ma\u00f1on",
+     "war": 0.1,
+     "model_rank": 16,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 31,
+     "n_drafted_below": 33
+    },
+    {
+     "pid": "U63030a3c21",
+     "name": "Mitchell Saxen",
+     "war": 0.0,
+     "model_rank": 18,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U59b1354157",
+     "name": "Malik Henry",
+     "war": 0.0,
+     "model_rank": 20,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Ua19f517857",
+     "name": "Jeff Woodward",
+     "war": 0.0,
+     "model_rank": 21,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Ud0bc1b2a7d",
+     "name": "MONTERO, JEAN",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "intl_22",
+     "route": "euro_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Ub979082e86",
+     "name": "Joe Charles",
+     "war": 0.0,
+     "model_rank": 23,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U2630bfdede",
+     "name": "Kobe Johnson",
+     "war": 0.0,
+     "model_rank": 25,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "P8961a7643a",
+     "name": "Dylan Cardwell",
+     "war": 0.5,
+     "model_rank": 28,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 17,
+     "n_drafted_below": 41
+    },
+    {
+     "pid": "Uda96da0af3",
+     "name": "Ben Gregg",
+     "war": 0.0,
+     "model_rank": 29,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U0d70824f04",
+     "name": "Clifford Omoruyi",
+     "war": 0.0,
+     "model_rank": 30,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "P07d140dc91",
+     "name": "Hunter Dickinson",
+     "war": -0.2,
+     "model_rank": 32,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 794,
+     "n_drafted_below": 20
+    },
+    {
+     "pid": "U36ade243c3",
+     "name": "Essam Mostafa",
+     "war": 0.0,
+     "model_rank": 34,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U90b6f3d980",
+     "name": "Bent Leuchten",
+     "war": 0.0,
+     "model_rank": 35,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U617f5fbc88",
+     "name": "Ian Schieffelin",
+     "war": 0.0,
+     "model_rank": 36,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "P6ce9cb925d",
+     "name": "Julian Reese",
+     "war": -0.7,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 808,
+     "n_drafted_below": 12
+    },
+    {
+     "pid": "U49d112156b",
+     "name": "Caleb Grill",
+     "war": 0.0,
+     "model_rank": 39,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Uff4de69602",
+     "name": "Oumar Ballo",
+     "war": 0.0,
+     "model_rank": 40,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Ub8bd9f0a29",
+     "name": "Coleman Hawkins",
+     "war": 0.0,
+     "model_rank": 41,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U5ba808cac2",
+     "name": "KJ Adams",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U8efa665e40",
+     "name": "Jared Billups",
+     "war": 0.0,
+     "model_rank": 44,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U62e71e4f50",
+     "name": "Viktor Lakhin",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Uf966bbcbed",
+     "name": "Stevie Mitchell",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U545c5fb2fc",
+     "name": "Zach Hicks",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Uef3fdb0767",
+     "name": "Nelly Joseph",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Uf3c7204555",
+     "name": "Zakai Zeigler",
+     "war": 0.0,
+     "model_rank": 50,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U398dcddb7f",
+     "name": "Obinna Anochili-Killen",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U69ea3aeab5",
+     "name": "Michael Graham",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U6f2ea36831",
+     "name": "UBAL, AGUSTIN",
+     "war": 0.0,
+     "model_rank": 53,
+     "source": "intl_22",
+     "route": "euro_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "P03328260f7",
+     "name": "Chucky Hepburn",
+     "war": -0.1,
+     "model_rank": 54,
+     "source": "senior",
+     "route": "test_row",
+     "war_rank_full": 787,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U1151c37bbc",
+     "name": "Fousseyni Traore",
+     "war": 0.0,
+     "model_rank": 55,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U4ac52cb2a8",
+     "name": "Javonte Brown",
+     "war": 0.0,
+     "model_rank": 56,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U125e2ddeb5",
+     "name": "Jack Clark",
+     "war": 0.0,
+     "model_rank": 57,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U21be1ba47c",
+     "name": "Tyson Degenhart",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U7af0bb1fb3",
+     "name": "Ben Middlebrooks",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U652a2d0ef6",
+     "name": "Mylik Wilson",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    }
+   ],
+   "displaced_drafted_war": -14.87,
+   "displaced_drafted_n": 34,
+   "undrafted_war_total": -4.5,
+   "undrafted_with_war": 30,
+   "gems_found": [],
+   "gems_missed": [],
+   "drafted_top_n_hits": 23
+  }
+ },
+ "consistency": {
+  "2019": {
+   "n": 50,
+   "pool": 703,
+   "spearman_real_vs_rebuilt": 0.9147398499599397,
+   "mean_rank_real": 144.83,
+   "mean_rank_rebuilt": 148.78,
+   "median_rank_real": 81.25,
+   "median_rank_rebuilt": 101.0,
+   "top60_real": 21,
+   "top60_rebuilt": 19
+  },
+  "2020": {
+   "n": 47,
+   "pool": 684,
+   "spearman_real_vs_rebuilt": 0.767113783533765,
+   "mean_rank_real": 130.61702127659575,
+   "mean_rank_rebuilt": 140.11702127659575,
+   "median_rank_real": 93.0,
+   "median_rank_rebuilt": 113.0,
+   "top60_real": 20,
+   "top60_rebuilt": 17
+  },
+  "2021": {
+   "n": 46,
+   "pool": 353,
+   "spearman_real_vs_rebuilt": 0.8875115633672526,
+   "mean_rank_real": 75.58695652173913,
+   "mean_rank_rebuilt": 74.98913043478261,
+   "median_rank_real": 62.0,
+   "median_rank_rebuilt": 57.5,
+   "top60_real": 22,
+   "top60_rebuilt": 25
+  },
+  "2022": {
+   "n": 43,
+   "pool": 628,
+   "spearman_real_vs_rebuilt": 0.9297795228027786,
+   "mean_rank_real": 134.98837209302326,
+   "mean_rank_rebuilt": 124.95348837209302,
+   "median_rank_real": 68.0,
+   "median_rank_rebuilt": 56.5,
+   "top60_real": 20,
+   "top60_rebuilt": 22
+  },
+  "2023": {
+   "n": 45,
+   "pool": 666,
+   "spearman_real_vs_rebuilt": 0.9593517380328928,
+   "mean_rank_real": 183.33333333333334,
+   "mean_rank_rebuilt": 170.94444444444446,
+   "median_rank_real": 112.0,
+   "median_rank_rebuilt": 74.0,
+   "top60_real": 19,
+   "top60_rebuilt": 20
+  },
+  "2024": {
+   "n": 42,
+   "pool": 664,
+   "spearman_real_vs_rebuilt": 0.8972530589093266,
+   "mean_rank_real": 106.25,
+   "mean_rank_rebuilt": 113.45238095238095,
+   "median_rank_real": 41.5,
+   "median_rank_rebuilt": 43.0,
+   "top60_real": 24,
+   "top60_rebuilt": 25
+  },
+  "2025": {
+   "n": 44,
+   "pool": 836,
+   "spearman_real_vs_rebuilt": 0.9451687950740989,
+   "mean_rank_real": 132.0681818181818,
+   "mean_rank_rebuilt": 135.88636363636363,
+   "median_rank_real": 83.0,
+   "median_rank_rebuilt": 55.5,
+   "top60_real": 20,
+   "top60_rebuilt": 23
+  }
+ },
+ "clean_strict_uniform": {
+  "2019": {
+   "k": 5,
+   "n_universe": 703,
+   "n_scored": 688,
+   "n_drafted": 58,
+   "n_undrafted": 630,
+   "n_no_inputs": 15,
+   "n_reached_nba_no_outcome": 0,
+   "n_from_test_rows": 10,
+   "n_rebuilt": 678,
+   "sources": {
+    "senior": 593,
+    "early_entry": 82,
+    "early_entry+senior": 16,
+    "intl_22": 10,
+    "drafted_outside_rule": 2
+   },
+   "n_seniors_rule": 644,
+   "n_seniors_returned": 16,
+   "n_entrants": 98,
+   "n_intl22": 11,
+   "drafted_outside_rule": 2,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 10,
+     "with_war": 9
+    },
+    {
+     "path": "college_declared",
+     "declared_only": 1,
+     "n": 3,
+     "with_war": 0
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 5,
+     "with_war": 5
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 5,
+     "with_war": 5
+    }
+   ],
+   "spearman_full_model": 0.08309640377977852,
+   "spearman_full_teams": 0.12543022258230968,
+   "vo_pick_full_model": 55.25641100861592,
+   "vo_pick_full_teams": 67.3667372542979,
+   "spearman_drafted_model": 0.49281737365037387,
+   "spearman_drafted_teams": 0.40213479344181613,
+   "undrafted_in_model_top_n": 41,
+   "undrafted_war_in_model_top_n": 12.019149991016615,
+   "undrafted_in_top_n_with_war": 11,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "Ped12aa913a",
+     "name": "John Konchar",
+     "war": 8.5,
+     "model_rank": 6,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 14,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "Ud295966fde",
+     "name": "Cameron Jackson",
+     "war": 0.0,
+     "model_rank": 9,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "P48e78aee32",
+     "name": "Sagaba Konate",
+     "war": 0.0,
+     "model_rank": 10,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "P20a99f84fd",
+     "name": "Juwan Morgan",
+     "war": -0.6,
+     "model_rank": 12,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 670,
+     "n_drafted_below": 14
+    },
+    {
+     "pid": "Ufe98800a6d",
+     "name": "Kevarrius Hayes",
+     "war": 0.0,
+     "model_rank": 13,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U8e5f988b8d",
+     "name": "CJ Massinburg",
+     "war": 0.0,
+     "model_rank": 14,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "P519f028bfb",
+     "name": "Shamorie Ponds",
+     "war": -0.1,
+     "model_rank": 16,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 652,
+     "n_drafted_below": 21
+    },
+    {
+     "pid": "Ub91897feec",
+     "name": "Ethan Happ",
+     "war": 0.0,
+     "model_rank": 17,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Pe19880ee92",
+     "name": "Dean Wade",
+     "war": 5.4,
+     "model_rank": 18,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 24,
+     "n_drafted_below": 41
+    },
+    {
+     "pid": "U8f0dd4e367",
+     "name": "Paschal Chukwu",
+     "war": 0.0,
+     "model_rank": 20,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U83d09be2bc",
+     "name": "Ebuka Izundu",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Pbafaf944fd",
+     "name": "Dedric Lawson",
+     "war": 0.0,
+     "model_rank": 23,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Uce8d424fee",
+     "name": "Zach Hankins",
+     "war": 0.0,
+     "model_rank": 26,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Pbda39b05ec",
+     "name": "Tariq Owens",
+     "war": -0.1,
+     "model_rank": 27,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 657,
+     "n_drafted_below": 20
+    },
+    {
+     "pid": "P5a277fef0e",
+     "name": "DaQuan Jeffries",
+     "war": -0.5,
+     "model_rank": 28,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 668,
+     "n_drafted_below": 15
+    },
+    {
+     "pid": "Pf0f9e6d8f5",
+     "name": "Donta Hall",
+     "war": 0.1,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 51,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Pca926e63d0",
+     "name": "Josh Reaves",
+     "war": -0.1,
+     "model_rank": 32,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 653,
+     "n_drafted_below": 21
+    },
+    {
+     "pid": "U46ca3b0e88",
+     "name": "Kenny Goins",
+     "war": 0.0,
+     "model_rank": 33,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Udb3ae80760",
+     "name": "Jason Burnell",
+     "war": 0.0,
+     "model_rank": 34,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U70febb1cb4",
+     "name": "Elijah Thomas",
+     "war": 0.0,
+     "model_rank": 35,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U7ff9269d8c",
+     "name": "Ed Polite Jr.",
+     "war": 0.0,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ucc35295333",
+     "name": "Jakeenan Gant",
+     "war": 0.0,
+     "model_rank": 38,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U183d13540c",
+     "name": "Dererk Pardon",
+     "war": 0.0,
+     "model_rank": 39,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ucee442a46f",
+     "name": "Jordan Hunter",
+     "war": 0.0,
+     "model_rank": 40,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "P3e9c3ca3d7",
+     "name": "Jeremiah Martin",
+     "war": 0.1,
+     "model_rank": 42,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 48,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ub6a1ba67a3",
+     "name": "Isaiah Martin",
+     "war": 0.0,
+     "model_rank": 44,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U4426833ef4",
+     "name": "Jordan Murphy",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ue0acea3f70",
+     "name": "Jacquil Taylor",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ue5dcfab735",
+     "name": "Jonathan Galloway",
+     "war": 0.0,
+     "model_rank": 47,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ub20b9824b6",
+     "name": "Aric Holman",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U77b8269462",
+     "name": "Ishmael Lane",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U1aad84a3ac",
+     "name": "Kavell Bigby-Williams",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U89e06083dd",
+     "name": "Daishon Smith",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Pc1416b3728",
+     "name": "Zach Norvell Jr.",
+     "war": -0.1,
+     "model_rank": 53,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 658,
+     "n_drafted_below": 20
+    },
+    {
+     "pid": "U642a930614",
+     "name": "Romone Saunders",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U25308a84fd",
+     "name": "Dylan Osetkowski",
+     "war": 0.0,
+     "model_rank": 55,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "P3022e1c032",
+     "name": "Justin Robinson",
+     "war": -0.7,
+     "model_rank": 56,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 672,
+     "n_drafted_below": 13
+    },
+    {
+     "pid": "Uffbff0995c",
+     "name": "Grady Eifert",
+     "war": 0.0,
+     "model_rank": 57,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "P56aec34978",
+     "name": "Kenny Wooten",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U7c42479dad",
+     "name": "Christian Cunningham",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "U69e9216eca",
+     "name": "Jimond Ivey",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 54,
+     "n_drafted_below": 25
+    }
+   ],
+   "displaced_drafted_war": 48.593830341969536,
+   "displaced_drafted_n": 39,
+   "undrafted_war_total": 66.95800302057613,
+   "undrafted_with_war": 38,
+   "gems_found": [
+    {
+     "pid": "Ped12aa913a",
+     "name": "John Konchar",
+     "war": 8.5,
+     "model_rank": 6,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 14,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "Pe19880ee92",
+     "name": "Dean Wade",
+     "war": 5.4,
+     "model_rank": 18,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 24,
+     "n_drafted_below": 41
+    }
+   ],
+   "gems_missed": [
+    {
+     "pid": "P37457bff4f",
+     "name": "Luguentz Dort",
+     "war": 11.6,
+     "model_rank": 336,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 11,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P82887a653c",
+     "name": "Max Strus",
+     "war": 11.0,
+     "model_rank": 241,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 12,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P9537391b0e",
+     "name": "Caleb Martin",
+     "war": 10.4,
+     "model_rank": 75,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 13,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P8df31bfe17",
+     "name": "Naz Reid",
+     "war": 8.5,
+     "model_rank": 351,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 15,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P7d0e11d7f1",
+     "name": "Garrison Mathews",
+     "war": 8.3,
+     "model_rank": 271,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 16,
+     "n_drafted_below": 48
+    },
+    {
+     "pid": "P47c5a2733b",
+     "name": "Terence Davis",
+     "war": 5.3,
+     "model_rank": 89,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 25,
+     "n_drafted_below": 41
+    }
+   ],
+   "drafted_top_n_hits": 19
+  },
+  "2020": {
+   "k": 5,
+   "n_universe": 684,
+   "n_scored": 674,
+   "n_drafted": 58,
+   "n_undrafted": 616,
+   "n_no_inputs": 9,
+   "n_reached_nba_no_outcome": 1,
+   "n_from_test_rows": 14,
+   "n_rebuilt": 660,
+   "sources": {
+    "senior": 589,
+    "early_entry": 66,
+    "early_entry+senior": 20,
+    "intl_22": 5,
+    "drafted_outside_rule": 4
+   },
+   "n_seniors_rule": 671,
+   "n_seniors_returned": 25,
+   "n_entrants": 86,
+   "n_intl22": 5,
+   "drafted_outside_rule": 4,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 11,
+     "with_war": 11
+    },
+    {
+     "path": "college_declared",
+     "declared_only": 1,
+     "n": 2,
+     "with_war": 0
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 2,
+     "with_war": 2
+    }
+   ],
+   "spearman_full_model": 0.08025226439171154,
+   "spearman_full_teams": 0.22341397649474154,
+   "vo_pick_full_model": 39.88424276547135,
+   "vo_pick_full_teams": 66.69346861205821,
+   "spearman_drafted_model": 0.061153236852981324,
+   "spearman_drafted_teams": 0.35021071088006406,
+   "undrafted_in_model_top_n": 38,
+   "undrafted_war_in_model_top_n": 1.1610367343075396,
+   "undrafted_in_top_n_with_war": 6,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "Pe6009787c4",
+     "name": "Freddie Gillespie",
+     "war": 0.1,
+     "model_rank": 7,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U3336c47692",
+     "name": "Dwayne Sutton",
+     "war": 0.0,
+     "model_rank": 11,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "P80eaeaa85d",
+     "name": "Nate Hinton",
+     "war": -0.1,
+     "model_rank": 12,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 645,
+     "n_drafted_below": 18
+    },
+    {
+     "pid": "P98391b949f",
+     "name": "Killian Tillie",
+     "war": 0.1,
+     "model_rank": 13,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 39,
+     "n_drafted_below": 25
+    },
+    {
+     "pid": "Ubc863c8a53",
+     "name": "Tyrique Jones",
+     "war": 0.0,
+     "model_rank": 14,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U6fae0eb6f9",
+     "name": "Dennis Tunstall",
+     "war": 0.0,
+     "model_rank": 15,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U87ca6c418f",
+     "name": "Max Mahoney",
+     "war": 0.0,
+     "model_rank": 16,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U6b263872fc",
+     "name": "Sha'markus Kennedy",
+     "war": 0.0,
+     "model_rank": 17,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U7d3751f7c2",
+     "name": "Christian Vital",
+     "war": 0.0,
+     "model_rank": 19,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U4c6b71e80b",
+     "name": "AJ Brodeur",
+     "war": 0.0,
+     "model_rank": 20,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Pd3cfd798be",
+     "name": "Kaleb Wesson",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U8e64ff0b48",
+     "name": "Jonah Radebaugh",
+     "war": 0.0,
+     "model_rank": 23,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U7189466f8d",
+     "name": "Chris Harris Jr.",
+     "war": 0.0,
+     "model_rank": 24,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Uaf977ffe4b",
+     "name": "Jahlil Tripp",
+     "war": 0.0,
+     "model_rank": 26,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U71b916101c",
+     "name": "Trey Landers",
+     "war": 0.0,
+     "model_rank": 27,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U2e6873e348",
+     "name": "Isaiah Tisdale",
+     "war": 0.0,
+     "model_rank": 28,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ufde68c27f2",
+     "name": "Scottie James",
+     "war": 0.0,
+     "model_rank": 29,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "P63a2ab1a2a",
+     "name": "Nathan Knight",
+     "war": 0.9,
+     "model_rank": 30,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 29,
+     "n_drafted_below": 31
+    },
+    {
+     "pid": "Uf192c076bf",
+     "name": "James Dickey",
+     "war": 0.0,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Pc2faa1488c",
+     "name": "Sean McDermott",
+     "war": -0.3,
+     "model_rank": 32,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 650,
+     "n_drafted_below": 17
+    },
+    {
+     "pid": "U20ee50c479",
+     "name": "David Bell",
+     "war": 0.0,
+     "model_rank": 33,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ub4348b0a93",
+     "name": "Dantez Walton",
+     "war": 0.0,
+     "model_rank": 34,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Uf4b3340f4d",
+     "name": "Mike Watkins",
+     "war": 0.0,
+     "model_rank": 35,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Uf04631c7b6",
+     "name": "Kyrin Galloway",
+     "war": 0.0,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U30c4f5dcab",
+     "name": "Tahjai Teague",
+     "war": 0.0,
+     "model_rank": 38,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Uf135d10615",
+     "name": "Jared Savage",
+     "war": 0.0,
+     "model_rank": 42,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "P076dcdb147",
+     "name": "Devon Dotson",
+     "war": 0.4,
+     "model_rank": 43,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U57987045c4",
+     "name": "Justinian Jessup",
+     "war": 0.0,
+     "model_rank": 44,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U7f61ebae1e",
+     "name": "Tre Scott",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U708d2837cf",
+     "name": "Mason Peatling",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ud7b31d6b1c",
+     "name": "De'Riante Jenkins",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U27a881e3d3",
+     "name": "Austin Wiley",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ue197d0537f",
+     "name": "Donnell Gresham Jr.",
+     "war": 0.0,
+     "model_rank": 50,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ub3cae97ce4",
+     "name": "Tres Tinkle",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U9d1e33df6c",
+     "name": "Cletrell Pope",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U4c1638f918",
+     "name": "Dazon Ingram",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "Ue8e347ab54",
+     "name": "Nathan Bain",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    },
+    {
+     "pid": "U7c2c96f185",
+     "name": "Christion Thompson",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 22
+    }
+   ],
+   "displaced_drafted_war": 172.62218446375005,
+   "displaced_drafted_n": 36,
+   "undrafted_war_total": 3.5330693695129427,
+   "undrafted_with_war": 20,
+   "gems_found": [],
+   "gems_missed": [
+    {
+     "pid": "Pc09cd8c6d0",
+     "name": "Naji Marshall",
+     "war": 6.6,
+     "model_rank": 126,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 17,
+     "n_drafted_below": 42
+    }
+   ],
+   "drafted_top_n_hits": 22
+  },
+  "2021": {
+   "k": 5,
+   "n_universe": 353,
+   "n_scored": 334,
+   "n_drafted": 56,
+   "n_undrafted": 278,
+   "n_no_inputs": 19,
+   "n_reached_nba_no_outcome": 0,
+   "n_from_test_rows": 14,
+   "n_rebuilt": 320,
+   "sources": {
+    "senior": 121,
+    "early_entry+senior": 112,
+    "early_entry": 103,
+    "intl_22": 11,
+    "drafted_outside_rule": 6
+   },
+   "n_seniors_rule": 655,
+   "n_seniors_returned": 409,
+   "n_entrants": 217,
+   "n_intl22": 11,
+   "drafted_outside_rule": 6,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 22,
+     "with_war": 22
+    },
+    {
+     "path": "college_declared",
+     "declared_only": 1,
+     "n": 4,
+     "with_war": 0
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 12,
+     "with_war": 12
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    }
+   ],
+   "spearman_full_model": 0.29247491739572534,
+   "spearman_full_teams": 0.35983664787820124,
+   "vo_pick_full_model": 64.33605195785681,
+   "vo_pick_full_teams": 72.69474474210605,
+   "spearman_drafted_model": 0.683675387580811,
+   "spearman_drafted_teams": 0.4084073820915926,
+   "undrafted_in_model_top_n": 30,
+   "undrafted_war_in_model_top_n": 39.93002445712199,
+   "undrafted_in_top_n_with_war": 12,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "P479c1cba2f",
+     "name": "Jay Huff",
+     "war": 5.3,
+     "model_rank": 5,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 27,
+     "n_drafted_below": 34
+    },
+    {
+     "pid": "Pc4eb6bb8ac",
+     "name": "Cameron Krutwig",
+     "war": 0.0,
+     "model_rank": 7,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Uf58893883c",
+     "name": "Sterling Manley",
+     "war": 0.0,
+     "model_rank": 9,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P9badd97dfe",
+     "name": "Joel Ayayi",
+     "war": -0.0,
+     "model_rank": 14,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 300,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pd7fcef8bed",
+     "name": "Aamir Simms",
+     "war": 0.0,
+     "model_rank": 16,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P130d4826ef",
+     "name": "McKinley Wright IV",
+     "war": -0.1,
+     "model_rank": 17,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 304,
+     "n_drafted_below": 15
+    },
+    {
+     "pid": "Pe0ad9b9ce5",
+     "name": "Oscar da Silva",
+     "war": 0.0,
+     "model_rank": 18,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P85bbbd5241",
+     "name": "Justin Champagnie",
+     "war": 3.8,
+     "model_rank": 19,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 28,
+     "n_drafted_below": 34
+    },
+    {
+     "pid": "Pd74e65b4cd",
+     "name": "Mark Vital",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Uf6e246bec0",
+     "name": "Brad Greene",
+     "war": 0.0,
+     "model_rank": 23,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P2e77fdcd5f",
+     "name": "Justin Gorham",
+     "war": 0.0,
+     "model_rank": 25,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pd0398785b7",
+     "name": "Micah Potter",
+     "war": 1.1,
+     "model_rank": 27,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 27
+    },
+    {
+     "pid": "P4583d7bf3c",
+     "name": "Jordan Goodwin",
+     "war": 6.7,
+     "model_rank": 28,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 20,
+     "n_drafted_below": 40
+    },
+    {
+     "pid": "Ue75301d738",
+     "name": "Michael Hughes",
+     "war": 0.0,
+     "model_rank": 29,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P64527f643b",
+     "name": "Ruot Monyyong",
+     "war": 0.0,
+     "model_rank": 34,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P8379cd574e",
+     "name": "Steffon Mitchell",
+     "war": 0.0,
+     "model_rank": 35,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P02bad696ed",
+     "name": "Isaiah Miller",
+     "war": 0.0,
+     "model_rank": 36,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Paf9449af91",
+     "name": "Jordan Schakel",
+     "war": 0.1,
+     "model_rank": 37,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 47,
+     "n_drafted_below": 19
+    },
+    {
+     "pid": "P40d023c55e",
+     "name": "Terry Taylor",
+     "war": 0.1,
+     "model_rank": 39,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 46,
+     "n_drafted_below": 19
+    },
+    {
+     "pid": "Pd89d8db6f9",
+     "name": "Jose Alvarado",
+     "war": 9.5,
+     "model_rank": 40,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 14,
+     "n_drafted_below": 45
+    },
+    {
+     "pid": "Uca8d9e34c8",
+     "name": "KALAITZAKIS, PANAGIOTIS",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "intl_22",
+     "route": "euro_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pcf11d56327",
+     "name": "Sam Hauser",
+     "war": 13.4,
+     "model_rank": 44,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 11,
+     "n_drafted_below": 47
+    },
+    {
+     "pid": "Pda7b1a3831",
+     "name": "Ian DuBose",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pe77b8e73a4",
+     "name": "Anthony Tarke",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P8b8dcb5659",
+     "name": "Balsa Koprivica",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pfe62281f0a",
+     "name": "LJ Figueroa",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "Pa74bde45e0",
+     "name": "Brandon Rachal",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "P9cb019ad12",
+     "name": "JaQuori McLaughlin",
+     "war": -0.0,
+     "model_rank": 54,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 302,
+     "n_drafted_below": 15
+    },
+    {
+     "pid": "Pff95561f44",
+     "name": "Moses Wright",
+     "war": -0.0,
+     "model_rank": 57,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 299,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "U322bfecbd8",
+     "name": "Corey Douglas Jr.",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 53,
+     "n_drafted_below": 16
+    }
+   ],
+   "displaced_drafted_war": 31.674633418756674,
+   "displaced_drafted_n": 26,
+   "undrafted_war_total": 59.5308995750827,
+   "undrafted_with_war": 32,
+   "gems_found": [
+    {
+     "pid": "Pcf11d56327",
+     "name": "Sam Hauser",
+     "war": 13.4,
+     "model_rank": 44,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 11,
+     "n_drafted_below": 47
+    },
+    {
+     "pid": "Pd89d8db6f9",
+     "name": "Jose Alvarado",
+     "war": 9.5,
+     "model_rank": 40,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 14,
+     "n_drafted_below": 45
+    },
+    {
+     "pid": "P4583d7bf3c",
+     "name": "Jordan Goodwin",
+     "war": 6.7,
+     "model_rank": 28,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 20,
+     "n_drafted_below": 40
+    },
+    {
+     "pid": "P479c1cba2f",
+     "name": "Jay Huff",
+     "war": 5.3,
+     "model_rank": 5,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 27,
+     "n_drafted_below": 34
+    },
+    {
+     "pid": "P85bbbd5241",
+     "name": "Justin Champagnie",
+     "war": 3.8,
+     "model_rank": 19,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 28,
+     "n_drafted_below": 34
+    }
+   ],
+   "gems_missed": [
+    {
+     "pid": "P41bcb3bebd",
+     "name": "Austin Reaves",
+     "war": 23.0,
+     "model_rank": 65,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 5,
+     "n_drafted_below": 52
+    },
+    {
+     "pid": "P46419801dd",
+     "name": "Brandon Williams",
+     "war": 2.2,
+     "model_rank": 145,
+     "source": "early_entry",
+     "route": "test_row",
+     "war_rank_full": 32,
+     "n_drafted_below": 31
+    }
+   ],
+   "drafted_top_n_hits": 30
+  },
+  "2022": {
+   "k": 4,
+   "n_universe": 628,
+   "n_scored": 620,
+   "n_drafted": 52,
+   "n_undrafted": 568,
+   "n_no_inputs": 8,
+   "n_reached_nba_no_outcome": 0,
+   "n_from_test_rows": 11,
+   "n_rebuilt": 609,
+   "sources": {
+    "senior": 468,
+    "early_entry": 83,
+    "early_entry+senior": 64,
+    "intl_22": 9,
+    "drafted_outside_rule": 3,
+    "early_entry+intl_22+senior": 1
+   },
+   "n_seniors_rule": 881,
+   "n_seniors_returned": 327,
+   "n_entrants": 149,
+   "n_intl22": 12,
+   "drafted_outside_rule": 3,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 4,
+     "with_war": 3
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    }
+   ],
+   "spearman_full_model": 0.10543337882873992,
+   "spearman_full_teams": 0.07050746919663894,
+   "vo_pick_full_model": 67.41113191500995,
+   "vo_pick_full_teams": 69.61078796906112,
+   "spearman_drafted_model": 0.45872107914283267,
+   "spearman_drafted_teams": 0.2623580636899172,
+   "undrafted_in_model_top_n": 36,
+   "undrafted_war_in_model_top_n": 9.77,
+   "undrafted_in_top_n_with_war": 5,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "P821b19c2a1",
+     "name": "Kenneth Lofton Jr.",
+     "war": 0.3,
+     "model_rank": 8,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 35,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ud159837f14",
+     "name": "Trevion Williams",
+     "war": 0.0,
+     "model_rank": 10,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "P19ae0a39ff",
+     "name": "Keon Ellis",
+     "war": 8.8,
+     "model_rank": 12,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 8,
+     "n_drafted_below": 46
+    },
+    {
+     "pid": "U0c9cef417c",
+     "name": "Justin Bean",
+     "war": 0.0,
+     "model_rank": 15,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U3a07da896e",
+     "name": "Myles Johnson",
+     "war": 0.0,
+     "model_rank": 16,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U40cc352ca8",
+     "name": "Marcus Bingham Jr.",
+     "war": 0.0,
+     "model_rank": 18,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "P50d6953351",
+     "name": "Orlando Robinson",
+     "war": 0.3,
+     "model_rank": 19,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U83645af882",
+     "name": "Hall Elisias",
+     "war": 0.0,
+     "model_rank": 24,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "P328e73174e",
+     "name": "Jacob Gilyard",
+     "war": 0.3,
+     "model_rank": 25,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 36,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Uf21c212247",
+     "name": "Fabian White Jr.",
+     "war": 0.0,
+     "model_rank": 27,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ub96a2cc36b",
+     "name": "Brison Gresham",
+     "war": 0.0,
+     "model_rank": 29,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U8e6da5ec90",
+     "name": "Eliel Nsoseme",
+     "war": 0.0,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U6fa959992b",
+     "name": "Jalyn Hinton",
+     "war": 0.0,
+     "model_rank": 34,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ubb7554867d",
+     "name": "Ike Obiagu",
+     "war": 0.0,
+     "model_rank": 36,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U42db754695",
+     "name": "Jaylan Gainey",
+     "war": 0.0,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ub4d523d5df",
+     "name": "Payton Willis",
+     "war": 0.0,
+     "model_rank": 38,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U6c8a09dc6c",
+     "name": "Tevin Brown",
+     "war": 0.0,
+     "model_rank": 39,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U92631472e0",
+     "name": "Abdul Ado",
+     "war": 0.0,
+     "model_rank": 41,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ufdcad14754",
+     "name": "Thomas Kithier",
+     "war": 0.0,
+     "model_rank": 42,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "P13f00227af",
+     "name": "Darius Days",
+     "war": 0.1,
+     "model_rank": 43,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 39,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U6bbb6c3366",
+     "name": "Nick Muszynski",
+     "war": 0.0,
+     "model_rank": 44,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U49bc777f04",
+     "name": "Kur Kuath",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U63426174ea",
+     "name": "Anthony Polite",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Uc5d068cc42",
+     "name": "Yauhen Massalski",
+     "war": 0.0,
+     "model_rank": 47,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U4b513fa993",
+     "name": "Sam Waardenburg",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U549a15451a",
+     "name": "Isaiah Whaley",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U5211cc1baa",
+     "name": "Darius Lee",
+     "war": 0.0,
+     "model_rank": 50,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U52b14f170e",
+     "name": "Ty Flowers",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U0e3c433c51",
+     "name": "Johnny McCants",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U44cc14c8cd",
+     "name": "Matthias Tass",
+     "war": 0.0,
+     "model_rank": 53,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ue616b46db5",
+     "name": "Brady Manek",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Ua726b7b670",
+     "name": "George Conditt IV",
+     "war": 0.0,
+     "model_rank": 56,
+     "source": "early_entry+intl_22+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U77e244546f",
+     "name": "David McCormack",
+     "war": 0.0,
+     "model_rank": 57,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "Uee2d91d0f2",
+     "name": "Luka Brajkovic",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U7d5892814f",
+     "name": "John Fulkerson",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    },
+    {
+     "pid": "U9cd6446c16",
+     "name": "Gaige Prim",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 24
+    }
+   ],
+   "displaced_drafted_war": 26.58,
+   "displaced_drafted_n": 28,
+   "undrafted_war_total": 22.73,
+   "undrafted_with_war": 25,
+   "gems_found": [
+    {
+     "pid": "P19ae0a39ff",
+     "name": "Keon Ellis",
+     "war": 8.8,
+     "model_rank": 12,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 8,
+     "n_drafted_below": 46
+    }
+   ],
+   "gems_missed": [
+    {
+     "pid": "P6521ad0003",
+     "name": "Julian Champagnie",
+     "war": 8.9,
+     "model_rank": 87,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 7,
+     "n_drafted_below": 46
+    },
+    {
+     "pid": "P8d79cd923c",
+     "name": "Scotty Pippen Jr.",
+     "war": 4.8,
+     "model_rank": 134,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 17,
+     "n_drafted_below": 38
+    }
+   ],
+   "drafted_top_n_hits": 24
+  },
+  "2023": {
+   "k": 3,
+   "n_universe": 666,
+   "n_scored": 657,
+   "n_drafted": 56,
+   "n_undrafted": 601,
+   "n_no_inputs": 8,
+   "n_reached_nba_no_outcome": 1,
+   "n_from_test_rows": 11,
+   "n_rebuilt": 646,
+   "sources": {
+    "senior": 560,
+    "early_entry": 62,
+    "early_entry+senior": 30,
+    "intl_22": 9,
+    "drafted_outside_rule": 5
+   },
+   "n_seniors_rule": 933,
+   "n_seniors_returned": 328,
+   "n_entrants": 92,
+   "n_intl22": 10,
+   "drafted_outside_rule": 5,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 8,
+     "with_war": 8
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 2,
+     "with_war": 2
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 7,
+     "with_war": 7
+    }
+   ],
+   "spearman_full_model": 0.059727234404088086,
+   "spearman_full_teams": -0.06250739725283977,
+   "vo_pick_full_model": 51.25463700565012,
+   "vo_pick_full_teams": 74.25792692250964,
+   "spearman_drafted_model": 0.4475469506284104,
+   "spearman_drafted_teams": 0.1106307353328877,
+   "undrafted_in_model_top_n": 33,
+   "undrafted_war_in_model_top_n": 2.73,
+   "undrafted_in_top_n_with_war": 8,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "Pe8ffde2213",
+     "name": "Oscar Tshiebwe",
+     "war": 0.3,
+     "model_rank": 3,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 26,
+     "n_drafted_below": 31
+    },
+    {
+     "pid": "U94a287c38b",
+     "name": "Jake Stephens",
+     "war": 0.0,
+     "model_rank": 4,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Uc4a3e7ec4f",
+     "name": "Charles Bediako",
+     "war": 0.0,
+     "model_rank": 6,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U6e5f01a69e",
+     "name": "DeAndre Williams",
+     "war": 0.0,
+     "model_rank": 9,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Ue42dc163ea",
+     "name": "Brandon Brown",
+     "war": 0.0,
+     "model_rank": 19,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U3a172ad564",
+     "name": "Kyle Bowen",
+     "war": 0.0,
+     "model_rank": 20,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U0c036fd430",
+     "name": "Jack Nunge",
+     "war": 0.0,
+     "model_rank": 21,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U858637fbec",
+     "name": "Myles Burns",
+     "war": 0.0,
+     "model_rank": 25,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U46038f2202",
+     "name": "Osun Osunniyi",
+     "war": 0.0,
+     "model_rank": 27,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U5eaab20971",
+     "name": "Terence Lewis II",
+     "war": 0.0,
+     "model_rank": 28,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U62d6b03e90",
+     "name": "Malik Miller",
+     "war": 0.0,
+     "model_rank": 29,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Uafbf632502",
+     "name": "Ja'von Franklin",
+     "war": 0.0,
+     "model_rank": 30,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Ub3226702aa",
+     "name": "Tra'Von Fagan",
+     "war": 0.0,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U054e87fc5a",
+     "name": "Nathaniel Pollard Jr.",
+     "war": 0.0,
+     "model_rank": 34,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U49faded30f",
+     "name": "Terrion Murdix",
+     "war": 0.0,
+     "model_rank": 35,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U074705f07d",
+     "name": "Josh Roberts",
+     "war": 0.0,
+     "model_rank": 36,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U689a8352e3",
+     "name": "Khalil Shabazz",
+     "war": 0.0,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "P88b17e8559",
+     "name": "Craig Porter Jr.",
+     "war": 4.8,
+     "model_rank": 38,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 10,
+     "n_drafted_below": 47
+    },
+    {
+     "pid": "P41704425e7",
+     "name": "Nathan Mensah",
+     "war": -1.0,
+     "model_rank": 39,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 643,
+     "n_drafted_below": 12
+    },
+    {
+     "pid": "P1424b0c02d",
+     "name": "Leaky Black",
+     "war": -0.7,
+     "model_rank": 40,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 637,
+     "n_drafted_below": 15
+    },
+    {
+     "pid": "U0f7b0a7b8f",
+     "name": "Manny Bates",
+     "war": 0.0,
+     "model_rank": 41,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Pa12a517258",
+     "name": "Azuolas Tubelis",
+     "war": 0.0,
+     "model_rank": 42,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U1ff3aba23e",
+     "name": "Chris Brandon",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U7b92babcdc",
+     "name": "Darius McGhee",
+     "war": 0.0,
+     "model_rank": 44,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "U6d8d4155b0",
+     "name": "Nadir Hifi",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "early_entry",
+     "route": "euro_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Pe1411c667e",
+     "name": "Adama Sanogo",
+     "war": -0.1,
+     "model_rank": 48,
+     "source": "early_entry",
+     "route": "torvik_rebuild",
+     "war_rank_full": 617,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Ua0872ad07f",
+     "name": "Isaiah Wilkins",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "P5d94de4385",
+     "name": "Colin Castleton",
+     "war": -0.7,
+     "model_rank": 50,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 639,
+     "n_drafted_below": 14
+    },
+    {
+     "pid": "U06a33e0bd1",
+     "name": "KJ Williams",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "P0252f7ff7f",
+     "name": "Dexter Dennis",
+     "war": 0.1,
+     "model_rank": 54,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 31,
+     "n_drafted_below": 31
+    },
+    {
+     "pid": "Pf92c037d4b",
+     "name": "Markquis Nowell",
+     "war": 0.1,
+     "model_rank": 55,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 30,
+     "n_drafted_below": 31
+    },
+    {
+     "pid": "U7d08cbdbe0",
+     "name": "Nelson Phillips",
+     "war": 0.0,
+     "model_rank": 57,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    },
+    {
+     "pid": "Uf66eb8b1a6",
+     "name": "Taylor Funk",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 33,
+     "n_drafted_below": 30
+    }
+   ],
+   "displaced_drafted_war": -13.080000000000002,
+   "displaced_drafted_n": 29,
+   "undrafted_war_total": -2.97,
+   "undrafted_with_war": 24,
+   "gems_found": [
+    {
+     "pid": "P88b17e8559",
+     "name": "Craig Porter Jr.",
+     "war": 4.8,
+     "model_rank": 38,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 10,
+     "n_drafted_below": 47
+    }
+   ],
+   "gems_missed": [],
+   "drafted_top_n_hits": 27
+  },
+  "2024": {
+   "k": 2,
+   "n_universe": 664,
+   "n_scored": 648,
+   "n_drafted": 55,
+   "n_undrafted": 593,
+   "n_no_inputs": 15,
+   "n_reached_nba_no_outcome": 1,
+   "n_from_test_rows": 16,
+   "n_rebuilt": 632,
+   "sources": {
+    "senior": 574,
+    "early_entry": 58,
+    "early_entry+senior": 19,
+    "intl_22": 9,
+    "drafted_outside_rule": 4
+   },
+   "n_seniors_rule": 916,
+   "n_seniors_returned": 296,
+   "n_entrants": 77,
+   "n_intl22": 10,
+   "drafted_outside_rule": 4,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 9,
+     "with_war": 9
+    },
+    {
+     "path": "college_declared",
+     "declared_only": 1,
+     "n": 2,
+     "with_war": 0
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 4,
+     "with_war": 4
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 4,
+     "with_war": 4
+    }
+   ],
+   "spearman_full_model": 0.07787304075494651,
+   "spearman_full_teams": 0.06089655114227881,
+   "vo_pick_full_model": 65.3816601213286,
+   "vo_pick_full_teams": 59.54810091745435,
+   "spearman_drafted_model": 0.3393285601810785,
+   "spearman_drafted_teams": 0.13403326556845988,
+   "undrafted_in_model_top_n": 30,
+   "undrafted_war_in_model_top_n": -0.18000000000000016,
+   "undrafted_in_top_n_with_war": 9,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "P816913601a",
+     "name": "N'Faly Dante",
+     "war": 0.1,
+     "model_rank": 4,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 38,
+     "n_drafted_below": 27
+    },
+    {
+     "pid": "U510cb05831",
+     "name": "Alex Sobel",
+     "war": 0.0,
+     "model_rank": 7,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U71637ff555",
+     "name": "DJ Burns Jr.",
+     "war": 0.0,
+     "model_rank": 9,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ue1d0db4a83",
+     "name": "Drew Cisse",
+     "war": 0.0,
+     "model_rank": 10,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U6274a9925f",
+     "name": "Max Fiedler",
+     "war": 0.0,
+     "model_rank": 12,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P66484e16cb",
+     "name": "Jalen Bridges",
+     "war": -0.1,
+     "model_rank": 14,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 623,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "U8afec52dec",
+     "name": "Shahada Wells",
+     "war": 0.0,
+     "model_rank": 15,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U4206d2e629",
+     "name": "Tyreek Smith",
+     "war": 0.0,
+     "model_rank": 18,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U748566ea64",
+     "name": "Drew Pember",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Pd3d2fde686",
+     "name": "Isaiah Crawford",
+     "war": -0.0,
+     "model_rank": 27,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 608,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Pe6c95cf044",
+     "name": "Malevy Leons",
+     "war": -0.1,
+     "model_rank": 33,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 619,
+     "n_drafted_below": 18
+    },
+    {
+     "pid": "Ua7c1c60232",
+     "name": "Josiah-Jordan James",
+     "war": 0.0,
+     "model_rank": 34,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U81c62e52d9",
+     "name": "Kalib Boone",
+     "war": 0.0,
+     "model_rank": 35,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P2382218b2e",
+     "name": "Nae'Qwan Tomlin",
+     "war": 0.4,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 26,
+     "n_drafted_below": 33
+    },
+    {
+     "pid": "U6275a07428",
+     "name": "Laolu Oke",
+     "war": 0.0,
+     "model_rank": 40,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Pf99c720027",
+     "name": "Spencer Jones",
+     "war": 0.4,
+     "model_rank": 41,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 24,
+     "n_drafted_below": 34
+    },
+    {
+     "pid": "U89c573bc20",
+     "name": "Brock Cunningham",
+     "war": 0.0,
+     "model_rank": 42,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P0e202d21b8",
+     "name": "Jesse Edwards",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Ud285a1bc56",
+     "name": "Luis Rodriguez",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U5dd0997a08",
+     "name": "Robert Ford III",
+     "war": 0.0,
+     "model_rank": 47,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P99ed7bd6ab",
+     "name": "Alex Ducas",
+     "war": 0.0,
+     "model_rank": 48,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 42,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "Pe8e75a6d90",
+     "name": "Jahmir Young",
+     "war": -0.1,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 612,
+     "n_drafted_below": 21
+    },
+    {
+     "pid": "U4dfae9d8cb",
+     "name": "Quentin Millora-Brown",
+     "war": 0.0,
+     "model_rank": 50,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U4d34d832bc",
+     "name": "Armando Bacot",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U7cffb63f34",
+     "name": "Qudus Wahab",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U6f85aac0b8",
+     "name": "Joshua Morgan",
+     "war": 0.0,
+     "model_rank": 53,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U1ccd4f17e9",
+     "name": "Warren Washington",
+     "war": 0.0,
+     "model_rank": 55,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "P2c7c71307b",
+     "name": "Reece Beekman",
+     "war": -0.8,
+     "model_rank": 56,
+     "source": "early_entry+senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 641,
+     "n_drafted_below": 7
+    },
+    {
+     "pid": "U82160ac8e6",
+     "name": "Shykeim Phillips",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    },
+    {
+     "pid": "U75c5309fae",
+     "name": "RUBSTAVICIUS, MANTAS",
+     "war": 0.0,
+     "model_rank": 59,
+     "source": "intl_22",
+     "route": "euro_rebuild",
+     "war_rank_full": 44,
+     "n_drafted_below": 26
+    }
+   ],
+   "displaced_drafted_war": -4.740000000000003,
+   "displaced_drafted_n": 25,
+   "undrafted_war_total": 0.6499999999999997,
+   "undrafted_with_war": 30,
+   "gems_found": [],
+   "gems_missed": [],
+   "drafted_top_n_hits": 30
+  },
+  "2025": {
+   "k": 1,
+   "n_universe": 836,
+   "n_scored": 823,
+   "n_drafted": 57,
+   "n_undrafted": 766,
+   "n_no_inputs": 9,
+   "n_reached_nba_no_outcome": 4,
+   "n_from_test_rows": 13,
+   "n_rebuilt": 810,
+   "sources": {
+    "senior": 776,
+    "early_entry": 38,
+    "intl_22": 10,
+    "early_entry+senior": 8,
+    "drafted_outside_rule": 4
+   },
+   "n_seniors_rule": 1035,
+   "n_seniors_returned": 231,
+   "n_entrants": 46,
+   "n_intl22": 11,
+   "drafted_outside_rule": 4,
+   "existing_test_rows_dropped": [
+    {
+     "path": "college_2008plus",
+     "declared_only": 0,
+     "n": 11,
+     "with_war": 11
+    },
+    {
+     "path": "college_pre2008_or_unlinked",
+     "declared_only": 0,
+     "n": 2,
+     "with_war": 2
+    },
+    {
+     "path": "international",
+     "declared_only": 0,
+     "n": 3,
+     "with_war": 3
+    }
+   ],
+   "spearman_full_model": -0.013116010648623635,
+   "spearman_full_teams": -0.03305906758705148,
+   "vo_pick_full_model": 71.42570304564573,
+   "vo_pick_full_teams": 71.44989994425735,
+   "spearman_drafted_model": 0.33296060418911816,
+   "spearman_drafted_teams": 0.17640862779925506,
+   "undrafted_in_model_top_n": 34,
+   "undrafted_war_in_model_top_n": -0.35,
+   "undrafted_in_top_n_with_war": 7,
+   "undrafted_in_top_n_list": [
+    {
+     "pid": "Pd559eb82c1",
+     "name": "Andersson Garcia",
+     "war": -0.3,
+     "model_rank": 4,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 801,
+     "n_drafted_below": 16
+    },
+    {
+     "pid": "U3a04c2457c",
+     "name": "Taye Fields",
+     "war": 0.0,
+     "model_rank": 9,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Peb9997d32a",
+     "name": "Chris Ma\u00f1on",
+     "war": 0.1,
+     "model_rank": 13,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 31,
+     "n_drafted_below": 33
+    },
+    {
+     "pid": "P8961a7643a",
+     "name": "Dylan Cardwell",
+     "war": 0.5,
+     "model_rank": 15,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 17,
+     "n_drafted_below": 41
+    },
+    {
+     "pid": "Ua19f517857",
+     "name": "Jeff Woodward",
+     "war": 0.0,
+     "model_rank": 18,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Ud0bc1b2a7d",
+     "name": "MONTERO, JEAN",
+     "war": 0.0,
+     "model_rank": 19,
+     "source": "intl_22",
+     "route": "euro_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U2630bfdede",
+     "name": "Kobe Johnson",
+     "war": 0.0,
+     "model_rank": 20,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U63030a3c21",
+     "name": "Mitchell Saxen",
+     "war": 0.0,
+     "model_rank": 21,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U59b1354157",
+     "name": "Malik Henry",
+     "war": 0.0,
+     "model_rank": 22,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Ub979082e86",
+     "name": "Joe Charles",
+     "war": 0.0,
+     "model_rank": 23,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Uda96da0af3",
+     "name": "Ben Gregg",
+     "war": 0.0,
+     "model_rank": 25,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U0d70824f04",
+     "name": "Clifford Omoruyi",
+     "war": 0.0,
+     "model_rank": 28,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Pc25108b74d",
+     "name": "Norchad Omier",
+     "war": 0.1,
+     "model_rank": 30,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 27,
+     "n_drafted_below": 34
+    },
+    {
+     "pid": "P6ce9cb925d",
+     "name": "Julian Reese",
+     "war": -0.7,
+     "model_rank": 31,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 808,
+     "n_drafted_below": 12
+    },
+    {
+     "pid": "U617f5fbc88",
+     "name": "Ian Schieffelin",
+     "war": 0.0,
+     "model_rank": 32,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U90b6f3d980",
+     "name": "Bent Leuchten",
+     "war": 0.0,
+     "model_rank": 33,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U36ade243c3",
+     "name": "Essam Mostafa",
+     "war": 0.0,
+     "model_rank": 36,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "P07d140dc91",
+     "name": "Hunter Dickinson",
+     "war": -0.2,
+     "model_rank": 37,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 794,
+     "n_drafted_below": 20
+    },
+    {
+     "pid": "U49d112156b",
+     "name": "Caleb Grill",
+     "war": 0.0,
+     "model_rank": 38,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "P9caa5193d5",
+     "name": "Kadary Richmond",
+     "war": 0.2,
+     "model_rank": 40,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 23,
+     "n_drafted_below": 37
+    },
+    {
+     "pid": "Uff4de69602",
+     "name": "Oumar Ballo",
+     "war": 0.0,
+     "model_rank": 41,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Ub8bd9f0a29",
+     "name": "Coleman Hawkins",
+     "war": 0.0,
+     "model_rank": 42,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U5ba808cac2",
+     "name": "KJ Adams",
+     "war": 0.0,
+     "model_rank": 43,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U8efa665e40",
+     "name": "Jared Billups",
+     "war": 0.0,
+     "model_rank": 45,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U62e71e4f50",
+     "name": "Viktor Lakhin",
+     "war": 0.0,
+     "model_rank": 46,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Uf966bbcbed",
+     "name": "Stevie Mitchell",
+     "war": 0.0,
+     "model_rank": 49,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U545c5fb2fc",
+     "name": "Zach Hicks",
+     "war": 0.0,
+     "model_rank": 50,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Uf3c7204555",
+     "name": "Zakai Zeigler",
+     "war": 0.0,
+     "model_rank": 51,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "Uef3fdb0767",
+     "name": "Nelly Joseph",
+     "war": 0.0,
+     "model_rank": 52,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U398dcddb7f",
+     "name": "Obinna Anochili-Killen",
+     "war": 0.0,
+     "model_rank": 53,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U69ea3aeab5",
+     "name": "Michael Graham",
+     "war": 0.0,
+     "model_rank": 54,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U6f2ea36831",
+     "name": "UBAL, AGUSTIN",
+     "war": 0.0,
+     "model_rank": 57,
+     "source": "intl_22",
+     "route": "euro_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U1151c37bbc",
+     "name": "Fousseyni Traore",
+     "war": 0.0,
+     "model_rank": 58,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    },
+    {
+     "pid": "U4ac52cb2a8",
+     "name": "Javonte Brown",
+     "war": 0.0,
+     "model_rank": 60,
+     "source": "senior",
+     "route": "torvik_rebuild",
+     "war_rank_full": 37,
+     "n_drafted_below": 29
+    }
+   ],
+   "displaced_drafted_war": -15.129999999999997,
+   "displaced_drafted_n": 31,
+   "undrafted_war_total": -4.5,
+   "undrafted_with_war": 30,
+   "gems_found": [],
+   "gems_missed": [],
+   "drafted_top_n_hits": 26
+  }
+ },
+ "definitions": {
+  "top_n": 60,
+  "gem_war": 2.0,
+  "universe_rule": {
+   "senior_min_per": 40.0,
+   "senior_gp": 10,
+   "intl_age": 22
   }
  }
 }

@@ -11,6 +11,10 @@ A small bench for scoring draft boards and trying model variants. Outputs of the
 - `evaluate_boards.py` - scores every board on the 2019-2025 classes (real draft, model strict/expanding, Colin,
   multi-site consensus, RSCI, college production, small ridge baselines) and writes `boards_eval.json`,
   `undrafted_eval.json` and `sequential_*.csv`. No model is selected here.
+- `evaluate_undrafted.py` - the undrafted question: the outcome-selected check from the saved base boards (modes strict,
+  expanding) and the H7 clean universe (`DraftDB-Data/v4_build/universe_v422`, built with no knowledge of later NBA
+  participation) scored by the strict engine, with a uniform-rows sensitivity and the rebuilt-vs-real consistency check.
+  Writes `undrafted_eval.json`.
 - `engine.py` - CPU re-implementation of the training pipeline on data v4.22: XGBoost + ridge + optional TabICL,
   season-consistent walk-forward folds 2012-2018, then strict and expanding blind looks at 2019-2025.
   Writes `exp_<name>.json`, `board_<name>_<mode>.csv` and a line in `experiments.jsonl`.
@@ -26,6 +30,7 @@ A small bench for scoring draft boards and trying model variants. Outputs of the
 ## Running (from the repo root)
 
     python tools/lab/evaluate_boards.py            # boards_eval.json, sequential_*.csv
+    python tools/lab/evaluate_undrafted.py         # undrafted_eval.json (needs the private universe files)
     python tools/lab/engine.py base                # one variant; optional 2nd arg is a JSON genome override
     python tools/lab/engine.py hw_uniform '{"hw": "uniform"}'
     python tools/lab/run_queue.py A                # a named queue (A, C locally; B, G, H, S need TabICL, see docs/AZURE.md)
@@ -40,6 +45,7 @@ Environment variables: `DRAFTDB_DATA` (private data repo, default `../DraftDB-Da
 - Player names (`identity/tabular_names.csv`): display only; every computation is keyed by pid.
 - Dated multi-site mock consensus, used by `evaluate_boards.py`.
 - The v4.22 input matrix (`v4_build/staging_v422`), needed by `engine.py` and `run_queue.py`.
+- The clean universe (`v4_build/universe_v422`, `identity/universe_names.csv`), needed by `evaluate_undrafted.py`.
 
 From the public repo alone, `build_dashboard.py` and `summarize_experiments.py` run on the committed outputs.
 `evaluate_boards.py` needs the private consensus and names, and nothing that needs the engine inputs
