@@ -105,7 +105,7 @@ Each entry: the claim, the evidence, the change, how it is judged, what counts a
 
 ## 5. Data, honestly
 Every block collected since September has failed the gate; today's two features did too. The data investments with a mechanism behind them:
-- More dated consensus publishers for 2019–2026 (the repo's own "cheapest honest gain left"); the current test classes have two to six, the training classes often fewer.
+- ~~More dated consensus publishers for 2019–2026~~ Done 2026-10-20: seven more publishers (6–13 per class) leave the consensus at 0.232 Spearman / 70.2 pick-value, unchanged. Closed; the mocks copy each other.
 - The undrafted universe (H7), which changes what can be claimed rather than the accuracy.
 - Low expected value, listed so they stop resurfacing: CBBD recruiting composite (new information only in the rank 100–250 band), ESPN 100 grades (a disagreement feature at best), hometown density, role transitions.
 
