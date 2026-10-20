@@ -14,8 +14,10 @@ A small bench for scoring draft boards and trying model variants. Outputs of the
 - `engine.py` - CPU re-implementation of the training pipeline on data v4.22: XGBoost + ridge + optional TabICL,
   season-consistent walk-forward folds 2012-2018, then strict and expanding blind looks at 2019-2025.
   Writes `exp_<name>.json`, `board_<name>_<mode>.csv` and a line in `experiments.jsonl`.
-- `run_queue.py` - named variant queues (A, B, C) run one after another through `engine.run`.
-- `summarize_experiments.py` - markdown table of every variant against base (folds first, blind looks last).
+- `run_queue.py` - named variant queues run one after another through `engine.run`: A and C on the CPU recipe, B/G/H/S on the
+  TabICL 32x3 recipe for the A100 job (S = the H6 top-of-board specialist, gene `star`).
+- `summarize_experiments.py` - markdown table of every variant against base (folds first, blind looks last); optional
+  arguments pick a result subfolder and the base variant (`summarize_experiments.py gpu_s s_star00`).
 - `build_dashboard.py` - assembles the JSON outputs into `lab.html` using `dashboard_template.html`.
 - `data/` - Colin's board (`colin_board.csv`, `colin_board_raw.csv`).
 
@@ -24,7 +26,7 @@ A small bench for scoring draft boards and trying model variants. Outputs of the
     python tools/lab/evaluate_boards.py            # boards_eval.json, sequential_*.csv
     python tools/lab/engine.py base                # one variant; optional 2nd arg is a JSON genome override
     python tools/lab/engine.py hw_uniform '{"hw": "uniform"}'
-    python tools/lab/run_queue.py A                # queue A, B or C
+    python tools/lab/run_queue.py A                # a named queue (A, C locally; B, G, H, S need TabICL, see docs/AZURE.md)
     python tools/lab/summarize_experiments.py      # markdown table to stdout
     python tools/lab/build_dashboard.py            # writes lab.html
 

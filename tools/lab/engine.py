@@ -13,7 +13,11 @@ Differences from the box: TabICL runs on CPU with 8 estimators (the box used 32 
 over 3 permutations) and the residual-XGBoost trick is omitted (its stack weight is 0 anyway).
 
 Every experiment reports two fold objectives: Spearman (the repo's) and the pick-value-weighted
-value of the order (vo_pick), on drafted players only.
+value of the order (vo_pick), on drafted players only, plus top-5 hits (H6's third judge).
+
+Gene `star` (H6, 2026-10-20): when present, an XGBoost classifier for "top-3 discounted-WAR outcome in
+class" (class-balanced) is trained on the same features and its probability rank is blended into the
+board for the consensus top 10 only: final = (1-star)*stack + star*rank(p_top3), then re-ranked.
 """
 import os, sys, json, time, itertools, warnings
 import numpy as np, pandas as pd
@@ -75,8 +79,8 @@ HW = {"uniform": [1, 1, 1, 1, 1], "disc85": [.85 ** i for i in range(5)], "disc7
 MIN = [f"y_s{i}_minutes" for i in range(1, 6)]
 
 
-def label(df, k_by_year, hw="disc85", clip=40, kind="gaussrank", floor0=0, minw=0.0):
-    """Within-class Gaussian-rank of discounted WAR, using for class c only its first k_by_year[c] seasons.
+def discounted(df, k_by_year, hw="disc85", clip=40, floor0=0, minw=0.0):
+    """Discounted, clipped k-season WAR per row, using for class c only its first k_by_year[c] seasons.
     floor0: clip each season's WAR at 0 before discounting (negative WAR = played a lot, badly, often on a
     bad team). minw: add minw * minutes/1000 per season (a value label that credits playing time)."""
     X = df[S].fillna(0).values.astype(float)
@@ -90,11 +94,27 @@ def label(df, k_by_year, hw="disc85", clip=40, kind="gaussrank", floor0=0, minw=
     for i, (c) in enumerate(df.draft_year.values):
         k = int(k_by_year.get(int(c), 5))
         v[i] = (X[i, :k] * w[:k]).sum()
-    v = np.clip(v, -clip, clip)
+    return np.clip(v, -clip, clip)
+
+
+def label(df, k_by_year, hw="disc85", clip=40, kind="gaussrank", floor0=0, minw=0.0):
+    """Within-class Gaussian-rank of the discounted WAR (see discounted())."""
+    v = discounted(df, k_by_year, hw=hw, clip=clip, floor0=floor0, minw=minw)
     o = np.zeros(len(df))
     for y in df.draft_year.unique():
         m = (df.draft_year == y).values; r = pd.Series(v[m]).rank(pct=True).values
         o[m] = norm.ppf(np.clip((r * len(r) - 0.5) / len(r), 0.01, 0.99)) if kind == "gaussrank" else r
+    return o
+
+
+def top_label(df, k_by_year, top=3, **kw):
+    """H6: 1 for the players whose discounted WAR ranks in the top `top` of their class, else 0.
+    Same discounted WAR as label(), so the folds stay season-consistent."""
+    v = discounted(df, k_by_year, **kw)
+    o = np.zeros(len(df))
+    for y in df.draft_year.unique():
+        m = (df.draft_year == y).values
+        o[m] = (pd.Series(-v[m]).rank(method="first").values <= top).astype(float)
     return o
 
 
@@ -203,6 +223,19 @@ def member(m, Xtr, ytr, Xte, g, wtr=None):
     raise ValueError(m)
 
 
+def star_member(Xtr, ytop, Xte, g):
+    """H6 top-of-board specialist: an XGBoost classifier for "top-3 outcome in class" with class-balanced
+    weights (positives and negatives carry equal total weight), bagged over seeds; returns P(top-3) on Xte."""
+    import xgboost as xgb
+    pos = ytop.sum(); neg = len(ytop) - pos
+    w = np.where(ytop > 0, 0.5 / max(pos, 1), 0.5 / max(neg, 1)) * len(ytop)
+    kw = dict(objective="binary:logistic", max_depth=g.get("star_depth", 3), learning_rate=0.03, n_estimators=g.get("star_n", 400),
+              subsample=0.7, colsample_bytree=0.5, min_child_weight=4, reg_lambda=5.0, reg_alpha=1.0, n_jobs=8,
+              monotone_constraints={"bio_age_at_draft": -1} if "bio_age_at_draft" in Xtr.columns else {})
+    return np.mean([xgb.XGBClassifier(**kw, random_state=s).fit(Xtr, ytop, sample_weight=w).predict_proba(Xte)[:, 1]
+                    for s in range(31, 31 + g.get("bag", 3))], axis=0)
+
+
 def sample_weights(ylab, g):
     """Optional top-weighting of the training rows: weight by the pick-value of the label's rank."""
     if not g.get("topw", 0):
@@ -213,7 +246,7 @@ def sample_weights(ylab, g):
     return (1 - g["topw"]) + g["topw"] * w
 
 
-def member_preds(g, Btr, Bte, cols, ylab):
+def member_preds(g, Btr, Bte, cols, ylab, ytop=None):
     out = {}
     wtr = sample_weights(ylab, g)
     topk = xgb_importance_topk(Btr[cols], ylab, g.get("topk", 100))
@@ -221,6 +254,8 @@ def member_preds(g, Btr, Bte, cols, ylab):
         cc = topk if m in ("ridge", "tabicl") else cols
         p = member(m, Btr[cc], ylab, Bte[cc], g, wtr)
         out[m] = pd.Series(p).rank(pct=True).values
+    if ytop is not None:     # H6: the top-3 classifier's probability as a class rank, blended in stack()
+        out["star"] = pd.Series(star_member(Btr[cols], ytop, Bte[cols], g)).rank(pct=True).values
     if g.get("consres", 0):   # consensus prior + learned residual: members were trained on the residual label
         pass
     return out
@@ -238,6 +273,12 @@ def stack(P, Bte, g, wts):
         cons = _num(Bte, "cons_mock_consensus_rank").values
         n = len(r); floor = 1 - (k + 2) / n
         r = np.where((cons <= k) & np.isfinite(cons), np.maximum(r, floor + 1e-6 * (k - cons)), r)
+        r = pd.Series(r).rank(pct=True).values
+    star = float(g.get("star", 0))
+    if star and "star" in P:   # H6: inside the consensus top 10 only, blend the top-3 probability rank into the board
+        cons = _num(Bte, "cons_mock_consensus_rank").values
+        top = (cons <= g.get("star_top", 10)) & np.isfinite(cons)
+        r = np.where(top, (1 - star) * r + star * P["star"], r)
         r = pd.Series(r).rank(pct=True).values
     return r
 
@@ -270,10 +311,11 @@ def walk_forward(g, cols, fold_years=range(2012, 2019), verbose=True):
         Btr, Bte = build(tr, pr, cq, cols, g), build(te, pr, cq, cols, g)
         fc = feature_cols(cols, g)
         ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0))
+        ytop = top_label(tr, kby, top=g.get("star_k", 3), hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0)) if "star" in g else None
         if g.get("consres", 0):
             ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
         t0 = time.time()
-        P = member_preds(g, Btr, Bte, fc, ylab)
+        P = member_preds(g, Btr, Bte, fc, ylab, ytop)
         if g.get("consres", 0):
             prior_te = norm.ppf(np.clip(_prior_rank(te), 0.01, 0.99))
             for m in P:
@@ -307,7 +349,9 @@ def fold_scores(g, F, wts):
         per_k = [fold_eval(s, F[y][2], k) for k in range(1, 6)]
         out[y] = dict(spearman_k5=per_k[4]["spearman"], spearman_avg=float(np.mean([e["spearman"] for e in per_k])),
                       vo_pick_k5=per_k[4]["vo_pick"], vo_pick_avg=float(np.mean([e["vo_pick"] for e in per_k])),
-                      n=per_k[4]["n"], members={m: fold_eval(F[y][0][m], F[y][2], 5)["spearman"] for m in g["members"]})
+                      top5_hits_k5=per_k[4]["top5_hits"], top5_hits_avg=float(np.mean([e["top5_hits"] for e in per_k])),
+                      top10_hits_k5=per_k[4]["top10_hits"],
+                      n=per_k[4]["n"], members={m: fold_eval(F[y][0][m], F[y][2], 5)["spearman"] for m in F[y][0]})
     return out
 
 
@@ -323,7 +367,8 @@ def blind(g, cols, wts, mode="strict", verbose=True):
         pr, cq = fit_prior(tr, cols); Btr = build(tr, pr, cq, cols, g); fc = feature_cols(cols, g)
         ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0))
         if g.get("consres", 0): ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
-        fitted = (Btr, fc, ylab)
+        ytop = top_label(tr, kby, top=g.get("star_k", 3), hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0)) if "star" in g else None
+        fitted = (Btr, fc, ylab, ytop)
     for Y in years:
         te = TESTS[Y]
         if mode == "expanding":
@@ -333,12 +378,13 @@ def blind(g, cols, wts, mode="strict", verbose=True):
             pr, cq = fit_prior(tr, cols); Btr = build(tr, pr, cq, cols, g); fc = feature_cols(cols, g)
             ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0))
             if g.get("consres", 0): ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
+            ytop = top_label(tr, kby, top=g.get("star_k", 3), hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0)) if "star" in g else None
         else:
-            Btr, fc, ylab = fitted
+            Btr, fc, ylab, ytop = fitted
         assert not (set(tr.pid) & set(te.pid))
         Bte = build(te, pr, cq, cols, g)
         t0 = time.time()
-        P = member_preds(g, Btr, Bte, fc, ylab)
+        P = member_preds(g, Btr, Bte, fc, ylab, ytop)
         if g.get("consres", 0):
             prior_te = norm.ppf(np.clip(_prior_rank(te), 0.01, 0.99))
             for m in P: P[m] = pd.Series(norm.ppf(np.clip(P[m], 0.01, 0.99)) + prior_te * g["consres"]).rank(pct=True).values
@@ -366,8 +412,10 @@ def run(name, g, do_blind=True, weight_objective="spearman", extra=("sc_", "tc_"
                    wf_spearman=float(np.mean([v["spearman_avg"] for v in fs.values()])),
                    wf_spearman_k5=float(np.mean([v["spearman_k5"] for v in fs.values()])),
                    wf_vo_pick=float(np.mean([v["vo_pick_avg"] for v in fs.values()])),
-                   wf_vo_pick_k5=float(np.mean([v["vo_pick_k5"] for v in fs.values()])))
-    print(f"   folds: spearman {summary['wf_spearman']:.4f} (k5 {summary['wf_spearman_k5']:.4f})  vo_pick {summary['wf_vo_pick']:.2f} (k5 {summary['wf_vo_pick_k5']:.2f})  wts {wts}", flush=True)
+                   wf_vo_pick_k5=float(np.mean([v["vo_pick_k5"] for v in fs.values()])),
+                   wf_top5_hits=float(np.mean([v["top5_hits_avg"] for v in fs.values()])),
+                   wf_top5_hits_k5=float(np.mean([v["top5_hits_k5"] for v in fs.values()])))
+    print(f"   folds: spearman {summary['wf_spearman']:.4f} (k5 {summary['wf_spearman_k5']:.4f})  vo_pick {summary['wf_vo_pick']:.2f} (k5 {summary['wf_vo_pick_k5']:.2f})  top5 {summary['wf_top5_hits']:.2f} (k5 {summary['wf_top5_hits_k5']:.2f})  wts {wts}", flush=True)
     if do_blind:
         for mode in ("strict", "expanding"):
             rows, boards = blind(g, cols, wts, mode)
@@ -376,6 +424,8 @@ def run(name, g, do_blind=True, weight_objective="spearman", extra=("sc_", "tc_"
             summary[f"{mode}_mean_vo_pick"] = float(np.mean([v["model"]["vo_pick"] for v in rows.values()]))
             summary[f"{mode}_teams_spearman"] = float(np.mean([v["teams"]["spearman"] for v in rows.values()]))
             summary[f"{mode}_teams_vo_pick"] = float(np.mean([v["teams"]["vo_pick"] for v in rows.values()]))
+            summary[f"{mode}_mean_top5_hits"] = float(np.mean([v["model"]["top5_hits"] for v in rows.values()]))
+            summary[f"{mode}_teams_top5_hits"] = float(np.mean([v["teams"]["top5_hits"] for v in rows.values()]))
             boards.to_csv(f"{C.OUT}/board_{name}_{mode}.csv", index=False)
             print(f"   {mode}: spearman {summary[f'{mode}_mean_spearman']:.3f} (teams {summary[f'{mode}_teams_spearman']:.3f}) vo_pick {summary[f'{mode}_mean_vo_pick']:.1f} (teams {summary[f'{mode}_teams_vo_pick']:.1f})", flush=True)
     summary["secs"] = round(time.time() - t0)

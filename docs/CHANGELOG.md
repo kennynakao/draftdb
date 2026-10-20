@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-20 — H6 top-of-board specialist tested on the A100 and closed
+
+| change | files | what and why |
+|---|---|---|
+| Gene `star` and top-5 hits in the lab engine | `tools/lab/engine.py`, `tools/lab/run_queue.py` (queue S), `tools/lab/summarize_experiments.py`, `tools/lab/README.md` | An XGBoost classifier for "top-3 discounted-WAR outcome in class" (class-balanced, same features and guards as the XGBoost member) whose probability rank is blended into the board for the consensus top 10 only, at weight `star`; fold scores and blind summaries now record top-5 hits. Queue S (star 0 / 0.25 / 0.5 / 0.75 / 1.0, and 0.5 with risk=mean) ran on the A100 (execution a100-training-thv74rm): every weight loses on the folds under all three judges and lowers blind top-5 hits, so H6 is closed. Entry in `docs/EXPERIMENTS.md`; H6 marked closed in `docs/MAKE_IT_BETTER.md`. |
+| Results and dashboard | `experiments/lab_2026-10-19/gpu_s/` (new), `tools/lab/build_dashboard.py`, `tools/lab/dashboard_template.html`, `lab.html` | The six variants' JSON, boards and `experiments.jsonl`; the experiments table on lab.html gains a "Folds top-5 hits" column (– for runs that predate it) and lists the queue S rows as [A100]. |
+| Trainer fails fast without a GPU | `infra/trainer/train.py` | The first execution of queue S came up on the NC24-A100 profile with no usable CUDA device and every TabICL fit crashed; the entrypoint now exits with `DRAFTDB_NO_GPU` when `TABICL_DEVICE=cuda` and torch sees no GPU, so a bad replica costs seconds, not a run. |
+
+Not changed: the champion model, its verified numbers, the vault, the ledger, the site pages.
+
 ## 2026-10-19 — response to the October review
 
 An outside reviewer (a front-office analyst) made five points: the team pages summed WAR while counting the same player on several cards; rank swaps were weighted equally; no comparison to mock consensus or simpler baselines; only drafted players were ranked; early-career WAR is noisy. Each change below names the point it answers. Numbers come from `experiments/lab_2026-10-19/`; nothing in the model, the vault or the published headline changed.

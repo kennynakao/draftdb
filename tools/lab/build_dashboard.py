@@ -7,9 +7,10 @@ import common as C
 R = json.load(open(f"{C.OUT}/boards_eval.json"))
 U = json.load(open(f"{C.OUT}/undrafted_eval.json")) if os.path.exists(f"{C.OUT}/undrafted_eval.json") else {}
 EXP = []
-for p in sorted(glob.glob(f"{C.OUT}/exp_*.json")) + sorted(glob.glob(f"{C.OUT}/gpu/exp_*.json")) + sorted(glob.glob(f"{C.OUT}/gpu_h/exp_*.json")):
+GPU_DIRS = ("gpu", "gpu_h", "gpu_s")       # the A100 runs of the TabICL recipe (32 estimators x 3 permutations)
+for p in sorted(glob.glob(f"{C.OUT}/exp_*.json")) + [q for d in GPU_DIRS for q in sorted(glob.glob(f"{C.OUT}/{d}/exp_*.json"))]:
     e = json.load(open(p))
-    if "/gpu/" in p or "/gpu_h/" in p:    # the A100 runs of the TabICL recipe (32 estimators x 3 permutations)
+    if any(f"/{d}/" in p for d in GPU_DIRS):
         e["name"] = e["name"] + " [A100]"
     EXP.append(e)
 BASE_G = next((e["genome"] for e in EXP if e["name"] == "base"), {})
@@ -82,6 +83,9 @@ def gdiff(g):
     return ", ".join(f"{k}={v}" for k, v in g.items() if BASE_G.get(k) != v) or "base"
 D["experiments"] = [dict(name=e["name"], change=gdiff(e["genome"]), wf_sp=r3(e["wf_spearman"]), wf_sp5=r3(e["wf_spearman_k5"]), wf_vo=r1(e["wf_vo_pick"]), wf_vo5=r1(e["wf_vo_pick_k5"]),
                          folds_won_sp=None, strict_sp=r3(e.get("strict_mean_spearman")), strict_vo=r1(e.get("strict_mean_vo_pick")), exp_sp=r3(e.get("expanding_mean_spearman")), exp_vo=r1(e.get("expanding_mean_vo_pick")),
+                         wf_top5=None if e.get("wf_top5_hits") is None else round(float(e["wf_top5_hits"]), 2),
+                         strict_top5=None if e.get("strict_mean_top5_hits") is None else round(float(e["strict_mean_top5_hits"]), 2),
+                         exp_top5=None if e.get("expanding_mean_top5_hits") is None else round(float(e["expanding_mean_top5_hits"]), 2),
                          secs=e.get("secs")) for e in EXP]
 base = next((e for e in EXP if e["name"] == "base"), None)
 if base:

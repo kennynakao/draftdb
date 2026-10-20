@@ -78,10 +78,11 @@ Each entry: the claim, the evidence, the change, how it is judged, what counts a
 - Change: label candidates `max(WAR, 0)` and `max(WAR, 0) + λ·minutes/1000` with λ small; evaluate on the folds under both metrics and on `war_pos` as a third.
 - Risk: a floored label removes the bust signal that the quantile objective was meant to capture; test, do not assume.
 
-### H6. A top-of-board specialist judged on pick-value (medium cost)
+### H6. A top-of-board specialist judged on pick-value — closed 2026-10-20
 - Claim: at picks 1–5 the teams still beat the model (379 vs 342 WAR); the model's README already calls the top a dead heat.
 - Change: a classifier for "top-3 outcome in class" (class-balanced), blended into the board only inside the consensus top 10; or the anchor above with a learned k. Both were rejected on Spearman before; neither has been judged on pick-value, which is where they would show.
 - Judge: folds on pick-value order and top-5 hits, then the vault. The anchor fell on the folds today, so the classifier is the better bet.
+- Result (A100 queue S, TabICL 32×3 recipe, `engine.py` gene `star`): the classifier blended at 0.25 / 0.5 / 0.75 / 1.0 loses on the folds under all three judges (Spearman 0.399 → 0.397–0.383, pick-value 65.7 → 64.9–61.9, top-5 hits 1.54 → 1.54–1.31; at most 3 of 7 folds won on any metric) and lowers blind top-5 hits (strict 2.43 → 2.14–2.29 against the teams' 2.43). On its own the classifier ranks the class at 0.36 fold Spearman against 0.43 for the ridge; with risk=mean it also falls short of risk=mean alone. Closed; the full table is in `EXPERIMENTS.md` (2026-10-20, queue S).
 
 ### H7. A clean undrafted universe (data engineering, two to three days)
 - Claim: the test files' undrafted rows are outcome-selected, so the model's undrafted hit rate cannot be measured honestly, and the review asked for it.
@@ -96,7 +97,8 @@ Each entry: the claim, the evidence, the change, how it is judged, what counts a
 - The three complete classes (2019–2021) at k = 5 only, as the number to quote until 2022 completes.
 
 ## 4. Closed by today's runs (do not retry without a new reason)
-- (2026-10-20, A100) Value labels (WAR floored at zero, with or without a minutes term): fold losses and 5–12 point blind losses. Every collected block switched on alone under the TabICL 32×3 recipe: fold losses on both metrics; the pick-value metric does not change the Spearman-era verdicts. H5 is closed; H6 (top-of-board specialist) remains untested.
+- (2026-10-20, A100) Value labels (WAR floored at zero, with or without a minutes term): fold losses and 5–12 point blind losses. Every collected block switched on alone under the TabICL 32×3 recipe: fold losses on both metrics; the pick-value metric does not change the Spearman-era verdicts. H5 is closed.
+- (2026-10-20, A100) H6 top-of-board specialist: a class-balanced top-3 classifier blended into the consensus top 10 at any weight loses on the folds under Spearman, pick-value and top-5 hits, and lowers blind top-5 hits; the classifier alone ranks the class worse than the ridge. The top of the board stays a tie with the teams. Closed.
 - Label horizon weights (uniform, 0.70, late, back): lose on both fold metrics, as on the box.
 - Top-weighted training rows: fold gains on both metrics, blind Spearman falls 5–12 points. The standard pattern of a fold-only gain.
 - Consensus prior plus learned residual: folds collapse. Agrees with the reliability line in `EXPERIMENTS.md`: the consensus is worse than the model exactly where the model is unsure.
@@ -111,4 +113,4 @@ Every block collected since September has failed the gate; today's two features 
 - Low expected value, listed so they stop resurfacing: CBBD recruiting composite (new information only in the rank 100–250 band), ESPN 100 grades (a disagreement feature at best), hometown density, role transitions.
 
 ## 6. Order of work
-1. H1 vault metrics and gate (half a day). 2. H4 site fix (an evening). 3. H2 README framing (an hour). 4. H3 one GPU run with the full recipe and three seed sets. 5. H5 label test on the folds. 6. H6 top-of-board specialist under the new gate. 7. H7 undrafted universe. 8. Data, if anything above moved.
+1. H1 vault metrics and gate (half a day). 2. H4 site fix (an evening). 3. H2 README framing (an hour). 4. H3 one GPU run with the full recipe and three seed sets. 5. H5 label test on the folds. 6. ~~H6 top-of-board specialist under the new gate~~ (closed 2026-10-20). 7. H7 undrafted universe. 8. Data, if anything above moved.

@@ -8,6 +8,11 @@ os.environ.setdefault("DRAFTDB_LAB_OUT", "/workspace/out")
 os.makedirs("/workspace/out", exist_ok=True)
 import torch
 print("DRAFTDB_TRAIN_START", json.dumps(dict(cuda=torch.cuda.is_available(), device=torch.cuda.get_device_name(0) if torch.cuda.is_available() else None, count=torch.cuda.device_count())), flush=True)
+if os.environ["TABICL_DEVICE"] == "cuda" and not torch.cuda.is_available():
+    # 2026-10-20: execution a100-training-jnssvkx came up on the NC24-A100 profile with no usable GPU and every TabICL fit
+    # crashed; fail fast and visibly instead of burning the run (the job has retry 0, so start it again by hand)
+    print("DRAFTDB_NO_GPU: TABICL_DEVICE=cuda but torch sees no CUDA device; aborting", flush=True)
+    sys.exit(3)
 sys.path.insert(0, "/workspace/draftdb/tools/lab")
 t0 = time.time()
 rc = subprocess.call([sys.executable, "/workspace/draftdb/tools/lab/run_queue.py", os.environ.get("QUEUE", "G")], cwd="/workspace/draftdb")

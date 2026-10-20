@@ -54,6 +54,15 @@ QUEUES = {
   ("h_plus_wts", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "extra": ["sc_", "tc_", "wts_"]}),
   ("h_plus_tv_vcons", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "extra": ["sc_", "tc_", "tv_", "vcons_"]}),
  ],
+ "S": [   # H6 top-of-board specialist on the TabICL 32x3 recipe: a class-balanced top-3 classifier blended into the
+          # consensus top 10 at weight star (0 = the recipe's base, trained but not blended, so its own fold score is reported)
+  ("s_star00", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "star": 0.0}),
+  ("s_star025", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "star": 0.25}),
+  ("s_star05", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "star": 0.5}),
+  ("s_star075", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "star": 0.75}),
+  ("s_star10", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "star": 1.0}),
+  ("s_star05_risk_mean", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "star": 0.5, "risk": "mean"}),
+ ],
  "B": [
   ("base_tabicl", {"members": ["xgb", "ridge", "tabicl"]}),
  ],

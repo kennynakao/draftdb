@@ -33,6 +33,10 @@ scripts/azure/collect_results.py experiments/lab_<date>/gpu   # decodes the RESU
 
 `scripts/azure/check-gpu-config.sh` fails closed if the job has left the NC24-A100 profile or lost the 24 cpu / 220Gi shape; `train.sh` runs it before every start. Queues are defined in `tools/lab/run_queue.py` (QUEUE env var on the job). Each variant's `exp_<name>.json`, boards and `experiments.jsonl` are written to `/workspace/out` in the container and printed by `infra/trainer/train.py` as `RESULT_BEGIN name` / `R <base64 gzip>` / `RESULT_END` lines.
 
+## Known failure: a replica without a GPU (2026-10-20)
+
+Execution `a100-training-jnssvkx` (queue S) started on the NC24-A100 profile with the GPU config check passing, yet inside the container `torch.cuda.is_available()` was False (`DRAFTDB_TRAIN_START {"cuda": false, "device": null, "count": 1}`) and every TabICL fit raised "No CUDA GPUs are available"; the job still reported Succeeded with zero result files. Starting the same job again, unchanged, ran normally (`a100-training-thv74rm`). `infra/trainer/train.py` now exits with code 3 and the marker `DRAFTDB_NO_GPU` in that state, so look for that line (or a zero-file download) and start the execution again. The polling loop in the pipeline scripts can also stall on a hung `az containerapp job execution show`; killing that one CLI process lets the loop continue.
+
 ## Rules kept from the handoff
 
 Do not delete or repurpose `a100-test`; do not use `sleep infinity` as a job command; prefer immutable image tags (`<git sha>-<utc timestamp>`); `az acr build` instead of local Docker (the Mac is arm64, the job is linux/amd64); no credentials in git (the registry password exists only as a job secret); one GPU per replica, one replica per execution until a sweep is wanted (then up to three executions in parallel, within the quota).
