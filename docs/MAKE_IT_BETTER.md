@@ -67,6 +67,7 @@ Each entry: the claim, the evidence, the change, how it is judged, what counts a
 - Change: `risk=mean` on the gen99 genome, three seed sets through the vault, with the stack weights re-learned so XGBoost can take weight.
 - Judge: the existing gate. It won only 3 of 7 folds here, so it may fail the 6-of-7 rule; if it does, drop the XGBoost member rather than keep a zero-weight one.
 - Success: a verified gain on either metric with no loss on the other; otherwise a simpler stack.
+- Lab result (2026-10-20, queues T and U on the A100): risk=mean with nine bags, a slower XGBoost (0.01 × 1,600), the thin/rich split at the lower third, and both objectives in one stack each add +0.007 to +0.012 Spearman and +1 to +2 pick-value on the folds, win 3 to 4 of 7 Spearman folds, and do not add when combined (0.407–0.411 for every pair or triple). Still a vault candidate, not a fold winner; the simpler-stack branch of this item is the likelier outcome.
 
 ### H4. Rebuild the team pages on the sequential redraft (site, one evening)
 - Claim: the current cards double count; the review called it out.
@@ -99,6 +100,7 @@ Each entry: the claim, the evidence, the change, how it is judged, what counts a
 ## 4. Closed by today's runs (do not retry without a new reason)
 - (2026-10-20, A100) Value labels (WAR floored at zero, with or without a minutes term): fold losses and 5–12 point blind losses. Every collected block switched on alone under the TabICL 32×3 recipe: fold losses on both metrics; the pick-value metric does not change the Spearman-era verdicts. H5 is closed.
 - (2026-10-20, A100) H6 top-of-board specialist: a class-balanced top-3 classifier blended into the consensus top 10 at any weight loses on the folds under Spearman, pick-value and top-5 hits, and lowers blind top-5 hits; the classifier alone ranks the class worse than the ridge. The top of the board stays a tie with the teams. Closed.
+- (2026-10-20, A100 queues T and U) Recipe knobs: recency weights on the training rows (half-life 4 and 8), ridge strength 30 / 100 / 1000, five TabICL bags, nine XGBoost bags alone, a 0.125 stack-weight grid (identical to the 0.25 optimum), monotone constraints on impact, and every combination of the positive arms. Within ±0.01 Spearman of the base, none winning 6 of 7 folds; the recipe is at a flat optimum. Dropping the international mask is the largest fold loss (−0.042) and the best single blind look (0.477 expanding); recorded, not acted on.
 - Label horizon weights (uniform, 0.70, late, back): lose on both fold metrics, as on the box.
 - Top-weighted training rows: fold gains on both metrics, blind Spearman falls 5–12 points. The standard pattern of a fold-only gain.
 - Consensus prior plus learned residual: folds collapse. Agrees with the reliability line in `EXPERIMENTS.md`: the consensus is worse than the model exactly where the model is unsure.
@@ -111,6 +113,9 @@ Every block collected since September has failed the gate; today's two features 
 - ~~More dated consensus publishers for 2019–2026~~ Done 2026-10-20: seven more publishers (6–13 per class) leave the consensus at 0.232 Spearman / 70.2 pick-value, unchanged. Closed; the mocks copy each other.
 - The undrafted universe (H7), which changes what can be claimed rather than the accuracy.
 - Low expected value, listed so they stop resurfacing: CBBD recruiting composite (new information only in the rank 100–250 band), ESPN 100 grades (a disagreement feature at best), hometown density, role transitions.
+
+## 5b. What the October lab says about the ceiling
+Fifty-six engine variants on the A100 and forty on the CPU, all judged on the same seven folds under Spearman, pick-value and top-5 hits: no single change or combination clears 6 of 7 folds on Spearman, the positive ones are the size of fold noise (+0.01) and sub-additive, and fold gains do not transfer blind. The inputs are the ceiling, not the learner. What can still change the numbers is in H7 (a clean undrafted universe, which changes what is claimed) and in a data block with a mechanism the mocks and box scores lack, which nothing collected so far has had.
 
 ## 6. Order of work
 1. H1 vault metrics and gate (half a day). 2. H4 site fix (an evening). 3. H2 README framing (an hour). 4. H3 one GPU run with the full recipe and three seed sets. 5. H5 label test on the folds. 6. ~~H6 top-of-board specialist under the new gate~~ (closed 2026-10-20). 7. H7 undrafted universe. 8. Data, if anything above moved.

@@ -270,3 +270,47 @@ Where this leaves the objective question: across the CPU runs, queue G and queue
 - With the quantile objective off as well (star 0.5 + risk=mean) the folds reach 0.406 Spearman, above the base but below risk=mean alone from queue G (0.409 / 67.7 pick-value): the classifier subtracts from the one standing lead too.
 
 H6 is closed. The consensus anchors (queue C) and now the classifier both fail on the folds; the top of the board is where the model and the teams tie, and nothing tried moves it. Numbers: `experiments/lab_2026-10-19/gpu_s/`, rows marked [A100] on lab.html, which now shows the fold top-5 hits column for runs that record it. The first execution of this queue (a100-training-jnssvkx) came up on the NC24-A100 profile with no usable CUDA device and every TabICL fit failed in 36 s; the job was started again unchanged and ran normally. `infra/trainer/train.py` now aborts at once with `DRAFTDB_NO_GPU` when `TABICL_DEVICE=cuda` and torch sees no GPU.
+
+**Update, 2026-10-20 — A100 queue T, an A/B screen of untested recipe changes (execution a100-training-8qtxf3a, 2 h 40 min), with a CPU replication.** After H6 closed, the open question was whether anything in the recipe itself, rather than the data or the label, still moves the folds. Fifteen arms, each one change against the TabICL 32×3 + XGBoost + ridge base, each with a mechanism stated in advance: recency weights on the training rows (half-life 4 and 8 years; the era shift diagnosed on 2026-09-06), both XGBoost objectives as separate stack members (`xgbm` = squared error beside the quantile member), nine XGBoost bags instead of three, five TabICL permutation bags instead of three, ridge strength 30 / 100 / 1000 against 300, the international-line mask off, the thin/rich split at the lower third of coverage instead of the median, a 0.125 stack-weight grid instead of 0.25, monotone constraints on college impact and production-over-age, and a slower XGBoost (learning rate 0.01 with 1,600 trees instead of 0.02 with 800). The same arms ran on the Mac with the TabICL member dropped (`tools/lab/run_queue_cpu.py`, outputs in `experiments/lab_2026-10-19/cpu_t/`, rows prefixed c_) as an independent read on direction. `t_base` reproduces queues H and S to the third decimal.
+
+| arm | folds Spearman (won of 7) | folds pick-value (won) | folds top-5 hits | strict Sp. / PV | expanding Sp. / PV | CPU folds Sp. / PV (won) |
+|---|---|---|---|---|---|---|
+| base | 0.399 | 65.7 | 1.54 | 0.435 / 72.9 | 0.429 / 72.0 | 0.354 / 65.8 |
+| slower XGBoost (0.01 × 1,600) | 0.402 (3) | 67.2 (7) | 1.69 | 0.430 / 73.1 | 0.441 / 72.3 | 0.354 (4) / 65.8 (3) |
+| both XGBoost objectives in the stack | 0.409 (3) | 66.5 (5) | 1.60 | 0.424 / 72.4 | 0.445 / 72.7 | 0.374 (3) / 65.2 (3) |
+| thin/rich split at the lower third | 0.409 (3) | 66.7 (5) | 1.63 | 0.433 / 72.7 | 0.432 / 71.8 | 0.365 (4) / 65.6 (3) |
+| risk=mean, nine bags | 0.406 (3) | 67.0 (5) | 1.74 | 0.418 / 72.5 | 0.454 / 73.4 | 0.372 (4) / 64.9 (3) |
+| monotone impact and production-over-age | 0.401 (2) | 66.3 (7) | 1.54 | 0.436 / 72.8 | 0.443 / 72.3 | 0.353 (2) / 65.6 (4) |
+| nine XGBoost bags | 0.400 (4) | 66.1 (4) | 1.54 | 0.438 / 72.7 | 0.433 / 72.3 | 0.354 (3) / 66.0 (5) |
+| five TabICL bags | 0.399 (2) | 65.8 (3) | 1.54 | 0.437 / 72.8 | 0.430 / 72.0 | – |
+| stack-weight grid 0.125 | 0.399 (0) | 65.7 (0) | 1.54 | 0.435 / 72.9 | 0.429 / 72.0 | identical to base |
+| recency half-life 8 | 0.399 (5) | 66.2 (4) | 1.57 | 0.437 / 72.7 | 0.445 / 71.1 | 0.348 (3) / 64.8 (3) |
+| recency half-life 4 | 0.389 (3) | 65.4 (2) | 1.57 | 0.429 / 72.6 | 0.449 / 69.9 | 0.344 (3) / 64.4 (3) |
+| ridge 1000 | 0.394 (3) | 66.1 (4) | 1.51 | 0.434 / 73.1 | 0.426 / 71.6 | 0.366 (3) / 65.3 (2) |
+| ridge 100 | 0.393 (3) | 65.1 (3) | 1.51 | 0.443 / 72.9 | 0.448 / 71.7 | 0.338 (3) / 65.3 (4) |
+| ridge 30 | 0.386 (2) | 64.4 (1) | 1.46 | 0.434 / 72.5 | 0.446 / 71.8 | 0.327 (1) / 63.5 (2) |
+| international mask off | 0.357 (3) | 64.9 (4) | 1.57 | 0.446 / 72.7 | 0.477 / 74.2 | 0.344 (3) / 64.7 (3) |
+
+**Reading.**
+- Nothing wins 6 of 7 folds on Spearman. The slower XGBoost wins pick-value on all seven folds, but six of the seven wins are 0.1 to 1.2 points and 2018 supplies +6.9; its Spearman is 3 of 7 and +0.003 on the mean. Halving the learning rate at double the trees is variance reduction: it cannot hurt and it barely helps. The monotone constraints are the same story (7 of 7 on pick-value by +0.1 to +1.5 per fold, 2 of 7 on Spearman).
+- The three arms that lift the Spearman mean (+0.007 to +0.010; both objectives, the lower-third split, risk=mean with nine bags) are each the size of the risk=mean lead from queue G, win 3 of 7 folds on Spearman and 5 of 7 on pick-value, and do not agree on the blind looks (strict 0.418 to 0.433 against 0.435 for base; expanding 0.432 to 0.454 against 0.429). In the both-objectives stack the learned weights put the squared-error member at 0.75 and the quantile member at 0.25 on thin rows, with rich rows still all ridge: the two objectives are not redundant on the rows with little college data, which is where XGBoost gets any weight at all. The CPU replication agrees on direction for both objectives and for risk=mean with nine bags (+0.018 to +0.020 Spearman, the best blind looks of the CPU set at 0.487 to 0.497 expanding) and for the split (+0.011), and disagrees on the slower XGBoost (flat).
+- Recency weights do not help: half-life 8 ties the mean (5 of 7 folds by tiny margins), half-life 4 loses 0.010, and both lose on the CPU. The era shift is not a reweighting problem; the 2007 window already handles it.
+- Ridge strength 300 is at the optimum: 30 and 100 lose on both machines, 1000 ties on the GPU and gains a little on the CPU. The stack-weight grid at 0.125 lands on exactly the 0.25 optimum. Five TabICL bags and nine XGBoost bags alone change nothing beyond the third decimal.
+- The international mask. Switching it off is the largest fold loss of the queue (−0.042 Spearman) and the best blind look (strict 0.446, expanding 0.477 / 74.2 pick-value; the CPU replication loses blind as well as on the folds). The mask was adopted on 2026-09-08 on blind evidence; on the folds it is worth +0.04. One look; recorded, not acted on.
+
+The honest summary of queue T: the recipe is at a flat optimum. Every regularisation knob tried is within ±0.01 Spearman and ±1.5 pick-value of the base on the folds, the three that lean positive are the same size as the fold noise, and the blind looks do not agree with each other. Queue U below combines the positive arms, since each is a different kind of variance reduction, to see whether they add. Numbers: `experiments/lab_2026-10-19/gpu_t/` and `cpu_t/`, rows marked [A100] and c_ on lab.html.
+
+**Update, 2026-10-20 — A100 queue U, the queue T leads combined (execution a100-training-12ut4cc, 1 h 25 min).** Seven combinations of the arms that leaned positive in queue T, compared with the same base (which the recipe reproduces exactly across queues).
+
+| arm | folds Spearman (won of 7) | folds pick-value (won) | folds top-5 hits | strict Sp. / PV / top-5 | expanding Sp. / PV / top-5 |
+|---|---|---|---|---|---|
+| base | 0.399 | 65.7 | 1.54 | 0.435 / 72.9 / 2.43 | 0.429 / 72.0 / 2.33 |
+| slow XGBoost + lower-third split | 0.411 (4) | 67.3 (6) | 1.63 | 0.434 / 72.4 / 2.43 | 0.417 / 70.6 / 2.17 |
+| both objectives + slow + split | 0.411 (4) | 67.3 (6) | 1.63 | 0.434 / 72.4 / 2.43 | 0.417 / 70.6 / 2.17 |
+| slow + risk=mean | 0.407 (4) | 67.7 (5) | 1.74 | 0.418 / 72.5 / 2.43 | 0.452 / 73.7 / 2.33 |
+| slow + risk=mean + nine bags | 0.407 (4) | 66.4 (4) | 1.66 | 0.409 / 72.1 / 2.29 | 0.451 / 73.4 / 2.33 |
+| slow + risk=mean + split | 0.407 (3) | 66.3 (4) | 1.66 | 0.407 / 71.9 / 2.29 | 0.451 / 73.2 / 2.17 |
+| slow + risk=mean + nine bags + split | 0.407 (3) | 66.9 (5) | 1.74 | 0.412 / 72.4 / 2.29 | 0.453 / 73.4 / 2.17 |
+| slow + risk=mean + split + monotone | 0.408 (3) | 66.4 (3) | 1.66 | 0.410 / 72.0 / 2.29 | 0.450 / 73.3 / 2.17 |
+
+**Reading.** The arms do not add. Every combination sits at 0.407 to 0.411 Spearman on the folds, the same +0.008 to +0.012 that each arm showed alone, with 3 or 4 of 7 folds won; pick-value reaches 67.3 to 67.7 (+1.6 to +2.0) with at most 6 of 7. The closest to the gate, the slow XGBoost with the lower-third split, wins 6 of 7 on pick-value and 4 of 7 on Spearman, and its expanding look is the worst of the set (0.417 / 70.6 against 0.429 / 72.0 for base). The squared-error member beside the quantile member gets zero weight once the slow learner and the split are in (the two rows are identical). The stack puts thin rows entirely on XGBoost in most combinations, so what is being tuned is the half of each class with little college data, and the seven folds disagree on how to tune it. Queue T and U together: eighteen single changes and seven combinations, none clearing 6 of 7 on Spearman, the positive ones the size of fold noise and sub-additive, the blind looks scattered 0.41 to 0.45. The recipe is at a flat optimum on these inputs; the remaining lever is not a knob. Numbers: `experiments/lab_2026-10-19/gpu_u/`, rows marked [A100] on lab.html.

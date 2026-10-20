@@ -15,7 +15,9 @@ A small bench for scoring draft boards and trying model variants. Outputs of the
   season-consistent walk-forward folds 2012-2018, then strict and expanding blind looks at 2019-2025.
   Writes `exp_<name>.json`, `board_<name>_<mode>.csv` and a line in `experiments.jsonl`.
 - `run_queue.py` - named variant queues run one after another through `engine.run`: A and C on the CPU recipe, B/G/H/S on the
-  TabICL 32x3 recipe for the A100 job (S = the H6 top-of-board specialist, gene `star`).
+  TabICL 32x3 recipe for the A100 job (S = the H6 top-of-board specialist, gene `star`; T and U = the 2026-10-20 A/B screen
+  of recipe changes and their combinations).
+- `run_queue_cpu.py` - the same queue's arms on the CPU recipe (TabICL dropped), names prefixed c_, as a second read.
 - `summarize_experiments.py` - markdown table of every variant against base (folds first, blind looks last); optional
   arguments pick a result subfolder and the base variant (`summarize_experiments.py gpu_s s_star00`).
 - `build_dashboard.py` - assembles the JSON outputs into `lab.html` using `dashboard_template.html`.

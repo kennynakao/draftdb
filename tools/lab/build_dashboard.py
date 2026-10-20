@@ -7,8 +7,9 @@ import common as C
 R = json.load(open(f"{C.OUT}/boards_eval.json"))
 U = json.load(open(f"{C.OUT}/undrafted_eval.json")) if os.path.exists(f"{C.OUT}/undrafted_eval.json") else {}
 EXP = []
-GPU_DIRS = ("gpu", "gpu_h", "gpu_s")       # the A100 runs of the TabICL recipe (32 estimators x 3 permutations)
-for p in sorted(glob.glob(f"{C.OUT}/exp_*.json")) + [q for d in GPU_DIRS for q in sorted(glob.glob(f"{C.OUT}/{d}/exp_*.json"))]:
+GPU_DIRS = ("gpu", "gpu_h", "gpu_s", "gpu_t", "gpu_u")       # the A100 runs of the TabICL recipe (32 estimators x 3 permutations)
+CPU_DIRS = ("cpu_t",)                        # CPU-recipe replications of a GPU queue (tools/lab/run_queue_cpu.py), names prefixed c_
+for p in sorted(glob.glob(f"{C.OUT}/exp_*.json")) + [q for d in CPU_DIRS for q in sorted(glob.glob(f"{C.OUT}/{d}/exp_*.json"))] + [q for d in GPU_DIRS for q in sorted(glob.glob(f"{C.OUT}/{d}/exp_*.json"))]:
     e = json.load(open(p))
     if any(f"/{d}/" in p for d in GPU_DIRS):
         e["name"] = e["name"] + " [A100]"

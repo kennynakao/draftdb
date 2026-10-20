@@ -195,12 +195,13 @@ def xgb_importance_topk(X, y, k, seed=11):
 
 
 def member(m, Xtr, ytr, Xte, g, wtr=None):
-    if m == "xgb":
+    if m in ("xgb", "xgbm"):     # xgbm: the same member with the squared-error objective, so both objectives can sit in one stack
         import xgboost as xgb
-        kw = dict(objective="reg:squarederror", max_depth=g.get("xgb_depth", 3), learning_rate=0.02, n_estimators=800, subsample=0.7,
-                  colsample_bytree=0.5, min_child_weight=8, reg_lambda=5.0, reg_alpha=1.0, n_jobs=8,
-                  monotone_constraints={"bio_age_at_draft": -1} if "bio_age_at_draft" in Xtr.columns else {})
-        if g.get("risk", "q25") == "q25":
+        mono = {"bio_age_at_draft": -1}; mono.update(g.get("mono", {}))
+        kw = dict(objective="reg:squarederror", max_depth=g.get("xgb_depth", 3), learning_rate=g.get("xgb_lr", 0.02), n_estimators=g.get("xgb_n", 800), subsample=0.7,
+                  colsample_bytree=0.5, min_child_weight=g.get("xgb_mcw", 8), reg_lambda=5.0, reg_alpha=1.0, n_jobs=8,
+                  monotone_constraints={c: v for c, v in mono.items() if c in Xtr.columns})
+        if m == "xgb" and g.get("risk", "q25") == "q25":
             kw["objective"] = "reg:quantileerror"; kw["quantile_alpha"] = 0.25
         return np.mean([xgb.XGBRegressor(**kw, random_state=s).fit(Xtr, ytr, sample_weight=wtr).predict(Xte) for s in range(11, 11 + g.get("bag", 3))], axis=0)
     if m == "ridge":
@@ -236,19 +237,27 @@ def star_member(Xtr, ytop, Xte, g):
                     for s in range(31, 31 + g.get("bag", 3))], axis=0)
 
 
-def sample_weights(ylab, g):
-    """Optional top-weighting of the training rows: weight by the pick-value of the label's rank."""
-    if not g.get("topw", 0):
+def sample_weights(ylab, g, years=None):
+    """Optional training-row weights. topw: weight by the pick-value of the label's rank. recency: half-life in years of
+    an exponential decay by class age (the class before the fold's draft weighs 1, one half-life earlier 0.5): a soft
+    version of the training window, aimed at the era shift diagnosed in September."""
+    w = np.ones(len(ylab))
+    if g.get("topw", 0):
+        r = pd.Series(-ylab).rank(method="first").values      # 1 = best label
+        n = len(r); slot = np.clip(np.round(r / n * 60), 1, 60).astype(int)
+        pv = np.array([V[s] for s in slot]); pv = pv / pv.mean()
+        w = w * ((1 - g["topw"]) + g["topw"] * pv)
+    if g.get("recency", 0) and years is not None:
+        age = years.max() - years          # 0 for the newest training class
+        w = w * 0.5 ** (age / float(g["recency"]))
+    if not g.get("topw", 0) and not g.get("recency", 0):
         return None
-    r = pd.Series(-ylab).rank(method="first").values      # 1 = best label
-    n = len(r); slot = np.clip(np.round(r / n * 60), 1, 60).astype(int)
-    w = np.array([V[s] for s in slot]); w = w / w.mean()
-    return (1 - g["topw"]) + g["topw"] * w
+    return w / w.mean()
 
 
 def member_preds(g, Btr, Bte, cols, ylab, ytop=None):
     out = {}
-    wtr = sample_weights(ylab, g)
+    wtr = sample_weights(ylab, g, _num(Btr, "draft_year").values)
     topk = xgb_importance_topk(Btr[cols], ylab, g.get("topk", 100))
     for m in g["members"]:
         cc = topk if m in ("ridge", "tabicl") else cols
@@ -263,7 +272,7 @@ def member_preds(g, Btr, Bte, cols, ylab, ytop=None):
 
 def stack(P, Bte, g, wts):
     cov = _num(Bte, "feat_coverage").fillna(0).values
-    thin = cov < np.median(cov)
+    thin = cov < np.quantile(cov, g.get("thin_q", 0.5))
     r = np.zeros(len(cov))
     for i, m in enumerate(g["members"]):
         r += np.where(thin, wts["thin"][i], wts["rich"][i]) * P[m]
@@ -329,7 +338,8 @@ def walk_forward(g, cols, fold_years=range(2012, 2019), verbose=True):
 
 def learn_weights(g, F, objective="spearman"):
     n = len(g["members"]); eq = tuple([1 / n] * n)
-    grid = [w for w in itertools.product(*[np.arange(0, 1.01, 0.25)] * n) if abs(sum(w) - 1) < 1e-6]
+    step = g.get("wgrid", 0.25)
+    grid = [w for w in itertools.product(*[np.arange(0, 1.0 + step / 2, step)] * n) if abs(sum(w) - 1) < 1e-6]
     if n == 1:
         return {"rich": eq, "thin": eq}
     best = None
