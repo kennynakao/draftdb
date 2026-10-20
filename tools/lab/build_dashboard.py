@@ -7,9 +7,9 @@ import common as C
 R = json.load(open(f"{C.OUT}/boards_eval.json"))
 U = json.load(open(f"{C.OUT}/undrafted_eval.json")) if os.path.exists(f"{C.OUT}/undrafted_eval.json") else {}
 EXP = []
-for p in sorted(glob.glob(f"{C.OUT}/exp_*.json")) + sorted(glob.glob(f"{C.OUT}/gpu/exp_*.json")):
+for p in sorted(glob.glob(f"{C.OUT}/exp_*.json")) + sorted(glob.glob(f"{C.OUT}/gpu/exp_*.json")) + sorted(glob.glob(f"{C.OUT}/gpu_h/exp_*.json")):
     e = json.load(open(p))
-    if "/gpu/" in p:                      # the A100 runs of the TabICL recipe (32 estimators x 3 permutations)
+    if "/gpu/" in p or "/gpu_h/" in p:    # the A100 runs of the TabICL recipe (32 estimators x 3 permutations)
         e["name"] = e["name"] + " [A100]"
     EXP.append(e)
 BASE_G = next((e["genome"] for e in EXP if e["name"] == "base"), {})

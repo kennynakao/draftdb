@@ -96,6 +96,7 @@ Each entry: the claim, the evidence, the change, how it is judged, what counts a
 - The three complete classes (2019–2021) at k = 5 only, as the number to quote until 2022 completes.
 
 ## 4. Closed by today's runs (do not retry without a new reason)
+- (2026-10-20, A100) Value labels (WAR floored at zero, with or without a minutes term): fold losses and 5–12 point blind losses. Every collected block switched on alone under the TabICL 32×3 recipe: fold losses on both metrics; the pick-value metric does not change the Spearman-era verdicts. H5 is closed; H6 (top-of-board specialist) remains untested.
 - Label horizon weights (uniform, 0.70, late, back): lose on both fold metrics, as on the box.
 - Top-weighted training rows: fold gains on both metrics, blind Spearman falls 5–12 points. The standard pattern of a fold-only gain.
 - Consensus prior plus learned residual: folds collapse. Agrees with the reliability line in `EXPERIMENTS.md`: the consensus is worse than the model exactly where the model is unsure.
