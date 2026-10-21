@@ -121,3 +121,18 @@ The Spearman lead of about 24 points over the teams becomes about 3 points of pi
 Given the mock consensus, the model's partial Spearman with WAR is 0.18-0.66 by class; the consensus given the model is about zero in five of seven classes (range -0.17 to 0.22). The model is not consensus plus noise.
 
 See also: [`lab.html`](../lab.html), [`tools/lab/README.md`](../tools/lab/README.md), [`MAKE_IT_BETTER.md`](MAKE_IT_BETTER.md).
+
+
+## Reading a team page: why the team wins a card (added 2026-10-21)
+
+The league-wide sequential replay is zero-sum: a player goes to the first team on the clock whose board has him highest. A team that really took a player the model also rated above that slot therefore loses the card to the replay, not to the model's judgement. Each card the team wins is tagged with one cause (`loss_reason` in `data/team_cards.json`):
+
+| cause | rule | league 2019-2025 | WAR lost |
+|---|---|---|---|
+| agreed, taken earlier | the model's rank of the real pick is at or above the slot | 113 of 198 | 552 |
+| genuine miss | the model ranked the real pick below the slot; its own pick scored 0 or more | 35 | 218 |
+| miss, negative-WAR pick | the model ranked the real pick below the slot and its own pick played and produced negative WAR | 50 | 166 (101 floored at zero) |
+
+The teams with the largest raw deficits are mostly the first kind: Charlotte 8 of 14 cards, Oklahoma City 7 of 11, Memphis 6 of 11, the Clippers 5 of 7, Boston 6 of 9. The genuine misses are the known top-of-board pattern (Edwards, Wembanyama, Barnes, Cunningham, LaMelo, Garland, Maxey, Quickley): young, pedigreed players with ordinary college production, which the closed H6 and pedigree lines did not fix. Floored-at-zero totals (`war_actual_total_pos`, `war_model_total_pos`) are shown beside the raw totals because a bust who played scores below a stash who never did.
+
+A team-conditional replay (the team uses the model at its own slots while every other team drafts as it did) was computed and not adopted: it lets a team pass on a lottery pick and take him later because no other team may react, which overstates the model (league 2,162 WAR against 1,129).

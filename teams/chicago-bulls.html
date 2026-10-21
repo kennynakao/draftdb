@@ -50,7 +50,7 @@
     <div class="container">
       <div class="team-hero__eyebrow"><span class="team-swatch"></span>Chicago Bulls &middot; 2019&ndash;2025 drafts</div>
       <h1 class="team-hero__title">Chicago Bulls</h1>
-      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order, each player taken once. At the Chicago Bulls&rsquo; own slots the model&rsquo;s pick out-produced the team&rsquo;s selection on <b>5 of 9 cards</b>; the team&rsquo;s pick did better on <b>4</b>. At those slots the model&rsquo;s picks have <b>35.8 WAR</b> to date against <b>30.2</b> for the team&rsquo;s picks; the slots themselves were worth <b>62.6 WAR</b> under the pick-value curve. Allowed to pick from the whole pre-draft pool instead of the drafted players, the model would have spent <b>6 of 9</b> of these picks on players nobody drafted, and its picks would total <b>32.2 WAR</b>.</p>
+      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order, each player taken once. At the Chicago Bulls&rsquo; own slots the model&rsquo;s pick out-produced the team&rsquo;s selection on <b>5 of 9 cards</b>; the team&rsquo;s pick did better on <b>4</b>. At those slots the model&rsquo;s picks have <b>35.8 WAR</b> to date against <b>30.2</b> for the team&rsquo;s picks; the slots themselves were worth <b>62.6 WAR</b> under the pick-value curve. Of the <b>4</b> cards the team wins, <b>1</b> are picks the model also rated at or above that slot (another team took them earlier in the replay), <b>1</b> are genuine misses and <b>2</b> are model picks who played and produced negative WAR; with WAR floored at zero the totals read 38.1 for the model against 30.3 for the team. Allowed to pick from the whole pre-draft pool instead of the drafted players, the model would have spent <b>6 of 9</b> of these picks on players nobody drafted, and its picks would total <b>32.2 WAR</b>.</p>
       <div class="tstat-grid">
         <div class="tstat">
           <div class="tstat__k">WAR to date &middot; team picks</div>
@@ -263,7 +263,7 @@
   <div class="pickcard__mid">
     <div class="vbadge__delta">-1.9</div>
     <div class="vbadge__unit">WAR, model &minus; team</div>
-    <div class="vbadge__label">Team&rsquo;s pick outperformed</div>
+    <div class="vbadge__label">Team pick; model miss</div>
   </div>
   <section class="pickcard__side" aria-label="Our model chose">
     <div class="pickcard__who">Our model chose</div>
@@ -279,6 +279,7 @@
   </section>
   </div>
   <div class="pickcard__foot">Best available in hindsight: <b>Isaiah Joe</b> (10.9 WAR) &middot; went 49th overall to Philadelphia 76ers</div>
+  <div class="pickcard__foot">Why the team wins this card: the model ranked the team&rsquo;s pick below this slot, and its own pick played and produced negative WAR; floored at zero the gap is 0.0.</div>
   <div class="pickcard__foot">Open pool &middot; if the model could take anyone who was actually in that year&rsquo;s pre-draft pool, each taken once: <b>Nate Pierre-Louis</b> (0.0 WAR, undrafted)</div>
 </article>
     </div>
@@ -367,7 +368,7 @@
   <div class="pickcard__mid">
     <div class="vbadge__delta">-0.9</div>
     <div class="vbadge__unit">WAR, model &minus; team</div>
-    <div class="vbadge__label">Team&rsquo;s pick outperformed</div>
+    <div class="vbadge__label">Team pick; model agreed</div>
   </div>
   <section class="pickcard__side" aria-label="Our model chose">
     <div class="pickcard__who">Our model chose</div>
@@ -383,6 +384,7 @@
   </section>
   </div>
   <div class="pickcard__foot">Best available in hindsight: <b>Walker Kessler</b> (12.9 WAR) &middot; went 22nd overall to Memphis Grizzlies</div>
+  <div class="pickcard__foot">Why the team wins this card: the model had <b>Dalen Terry</b> ranked No.&nbsp;11 in the class, at or above this slot; in the replay he was taken by an earlier team, so the model&rsquo;s board was right about him.</div>
   <div class="pickcard__foot">Open pool &middot; if the model could take anyone who was actually in that year&rsquo;s pre-draft pool, each taken once: <b>Dyson Daniels</b> (15.4 WAR, went 8th overall)</div>
 </article>
     </div>
@@ -480,7 +482,7 @@
   <div class="pickcard__mid">
     <div class="vbadge__delta">-0.3</div>
     <div class="vbadge__unit">WAR, model &minus; team</div>
-    <div class="vbadge__label">Team&rsquo;s pick outperformed</div>
+    <div class="vbadge__label">Team pick; model miss</div>
   </div>
   <section class="pickcard__side" aria-label="Our model chose">
     <div class="pickcard__who">Our model chose</div>
@@ -496,6 +498,7 @@
   </section>
   </div>
   <div class="pickcard__foot">Best available in hindsight: <b>Ryan Kalkbrenner</b> (3.3 WAR) &middot; went 34th overall to Charlotte Hornets</div>
+  <div class="pickcard__foot">Why the team wins this card: the model ranked the team&rsquo;s pick below this slot, and its own pick played and produced negative WAR; floored at zero the gap is 0.0.</div>
   <div class="pickcard__foot">Open pool &middot; if the model could take anyone who was actually in that year&rsquo;s pre-draft pool, each taken once: <b>Carter Bryant</b> (0.1 WAR, went 14th overall)</div>
 </article>
 <article class="pickcard pickcard--model" id="p2025-45">
@@ -556,6 +559,7 @@
           <li><span class="sq" aria-hidden="true"></span><span>The model&rsquo;s choice is its pick in a <b>sequential redraft</b>: the draft replayed in pick order with each player taken once, from a board built only from what was knowable before the draft. It is not a claim that anyone knew how the careers would turn out.</span></li>
           <li><span class="sq" aria-hidden="true"></span><span><b>Early-career WAR rewards early producers.</b> On the complete 2007&ndash;2018 classes the real draft order correlates 0.07 with first-season WAR and 0.32 with five-season WAR; teams draft for years three to five, so cards for the 2023&ndash;2025 classes lean toward the model.</span></li>
           <li><span class="sq" aria-hidden="true"></span><span><b>The open-pool line is the model&rsquo;s weakest result.</b> Ranking the whole pre-draft pool of a class (early entrants, Division-I seniors, EuroLeague 22-year-olds; about 650 players, built with no outcome information), the model ties the real draft order and would spend more than half of its picks on players nobody drafted, most of whom never played. It ranks talent; it has no notion of who is draftable.</span></li>
+          <li><span class="sq" aria-hidden="true"></span><span><b>A card the team wins is not always a model miss.</b> In the league-wide replay a player goes to the first team on the clock whose board has him highest, so a team that really took a player the model also rated above that slot loses the card to the replay, not to the model&rsquo;s judgement. Each such card says so; the team summary counts them apart from genuine misses and from model picks who played and produced negative WAR.</span></li>
           <li><span class="sq" aria-hidden="true"></span><span><b>A single card is noisy.</b> One pick can go either way for reasons no model or front office could see coming. The seven-class mean is the real test; the individual cards are how you read it.</span></li>
           <li><span class="sq" aria-hidden="true"></span><span><b>How WAR is measured here:</b> Realized WAR to date: y_early_war from the answers files, summed over the player&#x27;s NBA seasons scored so far, at most five (2019-2021 classes have complete five-season windows; 2022-2025 are partial and still accruing, so compare within a draft year, not across). Players who never appeared in the NBA score 0. A handful of draft-and-stash picks have no pre-draft or outcome record in our data at all; they are shown with WAR 0 and flagged in team_cards_audit.csv (war_note).</span></li>
         </ul>

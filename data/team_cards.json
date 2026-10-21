@@ -28,6 +28,12 @@
     "slot_value_total": 99.0,
     "war_actual_surplus": -64.9,
     "war_model_surplus": -21.1,
+    "team_better_agreed": 5,
+    "team_better_miss": 0,
+    "team_better_negwar": 0,
+    "model_rated_above_slot": 10,
+    "war_actual_total_pos": 40.9,
+    "war_model_total_pos": 79.9,
     "open_pool_war_total": 34.9,
     "open_pool_cards": 14,
     "open_pool_undrafted_picks": 6,
@@ -80,6 +86,8 @@
        "delta_war": -0.7,
        "verdict": "team",
        "slot_value": 10.22,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P5cd98708f1",
         "name": "Bruno Fernando",
@@ -124,6 +132,8 @@
        "delta_war": 7.8,
        "verdict": "model",
        "slot_value": 8.16,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P5277c76d51",
         "name": "Goga Bitadze",
@@ -168,6 +178,8 @@
        "delta_war": 13.9,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P4a79c6caeb",
         "name": "P.J. Washington",
@@ -218,6 +230,8 @@
        "delta_war": -8.1,
        "verdict": "team",
        "slot_value": 12.67,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P41612ab4e2",
         "name": "Obi Toppin",
@@ -262,6 +276,8 @@
        "delta_war": 0.1,
        "verdict": "model",
        "slot_value": 1.91,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P289da7f9c1",
         "name": "Tyrell Terry",
@@ -312,6 +328,8 @@
        "delta_war": -15.2,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pa0882490f6",
         "name": "Moses Moody",
@@ -356,6 +374,8 @@
        "delta_war": -0.8,
        "verdict": "team",
        "slot_value": 2.75,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pa74bde45e0",
         "name": "Brandon Rachal",
@@ -406,6 +426,8 @@
        "delta_war": 7.4,
        "verdict": "model",
        "slot_value": 6.21,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U0c9cef417c",
         "name": "Justin Bean",
@@ -450,6 +472,8 @@
        "delta_war": -4.0,
        "verdict": "team",
        "slot_value": 3.73,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P13f00227af",
         "name": "Darius Days",
@@ -500,6 +524,8 @@
        "delta_war": 32.8,
        "verdict": "model",
        "slot_value": 6.24,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U6e5f01a69e",
         "name": "DeAndre Williams",
@@ -544,6 +570,8 @@
        "delta_war": 0.5,
        "verdict": "model",
        "slot_value": 3.45,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U6d8d4155b0",
         "name": "Nadir Hifi",
@@ -594,6 +622,8 @@
        "delta_war": 6.7,
        "verdict": "model",
        "slot_value": 20.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pb0cd5d409b",
         "name": "Donovan Clingan",
@@ -644,6 +674,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 6.53,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P679974836f",
         "name": "Jase Richardson",
@@ -688,6 +720,8 @@
        "delta_war": 3.5,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ud0bc1b2a7d",
         "name": "MONTERO, JEAN",
@@ -719,6 +753,12 @@
     "slot_value_total": 65.1,
     "war_actual_surplus": 9.3,
     "war_model_surplus": -10.8,
+    "team_better_agreed": 6,
+    "team_better_miss": 0,
+    "team_better_negwar": 3,
+    "model_rated_above_slot": 9,
+    "war_actual_total_pos": 75.2,
+    "war_model_total_pos": 58.7,
     "open_pool_war_total": 58.4,
     "open_pool_cards": 14,
     "open_pool_undrafted_picks": 11,
@@ -771,6 +811,8 @@
        "delta_war": -1.5,
        "verdict": "team",
        "slot_value": 6.27,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P43dec358d1",
         "name": "Coby White",
@@ -815,6 +857,8 @@
        "delta_war": -8.6,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pb16e641fe9",
         "name": "Ty Jerome",
@@ -859,6 +903,8 @@
        "delta_war": -8.0,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U8e5f988b8d",
         "name": "CJ Massinburg",
@@ -903,6 +949,8 @@
        "delta_war": -0.5,
        "verdict": "team",
        "slot_value": 1.51,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ub20b9824b6",
         "name": "Aric Holman",
@@ -953,6 +1001,8 @@
        "delta_war": 21.3,
        "verdict": "model",
        "slot_value": 6.27,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P5be180758a",
         "name": "Desmond Bane",
@@ -997,6 +1047,8 @@
        "delta_war": 7.2,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U7d3751f7c2",
         "name": "Christian Vital",
@@ -1041,6 +1093,8 @@
        "delta_war": -27.5,
        "verdict": "team",
        "slot_value": 5.26,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Uaf977ffe4b",
         "name": "Jahlil Tripp",
@@ -1085,6 +1139,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 3.1,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Uf135d10615",
         "name": "Jared Savage",
@@ -1135,6 +1191,8 @@
        "delta_war": 2.0,
        "verdict": "model",
        "slot_value": 3.63,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P41bcb3bebd",
         "name": "Austin Reaves",
@@ -1176,6 +1234,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 1.12,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ue616b46db5",
         "name": "Brady Manek",
@@ -1226,6 +1286,8 @@
        "delta_war": 0.2,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U46038f2202",
         "name": "Osun Osunniyi",
@@ -1276,6 +1338,8 @@
        "delta_war": -3.3,
        "verdict": "team",
        "slot_value": 5.26,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U81c62e52d9",
         "name": "Kalib Boone",
@@ -1320,6 +1384,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U75c5309fae",
         "name": "RUBSTAVICIUS, MANTAS",
@@ -1370,6 +1436,8 @@
        "delta_war": 0.4,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P8961a7643a",
         "name": "Dylan Cardwell",
@@ -1414,6 +1482,8 @@
        "delta_war": -1.6,
        "verdict": "team",
        "slot_value": 4.37,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P07d140dc91",
         "name": "Hunter Dickinson",
@@ -1445,6 +1515,12 @@
     "slot_value_total": 82.9,
     "war_actual_surplus": -64.9,
     "war_model_surplus": -53.8,
+    "team_better_agreed": 2,
+    "team_better_miss": 2,
+    "team_better_negwar": 3,
+    "model_rated_above_slot": 7,
+    "war_actual_total_pos": 29.8,
+    "war_model_total_pos": 35.9,
     "open_pool_war_total": 21.6,
     "open_pool_cards": 16,
     "open_pool_undrafted_picks": 10,
@@ -1497,6 +1573,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 6.18,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P519f028bfb",
         "name": "Shamorie Ponds",
@@ -1541,6 +1619,8 @@
        "delta_war": 16.4,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U8f0dd4e367",
         "name": "Paschal Chukwu",
@@ -1585,6 +1665,8 @@
        "delta_war": -18.6,
        "verdict": "team",
        "slot_value": 4.81,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Uce8d424fee",
         "name": "Zach Hankins",
@@ -1635,6 +1717,8 @@
        "delta_war": -8.0,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P69f4c7679c",
         "name": "Malachi Flynn",
@@ -1679,6 +1763,8 @@
        "delta_war": 13.2,
        "verdict": "model",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ub3cae97ce4",
         "name": "Tres Tinkle",
@@ -1729,6 +1815,8 @@
        "delta_war": -0.6,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P69549f38f2",
         "name": "Kai Jones",
@@ -1773,6 +1861,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 3.73,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P9cb019ad12",
         "name": "JaQuori McLaughlin",
@@ -1817,6 +1907,8 @@
        "delta_war": -0.6,
        "verdict": "team",
        "slot_value": 2.4,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Uca8d9e34c8",
         "name": "KALAITZAKIS, PANAGIOTIS",
@@ -1852,6 +1944,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P61d8f8df57",
         "name": "Bones Hyland",
@@ -1907,6 +2001,8 @@
        "delta_war": 2.2,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P1999b4880f",
         "name": "Amen Thompson",
@@ -1951,6 +2047,8 @@
        "delta_war": -0.7,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Ue42dc163ea",
         "name": "Brandon Brown",
@@ -1995,6 +2093,8 @@
        "delta_war": 2.3,
        "verdict": "model",
        "slot_value": 1.51,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U06a33e0bd1",
         "name": "KJ Williams",
@@ -2050,6 +2150,8 @@
        "delta_war": -0.5,
        "verdict": "team",
        "slot_value": 10.22,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pd559eb82c1",
         "name": "Andersson Garcia",
@@ -2094,6 +2196,8 @@
        "delta_war": 2.9,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P855a9cc2ba",
         "name": "Brooks Barnhizer",
@@ -2138,6 +2242,8 @@
        "delta_war": 2.4,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P307cead4af",
         "name": "Danny Wolf",
@@ -2182,6 +2288,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P32fecc73d2",
         "name": "Noa Essengue",
@@ -2226,6 +2334,8 @@
        "delta_war": 0.8,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U617f5fbc88",
         "name": "Ian Schieffelin",
@@ -2257,6 +2367,12 @@
     "slot_value_total": 135.8,
     "war_actual_surplus": -64.1,
     "war_model_surplus": -124.7,
+    "team_better_agreed": 8,
+    "team_better_miss": 2,
+    "team_better_negwar": 4,
+    "model_rated_above_slot": 10,
+    "war_actual_total_pos": 80.5,
+    "war_model_total_pos": 27.0,
     "open_pool_war_total": 56.2,
     "open_pool_cards": 20,
     "open_pool_undrafted_picks": 11,
@@ -2309,6 +2425,8 @@
        "delta_war": 5.5,
        "verdict": "model",
        "slot_value": 7.07,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P20a99f84fd",
         "name": "Juwan Morgan",
@@ -2353,6 +2471,8 @@
        "delta_war": -7.1,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U46ca3b0e88",
         "name": "Kenny Goins",
@@ -2397,6 +2517,8 @@
        "delta_war": -0.4,
        "verdict": "team",
        "slot_value": 1.32,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U77b8269462",
         "name": "Ishmael Lane",
@@ -2447,6 +2569,8 @@
        "delta_war": -22.4,
        "verdict": "team",
        "slot_value": 17.5,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P1388f2fd26",
         "name": "Tyrese Haliburton",
@@ -2491,6 +2615,8 @@
        "delta_war": -4.4,
        "verdict": "team",
        "slot_value": 4.37,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U2e6873e348",
         "name": "Isaiah Tisdale",
@@ -2535,6 +2661,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P9b1073be42",
         "name": "Lamine Diane",
@@ -2585,6 +2713,8 @@
        "delta_war": 3.0,
        "verdict": "model",
        "slot_value": 7.62,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uf58893883c",
         "name": "Sterling Manley",
@@ -2620,6 +2750,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pa617e8f0a5",
         "name": "Hasahn French",
@@ -2655,6 +2787,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pa09bdf4e64",
         "name": "Georgios Kalaitzakis",
@@ -2705,6 +2839,8 @@
        "delta_war": -17.6,
        "verdict": "team",
        "slot_value": 6.53,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pe22f69b7a0",
         "name": "E.J. Liddell",
@@ -2749,6 +2885,8 @@
        "delta_war": -8.8,
        "verdict": "team",
        "slot_value": 6.24,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pa2e8c74c1f",
         "name": "Jaylin Williams",
@@ -2793,6 +2931,8 @@
        "delta_war": -4.4,
        "verdict": "team",
        "slot_value": 3.63,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U4b513fa993",
         "name": "Sam Waardenburg",
@@ -2843,6 +2983,8 @@
        "delta_war": -0.3,
        "verdict": "team",
        "slot_value": 19.21,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pdcc28d7d6b",
         "name": "Dereck Lively II",
@@ -2887,6 +3029,8 @@
        "delta_war": 4.2,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P737b0588be",
         "name": "Andre Jackson Jr.",
@@ -2931,6 +3075,8 @@
        "delta_war": -0.8,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U5eaab20971",
         "name": "Terence Lewis II",
@@ -2975,6 +3121,8 @@
        "delta_war": -5.1,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P1424b0c02d",
         "name": "Leaky Black",
@@ -3019,6 +3167,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 3.9,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P41704425e7",
         "name": "Nathan Mensah",
@@ -3069,6 +3219,8 @@
        "delta_war": 2.3,
        "verdict": "model",
        "slot_value": 12.67,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P2bc6f2a3aa",
         "name": "Kyle Filipowski",
@@ -3113,6 +3265,8 @@
        "delta_war": 1.6,
        "verdict": "model",
        "slot_value": 3.84,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P82e84aa110",
         "name": "Tristen Newton",
@@ -3163,6 +3317,8 @@
        "delta_war": -2.9,
        "verdict": "team",
        "slot_value": 15.17,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P5699f03b57",
         "name": "Collin Murray-Boyles",
@@ -3207,6 +3363,8 @@
        "delta_war": -0.8,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P15b8c13058",
         "name": "Derik Queen",
@@ -3251,6 +3409,8 @@
        "delta_war": -2.7,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U36ade243c3",
         "name": "Essam Mostafa",
@@ -3282,6 +3442,12 @@
     "slot_value_total": 62.6,
     "war_actual_surplus": -32.4,
     "war_model_surplus": -26.8,
+    "team_better_agreed": 1,
+    "team_better_miss": 1,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 3,
+    "war_actual_total_pos": 30.3,
+    "war_model_total_pos": 38.1,
     "open_pool_war_total": 32.2,
     "open_pool_cards": 9,
     "open_pool_undrafted_picks": 6,
@@ -3334,6 +3500,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 11.44,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ped12aa913a",
         "name": "John Konchar",
@@ -3378,6 +3546,8 @@
        "delta_war": 2.2,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Udb3ae80760",
         "name": "Jason Burnell",
@@ -3428,6 +3598,8 @@
        "delta_war": 4.1,
        "verdict": "model",
        "slot_value": 15.17,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pd70c9ef8df",
         "name": "Devin Vassell",
@@ -3472,6 +3644,8 @@
        "delta_war": -1.9,
        "verdict": "team",
        "slot_value": 3.73,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P51e6803c0a",
         "name": "Nate Pierre-Louis",
@@ -3522,6 +3696,8 @@
        "delta_war": -3.0,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P2e77fdcd5f",
         "name": "Justin Gorham",
@@ -3572,6 +3748,8 @@
        "delta_war": -0.9,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pab39ee5462",
         "name": "Dyson Daniels",
@@ -3627,6 +3805,8 @@
        "delta_war": 3.8,
        "verdict": "model",
        "slot_value": 7.62,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U510cb05831",
         "name": "Alex Sobel",
@@ -3677,6 +3857,8 @@
        "delta_war": -0.3,
        "verdict": "team",
        "slot_value": 7.07,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Pf4e651b50c",
         "name": "Carter Bryant",
@@ -3721,6 +3903,8 @@
        "delta_war": 1.2,
        "verdict": "model",
        "slot_value": 3.63,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U62e71e4f50",
         "name": "Viktor Lakhin",
@@ -3752,6 +3936,12 @@
     "slot_value_total": 75.6,
     "war_actual_surplus": -22.9,
     "war_model_surplus": -39.3,
+    "team_better_agreed": 3,
+    "team_better_miss": 1,
+    "team_better_negwar": 3,
+    "model_rated_above_slot": 5,
+    "war_actual_total_pos": 54.0,
+    "war_model_total_pos": 39.2,
     "open_pool_war_total": 40.1,
     "open_pool_cards": 10,
     "open_pool_undrafted_picks": 6,
@@ -3804,6 +3994,8 @@
        "delta_war": -13.4,
        "verdict": "team",
        "slot_value": 14.22,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Ped6b9a1a7c",
         "name": "Jaxson Hayes",
@@ -3848,6 +4040,8 @@
        "delta_war": -1.0,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ub91897feec",
         "name": "Ethan Happ",
@@ -3898,6 +4092,8 @@
        "delta_war": 1.7,
        "verdict": "model",
        "slot_value": 14.22,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P1f88525e9f",
         "name": "Xavier Tillman",
@@ -3948,6 +4144,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 17.5,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P45a39b68c1",
         "name": "Scottie Barnes",
@@ -3998,6 +4196,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 6.27,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P328e73174e",
         "name": "Jacob Gilyard",
@@ -4042,6 +4242,8 @@
        "delta_war": -0.6,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U92631472e0",
         "name": "Abdul Ado",
@@ -4086,6 +4288,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 2.4,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U52b14f170e",
         "name": "Ty Flowers",
@@ -4121,6 +4325,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uee2d91d0f2",
         "name": "Luka Brajkovic",
@@ -4171,6 +4377,8 @@
        "delta_war": 1.0,
        "verdict": "model",
        "slot_value": 2.4,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P47a1cc70a3",
         "name": "Kris Murray",
@@ -4221,6 +4429,8 @@
        "delta_war": -3.6,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U8afec52dec",
         "name": "Shahada Wells",
@@ -4271,6 +4481,8 @@
        "delta_war": -0.3,
        "verdict": "team",
        "slot_value": 2.4,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Uef3fdb0767",
         "name": "Nelly Joseph",
@@ -4306,6 +4518,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U21be1ba47c",
         "name": "Tyson Degenhart",
@@ -4337,6 +4551,12 @@
     "slot_value_total": 50.1,
     "war_actual_surplus": -29.3,
     "war_model_surplus": -30.0,
+    "team_better_agreed": 3,
+    "team_better_miss": 0,
+    "team_better_negwar": 0,
+    "model_rated_above_slot": 6,
+    "war_actual_total_pos": 20.9,
+    "war_model_total_pos": 21.1,
     "open_pool_war_total": 11.7,
     "open_pool_cards": 6,
     "open_pool_undrafted_picks": 3,
@@ -4389,6 +4609,8 @@
        "delta_war": 3.7,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pbda39b05ec",
         "name": "Tariq Owens",
@@ -4439,6 +4661,8 @@
        "delta_war": -2.6,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ubc863c8a53",
         "name": "Tyrique Jones",
@@ -4483,6 +4707,8 @@
        "delta_war": -0.6,
        "verdict": "team",
        "slot_value": 4.81,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U71b916101c",
         "name": "Trey Landers",
@@ -4538,6 +4764,8 @@
        "delta_war": 1.8,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P7d4b1d6e8f",
         "name": "Shaedon Sharpe",
@@ -4588,6 +4816,8 @@
        "delta_war": -3.0,
        "verdict": "team",
        "slot_value": 8.16,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pa813594724",
         "name": "Anthony Black",
@@ -4623,6 +4853,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pf99c720027",
         "name": "Spencer Jones",
@@ -4673,6 +4905,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 20.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P3d8ccdb639",
         "name": "Cooper Flagg",
@@ -4704,6 +4938,12 @@
     "slot_value_total": 28.5,
     "war_actual_surplus": -15.2,
     "war_model_surplus": -7.3,
+    "team_better_agreed": 3,
+    "team_better_miss": 0,
+    "team_better_negwar": 0,
+    "model_rated_above_slot": 3,
+    "war_actual_total_pos": 14.5,
+    "war_model_total_pos": 23.2,
     "open_pool_war_total": 4.9,
     "open_pool_cards": 5,
     "open_pool_undrafted_picks": 4,
@@ -4761,6 +5001,8 @@
        "delta_war": -1.2,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U87ca6c418f",
         "name": "Max Mahoney",
@@ -4811,6 +5053,8 @@
        "delta_war": 14.6,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pe0ad9b9ce5",
         "name": "Oscar da Silva",
@@ -4861,6 +5105,8 @@
        "delta_war": -5.7,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U3a07da896e",
         "name": "Myles Johnson",
@@ -4911,6 +5157,8 @@
        "delta_war": 0.5,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U689a8352e3",
         "name": "Khalil Shabazz",
@@ -4961,6 +5209,8 @@
        "delta_war": -0.3,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P4b73f3a250",
         "name": "Cam Spencer",
@@ -4997,6 +5247,12 @@
     "slot_value_total": 107.3,
     "war_actual_surplus": -77.5,
     "war_model_surplus": -72.7,
+    "team_better_agreed": 2,
+    "team_better_miss": 3,
+    "team_better_negwar": 0,
+    "model_rated_above_slot": 5,
+    "war_actual_total_pos": 43.1,
+    "war_model_total_pos": 46.4,
     "open_pool_war_total": 43.7,
     "open_pool_cards": 14,
     "open_pool_undrafted_picks": 9,
@@ -5049,6 +5305,8 @@
        "delta_war": 20.8,
        "verdict": "model",
        "slot_value": 6.24,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P48e78aee32",
         "name": "Sagaba Konate",
@@ -5093,6 +5351,8 @@
        "delta_war": 2.3,
        "verdict": "model",
        "slot_value": 3.63,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ucee442a46f",
         "name": "Jordan Hunter",
@@ -5143,6 +5403,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 11.44,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pfe5913c014",
         "name": "Killian Hayes",
@@ -5193,6 +5455,8 @@
        "delta_war": -9.8,
        "verdict": "team",
        "slot_value": 20.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pb2632428b5",
         "name": "Franz Wagner",
@@ -5237,6 +5501,8 @@
        "delta_war": 2.2,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pd89d8db6f9",
         "name": "Jose Alvarado",
@@ -5281,6 +5547,8 @@
        "delta_war": 1.5,
        "verdict": "model",
        "slot_value": 3.84,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Paf9449af91",
         "name": "Jordan Schakel",
@@ -5325,6 +5593,8 @@
        "delta_war": -5.9,
        "verdict": "team",
        "slot_value": 1.32,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pda7b1a3831",
         "name": "Ian DuBose",
@@ -5375,6 +5645,8 @@
        "delta_war": 9.1,
        "verdict": "model",
        "slot_value": 14.22,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pa5128e8532",
         "name": "Walker Kessler",
@@ -5419,6 +5691,8 @@
        "delta_war": 0.1,
        "verdict": "model",
        "slot_value": 3.45,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U5211cc1baa",
         "name": "Darius Lee",
@@ -5469,6 +5743,8 @@
        "delta_war": -4.7,
        "verdict": "team",
        "slot_value": 14.22,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P7bf5b1ca03",
         "name": "Jarace Walker",
@@ -5513,6 +5789,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 4.81,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U62d6b03e90",
         "name": "Malik Miller",
@@ -5563,6 +5841,8 @@
        "delta_war": -0.7,
        "verdict": "team",
        "slot_value": 14.22,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P32ff4229d3",
         "name": "Devin Carter",
@@ -5607,6 +5887,8 @@
        "delta_war": -10.4,
        "verdict": "team",
        "slot_value": 1.12,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U6f85aac0b8",
         "name": "Joshua Morgan",
@@ -5657,6 +5939,8 @@
        "delta_war": 0.4,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P6ce9cb925d",
         "name": "Julian Reese",
@@ -5688,6 +5972,12 @@
     "slot_value_total": 70.3,
     "war_actual_surplus": -54.4,
     "war_model_surplus": -18.1,
+    "team_better_agreed": 3,
+    "team_better_miss": 1,
+    "team_better_negwar": 3,
+    "model_rated_above_slot": 3,
+    "war_actual_total_pos": 23.7,
+    "war_model_total_pos": 66.0,
     "open_pool_war_total": 56.3,
     "open_pool_cards": 12,
     "open_pool_undrafted_picks": 9,
@@ -5740,6 +6030,8 @@
        "delta_war": -7.3,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U83d09be2bc",
         "name": "Ebuka Izundu",
@@ -5784,6 +6076,8 @@
        "delta_war": 2.0,
        "verdict": "model",
        "slot_value": 3.9,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U7ff9269d8c",
         "name": "Ed Polite Jr.",
@@ -5819,6 +6113,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U7c42479dad",
         "name": "Christian Cunningham",
@@ -5869,6 +6165,8 @@
        "delta_war": 42.7,
        "verdict": "model",
        "slot_value": 19.21,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P6232d5a44f",
         "name": "Onyeka Okongwu",
@@ -5913,6 +6211,8 @@
        "delta_war": 0.4,
        "verdict": "model",
        "slot_value": 2.75,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pc2faa1488c",
         "name": "Sean McDermott",
@@ -5957,6 +6257,8 @@
        "delta_war": -3.1,
        "verdict": "team",
        "slot_value": 1.51,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U708d2837cf",
         "name": "Mason Peatling",
@@ -6007,6 +6309,8 @@
        "delta_war": 16.1,
        "verdict": "model",
        "slot_value": 11.44,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P61afdc25a4",
         "name": "Cade Cunningham",
@@ -6051,6 +6355,8 @@
        "delta_war": 1.9,
        "verdict": "model",
        "slot_value": 6.27,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pd7fcef8bed",
         "name": "Aamir Simms",
@@ -6101,6 +6407,8 @@
        "delta_war": -2.3,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P19ae0a39ff",
         "name": "Keon Ellis",
@@ -6145,6 +6453,8 @@
        "delta_war": -1.3,
        "verdict": "team",
        "slot_value": 1.51,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U0e3c433c51",
         "name": "Johnny McCants",
@@ -6180,6 +6490,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U77e244546f",
         "name": "David McCormack",
@@ -6230,6 +6542,8 @@
        "delta_war": -8.8,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P9180c4596b",
         "name": "Ausar Thompson",
@@ -6280,6 +6594,8 @@
        "delta_war": -4.0,
        "verdict": "team",
        "slot_value": 1.32,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U1ccd4f17e9",
         "name": "Warren Washington",
@@ -6330,6 +6646,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 3.9,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Ub8bd9f0a29",
         "name": "Coleman Hawkins",
@@ -6361,6 +6679,12 @@
     "slot_value_total": 105.9,
     "war_actual_surplus": -52.9,
     "war_model_surplus": -47.1,
+    "team_better_agreed": 4,
+    "team_better_miss": 1,
+    "team_better_negwar": 1,
+    "model_rated_above_slot": 5,
+    "war_actual_total_pos": 55.2,
+    "war_model_total_pos": 59.3,
     "open_pool_war_total": 39.8,
     "open_pool_cards": 10,
     "open_pool_undrafted_picks": 2,
@@ -6423,6 +6747,8 @@
        "delta_war": 18.2,
        "verdict": "model",
        "slot_value": 19.21,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pc3e0235987",
         "name": "Evan Mobley",
@@ -6467,6 +6793,8 @@
        "delta_war": 4.9,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P4583d7bf3c",
         "name": "Jordan Goodwin",
@@ -6511,6 +6839,8 @@
        "delta_war": 16.9,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P0326e23b0d",
         "name": "Charles Bassey",
@@ -6561,6 +6891,8 @@
        "delta_war": -7.6,
        "verdict": "team",
        "slot_value": 17.5,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Pe3c0fc5a9e",
         "name": "Jeremy Sochan",
@@ -6605,6 +6937,8 @@
        "delta_war": -5.4,
        "verdict": "team",
        "slot_value": 6.18,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P50d6953351",
         "name": "Orlando Robinson",
@@ -6655,6 +6989,8 @@
        "delta_war": -11.4,
        "verdict": "team",
        "slot_value": 15.17,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P396ba96b58",
         "name": "Trayce Jackson-Davis",
@@ -6699,6 +7035,8 @@
        "delta_war": -1.7,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P51e5ade0ce",
         "name": "Scoot Henderson",
@@ -6749,6 +7087,8 @@
        "delta_war": -6.0,
        "verdict": "team",
        "slot_value": 17.5,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pafffac98b2",
         "name": "Jonathan Mogbo",
@@ -6793,6 +7133,8 @@
        "delta_war": -2.2,
        "verdict": "team",
        "slot_value": 3.73,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P414be319a7",
         "name": "Anton Watson",
@@ -6843,6 +7185,8 @@
        "delta_war": 0.1,
        "verdict": "model",
        "slot_value": 8.16,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pb9eccb67f7",
         "name": "Khaman Maluach",
@@ -6872,6 +7216,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U7af0bb1fb3",
         "name": "Ben Middlebrooks",
@@ -6903,6 +7249,12 @@
     "slot_value_total": 71.7,
     "war_actual_surplus": -62.0,
     "war_model_surplus": -40.5,
+    "team_better_agreed": 8,
+    "team_better_miss": 0,
+    "team_better_negwar": 1,
+    "model_rated_above_slot": 11,
+    "war_actual_total_pos": 16.8,
+    "war_model_total_pos": 43.0,
     "open_pool_war_total": 66.6,
     "open_pool_cards": 16,
     "open_pool_undrafted_picks": 9,
@@ -6955,6 +7307,8 @@
        "delta_war": -3.9,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pb14f594f0a",
         "name": "Cameron Johnson",
@@ -6999,6 +7353,8 @@
        "delta_war": 1.0,
        "verdict": "model",
        "slot_value": 1.91,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pf0f9e6d8f5",
         "name": "Donta Hall",
@@ -7049,6 +7405,8 @@
        "delta_war": -0.6,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ud7b31d6b1c",
         "name": "De'Riante Jenkins",
@@ -7099,6 +7457,8 @@
        "delta_war": 5.1,
        "verdict": "model",
        "slot_value": 6.53,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P85bbbd5241",
         "name": "Justin Champagnie",
@@ -7143,6 +7503,8 @@
        "delta_war": -7.7,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P6bb68789bc",
         "name": "Marcus Zegarowski",
@@ -7172,6 +7534,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pcfa1d05a1c",
         "name": "Carlik Jones",
@@ -7222,6 +7586,8 @@
        "delta_war": 6.4,
        "verdict": "model",
        "slot_value": 12.67,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P3a5b76349f",
         "name": "Mark Williams",
@@ -7266,6 +7632,8 @@
        "delta_war": -5.1,
        "verdict": "team",
        "slot_value": 4.81,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U8e6da5ec90",
         "name": "Eliel Nsoseme",
@@ -7295,6 +7663,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U9cd6446c16",
         "name": "Gaige Prim",
@@ -7345,6 +7715,8 @@
        "delta_war": 23.4,
        "verdict": "model",
        "slot_value": 11.44,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P0db0d3c576",
         "name": "Brandin Podziemski",
@@ -7389,6 +7761,8 @@
        "delta_war": -3.2,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P144ed94c77",
         "name": "Victor Wembanyama",
@@ -7433,6 +7807,8 @@
        "delta_war": 8.4,
        "verdict": "model",
        "slot_value": 5.7,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pc451072a63",
         "name": "D'Moi Hodge",
@@ -7477,6 +7853,8 @@
        "delta_war": -0.8,
        "verdict": "team",
        "slot_value": 4.37,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ub3226702aa",
         "name": "Tra'Von Fagan",
@@ -7521,6 +7899,8 @@
        "delta_war": -1.0,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P71f8c1b48d",
         "name": "Rayan Rupert",
@@ -7571,6 +7951,8 @@
        "delta_war": 2.1,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pa3f4257d20",
         "name": "Jared McCain",
@@ -7615,6 +7997,8 @@
        "delta_war": -3.2,
        "verdict": "team",
        "slot_value": 2.4,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U4d34d832bc",
         "name": "Armando Bacot",
@@ -7659,6 +8043,8 @@
        "delta_war": -0.8,
        "verdict": "team",
        "slot_value": 1.91,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P58407301c7",
         "name": "Tidjane Salaün",
@@ -7709,6 +8095,8 @@
        "delta_war": 1.4,
        "verdict": "model",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P03328260f7",
         "name": "Chucky Hepburn",
@@ -7740,6 +8128,12 @@
     "slot_value_total": 32.8,
     "war_actual_surplus": -4.2,
     "war_model_surplus": -40.7,
+    "team_better_agreed": 5,
+    "team_better_miss": 0,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 7,
+    "war_actual_total_pos": 30.2,
+    "war_model_total_pos": 6.0,
     "open_pool_war_total": 0.1,
     "open_pool_cards": 10,
     "open_pool_undrafted_picks": 10,
@@ -7792,6 +8186,8 @@
        "delta_war": -13.0,
        "verdict": "team",
        "slot_value": 2.75,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ue5dcfab735",
         "name": "Jonathan Galloway",
@@ -7836,6 +8232,8 @@
        "delta_war": -0.2,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U25308a84fd",
         "name": "Dylan Osetkowski",
@@ -7886,6 +8284,8 @@
        "delta_war": 0.5,
        "verdict": "model",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U27a881e3d3",
         "name": "Austin Wiley",
@@ -7936,6 +8336,8 @@
        "delta_war": -5.8,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P9badd97dfe",
         "name": "Joel Ayayi",
@@ -7986,6 +8388,8 @@
        "delta_war": -11.2,
        "verdict": "team",
        "slot_value": 3.79,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U49bc777f04",
         "name": "Kur Kuath",
@@ -8036,6 +8440,8 @@
        "delta_war": 2.3,
        "verdict": "model",
        "slot_value": 5.26,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uafbf632502",
         "name": "Ja'von Franklin",
@@ -8080,6 +8486,8 @@
        "delta_war": -6.6,
        "verdict": "team",
        "slot_value": 2.75,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pf92c037d4b",
         "name": "Markquis Nowell",
@@ -8130,6 +8538,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 3.45,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U5dd0997a08",
         "name": "Robert Ford III",
@@ -8180,6 +8590,8 @@
        "delta_war": -2.7,
        "verdict": "team",
        "slot_value": 5.26,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U0d70824f04",
         "name": "Clifford Omoruyi",
@@ -8224,6 +8636,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 1.51,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U398dcddb7f",
         "name": "Obinna Anochili-Killen",
@@ -8255,6 +8669,12 @@
     "slot_value_total": 47.8,
     "war_actual_surplus": -29.5,
     "war_model_surplus": -45.8,
+    "team_better_agreed": 2,
+    "team_better_miss": 2,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 2,
+    "war_actual_total_pos": 19.7,
+    "war_model_total_pos": 4.8,
     "open_pool_war_total": 15.7,
     "open_pool_cards": 8,
     "open_pool_undrafted_picks": 3,
@@ -8307,6 +8727,8 @@
        "delta_war": -3.8,
        "verdict": "team",
        "slot_value": 15.17,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Peecc71d248",
         "name": "Brandon Clarke",
@@ -8357,6 +8779,8 @@
        "delta_war": -9.1,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "U8e64ff0b48",
         "name": "Jonah Radebaugh",
@@ -8407,6 +8831,8 @@
        "delta_war": -4.7,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P606c98790a",
         "name": "Miles McBride",
@@ -8457,6 +8883,8 @@
        "delta_war": -0.5,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U42db754695",
         "name": "Jaylan Gainey",
@@ -8507,6 +8935,8 @@
        "delta_war": 2.2,
        "verdict": "model",
        "slot_value": 6.18,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pfdcf13c664",
         "name": "Gradey Dick",
@@ -8551,6 +8981,8 @@
        "delta_war": -0.0,
        "verdict": "tie",
        "slot_value": 3.1,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P2db6f2cc8f",
         "name": "Leonard Miller",
@@ -8601,6 +9033,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 6.18,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P23152d31e2",
         "name": "Zaccharie Risacher",
@@ -8636,6 +9070,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U82160ac8e6",
         "name": "Shykeim Phillips",
@@ -8686,6 +9122,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U1151c37bbc",
         "name": "Fousseyni Traore",
@@ -8717,6 +9155,12 @@
     "slot_value_total": 78.7,
     "war_actual_surplus": -19.2,
     "war_model_surplus": -68.4,
+    "team_better_agreed": 6,
+    "team_better_miss": 3,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 7,
+    "war_actual_total_pos": 62.6,
+    "war_model_total_pos": 22.2,
     "open_pool_war_total": 21.3,
     "open_pool_cards": 14,
     "open_pool_undrafted_picks": 11,
@@ -8769,6 +9213,8 @@
        "delta_war": -15.5,
        "verdict": "team",
        "slot_value": 19.21,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pfe4fcea486",
         "name": "Ja Morant",
@@ -8819,6 +9265,8 @@
        "delta_war": 0.6,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P3c885ec031",
         "name": "R.J. Hampton",
@@ -8869,6 +9317,8 @@
        "delta_war": -3.8,
        "verdict": "team",
        "slot_value": 6.18,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P479c1cba2f",
         "name": "Jay Huff",
@@ -8913,6 +9363,8 @@
        "delta_war": -0.3,
        "verdict": "team",
        "slot_value": 1.51,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pff95561f44",
         "name": "Moses Wright",
@@ -8963,6 +9415,8 @@
        "delta_war": -13.1,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U40cc352ca8",
         "name": "Marcus Bingham Jr.",
@@ -9007,6 +9461,8 @@
        "delta_war": 1.6,
        "verdict": "model",
        "slot_value": 5.7,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uf21c212247",
         "name": "Fabian White Jr.",
@@ -9051,6 +9507,8 @@
        "delta_war": -5.5,
        "verdict": "team",
        "slot_value": 3.1,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Uc5d068cc42",
         "name": "Yauhen Massalski",
@@ -9101,6 +9559,8 @@
        "delta_war": -1.8,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U3a172ad564",
         "name": "Kyle Bowen",
@@ -9145,6 +9605,8 @@
        "delta_war": -1.9,
        "verdict": "team",
        "slot_value": 3.63,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U1ff3aba23e",
         "name": "Chris Brandon",
@@ -9180,6 +9642,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P7c2cc1d590",
         "name": "Jordan Miller",
@@ -9230,6 +9694,8 @@
        "delta_war": -2.9,
        "verdict": "team",
        "slot_value": 9.29,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pd1401169e8",
         "name": "Tyler Kolek",
@@ -9274,6 +9740,8 @@
        "delta_war": -3.2,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pe8e75a6d90",
         "name": "Jahmir Young",
@@ -9309,6 +9777,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P1c44c138bb",
         "name": "Mohamed Diarra",
@@ -9359,6 +9829,8 @@
        "delta_war": 0.8,
        "verdict": "model",
        "slot_value": 6.21,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Peb9997d32a",
         "name": "Chris Mañon",
@@ -9403,6 +9875,8 @@
        "delta_war": -1.4,
        "verdict": "team",
        "slot_value": 2.75,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U545c5fb2fc",
         "name": "Zach Hicks",
@@ -9447,6 +9921,8 @@
        "delta_war": -2.9,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U4ac52cb2a8",
         "name": "Javonte Brown",
@@ -9478,6 +9954,12 @@
     "slot_value_total": 44.9,
     "war_actual_surplus": -10.4,
     "war_model_surplus": -31.8,
+    "team_better_agreed": 4,
+    "team_better_miss": 1,
+    "team_better_negwar": 1,
+    "model_rated_above_slot": 4,
+    "war_actual_total_pos": 34.5,
+    "war_model_total_pos": 13.7,
     "open_pool_war_total": 11.6,
     "open_pool_cards": 8,
     "open_pool_undrafted_picks": 6,
@@ -9530,6 +10012,8 @@
        "delta_war": -10.0,
        "verdict": "team",
        "slot_value": 6.53,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P023bbe5ec1",
         "name": "Grant Williams",
@@ -9574,6 +10058,8 @@
        "delta_war": -2.0,
        "verdict": "team",
        "slot_value": 3.73,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U183d13540c",
         "name": "Dererk Pardon",
@@ -9624,6 +10110,8 @@
        "delta_war": -3.6,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P32d7e7e1eb",
         "name": "Tyler Bey",
@@ -9679,6 +10167,8 @@
        "delta_war": 0.6,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U83645af882",
         "name": "Hall Elisias",
@@ -9729,6 +10219,8 @@
        "delta_war": -3.5,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P88b17e8559",
         "name": "Craig Porter Jr.",
@@ -9779,6 +10271,8 @@
        "delta_war": -5.8,
        "verdict": "team",
        "slot_value": 6.24,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ue1d0db4a83",
         "name": "Drew Cisse",
@@ -9823,6 +10317,8 @@
        "delta_war": 4.5,
        "verdict": "model",
        "slot_value": 3.79,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U89c573bc20",
         "name": "Brock Cunningham",
@@ -9873,6 +10369,8 @@
        "delta_war": -1.6,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U59b1354157",
         "name": "Malik Henry",
@@ -9904,6 +10402,12 @@
     "slot_value_total": 39.2,
     "war_actual_surplus": -43.7,
     "war_model_surplus": -27.8,
+    "team_better_agreed": 1,
+    "team_better_miss": 0,
+    "team_better_negwar": 1,
+    "model_rated_above_slot": 2,
+    "war_actual_total_pos": 7.0,
+    "war_model_total_pos": 15.9,
     "open_pool_war_total": 17.6,
     "open_pool_cards": 8,
     "open_pool_undrafted_picks": 3,
@@ -9956,6 +10460,8 @@
        "delta_war": 0.2,
        "verdict": "model",
        "slot_value": 5.26,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pbafaf944fd",
         "name": "Dedric Lawson",
@@ -10006,6 +10512,8 @@
        "delta_war": 5.7,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U6b263872fc",
         "name": "Sha'markus Kennedy",
@@ -10050,6 +10558,8 @@
        "delta_war": 1.4,
        "verdict": "model",
        "slot_value": 3.63,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P08bc96e9be",
         "name": "Udoka Azubuike",
@@ -10100,6 +10610,8 @@
        "delta_war": 8.2,
        "verdict": "model",
        "slot_value": 4.81,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P21372aaded",
         "name": "Herbert Jones",
@@ -10150,6 +10662,8 @@
        "delta_war": 0.5,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P416088a2b5",
         "name": "Dalen Terry",
@@ -10185,6 +10699,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ubae6b3c60c",
         "name": "Justyn Mutts",
@@ -10235,6 +10751,8 @@
        "delta_war": 3.2,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pa5d4a8fef6",
         "name": "Matas Buzelis",
@@ -10279,6 +10797,8 @@
        "delta_war": -0.2,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Pd3d2fde686",
         "name": "Isaiah Crawford",
@@ -10329,6 +10849,8 @@
        "delta_war": -3.1,
        "verdict": "team",
        "slot_value": 3.1,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P3651ab0a99",
         "name": "Bogoljub Marković",
@@ -10360,6 +10882,12 @@
     "slot_value_total": 79.3,
     "war_actual_surplus": -25.8,
     "war_model_surplus": -54.5,
+    "team_better_agreed": 2,
+    "team_better_miss": 3,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 4,
+    "war_actual_total_pos": 59.9,
+    "war_model_total_pos": 28.2,
     "open_pool_war_total": 11.8,
     "open_pool_cards": 14,
     "open_pool_undrafted_picks": 9,
@@ -10412,6 +10940,8 @@
        "delta_war": -14.9,
        "verdict": "team",
        "slot_value": 7.62,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P4ebfdd4833",
         "name": "Tyler Herro",
@@ -10456,6 +10986,8 @@
        "delta_war": -1.2,
        "verdict": "team",
        "slot_value": 3.79,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Ucc35295333",
         "name": "Jakeenan Gant",
@@ -10506,6 +11038,8 @@
        "delta_war": -22.0,
        "verdict": "team",
        "slot_value": 20.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pba698d642d",
         "name": "James Wiseman",
@@ -10550,6 +11084,8 @@
        "delta_war": 4.5,
        "verdict": "model",
        "slot_value": 6.18,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P076dcdb147",
         "name": "Devon Dotson",
@@ -10594,6 +11130,8 @@
        "delta_war": 0.4,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ufde68c27f2",
         "name": "Scottie James",
@@ -10649,6 +11187,8 @@
        "delta_war": -0.8,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P97df826a61",
         "name": "Jake LaRavia",
@@ -10693,6 +11233,8 @@
        "delta_war": 4.6,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ufdcad14754",
         "name": "Thomas Kithier",
@@ -10737,6 +11279,8 @@
        "delta_war": 0.6,
        "verdict": "model",
        "slot_value": 2.75,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U549a15451a",
         "name": "Isaiah Whaley",
@@ -10781,6 +11325,8 @@
        "delta_war": -2.3,
        "verdict": "team",
        "slot_value": 1.91,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P98f4c6dfa5",
         "name": "Justin Minaya",
@@ -10831,6 +11377,8 @@
        "delta_war": -1.7,
        "verdict": "team",
        "slot_value": 1.12,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P5d94de4385",
         "name": "Colin Castleton",
@@ -10881,6 +11429,8 @@
        "delta_war": 3.1,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P2c7c71307b",
         "name": "Reece Beekman",
@@ -10925,6 +11475,8 @@
        "delta_war": 1.3,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U6275a07428",
         "name": "Laolu Oke",
@@ -10975,6 +11527,8 @@
        "delta_war": -0.6,
        "verdict": "team",
        "slot_value": 6.18,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pa29e5f68db",
         "name": "Ryan Kalkbrenner",
@@ -11019,6 +11573,8 @@
        "delta_war": 0.4,
        "verdict": "model",
        "slot_value": 4.81,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P8048267828",
         "name": "Walter Clayton Jr.",
@@ -11050,6 +11606,12 @@
     "slot_value_total": 100.1,
     "war_actual_surplus": -55.7,
     "war_model_surplus": -28.5,
+    "team_better_agreed": 4,
+    "team_better_miss": 1,
+    "team_better_negwar": 1,
+    "model_rated_above_slot": 6,
+    "war_actual_total_pos": 54.3,
+    "war_model_total_pos": 74.6,
     "open_pool_war_total": 57.7,
     "open_pool_cards": 15,
     "open_pool_undrafted_picks": 9,
@@ -11102,6 +11664,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 20.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P00e7133fc6",
         "name": "Zion Williamson",
@@ -11146,6 +11710,8 @@
        "delta_war": -0.5,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U70febb1cb4",
         "name": "Elijah Thomas",
@@ -11190,6 +11756,8 @@
        "delta_war": -0.2,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P18facb688d",
         "name": "Terance Mann",
@@ -11240,6 +11808,8 @@
        "delta_war": 5.6,
        "verdict": "model",
        "slot_value": 6.53,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U3336c47692",
         "name": "Dwayne Sutton",
@@ -11284,6 +11854,8 @@
        "delta_war": 21.3,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uf04631c7b6",
         "name": "Kyrin Galloway",
@@ -11328,6 +11900,8 @@
        "delta_war": 13.1,
        "verdict": "model",
        "slot_value": 3.84,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U30c4f5dcab",
         "name": "Tahjai Teague",
@@ -11357,6 +11931,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U9d1e33df6c",
         "name": "Cletrell Pope",
@@ -11407,6 +11983,8 @@
        "delta_war": 2.7,
        "verdict": "model",
        "slot_value": 8.16,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P392363bcf2",
         "name": "Jalen Johnson",
@@ -11451,6 +12029,8 @@
        "delta_war": -15.5,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pc9a85d9349",
         "name": "Aaron Henry",
@@ -11495,6 +12075,8 @@
        "delta_war": 2.2,
        "verdict": "model",
        "slot_value": 3.79,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P64527f643b",
         "name": "Ruot Monyyong",
@@ -11545,6 +12127,8 @@
        "delta_war": -7.9,
        "verdict": "team",
        "slot_value": 10.22,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P76f8234113",
         "name": "Josh Minott",
@@ -11589,6 +12173,8 @@
        "delta_war": 2.4,
        "verdict": "model",
        "slot_value": 3.9,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U6bbb6c3366",
         "name": "Nick Muszynski",
@@ -11624,6 +12210,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 1.32,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U44cc14c8cd",
         "name": "Matthias Tass",
@@ -11674,6 +12262,8 @@
        "delta_war": 4.0,
        "verdict": "model",
        "slot_value": 6.27,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pe8ffde2213",
         "name": "Oscar Tshiebwe",
@@ -11724,6 +12314,8 @@
        "delta_war": -0.2,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P1ccfa6c1ee",
         "name": "Zach Edey",
@@ -11774,6 +12366,8 @@
        "delta_war": 0.7,
        "verdict": "model",
        "slot_value": 11.44,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pcb16689c6c",
         "name": "Asa Newell",
@@ -11818,6 +12412,8 @@
        "delta_war": -0.5,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ub979082e86",
         "name": "Joe Charles",
@@ -11849,6 +12445,12 @@
     "slot_value_total": 82.6,
     "war_actual_surplus": -67.4,
     "war_model_surplus": -39.7,
+    "team_better_agreed": 1,
+    "team_better_miss": 2,
+    "team_better_negwar": 3,
+    "model_rated_above_slot": 4,
+    "war_actual_total_pos": 21.5,
+    "war_model_total_pos": 44.5,
     "open_pool_war_total": 25.5,
     "open_pool_cards": 14,
     "open_pool_undrafted_picks": 10,
@@ -11901,6 +12503,8 @@
        "delta_war": -4.1,
        "verdict": "team",
        "slot_value": 17.5,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P273938bb97",
         "name": "Bol Bol",
@@ -11945,6 +12549,8 @@
        "delta_war": 7.3,
        "verdict": "model",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U642a930614",
         "name": "Romone Saunders",
@@ -11995,6 +12601,8 @@
        "delta_war": -3.5,
        "verdict": "team",
        "slot_value": 10.22,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P170284fab5",
         "name": "Paul Reed",
@@ -12039,6 +12647,8 @@
        "delta_war": 0.6,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P716f6175e4",
         "name": "Tre Jones",
@@ -12089,6 +12699,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P64263ced9d",
         "name": "Jalen Green",
@@ -12133,6 +12745,8 @@
        "delta_war": 9.9,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P130d4826ef",
         "name": "McKinley Wright IV",
@@ -12177,6 +12791,8 @@
        "delta_war": 12.4,
        "verdict": "model",
        "slot_value": 4.37,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P40d023c55e",
         "name": "Terry Taylor",
@@ -12212,6 +12828,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U322bfecbd8",
         "name": "Corey Douglas Jr.",
@@ -12262,6 +12880,8 @@
        "delta_war": 1.4,
        "verdict": "model",
        "slot_value": 7.62,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ud159837f14",
         "name": "Trevion Williams",
@@ -12306,6 +12926,8 @@
        "delta_war": 6.2,
        "verdict": "model",
        "slot_value": 3.84,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U63426174ea",
         "name": "Anthony Polite",
@@ -12361,6 +12983,8 @@
        "delta_war": 3.1,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U4206d2e629",
         "name": "Tyreek Smith",
@@ -12405,6 +13029,8 @@
        "delta_war": -0.5,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U748566ea64",
         "name": "Drew Pember",
@@ -12449,6 +13075,8 @@
        "delta_war": -4.7,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P66484e16cb",
         "name": "Jalen Bridges",
@@ -12493,6 +13121,8 @@
        "delta_war": -0.6,
        "verdict": "team",
        "slot_value": 1.51,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U4dfae9d8cb",
         "name": "Quentin Millora-Brown",
@@ -12543,6 +13173,8 @@
        "delta_war": -0.2,
        "verdict": "team",
        "slot_value": 1.91,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Uf3c7204555",
         "name": "Zakai Zeigler",
@@ -12574,6 +13206,12 @@
     "slot_value_total": 118.8,
     "war_actual_surplus": 29.2,
     "war_model_surplus": -22.0,
+    "team_better_agreed": 7,
+    "team_better_miss": 2,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 13,
+    "war_actual_total_pos": 154.1,
+    "war_model_total_pos": 101.4,
     "open_pool_war_total": 47.5,
     "open_pool_cards": 20,
     "open_pool_undrafted_picks": 7,
@@ -12626,6 +13264,8 @@
        "delta_war": -11.3,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pe19880ee92",
         "name": "Dean Wade",
@@ -12676,6 +13316,8 @@
        "delta_war": -12.4,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "U4c6b71e80b",
         "name": "AJ Brodeur",
@@ -12720,6 +13362,8 @@
        "delta_war": 6.4,
        "verdict": "model",
        "slot_value": 1.12,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P272ac40c3c",
         "name": "Patrick Williams",
@@ -12770,6 +13414,8 @@
        "delta_war": 9.9,
        "verdict": "model",
        "slot_value": 12.67,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P87ada0d006",
         "name": "Isaiah Jackson",
@@ -12814,6 +13460,8 @@
        "delta_war": -28.7,
        "verdict": "team",
        "slot_value": 6.21,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P854a3a23a2",
         "name": "Josh Giddey",
@@ -12858,6 +13506,8 @@
        "delta_war": 10.9,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P82dc635a40",
         "name": "Jared Butler",
@@ -12902,6 +13552,8 @@
        "delta_war": -0.5,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P30169adef4",
         "name": "Jason Preston",
@@ -12946,6 +13598,8 @@
        "delta_war": -6.7,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P8379cd574e",
         "name": "Steffon Mitchell",
@@ -12990,6 +13644,8 @@
        "delta_war": -6.9,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pbfadf35dca",
         "name": "Isaiah Livers",
@@ -13040,6 +13696,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 19.21,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P86df290cda",
         "name": "Keegan Murray",
@@ -13084,6 +13742,8 @@
        "delta_war": -5.3,
        "verdict": "team",
        "slot_value": 7.07,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P821b19c2a1",
         "name": "Kenneth Lofton Jr.",
@@ -13128,6 +13788,8 @@
        "delta_war": -3.0,
        "verdict": "team",
        "slot_value": 5.26,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Ub96a2cc36b",
         "name": "Brison Gresham",
@@ -13172,6 +13834,8 @@
        "delta_war": -8.9,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P6876f611cb",
         "name": "Vince Williams Jr.",
@@ -13222,6 +13886,8 @@
        "delta_war": -1.1,
        "verdict": "team",
        "slot_value": 7.07,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P3dd06c5ebd",
         "name": "Jaime Jaquez Jr.",
@@ -13266,6 +13932,8 @@
        "delta_war": 2.2,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pa6029bb5a6",
         "name": "Jaylen Clark",
@@ -13310,6 +13978,8 @@
        "delta_war": -0.3,
        "verdict": "team",
        "slot_value": 1.91,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ua0872ad07f",
         "name": "Isaiah Wilkins",
@@ -13360,6 +14030,8 @@
        "delta_war": 3.6,
        "verdict": "model",
        "slot_value": 7.07,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pe083952d4c",
         "name": "Ronald Holland II",
@@ -13410,6 +14082,8 @@
        "delta_war": 0.6,
        "verdict": "model",
        "slot_value": 6.24,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P318e86822c",
         "name": "Nique Clifford",
@@ -13454,6 +14128,8 @@
        "delta_war": 0.1,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pf54bd6bbc8",
         "name": "Kasparas Jakučionis",
@@ -13498,6 +14174,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 3.73,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U8efa665e40",
         "name": "Jared Billups",
@@ -13529,6 +14207,12 @@
     "slot_value_total": 112.6,
     "war_actual_surplus": -39.9,
     "war_model_surplus": -50.0,
+    "team_better_agreed": 6,
+    "team_better_miss": 1,
+    "team_better_negwar": 1,
+    "model_rated_above_slot": 11,
+    "war_actual_total_pos": 74.9,
+    "war_model_total_pos": 68.8,
     "open_pool_war_total": 69.9,
     "open_pool_cards": 15,
     "open_pool_undrafted_picks": 7,
@@ -13581,6 +14265,8 @@
        "delta_war": 3.8,
        "verdict": "model",
        "slot_value": 6.21,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ud295966fde",
         "name": "Cameron Jackson",
@@ -13625,6 +14311,8 @@
        "delta_war": -2.4,
        "verdict": "team",
        "slot_value": 3.45,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ub6a1ba67a3",
         "name": "Isaiah Martin",
@@ -13675,6 +14363,8 @@
        "delta_war": -6.2,
        "verdict": "team",
        "slot_value": 6.24,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P7699b7f669",
         "name": "Isaac Okoro",
@@ -13725,6 +14415,8 @@
        "delta_war": 19.2,
        "verdict": "model",
        "slot_value": 14.22,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pc97a1282a3",
         "name": "Jalen Suggs",
@@ -13769,6 +14461,8 @@
        "delta_war": -17.9,
        "verdict": "team",
        "slot_value": 10.22,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pb3cfb2c388",
         "name": "Alperen Sengun",
@@ -13813,6 +14507,8 @@
        "delta_war": 5.5,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uf6e246bec0",
         "name": "Brad Greene",
@@ -13863,6 +14559,8 @@
        "delta_war": -10.1,
        "verdict": "team",
        "slot_value": 20.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pbfdaa31fd0",
         "name": "Chet Holmgren",
@@ -13907,6 +14605,8 @@
        "delta_war": -2.0,
        "verdict": "team",
        "slot_value": 4.37,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U6fa959992b",
         "name": "Jalyn Hinton",
@@ -13957,6 +14657,8 @@
        "delta_war": 1.5,
        "verdict": "model",
        "slot_value": 12.67,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pc4ba85a58f",
         "name": "Jalen Pickett",
@@ -14001,6 +14703,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 7.62,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P9a144a10c5",
         "name": "Noah Clowney",
@@ -14045,6 +14749,8 @@
        "delta_war": -2.1,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U49faded30f",
         "name": "Terrion Murdix",
@@ -14095,6 +14801,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P4bbcd3bc18",
         "name": "DaRon Holmes II",
@@ -14139,6 +14847,8 @@
        "delta_war": 0.5,
        "verdict": "model",
        "slot_value": 3.1,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P13f5a8ca49",
         "name": "Tristan da Silva",
@@ -14189,6 +14899,8 @@
        "delta_war": -0.2,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U2630bfdede",
         "name": "Kobe Johnson",
@@ -14233,6 +14945,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 3.45,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Uf966bbcbed",
         "name": "Stevie Mitchell",
@@ -14268,6 +14982,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U125e2ddeb5",
         "name": "Jack Clark",
@@ -14299,6 +15015,12 @@
     "slot_value_total": 82.0,
     "war_actual_surplus": -52.6,
     "war_model_surplus": -34.7,
+    "team_better_agreed": 5,
+    "team_better_miss": 0,
+    "team_better_negwar": 1,
+    "model_rated_above_slot": 12,
+    "war_actual_total_pos": 41.1,
+    "war_model_total_pos": 59.4,
     "open_pool_war_total": 42.6,
     "open_pool_cards": 17,
     "open_pool_undrafted_picks": 9,
@@ -14351,6 +15073,8 @@
        "delta_war": -1.6,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P7c5888ec9d",
         "name": "Chuma Okeke",
@@ -14395,6 +15119,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P5a277fef0e",
         "name": "DaQuan Jeffries",
@@ -14439,6 +15165,8 @@
        "delta_war": 8.0,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pca926e63d0",
         "name": "Josh Reaves",
@@ -14483,6 +15211,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 3.84,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pe661d7acde",
         "name": "Nicolas Claxton",
@@ -14527,6 +15257,8 @@
        "delta_war": -2.0,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U89e06083dd",
         "name": "Daishon Smith",
@@ -14577,6 +15309,8 @@
        "delta_war": -28.2,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P98391b949f",
         "name": "Killian Tillie",
@@ -14621,6 +15355,8 @@
        "delta_war": 24.4,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uf192c076bf",
         "name": "James Dickey",
@@ -14665,6 +15401,8 @@
        "delta_war": 0.4,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pd3cfd798be",
         "name": "Kaleb Wesson",
@@ -14709,6 +15447,8 @@
        "delta_war": -11.0,
        "verdict": "team",
        "slot_value": 2.4,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U57987045c4",
         "name": "Justinian Jessup",
@@ -14744,6 +15484,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pf46613d969",
         "name": "Payton Pritchard",
@@ -14794,6 +15536,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P88205fde52",
         "name": "Quentin Grimes",
@@ -14838,6 +15582,8 @@
        "delta_war": -1.1,
        "verdict": "team",
        "slot_value": 1.91,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P60da7b4537",
         "name": "Luka Garza",
@@ -14882,6 +15628,8 @@
        "delta_war": -2.9,
        "verdict": "team",
        "slot_value": 1.12,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pa8621489c8",
         "name": "DeJon Jarreau",
@@ -14932,6 +15680,8 @@
        "delta_war": 24.8,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P3b1e823247",
         "name": "Christian Braun",
@@ -14987,6 +15737,8 @@
        "delta_war": 4.1,
        "verdict": "model",
        "slot_value": 6.21,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P0d7bcc4d57",
         "name": "Ryan Dunn",
@@ -15031,6 +15783,8 @@
        "delta_war": 1.8,
        "verdict": "model",
        "slot_value": 3.9,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P9fc884bebd",
         "name": "Oso Ighodaro",
@@ -15081,6 +15835,8 @@
        "delta_war": 0.0,
        "verdict": "tie",
        "slot_value": 17.5,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P3f654a33fe",
         "name": "Thomas Sorber",
@@ -15125,6 +15881,8 @@
        "delta_war": 0.6,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U90b6f3d980",
         "name": "Bent Leuchten",
@@ -15156,6 +15914,12 @@
     "slot_value_total": 45.4,
     "war_actual_surplus": -28.8,
     "war_model_surplus": -25.3,
+    "team_better_agreed": 3,
+    "team_better_miss": 1,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 4,
+    "war_actual_total_pos": 19.1,
+    "war_model_total_pos": 25.4,
     "open_pool_war_total": 11.5,
     "open_pool_cards": 8,
     "open_pool_undrafted_picks": 4,
@@ -15208,6 +15972,8 @@
        "delta_war": 20.7,
        "verdict": "model",
        "slot_value": 12.67,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pbc4309c829",
         "name": "Jarrett Culver",
@@ -15252,6 +16018,8 @@
        "delta_war": 4.9,
        "verdict": "model",
        "slot_value": 4.37,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P3e9c3ca3d7",
         "name": "Jeremiah Martin",
@@ -15302,6 +16070,8 @@
        "delta_war": -3.4,
        "verdict": "team",
        "slot_value": 8.16,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pe6009787c4",
         "name": "Freddie Gillespie",
@@ -15352,6 +16122,8 @@
        "delta_war": -6.1,
        "verdict": "team",
        "slot_value": 5.7,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P2c8aa67899",
         "name": "Davion Mitchell",
@@ -15407,6 +16179,8 @@
        "delta_war": -8.4,
        "verdict": "team",
        "slot_value": 1.32,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P0e1f032d1f",
         "name": "Jalen Slawson",
@@ -15457,6 +16231,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pada60a9da7",
         "name": "Kel'el Ware",
@@ -15492,6 +16268,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ue266541d21",
         "name": "KiAndre Gaddy",
@@ -15542,6 +16320,8 @@
        "delta_war": -1.6,
        "verdict": "team",
        "slot_value": 5.7,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Uda96da0af3",
         "name": "Ben Gregg",
@@ -15586,6 +16366,8 @@
        "delta_war": -2.4,
        "verdict": "team",
        "slot_value": 1.32,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U69ea3aeab5",
         "name": "Michael Graham",
@@ -15617,6 +16399,12 @@
     "slot_value_total": 91.8,
     "war_actual_surplus": -79.8,
     "war_model_surplus": -51.0,
+    "team_better_agreed": 5,
+    "team_better_miss": 0,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 8,
+    "war_actual_total_pos": 25.8,
+    "war_model_total_pos": 48.3,
     "open_pool_war_total": 19.9,
     "open_pool_cards": 13,
     "open_pool_undrafted_picks": 4,
@@ -15669,6 +16457,8 @@
        "delta_war": -3.3,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Pf1b3205a09",
         "name": "Dylan Windler",
@@ -15719,6 +16509,8 @@
        "delta_war": 8.8,
        "verdict": "model",
        "slot_value": 6.21,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U6fae0eb6f9",
         "name": "Dennis Tunstall",
@@ -15763,6 +16555,8 @@
        "delta_war": -0.2,
        "verdict": "team",
        "slot_value": 3.45,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pa430d00e1f",
         "name": "Deni Avdija",
@@ -15818,6 +16612,8 @@
        "delta_war": 5.7,
        "verdict": "model",
        "slot_value": 11.44,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P14882ceff6",
         "name": "Tari Eason",
@@ -15862,6 +16658,8 @@
        "delta_war": -1.3,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Pa408da26a2",
         "name": "TyTy Washington Jr.",
@@ -15891,6 +16689,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U7d5892814f",
         "name": "John Fulkerson",
@@ -15941,6 +16741,8 @@
        "delta_war": 15.6,
        "verdict": "model",
        "slot_value": 17.5,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pe60cc64195",
         "name": "Taylor Hendricks",
@@ -15985,6 +16787,8 @@
        "delta_war": -0.6,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U0c036fd430",
         "name": "Jack Nunge",
@@ -16029,6 +16833,8 @@
        "delta_war": 3.5,
        "verdict": "model",
        "slot_value": 3.79,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U0f7b0a7b8f",
         "name": "Manny Bates",
@@ -16079,6 +16885,8 @@
        "delta_war": -9.0,
        "verdict": "team",
        "slot_value": 11.44,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pd018d62aee",
         "name": "Nikola Topić",
@@ -16123,6 +16931,8 @@
        "delta_war": 13.1,
        "verdict": "model",
        "slot_value": 6.27,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U6274a9925f",
         "name": "Max Fiedler",
@@ -16167,6 +16977,8 @@
        "delta_war": -2.8,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P3bedf956bf",
         "name": "Harrison Ingram",
@@ -16211,6 +17023,8 @@
        "delta_war": -1.6,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P367a636ba4",
         "name": "KJ Simpson",
@@ -16261,6 +17075,8 @@
        "delta_war": 1.0,
        "verdict": "model",
        "slot_value": 7.62,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pad9c27fcb6",
         "name": "Johni Broome",
@@ -16292,6 +17108,12 @@
     "slot_value_total": 84.3,
     "war_actual_surplus": -19.3,
     "war_model_surplus": -22.9,
+    "team_better_agreed": 5,
+    "team_better_miss": 1,
+    "team_better_negwar": 1,
+    "model_rated_above_slot": 13,
+    "war_actual_total_pos": 69.9,
+    "war_model_total_pos": 70.4,
     "open_pool_war_total": 19.0,
     "open_pool_cards": 17,
     "open_pool_undrafted_picks": 11,
@@ -16344,6 +17166,8 @@
        "delta_war": 1.1,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P6f1d3c64d2",
         "name": "Nickeil Alexander-Walker",
@@ -16388,6 +17212,8 @@
        "delta_war": 0.7,
        "verdict": "model",
        "slot_value": 3.1,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U4426833ef4",
         "name": "Jordan Murphy",
@@ -16417,6 +17243,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U317d1cc89e",
         "name": "Alex Peacock",
@@ -16467,6 +17295,8 @@
        "delta_war": -28.3,
        "verdict": "team",
        "slot_value": 7.07,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P80eaeaa85d",
         "name": "Nate Hinton",
@@ -16511,6 +17341,8 @@
        "delta_war": 31.2,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U20ee50c479",
         "name": "David Bell",
@@ -16555,6 +17387,8 @@
        "delta_war": 0.6,
        "verdict": "model",
        "slot_value": 3.79,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P173da90181",
         "name": "CJ Elleby",
@@ -16599,6 +17433,8 @@
        "delta_war": -0.7,
        "verdict": "team",
        "slot_value": 1.32,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U7f61ebae1e",
         "name": "Tre Scott",
@@ -16649,6 +17485,8 @@
        "delta_war": -3.8,
        "verdict": "team",
        "slot_value": 9.29,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P0057628fa2",
         "name": "Corey Kispert",
@@ -16693,6 +17531,8 @@
        "delta_war": -11.5,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pd0398785b7",
         "name": "Micah Potter",
@@ -16737,6 +17577,8 @@
        "delta_war": 5.4,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ue75301d738",
         "name": "Michael Hughes",
@@ -16787,6 +17629,8 @@
        "delta_war": 4.4,
        "verdict": "model",
        "slot_value": 15.17,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P3a3a5bbbef",
         "name": "Jalen Duren",
@@ -16831,6 +17675,8 @@
        "delta_war": 1.3,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ub4d523d5df",
         "name": "Payton Willis",
@@ -16881,6 +17727,8 @@
        "delta_war": -1.4,
        "verdict": "team",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Pa4e79c2199",
         "name": "Bilal Coulibaly",
@@ -16925,6 +17773,8 @@
        "delta_war": -1.2,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U074705f07d",
         "name": "Josh Roberts",
@@ -16969,6 +17819,8 @@
        "delta_war": -3.4,
        "verdict": "team",
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U7d08cbdbe0",
         "name": "Nelson Phillips",
@@ -17019,6 +17871,8 @@
        "delta_war": 0.9,
        "verdict": "model",
        "slot_value": 6.53,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U71637ff555",
         "name": "DJ Burns Jr.",
@@ -17063,6 +17917,8 @@
        "delta_war": 0.6,
        "verdict": "model",
        "slot_value": 3.63,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ud285a1bc56",
         "name": "Luis Rodriguez",
@@ -17113,6 +17969,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 3.84,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P495dd3afc8",
         "name": "Kam Jones",
@@ -17144,6 +18002,12 @@
     "slot_value_total": 152.3,
     "war_actual_surplus": -101.6,
     "war_model_surplus": -90.7,
+    "team_better_agreed": 3,
+    "team_better_miss": 3,
+    "team_better_negwar": 3,
+    "model_rated_above_slot": 10,
+    "war_actual_total_pos": 67.9,
+    "war_model_total_pos": 68.5,
     "open_pool_war_total": 60.4,
     "open_pool_cards": 21,
     "open_pool_undrafted_picks": 10,
@@ -17196,6 +18060,8 @@
        "delta_war": 16.3,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ufe98800a6d",
         "name": "Kevarrius Hayes",
@@ -17240,6 +18106,8 @@
        "delta_war": -8.0,
        "verdict": "team",
        "slot_value": 5.7,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P846172a369",
         "name": "De'Andre Hunter",
@@ -17284,6 +18152,8 @@
        "delta_war": -0.0,
        "verdict": "tie",
        "slot_value": 2.4,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ue0acea3f70",
         "name": "Jacquil Taylor",
@@ -17334,6 +18204,8 @@
        "delta_war": -2.1,
        "verdict": "team",
        "slot_value": 7.62,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P3ff36ffdc1",
         "name": "LaMelo Ball",
@@ -17378,6 +18250,8 @@
        "delta_war": -9.4,
        "verdict": "team",
        "slot_value": 3.9,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Uf4b3340f4d",
         "name": "Mike Watkins",
@@ -17428,6 +18302,8 @@
        "delta_war": 1.7,
        "verdict": "model",
        "slot_value": 7.07,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pc4eb6bb8ac",
         "name": "Cameron Krutwig",
@@ -17472,6 +18348,8 @@
        "delta_war": 7.0,
        "verdict": "model",
        "slot_value": 3.9,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P02bad696ed",
         "name": "Isaiah Miller",
@@ -17522,6 +18400,8 @@
        "delta_war": 18.6,
        "verdict": "model",
        "slot_value": 9.29,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pfa7a6f2536",
         "name": "Paolo Banchero",
@@ -17566,6 +18446,8 @@
        "delta_war": 13.8,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P9345155d6a",
         "name": "Christian Koloko",
@@ -17610,6 +18492,8 @@
        "delta_war": 2.8,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P63014948f5",
         "name": "David Roddy",
@@ -17654,6 +18538,8 @@
        "delta_war": 3.9,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U6c8a09dc6c",
         "name": "Tevin Brown",
@@ -17704,6 +18590,8 @@
        "delta_war": -28.0,
        "verdict": "team",
        "slot_value": 20.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "Pf0ef0714b6",
         "name": "Cason Wallace",
@@ -17748,6 +18636,8 @@
        "delta_war": -1.3,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U054e87fc5a",
         "name": "Nathaniel Pollard Jr.",
@@ -17792,6 +18682,8 @@
        "delta_war": 0.8,
        "verdict": "model",
        "slot_value": 3.73,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U7b92babcdc",
         "name": "Darius McGhee",
@@ -17842,6 +18734,8 @@
        "delta_war": -3.1,
        "verdict": "team",
        "slot_value": 15.17,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P2a77fa93f7",
         "name": "Stephon Castle",
@@ -17886,6 +18780,8 @@
        "delta_war": 2.4,
        "verdict": "model",
        "slot_value": 10.22,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P35654567c0",
         "name": "Johnny Furphy",
@@ -17930,6 +18826,8 @@
        "delta_war": 0.4,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P65b97df144",
         "name": "Alex Sarr",
@@ -17974,6 +18872,8 @@
        "delta_war": -0.5,
        "verdict": "team",
        "slot_value": 2.75,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U7cffb63f34",
         "name": "Qudus Wahab",
@@ -18024,6 +18924,8 @@
        "delta_war": -1.7,
        "verdict": "team",
        "slot_value": 19.21,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P4e09db2338",
         "name": "VJ Edgecombe",
@@ -18068,6 +18970,8 @@
        "delta_war": -2.8,
        "verdict": "team",
        "slot_value": 6.27,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U3a04c2457c",
         "name": "Taye Fields",
@@ -18112,6 +19016,8 @@
        "delta_war": 0.2,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P95c84fe799",
         "name": "Max Shulga",
@@ -18143,6 +19049,12 @@
     "slot_value_total": 62.0,
     "war_actual_surplus": -25.3,
     "war_model_surplus": -8.8,
+    "team_better_agreed": 3,
+    "team_better_miss": 1,
+    "team_better_negwar": 1,
+    "model_rated_above_slot": 7,
+    "war_actual_total_pos": 40.7,
+    "war_model_total_pos": 55.1,
     "open_pool_war_total": 24.8,
     "open_pool_cards": 10,
     "open_pool_undrafted_picks": 6,
@@ -18180,6 +19092,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uffbff0995c",
         "name": "Grady Eifert",
@@ -18230,6 +19144,8 @@
        "delta_war": 9.5,
        "verdict": "model",
        "slot_value": 5.7,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pe0b660d280",
         "name": "Isaiah Stewart",
@@ -18265,6 +19181,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ue197d0537f",
         "name": "Donnell Gresham Jr.",
@@ -18315,6 +19233,8 @@
        "delta_war": -9.4,
        "verdict": "team",
        "slot_value": 15.17,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P90932c4b0a",
         "name": "Neemias Queta",
@@ -18359,6 +19279,8 @@
        "delta_war": -3.0,
        "verdict": "team",
        "slot_value": 3.45,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P9fd480084b",
         "name": "Ayo Dosunmu",
@@ -18403,6 +19325,8 @@
        "delta_war": 0.9,
        "verdict": "model",
        "slot_value": 3.1,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pe77b8e73a4",
         "name": "Anthony Tarke",
@@ -18453,6 +19377,8 @@
        "delta_war": 15.8,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ubb7554867d",
         "name": "Ike Obiagu",
@@ -18503,6 +19429,8 @@
        "delta_war": 2.8,
        "verdict": "model",
        "slot_value": 6.53,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uc4a3e7ec4f",
         "name": "Charles Bediako",
@@ -18553,6 +19481,8 @@
        "delta_war": 0.8,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P816913601a",
         "name": "N'Faly Dante",
@@ -18597,6 +19527,8 @@
        "delta_war": -0.5,
        "verdict": "team",
        "slot_value": 4.81,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Ua7c1c60232",
         "name": "Josiah-Jordan James",
@@ -18647,6 +19579,8 @@
        "delta_war": -0.4,
        "verdict": "team",
        "slot_value": 9.29,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "Pf3b62cae3c",
         "name": "Dylan Harper",
@@ -18691,6 +19625,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U49d112156b",
         "name": "Caleb Grill",
@@ -18722,6 +19658,12 @@
     "slot_value_total": 84.0,
     "war_actual_surplus": -86.2,
     "war_model_surplus": -66.9,
+    "team_better_agreed": 2,
+    "team_better_miss": 0,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 3,
+    "war_actual_total_pos": 13.9,
+    "war_model_total_pos": 29.3,
     "open_pool_war_total": 10.1,
     "open_pool_cards": 14,
     "open_pool_undrafted_picks": 8,
@@ -18774,6 +19716,8 @@
        "delta_war": 14.1,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pa9cae64430",
         "name": "RJ Barrett",
@@ -18818,6 +19762,8 @@
        "delta_war": -0.4,
        "verdict": "team",
        "slot_value": 1.12,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U1aad84a3ac",
         "name": "Kavell Bigby-Williams",
@@ -18868,6 +19814,8 @@
        "delta_war": 5.5,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U7189466f8d",
         "name": "Chris Harris Jr.",
@@ -18912,6 +19860,8 @@
        "delta_war": 0.3,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ub4348b0a93",
         "name": "Dantez Walton",
@@ -18962,6 +19912,8 @@
        "delta_war": -12.8,
        "verdict": "team",
        "slot_value": 5.26,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "Pd74e65b4cd",
         "name": "Mark Vital",
@@ -19017,6 +19969,8 @@
        "delta_war": 0.5,
        "verdict": "model",
        "slot_value": 9.29,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U94a287c38b",
         "name": "Jake Stephens",
@@ -19061,6 +20015,8 @@
        "delta_war": 3.1,
        "verdict": "model",
        "slot_value": 6.21,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P6b4a74f110",
         "name": "Kobe Bufkin",
@@ -19105,6 +20061,8 @@
        "delta_war": 1.3,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U858637fbec",
         "name": "Myles Burns",
@@ -19155,6 +20113,8 @@
        "delta_war": 5.4,
        "verdict": "model",
        "slot_value": 8.16,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pbdde11b624",
         "name": "Jamal Shead",
@@ -19199,6 +20159,8 @@
        "delta_war": 3.1,
        "verdict": "model",
        "slot_value": 5.7,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pfd3b474513",
         "name": "Baylor Scheierman",
@@ -19243,6 +20205,8 @@
        "delta_war": -9.0,
        "verdict": "team",
        "slot_value": 4.37,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P1a8fd8dc98",
         "name": "Dillon Jones",
@@ -19293,6 +20257,8 @@
        "delta_war": 9.8,
        "verdict": "model",
        "slot_value": 14.22,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P7ba2fa977b",
         "name": "Cedric Coward",
@@ -19337,6 +20303,8 @@
        "delta_war": 0.6,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ua19f517857",
         "name": "Jeff Woodward",
@@ -19381,6 +20349,8 @@
        "delta_war": -1.9,
        "verdict": "team",
        "slot_value": 1.12,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "U6f2ea36831",
         "name": "UBAL, AGUSTIN",
@@ -19412,6 +20382,12 @@
     "slot_value_total": 102.8,
     "war_actual_surplus": -91.4,
     "war_model_surplus": -65.3,
+    "team_better_agreed": 1,
+    "team_better_miss": 2,
+    "team_better_negwar": 2,
+    "model_rated_above_slot": 4,
+    "war_actual_total_pos": 18.5,
+    "war_model_total_pos": 42.7,
     "open_pool_war_total": 62.1,
     "open_pool_cards": 13,
     "open_pool_undrafted_picks": 3,
@@ -19464,6 +20440,8 @@
        "delta_war": 12.2,
        "verdict": "model",
        "slot_value": 9.29,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P4832cf3ea3",
         "name": "Matisse Thybulle",
@@ -19514,6 +20492,8 @@
        "delta_war": -4.0,
        "verdict": "team",
        "slot_value": 9.29,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P90a7395cb0",
         "name": "Jalen Smith",
@@ -19558,6 +20538,8 @@
        "delta_war": -0.4,
        "verdict": "team",
        "slot_value": 3.92,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss",
        "open_pool_choice": {
         "pid": "P04526b8576",
         "name": "Saddiq Bey",
@@ -19608,6 +20590,8 @@
        "delta_war": 3.6,
        "verdict": "model",
        "slot_value": 6.24,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Pe728a39ea0",
         "name": "Day'Ron Sharpe",
@@ -19658,6 +20642,8 @@
        "delta_war": 5.5,
        "verdict": "model",
        "slot_value": 8.16,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P12c0373e62",
         "name": "Jabari Smith Jr.",
@@ -19693,6 +20679,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Ua726b7b670",
         "name": "George Conditt IV",
@@ -19743,6 +20731,8 @@
        "delta_war": -3.8,
        "verdict": "team",
        "slot_value": 10.22,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "P664a2ede66",
         "name": "Brandon Miller",
@@ -19787,6 +20777,8 @@
        "delta_war": -2.2,
        "verdict": "team",
        "slot_value": 3.84,
+       "model_rated_above_slot": true,
+       "loss_reason": "agreed_taken_earlier",
        "open_pool_choice": {
         "pid": "P26ad072598",
         "name": "Marcus Sasser",
@@ -19822,6 +20814,8 @@
        "delta_war": null,
        "verdict": null,
        "slot_value": 0.93,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uf66eb8b1a6",
         "name": "Taylor Funk",
@@ -19872,6 +20866,8 @@
        "delta_war": 7.7,
        "verdict": "model",
        "slot_value": 19.21,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P473649a3ff",
         "name": "Reed Sheppard",
@@ -19916,6 +20912,8 @@
        "delta_war": 2.3,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P84e9dcbb3e",
         "name": "Adem Bona",
@@ -19966,6 +20964,8 @@
        "delta_war": 2.0,
        "verdict": "model",
        "slot_value": 12.67,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "P07268bf0e1",
         "name": "Kon Knueppel",
@@ -20010,6 +21010,8 @@
        "delta_war": 1.6,
        "verdict": "model",
        "slot_value": 6.15,
+       "model_rated_above_slot": false,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "U63030a3c21",
         "name": "Mitchell Saxen",
@@ -20054,6 +21056,8 @@
        "delta_war": 1.8,
        "verdict": "model",
        "slot_value": 3.92,
+       "model_rated_above_slot": true,
+       "loss_reason": null,
        "open_pool_choice": {
         "pid": "Uff4de69602",
         "name": "Oumar Ballo",
@@ -20098,6 +21102,8 @@
        "delta_war": -0.1,
        "verdict": "team",
        "slot_value": 3.79,
+       "model_rated_above_slot": false,
+       "loss_reason": "model_miss_negwar",
        "open_pool_choice": {
         "pid": "U5ba808cac2",
         "name": "KJ Adams",

@@ -209,9 +209,18 @@ for y in YEARS:
             'delta_war': round(delta, 1) if delta is not None else None,
             'verdict': verdict,
             'slot_value': round(sv, 2),
+            # attribution of a card the team wins: the model rated the real pick at or above this slot (he went to
+            # another team earlier in the replay), a genuine miss, or a miss where the model's own pick produced
+            # negative WAR (a bust who played scores below a stash who never did)
+            'model_rated_above_slot': bool(a_brow is not None and int(a_brow['model_rank']) <= pk),
+            'loss_reason': (None if verdict != 'team' else
+                            ('agreed_taken_earlier' if (a_brow is not None and int(a_brow['model_rank']) <= pk)
+                             else ('model_miss_negwar' if (c_war is not None and c_war < 0) else 'model_miss'))),
             'open_pool_choice': open_choice,
             '_raw': (a_war, c_war, sv, o_war),      # unrounded, for summary sums; removed below
         }
+        audit_reason = card['loss_reason'] or ''
+        audit_rated = card['model_rated_above_slot']
         cards_by_team[p['team_id']][y].append(card)
         audit.append({
             'slug': slug_of[p['team_id']], 'team': p['team_name'], 'abbr': p['abbr'],
@@ -243,6 +252,7 @@ for y in YEARS:
                                   'draft-night trades are not reflected',
             'slot_value': round(sv, 3),
             'method': 'sequential',
+            'loss_reason': audit_reason, 'model_rated_above_slot': audit_rated,
             'open_pool_name': open_choice['name'] if open_choice else '',
             'open_pool_pid': open_choice['pid'] if open_choice else '',
             'open_pool_war': round(o_war, 3) if open_choice else '',
@@ -264,7 +274,14 @@ def summarize(cs):
     oc = [c for c in cs if c.get('open_pool_choice')]
     o = sum(c['_raw'][3] for c in oc)
     o_und = [c for c in oc if c['open_pool_choice']['was_drafted'] == 0]
+    pos = lambda x: max(x or 0.0, 0.0)
     return {
+        'team_better_agreed': sum(1 for c in cs if c['loss_reason'] == 'agreed_taken_earlier'),
+        'team_better_miss': sum(1 for c in cs if c['loss_reason'] == 'model_miss'),
+        'team_better_negwar': sum(1 for c in cs if c['loss_reason'] == 'model_miss_negwar'),
+        'model_rated_above_slot': sum(1 for c in cs if c['model_rated_above_slot']),
+        'war_actual_total_pos': r1(sum(pos(c['_raw'][0]) for c in cs)),
+        'war_model_total_pos': r1(sum(pos(c['_raw'][1]) for c in cs)),
         'open_pool_war_total': r1(o), 'open_pool_cards': len(oc),
         'open_pool_undrafted_picks': len(o_und),
         'open_pool_undrafted_war': r1(sum(c['_raw'][3] for c in o_und)),
@@ -292,7 +309,10 @@ for tid, (city, name, abbr) in teams.items():
     summary.update({k: s[k] for k in ('war_actual_total', 'war_model_total',
                                       'model_better', 'team_better', 'ties',
                                       'slot_value_total', 'war_actual_surplus',
-                                      'war_model_surplus', 'open_pool_war_total',
+                                      'war_model_surplus', 'team_better_agreed',
+                                      'team_better_miss', 'team_better_negwar',
+                                      'model_rated_above_slot', 'war_actual_total_pos',
+                                      'war_model_total_pos', 'open_pool_war_total',
                                       'open_pool_cards', 'open_pool_undrafted_picks',
                                       'open_pool_undrafted_war')})
     summary['first_round_only'] = {k: fr[k] for k in (
