@@ -123,5 +123,10 @@ Every block collected since September has failed the gate; today's two features 
 ## 5b. What the October lab says about the ceiling
 Fifty-six engine variants on the A100 and forty on the CPU, all judged on the same seven folds under Spearman, pick-value and top-5 hits: no single change or combination clears 6 of 7 folds on Spearman, the positive ones are the size of fold noise (+0.01) and sub-additive, and fold gains do not transfer blind. The inputs are the ceiling, not the learner. What can still change the numbers is a data block with a mechanism the mocks and box scores lack, which nothing collected so far has had.
 
+### Data tested after the plan was written (2026-10-21)
+- Pathway/international pro-season block (pw_): 166 of 305 pathway rows, the hard cases unfilled (JavaScript league sites, no pre-draft article tables); folds −0.035. Closed unless an official dated source for LNB, NBL 2019–2021 and Ignite appears.
+- Prep all-star game box scores (pg_): 393 players, dated and verified; folds −0.033. Closed: the pedigreed-teenager misses are not in those box scores.
+- The attribution work showed most team-level deficits are replay artifacts and only 35 cards are genuine misses, concentrated on young pedigreed players; with these two blocks and the earlier FIBA, DraftExpress growth, boards and comparison blocks all failed, the inputs that would separate Edwards or LaMelo from their class before the draft are not in any public dated source tried so far.
+
 ## 6. Order of work
 1. H1 vault metrics and gate (half a day). 2. H4 site fix (an evening). 3. H2 README framing (an hour). 4. H3 one GPU run with the full recipe and three seed sets. 5. H5 label test on the folds. 6. ~~H6 top-of-board specialist under the new gate~~ (closed 2026-10-20). 7. ~~H7 undrafted universe~~ (done 2026-10-20). 8. Data, if anything above moved.

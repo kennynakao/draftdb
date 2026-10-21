@@ -98,6 +98,16 @@ QUEUES = {
   ("v_base_s20", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "seed_offset": 20}),
   ("v_risk_mean_s20", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "risk": "mean", "seed_offset": 20}),
  ],
+ "N1": [  # new data 2026-10-21: the pathway/international pro-season block, all sources and strictly dated sources
+  ("n1_base", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3}),
+  ("n1_pathway", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "blocks": ["pathway"], "extra": ["sc_", "tc_", "pw_"]}),
+  ("n1_pathway_dated", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "blocks": ["pathway_dated"], "extra": ["sc_", "tc_", "pw_"]}),
+ ],
+ "N2": [  # new data 2026-10-21: prep all-star game box scores (McDonald's, Jordan Brand, Hoop Summit), alone and with the pathway block
+  ("n2_prep", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "blocks": ["prep_games"], "extra": ["sc_", "tc_", "pg_"]}),
+  ("n2_prep_pathway", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "blocks": ["prep_games", "pathway"], "extra": ["sc_", "tc_", "pg_", "pw_"]}),
+  ("n2_prep_risk_mean", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "blocks": ["prep_games"], "extra": ["sc_", "tc_", "pg_"], "risk": "mean"}),
+ ],
  "B": [
   ("base_tabicl", {"members": ["xgb", "ridge", "tabicl"]}),
  ],
