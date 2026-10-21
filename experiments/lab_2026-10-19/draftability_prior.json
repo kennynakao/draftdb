@@ -1,0 +1,349 @@
+{
+ "per_class": {
+  "2019": {
+   "n_pool": 688,
+   "n_drafted": 58,
+   "auc_p_drafted": 0.9719485495347564,
+   "teams": {
+    "spearman": 0.12543022258230968,
+    "vo_pick": 67.36673725429792
+   },
+   "lam_0.0": {
+    "spearman": 0.09322075003745246,
+    "vo_pick": 61.21720483996465,
+    "undrafted_in_top60": 38,
+    "undrafted_war_in_top60": 12.834388863491133,
+    "drafted_hits_top60": 22
+   },
+   "lam_0.25": {
+    "spearman": 0.09330526121297732,
+    "vo_pick": 63.029090515925986,
+    "undrafted_in_top60": 32,
+    "undrafted_war_in_top60": 18.004219997201954,
+    "drafted_hits_top60": 28
+   },
+   "lam_0.5": {
+    "spearman": 0.08706694793072706,
+    "vo_pick": 63.279199132801395,
+    "undrafted_in_top60": 26,
+    "undrafted_war_in_top60": 17.986366835566134,
+    "drafted_hits_top60": 34
+   },
+   "lam_0.75": {
+    "spearman": 0.08256021400318571,
+    "vo_pick": 64.71124664315069,
+    "undrafted_in_top60": 20,
+    "undrafted_war_in_top60": 9.618998292928152,
+    "drafted_hits_top60": 40
+   },
+   "lam_1.0": {
+    "spearman": 0.07909827045124393,
+    "vo_pick": 65.27169400814132,
+    "undrafted_in_top60": 14,
+    "undrafted_war_in_top60": 22.180419604408698,
+    "drafted_hits_top60": 46
+   }
+  },
+  "2020": {
+   "n_pool": 674,
+   "n_drafted": 58,
+   "auc_p_drafted": 0.9951578593819973,
+   "teams": {
+    "spearman": 0.22341397649474154,
+    "vo_pick": 66.69346861205821
+   },
+   "lam_0.0": {
+    "spearman": 0.08792107763466943,
+    "vo_pick": 49.453724305809224,
+    "undrafted_in_top60": 36,
+    "undrafted_war_in_top60": 0.28160605971194597,
+    "drafted_hits_top60": 24
+   },
+   "lam_0.25": {
+    "spearman": 0.08295615295214391,
+    "vo_pick": 52.9701741670139,
+    "undrafted_in_top60": 30,
+    "undrafted_war_in_top60": 1.7616021042337713,
+    "drafted_hits_top60": 30
+   },
+   "lam_0.5": {
+    "spearman": 0.07752294710542328,
+    "vo_pick": 53.223219677147654,
+    "undrafted_in_top60": 25,
+    "undrafted_war_in_top60": 1.4221374516566452,
+    "drafted_hits_top60": 35
+   },
+   "lam_0.75": {
+    "spearman": 0.07271264338589725,
+    "vo_pick": 55.15274881603112,
+    "undrafted_in_top60": 17,
+    "undrafted_war_in_top60": -0.08010039149369486,
+    "drafted_hits_top60": 43
+   },
+   "lam_1.0": {
+    "spearman": 0.06646867682797343,
+    "vo_pick": 67.05303683350579,
+    "undrafted_in_top60": 8,
+    "undrafted_war_in_top60": -1.1003886121339783,
+    "drafted_hits_top60": 52
+   }
+  },
+  "2021": {
+   "n_pool": 334,
+   "n_drafted": 56,
+   "auc_p_drafted": 0.9824640287769785,
+   "teams": {
+    "spearman": 0.35983664787820124,
+    "vo_pick": 72.69474474210604
+   },
+   "lam_0.0": {
+    "spearman": 0.3047640830906044,
+    "vo_pick": 78.08022551988996,
+    "undrafted_in_top60": 33,
+    "undrafted_war_in_top60": 48.88222190529792,
+    "drafted_hits_top60": 27
+   },
+   "lam_0.25": {
+    "spearman": 0.2914203503846792,
+    "vo_pick": 84.48971609731132,
+    "undrafted_in_top60": 25,
+    "undrafted_war_in_top60": 49.334200435011184,
+    "drafted_hits_top60": 35
+   },
+   "lam_0.5": {
+    "spearman": 0.2604076618940717,
+    "vo_pick": 83.29180228196078,
+    "undrafted_in_top60": 18,
+    "undrafted_war_in_top60": 38.63508123913671,
+    "drafted_hits_top60": 42
+   },
+   "lam_0.75": {
+    "spearman": 0.23373265845949928,
+    "vo_pick": 80.99970345923309,
+    "undrafted_in_top60": 13,
+    "undrafted_war_in_top60": 44.77265165191146,
+    "drafted_hits_top60": 47
+   },
+   "lam_1.0": {
+    "spearman": 0.20124651810380917,
+    "vo_pick": 70.54505067147548,
+    "undrafted_in_top60": 9,
+    "undrafted_war_in_top60": -1.1631519020091936,
+    "drafted_hits_top60": 51
+   }
+  },
+  "2022": {
+   "n_pool": 620,
+   "n_drafted": 52,
+   "auc_p_drafted": 0.9947521668472372,
+   "teams": {
+    "spearman": 0.07050746919663894,
+    "vo_pick": 69.60839314498293
+   },
+   "lam_0.0": {
+    "spearman": 0.10609784969876386,
+    "vo_pick": 70.97332595997587,
+    "undrafted_in_top60": 38,
+    "undrafted_war_in_top60": 8.95,
+    "drafted_hits_top60": 22
+   },
+   "lam_0.25": {
+    "spearman": 0.09089326483933292,
+    "vo_pick": 72.9840285705042,
+    "undrafted_in_top60": 30,
+    "undrafted_war_in_top60": 8.729999999999999,
+    "drafted_hits_top60": 30
+   },
+   "lam_0.5": {
+    "spearman": 0.0721426279870867,
+    "vo_pick": 74.20195424725058,
+    "undrafted_in_top60": 24,
+    "undrafted_war_in_top60": 9.65,
+    "drafted_hits_top60": 36
+   },
+   "lam_0.75": {
+    "spearman": 0.05793567262439565,
+    "vo_pick": 76.88289050921786,
+    "undrafted_in_top60": 20,
+    "undrafted_war_in_top60": 23.82,
+    "drafted_hits_top60": 40
+   },
+   "lam_1.0": {
+    "spearman": 0.04274961959438143,
+    "vo_pick": 67.88366209209767,
+    "undrafted_in_top60": 10,
+    "undrafted_war_in_top60": 14.41,
+    "drafted_hits_top60": 50
+   }
+  },
+  "2023": {
+   "n_pool": 657,
+   "n_drafted": 56,
+   "auc_p_drafted": 0.9962859519847873,
+   "teams": {
+    "spearman": -0.06250739725283977,
+    "vo_pick": 74.25792692250964
+   },
+   "lam_0.0": {
+    "spearman": 0.04670373053950878,
+    "vo_pick": 59.88482655738021,
+    "undrafted_in_top60": 34,
+    "undrafted_war_in_top60": 2.6799999999999997,
+    "drafted_hits_top60": 26
+   },
+   "lam_0.25": {
+    "spearman": 0.009856800193350765,
+    "vo_pick": 60.43860932616623,
+    "undrafted_in_top60": 29,
+    "undrafted_war_in_top60": 1.7899999999999998,
+    "drafted_hits_top60": 31
+   },
+   "lam_0.5": {
+    "spearman": -0.03067122710186858,
+    "vo_pick": 60.758894657074144,
+    "undrafted_in_top60": 24,
+    "undrafted_war_in_top60": -3.01,
+    "drafted_hits_top60": 36
+   },
+   "lam_0.75": {
+    "spearman": -0.060943886363134664,
+    "vo_pick": 67.31950528001282,
+    "undrafted_in_top60": 19,
+    "undrafted_war_in_top60": -1.07,
+    "drafted_hits_top60": 41
+   },
+   "lam_1.0": {
+    "spearman": -0.08291012512732801,
+    "vo_pick": 71.7147074105615,
+    "undrafted_in_top60": 7,
+    "undrafted_war_in_top60": -1.4,
+    "drafted_hits_top60": 53
+   }
+  },
+  "2024": {
+   "n_pool": 648,
+   "n_drafted": 55,
+   "auc_p_drafted": 0.9956155143338955,
+   "teams": {
+    "spearman": 0.06089655114227881,
+    "vo_pick": 59.54810091745435
+   },
+   "lam_0.0": {
+    "spearman": 0.08008977403688002,
+    "vo_pick": 74.77144186648907,
+    "undrafted_in_top60": 30,
+    "undrafted_war_in_top60": -0.4900000000000001,
+    "drafted_hits_top60": 30
+   },
+   "lam_0.25": {
+    "spearman": 0.06762245128186893,
+    "vo_pick": 75.96488664740903,
+    "undrafted_in_top60": 25,
+    "undrafted_war_in_top60": -0.35000000000000003,
+    "drafted_hits_top60": 35
+   },
+   "lam_0.5": {
+    "spearman": 0.05055687247732431,
+    "vo_pick": 76.09528306677412,
+    "undrafted_in_top60": 21,
+    "undrafted_war_in_top60": -0.5100000000000001,
+    "drafted_hits_top60": 39
+   },
+   "lam_0.75": {
+    "spearman": 0.03795614726968148,
+    "vo_pick": 72.73995601458083,
+    "undrafted_in_top60": 14,
+    "undrafted_war_in_top60": -0.5200000000000001,
+    "drafted_hits_top60": 46
+   },
+   "lam_1.0": {
+    "spearman": 0.02543993087096405,
+    "vo_pick": 60.23160961990689,
+    "undrafted_in_top60": 10,
+    "undrafted_war_in_top60": -1.7,
+    "drafted_hits_top60": 50
+   }
+  },
+  "2025": {
+   "n_pool": 823,
+   "n_drafted": 57,
+   "auc_p_drafted": 0.9921900050387065,
+   "teams": {
+    "spearman": -0.03305906758705148,
+    "vo_pick": 71.44989994425735
+   },
+   "lam_0.0": {
+    "spearman": -0.015538824626164023,
+    "vo_pick": 80.33482778537626,
+    "undrafted_in_top60": 37,
+    "undrafted_war_in_top60": -0.75,
+    "drafted_hits_top60": 23
+   },
+   "lam_0.25": {
+    "spearman": -0.03155905134738159,
+    "vo_pick": 83.94430647789,
+    "undrafted_in_top60": 30,
+    "undrafted_war_in_top60": -0.28,
+    "drafted_hits_top60": 30
+   },
+   "lam_0.5": {
+    "spearman": -0.045971945074134095,
+    "vo_pick": 82.4908875468316,
+    "undrafted_in_top60": 25,
+    "undrafted_war_in_top60": -0.050000000000000044,
+    "drafted_hits_top60": 35
+   },
+   "lam_0.75": {
+    "spearman": -0.05204696590536955,
+    "vo_pick": 79.41507139299993,
+    "undrafted_in_top60": 18,
+    "undrafted_war_in_top60": -0.050000000000000044,
+    "drafted_hits_top60": 42
+   },
+   "lam_1.0": {
+    "spearman": -0.05493968701539225,
+    "vo_pick": 68.29371568073098,
+    "undrafted_in_top60": 7,
+    "undrafted_war_in_top60": -1.13,
+    "drafted_hits_top60": 53
+   }
+  }
+ },
+ "means": {
+  "0.0": {
+   "spearman": 0.10046549148738784,
+   "vo_pick": 67.81651097641218,
+   "undrafted_in_top60": 35.142857142857146,
+   "undrafted_war_in_top60": 10.341173832643
+  },
+  "0.25": {
+   "spearman": 0.08635646135956736,
+   "vo_pick": 70.5458302574601,
+   "undrafted_in_top60": 28.714285714285715,
+   "undrafted_war_in_top60": 11.284288933778132
+  },
+  "0.5": {
+   "spearman": 0.06729341217409006,
+   "vo_pick": 70.47732008712003,
+   "undrafted_in_top60": 23.285714285714285,
+   "undrafted_war_in_top60": 9.160512218051355
+  },
+  "0.75": {
+   "spearman": 0.05312949763916502,
+   "vo_pick": 71.03158887360378,
+   "undrafted_in_top60": 17.285714285714285,
+   "undrafted_war_in_top60": 10.927364221906561
+  },
+  "1.0": {
+   "spearman": 0.039593314815093116,
+   "vo_pick": 67.2847823309171,
+   "undrafted_in_top60": 9.285714285714286,
+   "undrafted_war_in_top60": 4.299554155752218
+  },
+  "teams": {
+   "spearman": 0.10635977177918272,
+   "vo_pick": 68.80275307680948
+  }
+ },
+ "note": "one blind look on the open pool; no fold selection possible (universe exists for 2019-2025 only)"
+}

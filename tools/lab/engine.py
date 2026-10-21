@@ -203,7 +203,8 @@ def member(m, Xtr, ytr, Xte, g, wtr=None):
                   monotone_constraints={c: v for c, v in mono.items() if c in Xtr.columns})
         if m == "xgb" and g.get("risk", "q25") == "q25":
             kw["objective"] = "reg:quantileerror"; kw["quantile_alpha"] = 0.25
-        return np.mean([xgb.XGBRegressor(**kw, random_state=s).fit(Xtr, ytr, sample_weight=wtr).predict(Xte) for s in range(11, 11 + g.get("bag", 3))], axis=0)
+        off = int(g.get("seed_offset", 0))     # seed-shifted confirmation: every learner's seeds move together
+        return np.mean([xgb.XGBRegressor(**kw, random_state=s + off).fit(Xtr, ytr, sample_weight=wtr).predict(Xte) for s in range(11, 11 + g.get("bag", 3))], axis=0)
     if m == "ridge":
         from sklearn.linear_model import Ridge
         mu, sd = Xtr.mean(), Xtr.std().replace(0, 1.0)
@@ -217,7 +218,7 @@ def member(m, Xtr, ytr, Xte, g, wtr=None):
         dev = os.environ.get("TABICL_DEVICE", "cpu")
         preds = []
         for b in range(int(g.get("icl_bag", 1))):
-            r = TabICLRegressor(n_estimators=g.get("icl_n", 8), device=dev, random_state=g.get("seed", 42) + 100 * b, outlier_threshold=2.0)
+            r = TabICLRegressor(n_estimators=g.get("icl_n", 8), device=dev, random_state=g.get("seed", 42) + 100 * b + int(g.get("seed_offset", 0)), outlier_threshold=2.0)
             r.fit(Xtr.astype(float).values, ytr)
             preds.append(r.predict(Xte.astype(float).values))
         return np.mean(preds, axis=0)
@@ -258,7 +259,7 @@ def sample_weights(ylab, g, years=None):
 def member_preds(g, Btr, Bte, cols, ylab, ytop=None):
     out = {}
     wtr = sample_weights(ylab, g, _num(Btr, "draft_year").values)
-    topk = xgb_importance_topk(Btr[cols], ylab, g.get("topk", 100))
+    topk = xgb_importance_topk(Btr[cols], ylab, g.get("topk", 100), seed=11 + int(g.get("seed_offset", 0)))
     for m in g["members"]:
         cc = topk if m in ("ridge", "tabicl") else cols
         p = member(m, Btr[cc], ylab, Bte[cc], g, wtr)

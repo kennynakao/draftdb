@@ -92,6 +92,12 @@ QUEUES = {
   ("u_both_slow_thin33", {"members": ["xgb", "xgbm", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "xgb_lr": 0.01, "xgb_n": 1600, "thin_q": 0.33}),
   ("u_slow_mean_thin33_mono", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "xgb_lr": 0.01, "xgb_n": 1600, "risk": "mean", "thin_q": 0.33, "mono": {"col_impact": 1, "x_prod_over_age": 1}}),
  ],
+ "V": [   # seed-shifted confirmation (the gate's second step) of the one lead: squared-error XGBoost vs the quantile base
+  ("v_base_s10", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "seed_offset": 10}),
+  ("v_risk_mean_s10", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "risk": "mean", "seed_offset": 10}),
+  ("v_base_s20", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "seed_offset": 20}),
+  ("v_risk_mean_s20", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "risk": "mean", "seed_offset": 20}),
+ ],
  "B": [
   ("base_tabicl", {"members": ["xgb", "ridge", "tabicl"]}),
  ],

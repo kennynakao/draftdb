@@ -91,6 +91,11 @@ Each entry: the claim, the evidence, the change, how it is judged, what counts a
 - Result: Spearman 0.100 vs 0.106 for the teams, pick-value 67.8 vs 68.8; 35 undrafted players per class in the model's first 60 (10.3 WAR, 7.7 of them played) against 26.5 WAR for the drafted players displaced; 9 gems found, 11 missed. The model's drafted-only lead does not survive the open pool: it has no notion of who else is draftable and rates productive 23-year-old seniors like second-round picks.
 - Partial: the international block is EuroLeague/EuroCup only (declared internationals in domestic leagues have no inputs); senior eligibility is proxied by the next season's roster; 2023–2025 have one to three seasons of outcomes. A follow-up with a mechanism: a "draftability" prior (age × class × consensus presence) learned on the folds, tested under the gate, since the open pool is now measurable.
 
+### H7b. Draftability prior for the open pool (one look taken 2026-10-21)
+- Claim: the open-pool failure is a missing draftability notion, not a talent-ranking failure.
+- Evidence: a logistic P(drafted) on age, consensus, RSCI, production and height reaches AUC 0.97–0.996 on the clean universe; blended at λ = 0.25–0.75 with the strict board it lifts open-pool pick-value order from 67.8 to 70.5–71.0 (teams 68.8) and cuts undrafted top-60 picks from 35 to 17–29 per class; rank correlation on the open pool falls (0.10 to 0.05–0.09).
+- Status: one blind look, no fold selection possible (the universe exists for 2019–2025 only). To use it, fix λ = 0.5 now and treat 2026 onward as the test; do not tune λ on these classes.
+
 ### H8. Variance discipline (cost near zero)
 - Publish bootstrap intervals per class for model vs teams on both metrics (the lab code does this), stop reading two-point differences, and prefer seven-class means with their ±0.05 standard error.
 
