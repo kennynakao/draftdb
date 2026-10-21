@@ -58,6 +58,11 @@ def slot_value(pick):
 
 board = pd.read_csv(BOARD)
 board['year'] = board['year'].astype(int)
+# the open pool: the strict engine's ranking of the clean pre-draft universe (H7), tools/lab/export_open_pool_board.py
+OPEN = os.path.join(REPO, 'data', 'open_pool_board_2019_2025.csv')
+open_board = pd.read_csv(OPEN) if os.path.exists(OPEN) else None
+if open_board is not None:
+    open_board['year'] = open_board['year'].astype(int)
 
 answers = {}                                        # (year, pid) -> dict
 pid_by_pick = {}                                    # (year, pick) -> pid
@@ -129,6 +134,8 @@ choice_count = collections.Counter()
 for y in YEARS:
     yb = board[board['year'] == y].sort_values('model_rank')
     available = list(yb['pid'])                     # already in rank order
+    open_avail = ([r for r in open_board[open_board['year'] == y].sort_values('model_rank').to_dict('records')]
+                  if open_board is not None else [])
     drafted = [p for p in picks[y] if p['pid'] and (y, p['pid']) in answers]
     for p in picks[y]:                              # overall-pick order
         pk = p['pick']
@@ -170,6 +177,18 @@ for y in YEARS:
                 'actual_pick': int(br['actual_pick']),
                 'drafted_by': cp['team_name'] if cp else '',
             }
+        # open pool: the model's pick if it could take anyone in the clean pre-draft universe, each taken once
+        open_choice, o_war = None, None
+        if open_avail:
+            orow = open_avail.pop(0)
+            o_war = fnum(orow.get('war'))
+            open_choice = {
+                'pid': orow['pid'], 'name': orow.get('player') or '',
+                'war': round(o_war, 1), 'was_drafted': int(orow['was_drafted']),
+                'actual_pick': (int(orow['actual_pick']) if str(orow.get('actual_pick', '')).strip() not in ('', 'nan') else None),
+                'source': orow.get('source', ''), 'model_rank': int(orow['model_rank']),
+                'same_as_team': orow['pid'] == p['pid'],
+            }
         sv = slot_value(pk)
         card = {
             'pick': pk, 'round': p['round'],
@@ -190,7 +209,8 @@ for y in YEARS:
             'delta_war': round(delta, 1) if delta is not None else None,
             'verdict': verdict,
             'slot_value': round(sv, 2),
-            '_raw': (a_war, c_war, sv),             # unrounded, for summary sums; removed below
+            'open_pool_choice': open_choice,
+            '_raw': (a_war, c_war, sv, o_war),      # unrounded, for summary sums; removed below
         }
         cards_by_team[p['team_id']][y].append(card)
         audit.append({
@@ -223,6 +243,11 @@ for y in YEARS:
                                   'draft-night trades are not reflected',
             'slot_value': round(sv, 3),
             'method': 'sequential',
+            'open_pool_name': open_choice['name'] if open_choice else '',
+            'open_pool_pid': open_choice['pid'] if open_choice else '',
+            'open_pool_war': round(o_war, 3) if open_choice else '',
+            'open_pool_was_drafted': open_choice['was_drafted'] if open_choice else '',
+            'open_pool_actual_pick': open_choice['actual_pick'] if open_choice and open_choice['actual_pick'] else '',
         })
 
 # ---------------------------------------------------------------- team summaries
@@ -236,7 +261,13 @@ def summarize(cs):
     a = sum(c['_raw'][0] for c in cs)
     m = sum(c['_raw'][1] for c in cs)
     sv = sum(c['_raw'][2] for c in cs)
+    oc = [c for c in cs if c.get('open_pool_choice')]
+    o = sum(c['_raw'][3] for c in oc)
+    o_und = [c for c in oc if c['open_pool_choice']['was_drafted'] == 0]
     return {
+        'open_pool_war_total': r1(o), 'open_pool_cards': len(oc),
+        'open_pool_undrafted_picks': len(o_und),
+        'open_pool_undrafted_war': r1(sum(c['_raw'][3] for c in o_und)),
         'war_actual_total': r1(a), 'war_model_total': r1(m),
         'model_better': sum(1 for c in cs if c['verdict'] == 'model'),
         'team_better': sum(1 for c in cs if c['verdict'] == 'team'),
@@ -261,7 +292,9 @@ for tid, (city, name, abbr) in teams.items():
     summary.update({k: s[k] for k in ('war_actual_total', 'war_model_total',
                                       'model_better', 'team_better', 'ties',
                                       'slot_value_total', 'war_actual_surplus',
-                                      'war_model_surplus')})
+                                      'war_model_surplus', 'open_pool_war_total',
+                                      'open_pool_cards', 'open_pool_undrafted_picks',
+                                      'open_pool_undrafted_war')})
     summary['first_round_only'] = {k: fr[k] for k in (
         'war_actual_total', 'war_model_total', 'model_better', 'team_better',
         'slot_value_total', 'war_actual_surplus', 'war_model_surplus')}
@@ -276,6 +309,11 @@ for t in team_out.values():
 out = {
     'generated': datetime.date.today().isoformat(),
     'method': METHOD,
+    'open_pool': ('open_pool_choice per card: the strict engine ranking the clean pre-draft universe of that class '
+                  '(early-entry list, Division-I seniors at 40%+ of team minutes, EuroLeague 22-year-olds; built '
+                  '2026-10-20 with no outcome information), replayed in pick order with each player taken once. '
+                  'An undrafted pick scores 0 WAR unless he later reached the NBA. Board: '
+                  'data/open_pool_board_2019_2025.csv (tools/lab/export_open_pool_board.py).'),
     'boards_used': 'expanding',
     'war_definition': (
         'Realized WAR to date: y_early_war from the answers files, summed over the '

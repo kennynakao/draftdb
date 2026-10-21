@@ -539,6 +539,17 @@ def pick_card(team_name, year, pick, idx):
                 '<b>{name}</b> ({w} WAR){tail}</div>').format(
             name=esc(best.get("name")), w=war(best.get("war")), tail=tail)
 
+    op = pick.get("open_pool_choice") or {}
+    if op and esc(op.get("name"), dash=""):
+        if op.get("same_as_team"):
+            who = "the same player"
+        elif to_num(op.get("was_drafted")) == 1 and to_num(op.get("actual_pick")) is not None:
+            who = "<b>{}</b> ({} WAR, went {} overall)".format(esc(op.get("name")), war(op.get("war")), ordinal(to_num(op.get("actual_pick"))))
+        else:
+            who = "<b>{}</b> ({} WAR, undrafted)".format(esc(op.get("name")), war(op.get("war")))
+        foot += ('\n  <div class="pickcard__foot">Open pool &middot; if the model could take anyone who was '
+                 'actually in that year&rsquo;s pre-draft pool, each taken once: {}</div>').format(who)
+
     return """<article class="pickcard {cls}" id="{anchor}">
   <header class="pickcard__head">
       <span class="sq sq--sm" aria-hidden="true"></span>
@@ -602,6 +613,10 @@ def hero_section(team, meta, years_with_picks):
              " &middot; {} where the model agreed with the team".format(whole(ag)) if (ag or 0) > 0 else ""), ""),
         ('Slot value', war(s.get("slot_value_total")),
          "expected WAR of those picks (2000&ndash;2018 pick-value curve)", ""),
+        ('Open-pool model picks', war(s.get("open_pool_war_total")),
+         "if the model could take anyone in the pre-draft pool: {} of {} picks on undrafted players ({} WAR)".format(
+             whole(s.get("open_pool_undrafted_picks"), "0"), whole(s.get("open_pool_cards"), "0"),
+             war(s.get("open_pool_undrafted_war"))), ""),
     ]
     tiles_html = "\n".join(
         '        <div class="tstat{cls}">\n'
@@ -627,7 +642,7 @@ def hero_section(team, meta, years_with_picks):
     <div class="container">
       <div class="team-hero__eyebrow"><span class="team-swatch"></span>{name} &middot; 2019&ndash;2025 drafts</div>
       <h1 class="team-hero__title">{name}</h1>
-      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order, each player taken once. At the {name}{poss} own slots the model&rsquo;s pick out-produced the team&rsquo;s selection on <b>{mb} of {ncards} cards</b>; the team&rsquo;s pick did better on <b>{tb}</b>{agtxt}. At those slots the model&rsquo;s picks have <b>{model} WAR</b> to date against <b>{actual}</b> for the team&rsquo;s picks; the slots themselves were worth <b>{slot} WAR</b> under the pick-value curve.</p>
+      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order, each player taken once. At the {name}{poss} own slots the model&rsquo;s pick out-produced the team&rsquo;s selection on <b>{mb} of {ncards} cards</b>; the team&rsquo;s pick did better on <b>{tb}</b>{agtxt}. At those slots the model&rsquo;s picks have <b>{model} WAR</b> to date against <b>{actual}</b> for the team&rsquo;s picks; the slots themselves were worth <b>{slot} WAR</b> under the pick-value curve. Allowed to pick from the whole pre-draft pool instead of the drafted players, the model would have spent <b>{oun} of {ocards}</b> of these picks on players nobody drafted, and its picks would total <b>{owar} WAR</b>.</p>
       <div class="tstat-grid">
 {tiles}
       </div>
@@ -640,6 +655,8 @@ def hero_section(team, meta, years_with_picks):
   </section>""".format(
         name=esc(name), model=war(s.get("war_model_total")), actual=war(s.get("war_actual_total")),
         slot=war(s.get("slot_value_total")),
+        oun=whole(s.get("open_pool_undrafted_picks"), "0"), ocards=whole(s.get("open_pool_cards"), "0"),
+        owar=war(s.get("open_pool_war_total")),
         poss=("&rsquo;" if str(name).endswith("s") else "&rsquo;s"),
         mb=whole(mb, "0"), tb=whole(tb, "0"), agtxt=(", and on {} the model had the same player at the top of its board".format(whole(ag)) if (ag or 0) > 0 else ""),
         tiles=tiles_html, npicks=whole(n_picks, "0"), ncards=whole(n_cards, "0"),
@@ -664,6 +681,10 @@ HONEST_ITEMS = [
     "<b>Early-career WAR rewards early producers.</b> On the complete 2007&ndash;2018 classes the real draft "
     "order correlates 0.07 with first-season WAR and 0.32 with five-season WAR; teams draft for years three "
     "to five, so cards for the 2023&ndash;2025 classes lean toward the model.",
+    "<b>The open-pool line is the model&rsquo;s weakest result.</b> Ranking the whole pre-draft pool of a class "
+    "(early entrants, Division-I seniors, EuroLeague 22-year-olds; about 650 players, built with no outcome "
+    "information), the model ties the real draft order and would spend more than half of its picks on players "
+    "nobody drafted, most of whom never played. It ranks talent; it has no notion of who is draftable.",
     "<b>A single card is noisy.</b> One pick can go either way for reasons no model or front office "
     "could see coming. The seven-class mean is the real test; the individual cards are how you read it.",
 ]
@@ -806,8 +827,8 @@ def index_card(slug, city, nick, accent, team):
 def index_page(doc, meta, by_slug, accents, prefix):
     accent = accents.get("__index__", INDEX_ACCENT)
 
-    war_a = war_m = 0.0
-    mb = tb = ti = n_cards = n_picks = 0
+    war_a = war_m = war_o = 0.0
+    mb = tb = ti = n_cards = n_picks = o_cards = o_und = 0
     have = 0
     for team in doc.get("teams") or []:
         s = dict(team.get("summary") or {}); s.update({k: v for k, v in recount(team).items() if k in ("model_better", "team_better", "ties")})
@@ -818,6 +839,9 @@ def index_page(doc, meta, by_slug, accents, prefix):
         ti += int(to_num(s.get("ties")) or 0)
         n_cards += int(to_num(s.get("n_cards")) or 0)
         n_picks += int(to_num(s.get("n_picks")) or 0)
+        war_o += to_num(s.get("open_pool_war_total")) or 0.0
+        o_cards += int(to_num(s.get("open_pool_cards")) or 0)
+        o_und += int(to_num(s.get("open_pool_undrafted_picks")) or 0)
         have += 1
 
     tiles = [
@@ -828,6 +852,8 @@ def index_page(doc, meta, by_slug, accents, prefix):
          "the same slots, taken in the model&rsquo;s board order", " tstat--model"),
         ("Comparison cards", '{}<span class="sl">/</span>{}<span class="sl">/</span>{}'.format(mb, tb, ti),
          "won by the model / by the team / ties", ""),
+        ("Open-pool model picks", war(war_o),
+         "if the model could take anyone in the pre-draft pool: {} of {} picks on undrafted players".format(o_und, o_cards), ""),
     ]
     tiles_html = "\n".join(
         '        <div class="tstat{cls}">\n'
@@ -852,7 +878,7 @@ def index_page(doc, meta, by_slug, accents, prefix):
     <div class="container">
       <div class="team-hero__eyebrow"><span class="team-swatch"></span>30 teams &middot; 2019&ndash;2025 drafts</div>
       <h1 class="team-hero__title">Every team&rsquo;s draft, re-run.</h1>
-      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order with each player taken once. The model&rsquo;s pick out-produced the team&rsquo;s selection on <b>{mb} of {nc} cards</b> and the team&rsquo;s pick did better on <b>{tb}</b>. At the same slots the model&rsquo;s picks have <b>{wm} WAR</b> to date against <b>{wa}</b> for the teams&rsquo; picks. Open a team to see the pick-by-pick cards.</p>
+      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order with each player taken once. The model&rsquo;s pick out-produced the team&rsquo;s selection on <b>{mb} of {nc} cards</b> and the team&rsquo;s pick did better on <b>{tb}</b>. At the same slots the model&rsquo;s picks have <b>{wm} WAR</b> to date against <b>{wa}</b> for the teams&rsquo; picks. Allowed to pick from the whole pre-draft pool, the model would have spent <b>{ou} of {oc}</b> picks on players nobody drafted, for <b>{wo} WAR</b>. Open a team to see the pick-by-pick cards.</p>
       <div class="tstat-grid">
 {tiles}
       </div>
@@ -867,6 +893,7 @@ def index_page(doc, meta, by_slug, accents, prefix):
     </div>
   </section>
 </main>""".format(wm=war(war_m), wa=war(war_a), mb=mb, tb=tb, nc=n_cards, tiles=tiles_html, cards="\n".join(cards),
+                  ou=o_und, oc=o_cards, wo=war(war_o),
                   short=WAR_SHORT, wardef=esc(meta.get("war_definition"), dash=""),
                   boards=esc(meta.get("boards_used")),
                   label=esc((meta.get("model") or {}).get("label")))

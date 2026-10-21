@@ -1,6 +1,7 @@
 {
- "generated": "2026-10-19",
+ "generated": "2026-10-20",
  "method": "sequential redraft: the real draft replayed in pick order, each player taken once (replaces best-available-with-repeats, 2026-10-19)",
+ "open_pool": "open_pool_choice per card: the strict engine ranking the clean pre-draft universe of that class (early-entry list, Division-I seniors at 40%+ of team minutes, EuroLeague 22-year-olds; built 2026-10-20 with no outcome information), replayed in pick order with each player taken once. An undrafted pick scores 0 WAR unless he later reached the NBA. Board: data/open_pool_board_2019_2025.csv (tools/lab/export_open_pool_board.py).",
  "boards_used": "expanding",
  "war_definition": "Realized WAR to date: y_early_war from the answers files, summed over the player's NBA seasons scored so far, at most five (2019-2021 classes have complete five-season windows; 2022-2025 are partial and still accruing, so compare within a draft year, not across). Players who never appeared in the NBA score 0. A handful of draft-and-stash picks have no pre-draft or outcome record in our data at all; they are shown with WAR 0 and flagged in team_cards_audit.csv (war_note).",
  "model": {
@@ -27,6 +28,10 @@
     "slot_value_total": 99.0,
     "war_actual_surplus": -64.9,
     "war_model_surplus": -21.1,
+    "open_pool_war_total": 34.9,
+    "open_pool_cards": 14,
+    "open_pool_undrafted_picks": 6,
+    "open_pool_undrafted_war": 0.1,
     "first_round_only": {
      "war_actual_total": 31.7,
      "war_model_total": 65.9,
@@ -74,7 +79,17 @@
        },
        "delta_war": -0.7,
        "verdict": "team",
-       "slot_value": 10.22
+       "slot_value": 10.22,
+       "open_pool_choice": {
+        "pid": "P5cd98708f1",
+        "name": "Bruno Fernando",
+        "war": -0.6,
+        "was_drafted": 1,
+        "actual_pick": 34,
+        "source": "early_entry+senior",
+        "model_rank": 8,
+        "same_as_team": false
+       }
       },
       {
        "pick": 10,
@@ -108,7 +123,17 @@
        },
        "delta_war": 7.8,
        "verdict": "model",
-       "slot_value": 8.16
+       "slot_value": 8.16,
+       "open_pool_choice": {
+        "pid": "P5277c76d51",
+        "name": "Goga Bitadze",
+        "war": 3.7,
+        "was_drafted": 1,
+        "actual_pick": 18,
+        "source": "early_entry",
+        "model_rank": 10,
+        "same_as_team": false
+       }
       },
       {
        "pick": 35,
@@ -142,7 +167,17 @@
        },
        "delta_war": 13.9,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P4a79c6caeb",
+        "name": "P.J. Washington",
+        "war": 7.0,
+        "was_drafted": 1,
+        "actual_pick": 12,
+        "source": "early_entry",
+        "model_rank": 35,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -182,7 +217,17 @@
        },
        "delta_war": -8.1,
        "verdict": "team",
-       "slot_value": 12.67
+       "slot_value": 12.67,
+       "open_pool_choice": {
+        "pid": "P41612ab4e2",
+        "name": "Obi Toppin",
+        "war": 10.2,
+        "was_drafted": 1,
+        "actual_pick": 8,
+        "source": "early_entry+senior",
+        "model_rank": 6,
+        "same_as_team": false
+       }
       },
       {
        "pick": 50,
@@ -216,7 +261,17 @@
        },
        "delta_war": 0.1,
        "verdict": "model",
-       "slot_value": 1.91
+       "slot_value": 1.91,
+       "open_pool_choice": {
+        "pid": "P289da7f9c1",
+        "name": "Tyrell Terry",
+        "war": 0.1,
+        "was_drafted": 1,
+        "actual_pick": 31,
+        "source": "early_entry+senior",
+        "model_rank": 50,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -256,7 +311,17 @@
        },
        "delta_war": -15.2,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pa0882490f6",
+        "name": "Moses Moody",
+        "war": 5.7,
+        "was_drafted": 1,
+        "actual_pick": 14,
+        "source": "early_entry",
+        "model_rank": 20,
+        "same_as_team": false
+       }
       },
       {
        "pick": 48,
@@ -290,7 +355,17 @@
        },
        "delta_war": -0.8,
        "verdict": "team",
-       "slot_value": 2.75
+       "slot_value": 2.75,
+       "open_pool_choice": {
+        "pid": "Pa74bde45e0",
+        "name": "Brandon Rachal",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 48,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -330,7 +405,17 @@
        },
        "delta_war": 7.4,
        "verdict": "model",
-       "slot_value": 6.21
+       "slot_value": 6.21,
+       "open_pool_choice": {
+        "pid": "U0c9cef417c",
+        "name": "Justin Bean",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 16,
+        "same_as_team": false
+       }
       },
       {
        "pick": 44,
@@ -364,7 +449,17 @@
        },
        "delta_war": -4.0,
        "verdict": "team",
-       "slot_value": 3.73
+       "slot_value": 3.73,
+       "open_pool_choice": {
+        "pid": "P13f00227af",
+        "name": "Darius Days",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 44,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -404,7 +499,17 @@
        },
        "delta_war": 32.8,
        "verdict": "model",
-       "slot_value": 6.24
+       "slot_value": 6.24,
+       "open_pool_choice": {
+        "pid": "U6e5f01a69e",
+        "name": "DeAndre Williams",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 15,
+        "same_as_team": false
+       }
       },
       {
        "pick": 46,
@@ -438,7 +543,17 @@
        },
        "delta_war": 0.5,
        "verdict": "model",
-       "slot_value": 3.45
+       "slot_value": 3.45,
+       "open_pool_choice": {
+        "pid": "U6d8d4155b0",
+        "name": "Nadir Hifi",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 46,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -478,7 +593,17 @@
        },
        "delta_war": 6.7,
        "verdict": "model",
-       "slot_value": 20.92
+       "slot_value": 20.92,
+       "open_pool_choice": {
+        "pid": "Pb0cd5d409b",
+        "name": "Donovan Clingan",
+        "war": 8.6,
+        "was_drafted": 1,
+        "actual_pick": 7,
+        "source": "early_entry",
+        "model_rank": 1,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -518,7 +643,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 6.53
+       "slot_value": 6.53,
+       "open_pool_choice": {
+        "pid": "P679974836f",
+        "name": "Jase Richardson",
+        "war": 0.1,
+        "was_drafted": 1,
+        "actual_pick": 25,
+        "source": "early_entry",
+        "model_rank": 13,
+        "same_as_team": false
+       }
       },
       {
        "pick": 22,
@@ -552,7 +687,17 @@
        },
        "delta_war": 3.5,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Ud0bc1b2a7d",
+        "name": "MONTERO, JEAN",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "intl_22",
+        "model_rank": 22,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -574,6 +719,10 @@
     "slot_value_total": 65.1,
     "war_actual_surplus": 9.3,
     "war_model_surplus": -10.8,
+    "open_pool_war_total": 58.4,
+    "open_pool_cards": 14,
+    "open_pool_undrafted_picks": 11,
+    "open_pool_undrafted_war": 23.3,
     "first_round_only": {
      "war_actual_total": 74.6,
      "war_model_total": 54.7,
@@ -621,7 +770,17 @@
        },
        "delta_war": -1.5,
        "verdict": "team",
-       "slot_value": 6.27
+       "slot_value": 6.27,
+       "open_pool_choice": {
+        "pid": "P43dec358d1",
+        "name": "Coby White",
+        "war": 6.9,
+        "was_drafted": 1,
+        "actual_pick": 7,
+        "source": "early_entry",
+        "model_rank": 14,
+        "same_as_team": false
+       }
       },
       {
        "pick": 20,
@@ -655,7 +814,17 @@
        },
        "delta_war": -8.6,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pb16e641fe9",
+        "name": "Ty Jerome",
+        "war": 1.3,
+        "was_drafted": 1,
+        "actual_pick": 24,
+        "source": "early_entry",
+        "model_rank": 20,
+        "same_as_team": false
+       }
       },
       {
        "pick": 22,
@@ -689,7 +858,17 @@
        },
        "delta_war": -8.0,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U8e5f988b8d",
+        "name": "CJ Massinburg",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 22,
+        "same_as_team": false
+       }
       },
       {
        "pick": 51,
@@ -723,7 +902,17 @@
        },
        "delta_war": -0.5,
        "verdict": "team",
-       "slot_value": 1.51
+       "slot_value": 1.51,
+       "open_pool_choice": {
+        "pid": "Ub20b9824b6",
+        "name": "Aric Holman",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 51,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -763,7 +952,17 @@
        },
        "delta_war": 21.3,
        "verdict": "model",
-       "slot_value": 6.27
+       "slot_value": 6.27,
+       "open_pool_choice": {
+        "pid": "P5be180758a",
+        "name": "Desmond Bane",
+        "war": 26.9,
+        "was_drafted": 1,
+        "actual_pick": 30,
+        "source": "senior",
+        "model_rank": 14,
+        "same_as_team": false
+       }
       },
       {
        "pick": 26,
@@ -797,7 +996,17 @@
        },
        "delta_war": 7.2,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U7d3751f7c2",
+        "name": "Christian Vital",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 26,
+        "same_as_team": false
+       }
       },
       {
        "pick": 30,
@@ -831,7 +1040,17 @@
        },
        "delta_war": -27.5,
        "verdict": "team",
-       "slot_value": 5.26
+       "slot_value": 5.26,
+       "open_pool_choice": {
+        "pid": "Uaf977ffe4b",
+        "name": "Jahlil Tripp",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 30,
+        "same_as_team": false
+       }
       },
       {
        "pick": 47,
@@ -865,7 +1084,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 3.1
+       "slot_value": 3.1,
+       "open_pool_choice": {
+        "pid": "Uf135d10615",
+        "name": "Jared Savage",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 47,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -905,7 +1134,17 @@
        },
        "delta_war": 2.0,
        "verdict": "model",
-       "slot_value": 3.63
+       "slot_value": 3.63,
+       "open_pool_choice": {
+        "pid": "P41bcb3bebd",
+        "name": "Austin Reaves",
+        "war": 23.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 45,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -936,7 +1175,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 1.12
+       "slot_value": 1.12,
+       "open_pool_choice": {
+        "pid": "Ue616b46db5",
+        "name": "Brady Manek",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 53,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -976,7 +1225,17 @@
        },
        "delta_war": 0.2,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U46038f2202",
+        "name": "Osun Osunniyi",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 35,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -1016,7 +1275,17 @@
        },
        "delta_war": -3.3,
        "verdict": "team",
-       "slot_value": 5.26
+       "slot_value": 5.26,
+       "open_pool_choice": {
+        "pid": "U81c62e52d9",
+        "name": "Kalib Boone",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 30,
+        "same_as_team": false
+       }
       },
       {
        "pick": 54,
@@ -1050,7 +1319,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U75c5309fae",
+        "name": "RUBSTAVICIUS, MANTAS",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "intl_22",
+        "model_rank": 54,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -1090,7 +1369,17 @@
        },
        "delta_war": 0.4,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P8961a7643a",
+        "name": "Dylan Cardwell",
+        "war": 0.5,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 28,
+        "same_as_team": false
+       }
       },
       {
        "pick": 32,
@@ -1124,7 +1413,17 @@
        },
        "delta_war": -1.6,
        "verdict": "team",
-       "slot_value": 4.37
+       "slot_value": 4.37,
+       "open_pool_choice": {
+        "pid": "P07d140dc91",
+        "name": "Hunter Dickinson",
+        "war": -0.2,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 32,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -1146,6 +1445,10 @@
     "slot_value_total": 82.9,
     "war_actual_surplus": -64.9,
     "war_model_surplus": -53.8,
+    "open_pool_war_total": 21.6,
+    "open_pool_cards": 16,
+    "open_pool_undrafted_picks": 10,
+    "open_pool_undrafted_war": -0.4,
     "first_round_only": {
      "war_actual_total": 5.7,
      "war_model_total": 19.6,
@@ -1193,7 +1496,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 6.18
+       "slot_value": 6.18,
+       "open_pool_choice": {
+        "pid": "P519f028bfb",
+        "name": "Shamorie Ponds",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 17,
+        "same_as_team": false
+       }
       },
       {
        "pick": 27,
@@ -1227,7 +1540,17 @@
        },
        "delta_war": 16.4,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U8f0dd4e367",
+        "name": "Paschal Chukwu",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 27,
+        "same_as_team": false
+       }
       },
       {
        "pick": 31,
@@ -1261,7 +1584,17 @@
        },
        "delta_war": -18.6,
        "verdict": "team",
-       "slot_value": 4.81
+       "slot_value": 4.81,
+       "open_pool_choice": {
+        "pid": "Uce8d424fee",
+        "name": "Zach Hankins",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 31,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -1301,7 +1634,17 @@
        },
        "delta_war": -8.0,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P69f4c7679c",
+        "name": "Malachi Flynn",
+        "war": 1.4,
+        "was_drafted": 1,
+        "actual_pick": 29,
+        "source": "early_entry",
+        "model_rank": 19,
+        "same_as_team": false
+       }
       },
       {
        "pick": 55,
@@ -1335,7 +1678,17 @@
        },
        "delta_war": 13.2,
        "verdict": "model",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Ub3cae97ce4",
+        "name": "Tres Tinkle",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 55,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -1375,7 +1728,17 @@
        },
        "delta_war": -0.6,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P69549f38f2",
+        "name": "Kai Jones",
+        "war": 0.6,
+        "was_drafted": 1,
+        "actual_pick": 19,
+        "source": "early_entry",
+        "model_rank": 27,
+        "same_as_team": false
+       }
       },
       {
        "pick": 44,
@@ -1409,7 +1772,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 3.73
+       "slot_value": 3.73,
+       "open_pool_choice": {
+        "pid": "P9cb019ad12",
+        "name": "JaQuori McLaughlin",
+        "war": -0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 44,
+        "same_as_team": false
+       }
       },
       {
        "pick": 49,
@@ -1443,7 +1816,17 @@
        },
        "delta_war": -0.6,
        "verdict": "team",
-       "slot_value": 2.4
+       "slot_value": 2.4,
+       "open_pool_choice": {
+        "pid": "Uca8d9e34c8",
+        "name": "KALAITZAKIS, PANAGIOTIS",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "intl_22",
+        "model_rank": 49,
+        "same_as_team": false
+       }
       },
       {
        "pick": 59,
@@ -1468,7 +1851,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "P61d8f8df57",
+        "name": "Bones Hyland",
+        "war": 6.2,
+        "was_drafted": 1,
+        "actual_pick": 26,
+        "source": "drafted_outside_rule",
+        "model_rank": 59,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -1513,7 +1906,17 @@
        },
        "delta_war": 2.2,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P1999b4880f",
+        "name": "Amen Thompson",
+        "war": 20.4,
+        "was_drafted": 1,
+        "actual_pick": 4,
+        "source": "drafted_outside_rule",
+        "model_rank": 21,
+        "same_as_team": false
+       }
       },
       {
        "pick": 22,
@@ -1547,7 +1950,17 @@
        },
        "delta_war": -0.7,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Ue42dc163ea",
+        "name": "Brandon Brown",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 22,
+        "same_as_team": false
+       }
       },
       {
        "pick": 51,
@@ -1581,7 +1994,17 @@
        },
        "delta_war": 2.3,
        "verdict": "model",
-       "slot_value": 1.51
+       "slot_value": 1.51,
+       "open_pool_choice": {
+        "pid": "U06a33e0bd1",
+        "name": "KJ Williams",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 51,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -1626,7 +2049,17 @@
        },
        "delta_war": -0.5,
        "verdict": "team",
-       "slot_value": 10.22
+       "slot_value": 10.22,
+       "open_pool_choice": {
+        "pid": "Pd559eb82c1",
+        "name": "Andersson Garcia",
+        "war": -0.3,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 8,
+        "same_as_team": false
+       }
       },
       {
        "pick": 19,
@@ -1660,7 +2093,17 @@
        },
        "delta_war": 2.9,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P855a9cc2ba",
+        "name": "Brooks Barnhizer",
+        "war": -0.1,
+        "was_drafted": 1,
+        "actual_pick": 44,
+        "source": "senior",
+        "model_rank": 19,
+        "same_as_team": false
+       }
       },
       {
        "pick": 26,
@@ -1694,7 +2137,17 @@
        },
        "delta_war": 2.4,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P307cead4af",
+        "name": "Danny Wolf",
+        "war": -0.1,
+        "was_drafted": 1,
+        "actual_pick": 27,
+        "source": "early_entry+senior",
+        "model_rank": 26,
+        "same_as_team": false
+       }
       },
       {
        "pick": 27,
@@ -1728,7 +2181,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P32fecc73d2",
+        "name": "Noa Essengue",
+        "war": -0.1,
+        "was_drafted": 1,
+        "actual_pick": 12,
+        "source": "early_entry",
+        "model_rank": 27,
+        "same_as_team": false
+       }
       },
       {
        "pick": 36,
@@ -1762,7 +2225,17 @@
        },
        "delta_war": 0.8,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U617f5fbc88",
+        "name": "Ian Schieffelin",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 36,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -1784,6 +2257,10 @@
     "slot_value_total": 135.8,
     "war_actual_surplus": -64.1,
     "war_model_surplus": -124.7,
+    "open_pool_war_total": 56.2,
+    "open_pool_cards": 20,
+    "open_pool_undrafted_picks": 11,
+    "open_pool_undrafted_war": -2.3,
     "first_round_only": {
      "war_actual_total": 57.1,
      "war_model_total": 20.2,
@@ -1831,7 +2308,17 @@
        },
        "delta_war": 5.5,
        "verdict": "model",
-       "slot_value": 7.07
+       "slot_value": 7.07,
+       "open_pool_choice": {
+        "pid": "P20a99f84fd",
+        "name": "Juwan Morgan",
+        "war": -0.6,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 12,
+        "same_as_team": false
+       }
       },
       {
        "pick": 36,
@@ -1865,7 +2352,17 @@
        },
        "delta_war": -7.1,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U46ca3b0e88",
+        "name": "Kenny Goins",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 36,
+        "same_as_team": false
+       }
       },
       {
        "pick": 52,
@@ -1899,7 +2396,17 @@
        },
        "delta_war": -0.4,
        "verdict": "team",
-       "slot_value": 1.32
+       "slot_value": 1.32,
+       "open_pool_choice": {
+        "pid": "U77b8269462",
+        "name": "Ishmael Lane",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 52,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -1939,7 +2446,17 @@
        },
        "delta_war": -22.4,
        "verdict": "team",
-       "slot_value": 17.5
+       "slot_value": 17.5,
+       "open_pool_choice": {
+        "pid": "P1388f2fd26",
+        "name": "Tyrese Haliburton",
+        "war": 38.5,
+        "was_drafted": 1,
+        "actual_pick": 12,
+        "source": "early_entry",
+        "model_rank": 3,
+        "same_as_team": false
+       }
       },
       {
        "pick": 32,
@@ -1973,7 +2490,17 @@
        },
        "delta_war": -4.4,
        "verdict": "team",
-       "slot_value": 4.37
+       "slot_value": 4.37,
+       "open_pool_choice": {
+        "pid": "U2e6873e348",
+        "name": "Isaiah Tisdale",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 32,
+        "same_as_team": false
+       }
       },
       {
        "pick": 56,
@@ -2007,7 +2534,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "P9b1073be42",
+        "name": "Lamine Diane",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 56,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2047,7 +2584,17 @@
        },
        "delta_war": 3.0,
        "verdict": "model",
-       "slot_value": 7.62
+       "slot_value": 7.62,
+       "open_pool_choice": {
+        "pid": "Uf58893883c",
+        "name": "Sterling Manley",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 11,
+        "same_as_team": false
+       }
       },
       {
        "pick": 56,
@@ -2072,7 +2619,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Pa617e8f0a5",
+        "name": "Hasahn French",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 56,
+        "same_as_team": false
+       }
       },
       {
        "pick": 57,
@@ -2097,7 +2654,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Pa09bdf4e64",
+        "name": "Georgios Kalaitzakis",
+        "war": -1.1,
+        "was_drafted": 1,
+        "actual_pick": 60,
+        "source": "drafted_outside_rule",
+        "model_rank": 57,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2137,7 +2704,17 @@
        },
        "delta_war": -17.6,
        "verdict": "team",
-       "slot_value": 6.53
+       "slot_value": 6.53,
+       "open_pool_choice": {
+        "pid": "Pe22f69b7a0",
+        "name": "E.J. Liddell",
+        "war": -0.2,
+        "was_drafted": 1,
+        "actual_pick": 41,
+        "source": "early_entry",
+        "model_rank": 13,
+        "same_as_team": false
+       }
       },
       {
        "pick": 15,
@@ -2171,7 +2748,17 @@
        },
        "delta_war": -8.8,
        "verdict": "team",
-       "slot_value": 6.24
+       "slot_value": 6.24,
+       "open_pool_choice": {
+        "pid": "Pa2e8c74c1f",
+        "name": "Jaylin Williams",
+        "war": 8.7,
+        "was_drafted": 1,
+        "actual_pick": 34,
+        "source": "early_entry",
+        "model_rank": 15,
+        "same_as_team": false
+       }
       },
       {
        "pick": 45,
@@ -2205,7 +2792,17 @@
        },
        "delta_war": -4.4,
        "verdict": "team",
-       "slot_value": 3.63
+       "slot_value": 3.63,
+       "open_pool_choice": {
+        "pid": "U4b513fa993",
+        "name": "Sam Waardenburg",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 45,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2245,7 +2842,17 @@
        },
        "delta_war": -0.3,
        "verdict": "team",
-       "slot_value": 19.21
+       "slot_value": 19.21,
+       "open_pool_choice": {
+        "pid": "Pdcc28d7d6b",
+        "name": "Dereck Lively II",
+        "war": 5.7,
+        "was_drafted": 1,
+        "actual_pick": 12,
+        "source": "early_entry",
+        "model_rank": 2,
+        "same_as_team": false
+       }
       },
       {
        "pick": 27,
@@ -2279,7 +2886,17 @@
        },
        "delta_war": 4.2,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P737b0588be",
+        "name": "Andre Jackson Jr.",
+        "war": -1.6,
+        "was_drafted": 1,
+        "actual_pick": 36,
+        "source": "early_entry",
+        "model_rank": 27,
+        "same_as_team": false
+       }
       },
       {
        "pick": 34,
@@ -2313,7 +2930,17 @@
        },
        "delta_war": -0.8,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U5eaab20971",
+        "name": "Terence Lewis II",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 34,
+        "same_as_team": false
+       }
       },
       {
        "pick": 39,
@@ -2347,7 +2974,17 @@
        },
        "delta_war": -5.1,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P1424b0c02d",
+        "name": "Leaky Black",
+        "war": -0.7,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 39,
+        "same_as_team": false
+       }
       },
       {
        "pick": 41,
@@ -2381,7 +3018,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 3.9
+       "slot_value": 3.9,
+       "open_pool_choice": {
+        "pid": "P41704425e7",
+        "name": "Nathan Mensah",
+        "war": -1.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 41,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2421,7 +3068,17 @@
        },
        "delta_war": 2.3,
        "verdict": "model",
-       "slot_value": 12.67
+       "slot_value": 12.67,
+       "open_pool_choice": {
+        "pid": "P2bc6f2a3aa",
+        "name": "Kyle Filipowski",
+        "war": 2.4,
+        "was_drafted": 1,
+        "actual_pick": 32,
+        "source": "early_entry",
+        "model_rank": 6,
+        "same_as_team": false
+       }
       },
       {
        "pick": 42,
@@ -2455,7 +3112,17 @@
        },
        "delta_war": 1.6,
        "verdict": "model",
-       "slot_value": 3.84
+       "slot_value": 3.84,
+       "open_pool_choice": {
+        "pid": "P82e84aa110",
+        "name": "Tristen Newton",
+        "war": -0.1,
+        "was_drafted": 1,
+        "actual_pick": 49,
+        "source": "senior",
+        "model_rank": 42,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2495,7 +3162,17 @@
        },
        "delta_war": -2.9,
        "verdict": "team",
-       "slot_value": 15.17
+       "slot_value": 15.17,
+       "open_pool_choice": {
+        "pid": "P5699f03b57",
+        "name": "Collin Murray-Boyles",
+        "war": 2.7,
+        "was_drafted": 1,
+        "actual_pick": 9,
+        "source": "early_entry",
+        "model_rank": 4,
+        "same_as_team": false
+       }
       },
       {
        "pick": 33,
@@ -2529,7 +3206,17 @@
        },
        "delta_war": -0.8,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P15b8c13058",
+        "name": "Derik Queen",
+        "war": 2.3,
+        "was_drafted": 1,
+        "actual_pick": 13,
+        "source": "early_entry",
+        "model_rank": 33,
+        "same_as_team": false
+       }
       },
       {
        "pick": 34,
@@ -2563,7 +3250,17 @@
        },
        "delta_war": -2.7,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U36ade243c3",
+        "name": "Essam Mostafa",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 34,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -2585,6 +3282,10 @@
     "slot_value_total": 62.6,
     "war_actual_surplus": -32.4,
     "war_model_surplus": -26.8,
+    "open_pool_war_total": 32.2,
+    "open_pool_cards": 9,
+    "open_pool_undrafted_picks": 6,
+    "open_pool_undrafted_war": 8.5,
     "first_round_only": {
      "war_actual_total": 10.5,
      "war_model_total": 17.6,
@@ -2632,7 +3333,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 11.44
+       "slot_value": 11.44,
+       "open_pool_choice": {
+        "pid": "Ped12aa913a",
+        "name": "John Konchar",
+        "war": 8.5,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 7,
+        "same_as_team": false
+       }
       },
       {
        "pick": 38,
@@ -2666,7 +3377,17 @@
        },
        "delta_war": 2.2,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Udb3ae80760",
+        "name": "Jason Burnell",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 38,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2706,7 +3427,17 @@
        },
        "delta_war": 4.1,
        "verdict": "model",
-       "slot_value": 15.17
+       "slot_value": 15.17,
+       "open_pool_choice": {
+        "pid": "Pd70c9ef8df",
+        "name": "Devin Vassell",
+        "war": 8.1,
+        "was_drafted": 1,
+        "actual_pick": 11,
+        "source": "early_entry",
+        "model_rank": 4,
+        "same_as_team": false
+       }
       },
       {
        "pick": 44,
@@ -2740,7 +3471,17 @@
        },
        "delta_war": -1.9,
        "verdict": "team",
-       "slot_value": 3.73
+       "slot_value": 3.73,
+       "open_pool_choice": {
+        "pid": "P51e6803c0a",
+        "name": "Nate Pierre-Louis",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 44,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2780,7 +3521,17 @@
        },
        "delta_war": -3.0,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P2e77fdcd5f",
+        "name": "Justin Gorham",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 38,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2820,7 +3571,17 @@
        },
        "delta_war": -0.9,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pab39ee5462",
+        "name": "Dyson Daniels",
+        "war": 15.4,
+        "was_drafted": 1,
+        "actual_pick": 8,
+        "source": "drafted_outside_rule",
+        "model_rank": 18,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2865,7 +3626,17 @@
        },
        "delta_war": 3.8,
        "verdict": "model",
-       "slot_value": 7.62
+       "slot_value": 7.62,
+       "open_pool_choice": {
+        "pid": "U510cb05831",
+        "name": "Alex Sobel",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 11,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -2905,7 +3676,17 @@
        },
        "delta_war": -0.3,
        "verdict": "team",
-       "slot_value": 7.07
+       "slot_value": 7.07,
+       "open_pool_choice": {
+        "pid": "Pf4e651b50c",
+        "name": "Carter Bryant",
+        "war": 0.1,
+        "was_drafted": 1,
+        "actual_pick": 14,
+        "source": "early_entry",
+        "model_rank": 12,
+        "same_as_team": false
+       }
       },
       {
        "pick": 45,
@@ -2939,7 +3720,17 @@
        },
        "delta_war": 1.2,
        "verdict": "model",
-       "slot_value": 3.63
+       "slot_value": 3.63,
+       "open_pool_choice": {
+        "pid": "U62e71e4f50",
+        "name": "Viktor Lakhin",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 45,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -2961,6 +3752,10 @@
     "slot_value_total": 75.6,
     "war_actual_surplus": -22.9,
     "war_model_surplus": -39.3,
+    "open_pool_war_total": 40.1,
+    "open_pool_cards": 10,
+    "open_pool_undrafted_picks": 6,
+    "open_pool_undrafted_war": 0.3,
     "first_round_only": {
      "war_actual_total": 53.2,
      "war_model_total": 36.8,
@@ -3008,7 +3803,17 @@
        },
        "delta_war": -13.4,
        "verdict": "team",
-       "slot_value": 14.22
+       "slot_value": 14.22,
+       "open_pool_choice": {
+        "pid": "Ped6b9a1a7c",
+        "name": "Jaxson Hayes",
+        "war": 2.0,
+        "was_drafted": 1,
+        "actual_pick": 8,
+        "source": "early_entry",
+        "model_rank": 5,
+        "same_as_team": false
+       }
       },
       {
        "pick": 26,
@@ -3042,7 +3847,17 @@
        },
        "delta_war": -1.0,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Ub91897feec",
+        "name": "Ethan Happ",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 26,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3082,7 +3897,17 @@
        },
        "delta_war": 1.7,
        "verdict": "model",
-       "slot_value": 14.22
+       "slot_value": 14.22,
+       "open_pool_choice": {
+        "pid": "P1f88525e9f",
+        "name": "Xavier Tillman",
+        "war": 5.3,
+        "was_drafted": 1,
+        "actual_pick": 35,
+        "source": "early_entry",
+        "model_rank": 5,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3122,7 +3947,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 17.5
+       "slot_value": 17.5,
+       "open_pool_choice": {
+        "pid": "P45a39b68c1",
+        "name": "Scottie Barnes",
+        "war": 32.0,
+        "was_drafted": 1,
+        "actual_pick": 4,
+        "source": "early_entry",
+        "model_rank": 3,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3162,7 +3997,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 6.27
+       "slot_value": 6.27,
+       "open_pool_choice": {
+        "pid": "P328e73174e",
+        "name": "Jacob Gilyard",
+        "war": 0.3,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 14,
+        "same_as_team": false
+       }
       },
       {
        "pick": 39,
@@ -3196,7 +4041,17 @@
        },
        "delta_war": -0.6,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U92631472e0",
+        "name": "Abdul Ado",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 39,
+        "same_as_team": false
+       }
       },
       {
        "pick": 49,
@@ -3230,7 +4085,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 2.4
+       "slot_value": 2.4,
+       "open_pool_choice": {
+        "pid": "U52b14f170e",
+        "name": "Ty Flowers",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 49,
+        "same_as_team": false
+       }
       },
       {
        "pick": 56,
@@ -3255,7 +4120,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Uee2d91d0f2",
+        "name": "Luka Brajkovic",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 56,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3295,7 +4170,17 @@
        },
        "delta_war": 1.0,
        "verdict": "model",
-       "slot_value": 2.4
+       "slot_value": 2.4,
+       "open_pool_choice": {
+        "pid": "P47a1cc70a3",
+        "name": "Kris Murray",
+        "war": 0.5,
+        "was_drafted": 1,
+        "actual_pick": 23,
+        "source": "early_entry",
+        "model_rank": 49,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3335,7 +4220,17 @@
        },
        "delta_war": -3.6,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U8afec52dec",
+        "name": "Shahada Wells",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 20,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3375,7 +4270,17 @@
        },
        "delta_war": -0.3,
        "verdict": "team",
-       "slot_value": 2.4
+       "slot_value": 2.4,
+       "open_pool_choice": {
+        "pid": "Uef3fdb0767",
+        "name": "Nelly Joseph",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 49,
+        "same_as_team": false
+       }
       },
       {
        "pick": 58,
@@ -3400,7 +4305,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U21be1ba47c",
+        "name": "Tyson Degenhart",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 58,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -3422,6 +4337,10 @@
     "slot_value_total": 50.1,
     "war_actual_surplus": -29.3,
     "war_model_surplus": -30.0,
+    "open_pool_war_total": 11.7,
+    "open_pool_cards": 6,
+    "open_pool_undrafted_picks": 3,
+    "open_pool_undrafted_war": -0.1,
     "first_round_only": {
      "war_actual_total": 20.8,
      "war_model_total": 16.9,
@@ -3469,7 +4388,17 @@
        },
        "delta_war": 3.7,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pbda39b05ec",
+        "name": "Tariq Owens",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 37,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3509,7 +4438,17 @@
        },
        "delta_war": -2.6,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Ubc863c8a53",
+        "name": "Tyrique Jones",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 18,
+        "same_as_team": false
+       }
       },
       {
        "pick": 31,
@@ -3543,7 +4482,17 @@
        },
        "delta_war": -0.6,
        "verdict": "team",
-       "slot_value": 4.81
+       "slot_value": 4.81,
+       "open_pool_choice": {
+        "pid": "U71b916101c",
+        "name": "Trey Landers",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 31,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3588,7 +4537,17 @@
        },
        "delta_war": 1.8,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P7d4b1d6e8f",
+        "name": "Shaedon Sharpe",
+        "war": 2.7,
+        "was_drafted": 1,
+        "actual_pick": 7,
+        "source": "early_entry",
+        "model_rank": 26,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3628,7 +4587,17 @@
        },
        "delta_war": -3.0,
        "verdict": "team",
-       "slot_value": 8.16
+       "slot_value": 8.16,
+       "open_pool_choice": {
+        "pid": "Pa813594724",
+        "name": "Anthony Black",
+        "war": 4.2,
+        "was_drafted": 1,
+        "actual_pick": 6,
+        "source": "early_entry",
+        "model_rank": 10,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3653,7 +4622,17 @@
        "best_hindsight": null,
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Pf99c720027",
+        "name": "Spencer Jones",
+        "war": 0.4,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 58,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3693,7 +4672,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 20.92
+       "slot_value": 20.92,
+       "open_pool_choice": {
+        "pid": "P3d8ccdb639",
+        "name": "Cooper Flagg",
+        "war": 5.0,
+        "was_drafted": 1,
+        "actual_pick": 1,
+        "source": "early_entry",
+        "model_rank": 1,
+        "same_as_team": true
+       }
       }
      ]
     }
@@ -3715,6 +4704,10 @@
     "slot_value_total": 28.5,
     "war_actual_surplus": -15.2,
     "war_model_surplus": -7.3,
+    "open_pool_war_total": 4.9,
+    "open_pool_cards": 5,
+    "open_pool_undrafted_picks": 4,
+    "open_pool_undrafted_war": 0.0,
     "first_round_only": {
      "war_actual_total": 14.1,
      "war_model_total": 21.5,
@@ -3767,7 +4760,17 @@
        },
        "delta_war": -1.2,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U87ca6c418f",
+        "name": "Max Mahoney",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 22,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3807,7 +4810,17 @@
        },
        "delta_war": 14.6,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pe0ad9b9ce5",
+        "name": "Oscar da Silva",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 26,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3847,7 +4860,17 @@
        },
        "delta_war": -5.7,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U3a07da896e",
+        "name": "Myles Johnson",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 21,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3887,7 +4910,17 @@
        },
        "delta_war": 0.5,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U689a8352e3",
+        "name": "Khalil Shabazz",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 40,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3927,7 +4960,17 @@
        },
        "delta_war": -0.3,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P4b73f3a250",
+        "name": "Cam Spencer",
+        "war": 4.9,
+        "was_drafted": 1,
+        "actual_pick": 53,
+        "source": "senior",
+        "model_rank": 28,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -3954,6 +4997,10 @@
     "slot_value_total": 107.3,
     "war_actual_surplus": -77.5,
     "war_model_surplus": -72.7,
+    "open_pool_war_total": 43.7,
+    "open_pool_cards": 14,
+    "open_pool_undrafted_picks": 9,
+    "open_pool_undrafted_war": 8.9,
     "first_round_only": {
      "war_actual_total": 26.2,
      "war_model_total": 40.9,
@@ -4001,7 +5048,17 @@
        },
        "delta_war": 20.8,
        "verdict": "model",
-       "slot_value": 6.24
+       "slot_value": 6.24,
+       "open_pool_choice": {
+        "pid": "P48e78aee32",
+        "name": "Sagaba Konate",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 15,
+        "same_as_team": false
+       }
       },
       {
        "pick": 45,
@@ -4035,7 +5092,17 @@
        },
        "delta_war": 2.3,
        "verdict": "model",
-       "slot_value": 3.63
+       "slot_value": 3.63,
+       "open_pool_choice": {
+        "pid": "Ucee442a46f",
+        "name": "Jordan Hunter",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 45,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4075,7 +5142,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 11.44
+       "slot_value": 11.44,
+       "open_pool_choice": {
+        "pid": "Pfe5913c014",
+        "name": "Killian Hayes",
+        "war": -4.1,
+        "was_drafted": 1,
+        "actual_pick": 7,
+        "source": "early_entry",
+        "model_rank": 7,
+        "same_as_team": true
+       }
       }
      ]
     },
@@ -4115,7 +5192,17 @@
        },
        "delta_war": -9.8,
        "verdict": "team",
-       "slot_value": 20.92
+       "slot_value": 20.92,
+       "open_pool_choice": {
+        "pid": "Pb2632428b5",
+        "name": "Franz Wagner",
+        "war": 25.7,
+        "was_drafted": 1,
+        "actual_pick": 8,
+        "source": "early_entry",
+        "model_rank": 1,
+        "same_as_team": false
+       }
       },
       {
        "pick": 37,
@@ -4149,7 +5236,17 @@
        },
        "delta_war": 2.2,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pd89d8db6f9",
+        "name": "Jose Alvarado",
+        "war": 9.5,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 37,
+        "same_as_team": false
+       }
       },
       {
        "pick": 42,
@@ -4183,7 +5280,17 @@
        },
        "delta_war": 1.5,
        "verdict": "model",
-       "slot_value": 3.84
+       "slot_value": 3.84,
+       "open_pool_choice": {
+        "pid": "Paf9449af91",
+        "name": "Jordan Schakel",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 42,
+        "same_as_team": false
+       }
       },
       {
        "pick": 52,
@@ -4217,7 +5324,17 @@
        },
        "delta_war": -5.9,
        "verdict": "team",
-       "slot_value": 1.32
+       "slot_value": 1.32,
+       "open_pool_choice": {
+        "pid": "Pda7b1a3831",
+        "name": "Ian DuBose",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 52,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4257,7 +5374,17 @@
        },
        "delta_war": 9.1,
        "verdict": "model",
-       "slot_value": 14.22
+       "slot_value": 14.22,
+       "open_pool_choice": {
+        "pid": "Pa5128e8532",
+        "name": "Walker Kessler",
+        "war": 12.9,
+        "was_drafted": 1,
+        "actual_pick": 22,
+        "source": "early_entry",
+        "model_rank": 5,
+        "same_as_team": false
+       }
       },
       {
        "pick": 46,
@@ -4291,7 +5418,17 @@
        },
        "delta_war": 0.1,
        "verdict": "model",
-       "slot_value": 3.45
+       "slot_value": 3.45,
+       "open_pool_choice": {
+        "pid": "U5211cc1baa",
+        "name": "Darius Lee",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 46,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4331,7 +5468,17 @@
        },
        "delta_war": -4.7,
        "verdict": "team",
-       "slot_value": 14.22
+       "slot_value": 14.22,
+       "open_pool_choice": {
+        "pid": "P7bf5b1ca03",
+        "name": "Jarace Walker",
+        "war": 0.3,
+        "was_drafted": 1,
+        "actual_pick": 8,
+        "source": "early_entry",
+        "model_rank": 5,
+        "same_as_team": false
+       }
       },
       {
        "pick": 31,
@@ -4365,7 +5512,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 4.81
+       "slot_value": 4.81,
+       "open_pool_choice": {
+        "pid": "U62d6b03e90",
+        "name": "Malik Miller",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 31,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4405,7 +5562,17 @@
        },
        "delta_war": -0.7,
        "verdict": "team",
-       "slot_value": 14.22
+       "slot_value": 14.22,
+       "open_pool_choice": {
+        "pid": "P32ff4229d3",
+        "name": "Devin Carter",
+        "war": 0.0,
+        "was_drafted": 1,
+        "actual_pick": 13,
+        "source": "early_entry+senior",
+        "model_rank": 5,
+        "same_as_team": false
+       }
       },
       {
        "pick": 53,
@@ -4439,7 +5606,17 @@
        },
        "delta_war": -10.4,
        "verdict": "team",
-       "slot_value": 1.12
+       "slot_value": 1.12,
+       "open_pool_choice": {
+        "pid": "U6f85aac0b8",
+        "name": "Joshua Morgan",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 53,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4479,7 +5656,17 @@
        },
        "delta_war": 0.4,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P6ce9cb925d",
+        "name": "Julian Reese",
+        "war": -0.7,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 37,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -4501,6 +5688,10 @@
     "slot_value_total": 70.3,
     "war_actual_surplus": -54.4,
     "war_model_surplus": -18.1,
+    "open_pool_war_total": 56.3,
+    "open_pool_cards": 12,
+    "open_pool_undrafted_picks": 9,
+    "open_pool_undrafted_war": 8.4,
     "first_round_only": {
      "war_actual_total": 17.6,
      "war_model_total": 59.9,
@@ -4548,7 +5739,17 @@
        },
        "delta_war": -7.3,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U83d09be2bc",
+        "name": "Ebuka Izundu",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 28,
+        "same_as_team": false
+       }
       },
       {
        "pick": 41,
@@ -4582,7 +5783,17 @@
        },
        "delta_war": 2.0,
        "verdict": "model",
-       "slot_value": 3.9
+       "slot_value": 3.9,
+       "open_pool_choice": {
+        "pid": "U7ff9269d8c",
+        "name": "Ed Polite Jr.",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 41,
+        "same_as_team": false
+       }
       },
       {
        "pick": 58,
@@ -4607,7 +5818,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U7c42479dad",
+        "name": "Christian Cunningham",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 58,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4647,7 +5868,17 @@
        },
        "delta_war": 42.7,
        "verdict": "model",
-       "slot_value": 19.21
+       "slot_value": 19.21,
+       "open_pool_choice": {
+        "pid": "P6232d5a44f",
+        "name": "Onyeka Okongwu",
+        "war": 14.5,
+        "was_drafted": 1,
+        "actual_pick": 6,
+        "source": "early_entry",
+        "model_rank": 2,
+        "same_as_team": false
+       }
       },
       {
        "pick": 48,
@@ -4681,7 +5912,17 @@
        },
        "delta_war": 0.4,
        "verdict": "model",
-       "slot_value": 2.75
+       "slot_value": 2.75,
+       "open_pool_choice": {
+        "pid": "Pc2faa1488c",
+        "name": "Sean McDermott",
+        "war": -0.3,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 48,
+        "same_as_team": false
+       }
       },
       {
        "pick": 51,
@@ -4715,7 +5956,17 @@
        },
        "delta_war": -3.1,
        "verdict": "team",
-       "slot_value": 1.51
+       "slot_value": 1.51,
+       "open_pool_choice": {
+        "pid": "U708d2837cf",
+        "name": "Mason Peatling",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 51,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4755,7 +6006,17 @@
        },
        "delta_war": 16.1,
        "verdict": "model",
-       "slot_value": 11.44
+       "slot_value": 11.44,
+       "open_pool_choice": {
+        "pid": "P61afdc25a4",
+        "name": "Cade Cunningham",
+        "war": 22.6,
+        "was_drafted": 1,
+        "actual_pick": 1,
+        "source": "early_entry",
+        "model_rank": 7,
+        "same_as_team": false
+       }
       },
       {
        "pick": 14,
@@ -4789,7 +6050,17 @@
        },
        "delta_war": 1.9,
        "verdict": "model",
-       "slot_value": 6.27
+       "slot_value": 6.27,
+       "open_pool_choice": {
+        "pid": "Pd7fcef8bed",
+        "name": "Aamir Simms",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 14,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4829,7 +6100,17 @@
        },
        "delta_war": -2.3,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P19ae0a39ff",
+        "name": "Keon Ellis",
+        "war": 8.8,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 28,
+        "same_as_team": false
+       }
       },
       {
        "pick": 51,
@@ -4863,7 +6144,17 @@
        },
        "delta_war": -1.3,
        "verdict": "team",
-       "slot_value": 1.51
+       "slot_value": 1.51,
+       "open_pool_choice": {
+        "pid": "U0e3c433c51",
+        "name": "Johnny McCants",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 51,
+        "same_as_team": false
+       }
       },
       {
        "pick": 55,
@@ -4888,7 +6179,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U77e244546f",
+        "name": "David McCormack",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 55,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4928,7 +6229,17 @@
        },
        "delta_war": -8.8,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P9180c4596b",
+        "name": "Ausar Thompson",
+        "war": 10.7,
+        "was_drafted": 1,
+        "actual_pick": 5,
+        "source": "drafted_outside_rule",
+        "model_rank": 19,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -4968,7 +6279,17 @@
        },
        "delta_war": -4.0,
        "verdict": "team",
-       "slot_value": 1.32
+       "slot_value": 1.32,
+       "open_pool_choice": {
+        "pid": "U1ccd4f17e9",
+        "name": "Warren Washington",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 52,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5008,7 +6329,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 3.9
+       "slot_value": 3.9,
+       "open_pool_choice": {
+        "pid": "Ub8bd9f0a29",
+        "name": "Coleman Hawkins",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 41,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -5030,6 +6361,10 @@
     "slot_value_total": 105.9,
     "war_actual_surplus": -52.9,
     "war_model_surplus": -47.1,
+    "open_pool_war_total": 39.8,
+    "open_pool_cards": 10,
+    "open_pool_undrafted_picks": 2,
+    "open_pool_undrafted_war": 6.9,
     "first_round_only": {
      "war_actual_total": 50.8,
      "war_model_total": 58.9,
@@ -5087,7 +6422,17 @@
        },
        "delta_war": 18.2,
        "verdict": "model",
-       "slot_value": 19.21
+       "slot_value": 19.21,
+       "open_pool_choice": {
+        "pid": "Pc3e0235987",
+        "name": "Evan Mobley",
+        "war": 28.5,
+        "was_drafted": 1,
+        "actual_pick": 3,
+        "source": "early_entry",
+        "model_rank": 2,
+        "same_as_team": false
+       }
       },
       {
        "pick": 23,
@@ -5121,7 +6466,17 @@
        },
        "delta_war": 4.9,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P4583d7bf3c",
+        "name": "Jordan Goodwin",
+        "war": 6.7,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 23,
+        "same_as_team": false
+       }
       },
       {
        "pick": 24,
@@ -5155,7 +6510,17 @@
        },
        "delta_war": 16.9,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P0326e23b0d",
+        "name": "Charles Bassey",
+        "war": 1.8,
+        "was_drafted": 1,
+        "actual_pick": 53,
+        "source": "early_entry",
+        "model_rank": 24,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5195,7 +6560,17 @@
        },
        "delta_war": -7.6,
        "verdict": "team",
-       "slot_value": 17.5
+       "slot_value": 17.5,
+       "open_pool_choice": {
+        "pid": "Pe3c0fc5a9e",
+        "name": "Jeremy Sochan",
+        "war": -0.1,
+        "was_drafted": 1,
+        "actual_pick": 9,
+        "source": "early_entry",
+        "model_rank": 3,
+        "same_as_team": false
+       }
       },
       {
        "pick": 17,
@@ -5229,7 +6604,17 @@
        },
        "delta_war": -5.4,
        "verdict": "team",
-       "slot_value": 6.18
+       "slot_value": 6.18,
+       "open_pool_choice": {
+        "pid": "P50d6953351",
+        "name": "Orlando Robinson",
+        "war": 0.3,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 17,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5269,7 +6654,17 @@
        },
        "delta_war": -11.4,
        "verdict": "team",
-       "slot_value": 15.17
+       "slot_value": 15.17,
+       "open_pool_choice": {
+        "pid": "P396ba96b58",
+        "name": "Trayce Jackson-Davis",
+        "war": 4.7,
+        "was_drafted": 1,
+        "actual_pick": 57,
+        "source": "early_entry+senior",
+        "model_rank": 4,
+        "same_as_team": false
+       }
       },
       {
        "pick": 20,
@@ -5303,7 +6698,17 @@
        },
        "delta_war": -1.7,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P51e5ade0ce",
+        "name": "Scoot Henderson",
+        "war": -1.9,
+        "was_drafted": 1,
+        "actual_pick": 3,
+        "source": "drafted_outside_rule",
+        "model_rank": 20,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5343,7 +6748,17 @@
        },
        "delta_war": -6.0,
        "verdict": "team",
-       "slot_value": 17.5
+       "slot_value": 17.5,
+       "open_pool_choice": {
+        "pid": "Pafffac98b2",
+        "name": "Jonathan Mogbo",
+        "war": 0.4,
+        "was_drafted": 1,
+        "actual_pick": 31,
+        "source": "early_entry",
+        "model_rank": 3,
+        "same_as_team": false
+       }
       },
       {
        "pick": 44,
@@ -5377,7 +6792,17 @@
        },
        "delta_war": -2.2,
        "verdict": "team",
-       "slot_value": 3.73
+       "slot_value": 3.73,
+       "open_pool_choice": {
+        "pid": "P414be319a7",
+        "name": "Anton Watson",
+        "war": -0.1,
+        "was_drafted": 1,
+        "actual_pick": 54,
+        "source": "senior",
+        "model_rank": 44,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5417,7 +6842,17 @@
        },
        "delta_war": 0.1,
        "verdict": "model",
-       "slot_value": 8.16
+       "slot_value": 8.16,
+       "open_pool_choice": {
+        "pid": "Pb9eccb67f7",
+        "name": "Khaman Maluach",
+        "war": -0.3,
+        "was_drafted": 1,
+        "actual_pick": 10,
+        "source": "early_entry",
+        "model_rank": 10,
+        "same_as_team": true
+       }
       },
       {
        "pick": 59,
@@ -5436,7 +6871,17 @@
        "best_hindsight": null,
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U7af0bb1fb3",
+        "name": "Ben Middlebrooks",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 59,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -5458,6 +6903,10 @@
     "slot_value_total": 71.7,
     "war_actual_surplus": -62.0,
     "war_model_surplus": -40.5,
+    "open_pool_war_total": 66.6,
+    "open_pool_cards": 16,
+    "open_pool_undrafted_picks": 9,
+    "open_pool_undrafted_war": 3.7,
     "first_round_only": {
      "war_actual_total": -0.2,
      "war_model_total": 36.0,
@@ -5505,7 +6954,17 @@
        },
        "delta_war": -3.9,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pb14f594f0a",
+        "name": "Cameron Johnson",
+        "war": 17.2,
+        "was_drafted": 1,
+        "actual_pick": 11,
+        "source": "senior",
+        "model_rank": 18,
+        "same_as_team": false
+       }
       },
       {
        "pick": 50,
@@ -5539,7 +6998,17 @@
        },
        "delta_war": 1.0,
        "verdict": "model",
-       "slot_value": 1.91
+       "slot_value": 1.91,
+       "open_pool_choice": {
+        "pid": "Pf0f9e6d8f5",
+        "name": "Donta Hall",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 50,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5579,7 +7048,17 @@
        },
        "delta_war": -0.6,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Ud7b31d6b1c",
+        "name": "De'Riante Jenkins",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 54,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5619,7 +7098,17 @@
        },
        "delta_war": 5.1,
        "verdict": "model",
-       "slot_value": 6.53
+       "slot_value": 6.53,
+       "open_pool_choice": {
+        "pid": "P85bbbd5241",
+        "name": "Justin Champagnie",
+        "war": 3.8,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 13,
+        "same_as_team": false
+       }
       },
       {
        "pick": 54,
@@ -5653,7 +7142,17 @@
        },
        "delta_war": -7.7,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "P6bb68789bc",
+        "name": "Marcus Zegarowski",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 54,
+        "same_as_team": false
+       }
       },
       {
        "pick": 60,
@@ -5672,7 +7171,17 @@
        "best_hindsight": null,
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Pcfa1d05a1c",
+        "name": "Carlik Jones",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 60,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5712,7 +7221,17 @@
        },
        "delta_war": 6.4,
        "verdict": "model",
-       "slot_value": 12.67
+       "slot_value": 12.67,
+       "open_pool_choice": {
+        "pid": "P3a5b76349f",
+        "name": "Mark Williams",
+        "war": 8.4,
+        "was_drafted": 1,
+        "actual_pick": 15,
+        "source": "early_entry",
+        "model_rank": 6,
+        "same_as_team": false
+       }
       },
       {
        "pick": 31,
@@ -5746,7 +7265,17 @@
        },
        "delta_war": -5.1,
        "verdict": "team",
-       "slot_value": 4.81
+       "slot_value": 4.81,
+       "open_pool_choice": {
+        "pid": "U8e6da5ec90",
+        "name": "Eliel Nsoseme",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 31,
+        "same_as_team": false
+       }
       },
       {
        "pick": 58,
@@ -5765,7 +7294,17 @@
        "best_hindsight": null,
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U9cd6446c16",
+        "name": "Gaige Prim",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 58,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5805,7 +7344,17 @@
        },
        "delta_war": 23.4,
        "verdict": "model",
-       "slot_value": 11.44
+       "slot_value": 11.44,
+       "open_pool_choice": {
+        "pid": "P0db0d3c576",
+        "name": "Brandin Podziemski",
+        "war": 9.1,
+        "was_drafted": 1,
+        "actual_pick": 19,
+        "source": "early_entry",
+        "model_rank": 7,
+        "same_as_team": false
+       }
       },
       {
        "pick": 26,
@@ -5839,7 +7388,17 @@
        },
        "delta_war": -3.2,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P144ed94c77",
+        "name": "Victor Wembanyama",
+        "war": 32.1,
+        "was_drafted": 1,
+        "actual_pick": 1,
+        "source": "early_entry",
+        "model_rank": 26,
+        "same_as_team": false
+       }
       },
       {
        "pick": 29,
@@ -5873,7 +7432,17 @@
        },
        "delta_war": 8.4,
        "verdict": "model",
-       "slot_value": 5.7
+       "slot_value": 5.7,
+       "open_pool_choice": {
+        "pid": "Pc451072a63",
+        "name": "D'Moi Hodge",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 29,
+        "same_as_team": false
+       }
       },
       {
        "pick": 32,
@@ -5907,7 +7476,17 @@
        },
        "delta_war": -0.8,
        "verdict": "team",
-       "slot_value": 4.37
+       "slot_value": 4.37,
+       "open_pool_choice": {
+        "pid": "Ub3226702aa",
+        "name": "Tra'Von Fagan",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 32,
+        "same_as_team": false
+       }
       },
       {
        "pick": 55,
@@ -5941,7 +7520,17 @@
        },
        "delta_war": -1.0,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "P71f8c1b48d",
+        "name": "Rayan Rupert",
+        "war": -3.6,
+        "was_drafted": 1,
+        "actual_pick": 43,
+        "source": "early_entry",
+        "model_rank": 55,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -5981,7 +7570,17 @@
        },
        "delta_war": 2.1,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pa3f4257d20",
+        "name": "Jared McCain",
+        "war": 0.7,
+        "was_drafted": 1,
+        "actual_pick": 16,
+        "source": "early_entry",
+        "model_rank": 36,
+        "same_as_team": false
+       }
       },
       {
        "pick": 49,
@@ -6015,7 +7614,17 @@
        },
        "delta_war": -3.2,
        "verdict": "team",
-       "slot_value": 2.4
+       "slot_value": 2.4,
+       "open_pool_choice": {
+        "pid": "U4d34d832bc",
+        "name": "Armando Bacot",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 49,
+        "same_as_team": false
+       }
       },
       {
        "pick": 50,
@@ -6049,7 +7658,17 @@
        },
        "delta_war": -0.8,
        "verdict": "team",
-       "slot_value": 1.91
+       "slot_value": 1.91,
+       "open_pool_choice": {
+        "pid": "P58407301c7",
+        "name": "Tidjane Salaün",
+        "war": -1.1,
+        "was_drafted": 1,
+        "actual_pick": 6,
+        "source": "early_entry",
+        "model_rank": 50,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6089,7 +7708,17 @@
        },
        "delta_war": 1.4,
        "verdict": "model",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "P03328260f7",
+        "name": "Chucky Hepburn",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 54,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -6111,6 +7740,10 @@
     "slot_value_total": 32.8,
     "war_actual_surplus": -4.2,
     "war_model_surplus": -40.7,
+    "open_pool_war_total": 0.1,
+    "open_pool_cards": 10,
+    "open_pool_undrafted_picks": 10,
+    "open_pool_undrafted_war": 0.1,
     "first_round_only": {
      "war_actual_total": 9.5,
      "war_model_total": 3.3,
@@ -6158,7 +7791,17 @@
        },
        "delta_war": -13.0,
        "verdict": "team",
-       "slot_value": 2.75
+       "slot_value": 2.75,
+       "open_pool_choice": {
+        "pid": "Ue5dcfab735",
+        "name": "Jonathan Galloway",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 48,
+        "same_as_team": false
+       }
       },
       {
        "pick": 56,
@@ -6192,7 +7835,17 @@
        },
        "delta_war": -0.2,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U25308a84fd",
+        "name": "Dylan Osetkowski",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 56,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6232,7 +7885,17 @@
        },
        "delta_war": 0.5,
        "verdict": "model",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U27a881e3d3",
+        "name": "Austin Wiley",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 57,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6272,7 +7935,17 @@
        },
        "delta_war": -5.8,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P9badd97dfe",
+        "name": "Joel Ayayi",
+        "war": -0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 25,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6312,7 +7985,17 @@
        },
        "delta_war": -11.2,
        "verdict": "team",
-       "slot_value": 3.79
+       "slot_value": 3.79,
+       "open_pool_choice": {
+        "pid": "U49bc777f04",
+        "name": "Kur Kuath",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 43,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6352,7 +8035,17 @@
        },
        "delta_war": 2.3,
        "verdict": "model",
-       "slot_value": 5.26
+       "slot_value": 5.26,
+       "open_pool_choice": {
+        "pid": "Uafbf632502",
+        "name": "Ja'von Franklin",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 30,
+        "same_as_team": false
+       }
       },
       {
        "pick": 48,
@@ -6386,7 +8079,17 @@
        },
        "delta_war": -6.6,
        "verdict": "team",
-       "slot_value": 2.75
+       "slot_value": 2.75,
+       "open_pool_choice": {
+        "pid": "Pf92c037d4b",
+        "name": "Markquis Nowell",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 48,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6426,7 +8129,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 3.45
+       "slot_value": 3.45,
+       "open_pool_choice": {
+        "pid": "U5dd0997a08",
+        "name": "Robert Ford III",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 46,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6466,7 +8179,17 @@
        },
        "delta_war": -2.7,
        "verdict": "team",
-       "slot_value": 5.26
+       "slot_value": 5.26,
+       "open_pool_choice": {
+        "pid": "U0d70824f04",
+        "name": "Clifford Omoruyi",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 30,
+        "same_as_team": false
+       }
       },
       {
        "pick": 51,
@@ -6500,7 +8223,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 1.51
+       "slot_value": 1.51,
+       "open_pool_choice": {
+        "pid": "U398dcddb7f",
+        "name": "Obinna Anochili-Killen",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 51,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -6522,6 +8255,10 @@
     "slot_value_total": 47.8,
     "war_actual_surplus": -29.5,
     "war_model_surplus": -45.8,
+    "open_pool_war_total": 15.7,
+    "open_pool_cards": 8,
+    "open_pool_undrafted_picks": 3,
+    "open_pool_undrafted_war": 0.0,
     "first_round_only": {
      "war_actual_total": 18.0,
      "war_model_total": 2.4,
@@ -6569,7 +8306,17 @@
        },
        "delta_war": -3.8,
        "verdict": "team",
-       "slot_value": 15.17
+       "slot_value": 15.17,
+       "open_pool_choice": {
+        "pid": "Peecc71d248",
+        "name": "Brandon Clarke",
+        "war": 12.3,
+        "was_drafted": 1,
+        "actual_pick": 21,
+        "source": "early_entry",
+        "model_rank": 4,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6609,7 +8356,17 @@
        },
        "delta_war": -9.1,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U8e64ff0b48",
+        "name": "Jonah Radebaugh",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 28,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6649,7 +8406,17 @@
        },
        "delta_war": -4.7,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P606c98790a",
+        "name": "Miles McBride",
+        "war": 6.7,
+        "was_drafted": 1,
+        "actual_pick": 36,
+        "source": "early_entry",
+        "model_rank": 22,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6689,7 +8456,17 @@
        },
        "delta_war": -0.5,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U42db754695",
+        "name": "Jaylan Gainey",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 35,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6729,7 +8506,17 @@
        },
        "delta_war": 2.2,
        "verdict": "model",
-       "slot_value": 6.18
+       "slot_value": 6.18,
+       "open_pool_choice": {
+        "pid": "Pfdcf13c664",
+        "name": "Gradey Dick",
+        "war": -3.5,
+        "was_drafted": 1,
+        "actual_pick": 13,
+        "source": "early_entry",
+        "model_rank": 17,
+        "same_as_team": false
+       }
       },
       {
        "pick": 47,
@@ -6763,7 +8550,17 @@
        },
        "delta_war": -0.0,
        "verdict": "tie",
-       "slot_value": 3.1
+       "slot_value": 3.1,
+       "open_pool_choice": {
+        "pid": "P2db6f2cc8f",
+        "name": "Leonard Miller",
+        "war": 0.9,
+        "was_drafted": 1,
+        "actual_pick": 33,
+        "source": "drafted_outside_rule",
+        "model_rank": 47,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6803,7 +8600,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 6.18
+       "slot_value": 6.18,
+       "open_pool_choice": {
+        "pid": "P23152d31e2",
+        "name": "Zaccharie Risacher",
+        "war": -0.8,
+        "was_drafted": 1,
+        "actual_pick": 1,
+        "source": "early_entry",
+        "model_rank": 17,
+        "same_as_team": false
+       }
       },
       {
        "pick": 55,
@@ -6828,7 +8635,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U82160ac8e6",
+        "name": "Shykeim Phillips",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 55,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -6868,7 +8685,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U1151c37bbc",
+        "name": "Fousseyni Traore",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 55,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -6890,6 +8717,10 @@
     "slot_value_total": 78.7,
     "war_actual_surplus": -19.2,
     "war_model_surplus": -68.4,
+    "open_pool_war_total": 21.3,
+    "open_pool_cards": 14,
+    "open_pool_undrafted_picks": 11,
+    "open_pool_undrafted_war": 5.3,
     "first_round_only": {
      "war_actual_total": 54.7,
      "war_model_total": 20.1,
@@ -6937,7 +8768,17 @@
        },
        "delta_war": -15.5,
        "verdict": "team",
-       "slot_value": 19.21
+       "slot_value": 19.21,
+       "open_pool_choice": {
+        "pid": "Pfe4fcea486",
+        "name": "Ja Morant",
+        "war": 19.2,
+        "was_drafted": 1,
+        "actual_pick": 2,
+        "source": "early_entry+senior",
+        "model_rank": 2,
+        "same_as_team": true
+       }
       }
      ]
     },
@@ -6977,7 +8818,17 @@
        },
        "delta_war": 0.6,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P3c885ec031",
+        "name": "R.J. Hampton",
+        "war": -4.5,
+        "was_drafted": 1,
+        "actual_pick": 24,
+        "source": "drafted_outside_rule",
+        "model_rank": 40,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7017,7 +8868,17 @@
        },
        "delta_war": -3.8,
        "verdict": "team",
-       "slot_value": 6.18
+       "slot_value": 6.18,
+       "open_pool_choice": {
+        "pid": "P479c1cba2f",
+        "name": "Jay Huff",
+        "war": 5.3,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 17,
+        "same_as_team": false
+       }
       },
       {
        "pick": 51,
@@ -7051,7 +8912,17 @@
        },
        "delta_war": -0.3,
        "verdict": "team",
-       "slot_value": 1.51
+       "slot_value": 1.51,
+       "open_pool_choice": {
+        "pid": "Pff95561f44",
+        "name": "Moses Wright",
+        "war": -0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 51,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7091,7 +8962,17 @@
        },
        "delta_war": -13.1,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U40cc352ca8",
+        "name": "Marcus Bingham Jr.",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 22,
+        "same_as_team": false
+       }
       },
       {
        "pick": 29,
@@ -7125,7 +9006,17 @@
        },
        "delta_war": 1.6,
        "verdict": "model",
-       "slot_value": 5.7
+       "slot_value": 5.7,
+       "open_pool_choice": {
+        "pid": "Uf21c212247",
+        "name": "Fabian White Jr.",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 29,
+        "same_as_team": false
+       }
       },
       {
        "pick": 47,
@@ -7159,7 +9050,17 @@
        },
        "delta_war": -5.5,
        "verdict": "team",
-       "slot_value": 3.1
+       "slot_value": 3.1,
+       "open_pool_choice": {
+        "pid": "Uc5d068cc42",
+        "name": "Yauhen Massalski",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 47,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7199,7 +9100,17 @@
        },
        "delta_war": -1.8,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U3a172ad564",
+        "name": "Kyle Bowen",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 25,
+        "same_as_team": false
+       }
       },
       {
        "pick": 45,
@@ -7233,7 +9144,17 @@
        },
        "delta_war": -1.9,
        "verdict": "team",
-       "slot_value": 3.63
+       "slot_value": 3.63,
+       "open_pool_choice": {
+        "pid": "U1ff3aba23e",
+        "name": "Chris Brandon",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 45,
+        "same_as_team": false
+       }
       },
       {
        "pick": 56,
@@ -7258,7 +9179,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "P7c2cc1d590",
+        "name": "Jordan Miller",
+        "war": 2.2,
+        "was_drafted": 1,
+        "actual_pick": 48,
+        "source": "senior",
+        "model_rank": 56,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7298,7 +9229,17 @@
        },
        "delta_war": -2.9,
        "verdict": "team",
-       "slot_value": 9.29
+       "slot_value": 9.29,
+       "open_pool_choice": {
+        "pid": "Pd1401169e8",
+        "name": "Tyler Kolek",
+        "war": 1.3,
+        "was_drafted": 1,
+        "actual_pick": 34,
+        "source": "early_entry+senior",
+        "model_rank": 9,
+        "same_as_team": false
+       }
       },
       {
        "pick": 39,
@@ -7332,7 +9273,17 @@
        },
        "delta_war": -3.2,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pe8e75a6d90",
+        "name": "Jahmir Young",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 39,
+        "same_as_team": false
+       }
       },
       {
        "pick": 57,
@@ -7357,7 +9308,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "P1c44c138bb",
+        "name": "Mohamed Diarra",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 57,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7397,7 +9358,17 @@
        },
        "delta_war": 0.8,
        "verdict": "model",
-       "slot_value": 6.21
+       "slot_value": 6.21,
+       "open_pool_choice": {
+        "pid": "Peb9997d32a",
+        "name": "Chris Mañon",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 16,
+        "same_as_team": false
+       }
       },
       {
        "pick": 48,
@@ -7431,7 +9402,17 @@
        },
        "delta_war": -1.4,
        "verdict": "team",
-       "slot_value": 2.75
+       "slot_value": 2.75,
+       "open_pool_choice": {
+        "pid": "U545c5fb2fc",
+        "name": "Zach Hicks",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 48,
+        "same_as_team": false
+       }
       },
       {
        "pick": 56,
@@ -7465,7 +9446,17 @@
        },
        "delta_war": -2.9,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U4ac52cb2a8",
+        "name": "Javonte Brown",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 56,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -7487,6 +9478,10 @@
     "slot_value_total": 44.9,
     "war_actual_surplus": -10.4,
     "war_model_surplus": -31.8,
+    "open_pool_war_total": 11.6,
+    "open_pool_cards": 8,
+    "open_pool_undrafted_picks": 6,
+    "open_pool_undrafted_war": 4.8,
     "first_round_only": {
      "war_actual_total": 32.6,
      "war_model_total": 8.7,
@@ -7534,7 +9529,17 @@
        },
        "delta_war": -10.0,
        "verdict": "team",
-       "slot_value": 6.53
+       "slot_value": 6.53,
+       "open_pool_choice": {
+        "pid": "P023bbe5ec1",
+        "name": "Grant Williams",
+        "war": 7.2,
+        "was_drafted": 1,
+        "actual_pick": 22,
+        "source": "early_entry",
+        "model_rank": 13,
+        "same_as_team": false
+       }
       },
       {
        "pick": 44,
@@ -7568,7 +9573,17 @@
        },
        "delta_war": -2.0,
        "verdict": "team",
-       "slot_value": 3.73
+       "slot_value": 3.73,
+       "open_pool_choice": {
+        "pid": "U183d13540c",
+        "name": "Dererk Pardon",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 44,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7608,7 +9623,17 @@
        },
        "delta_war": -3.6,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P32d7e7e1eb",
+        "name": "Tyler Bey",
+        "war": -0.4,
+        "was_drafted": 1,
+        "actual_pick": 36,
+        "source": "early_entry",
+        "model_rank": 20,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7653,7 +9678,17 @@
        },
        "delta_war": 0.6,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U83645af882",
+        "name": "Hall Elisias",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 27,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7693,7 +9728,17 @@
        },
        "delta_war": -3.5,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P88b17e8559",
+        "name": "Craig Porter Jr.",
+        "war": 4.8,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 18,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7733,7 +9778,17 @@
        },
        "delta_war": -5.8,
        "verdict": "team",
-       "slot_value": 6.24
+       "slot_value": 6.24,
+       "open_pool_choice": {
+        "pid": "Ue1d0db4a83",
+        "name": "Drew Cisse",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 15,
+        "same_as_team": false
+       }
       },
       {
        "pick": 43,
@@ -7767,7 +9822,17 @@
        },
        "delta_war": 4.5,
        "verdict": "model",
-       "slot_value": 3.79
+       "slot_value": 3.79,
+       "open_pool_choice": {
+        "pid": "U89c573bc20",
+        "name": "Brock Cunningham",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 43,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7807,7 +9872,17 @@
        },
        "delta_war": -1.6,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U59b1354157",
+        "name": "Malik Henry",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 20,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -7829,6 +9904,10 @@
     "slot_value_total": 39.2,
     "war_actual_surplus": -43.7,
     "war_model_surplus": -27.8,
+    "open_pool_war_total": 17.6,
+    "open_pool_cards": 8,
+    "open_pool_undrafted_picks": 3,
+    "open_pool_undrafted_war": -0.0,
     "first_round_only": {
      "war_actual_total": -2.0,
      "war_model_total": 7.6,
@@ -7876,7 +9955,17 @@
        },
        "delta_war": 0.2,
        "verdict": "model",
-       "slot_value": 5.26
+       "slot_value": 5.26,
+       "open_pool_choice": {
+        "pid": "Pbafaf944fd",
+        "name": "Dedric Lawson",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 30,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7916,7 +10005,17 @@
        },
        "delta_war": 5.7,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U6b263872fc",
+        "name": "Sha'markus Kennedy",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 24,
+        "same_as_team": false
+       }
       },
       {
        "pick": 45,
@@ -7950,7 +10049,17 @@
        },
        "delta_war": 1.4,
        "verdict": "model",
-       "slot_value": 3.63
+       "slot_value": 3.63,
+       "open_pool_choice": {
+        "pid": "P08bc96e9be",
+        "name": "Udoka Azubuike",
+        "war": 0.1,
+        "was_drafted": 1,
+        "actual_pick": 27,
+        "source": "senior",
+        "model_rank": 45,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -7990,7 +10099,17 @@
        },
        "delta_war": 8.2,
        "verdict": "model",
-       "slot_value": 4.81
+       "slot_value": 4.81,
+       "open_pool_choice": {
+        "pid": "P21372aaded",
+        "name": "Herbert Jones",
+        "war": 15.1,
+        "was_drafted": 1,
+        "actual_pick": 35,
+        "source": "early_entry+senior",
+        "model_rank": 31,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8030,7 +10149,17 @@
        },
        "delta_war": 0.5,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P416088a2b5",
+        "name": "Dalen Terry",
+        "war": 0.8,
+        "was_drafted": 1,
+        "actual_pick": 18,
+        "source": "early_entry",
+        "model_rank": 24,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8055,7 +10184,17 @@
        "best_hindsight": null,
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Ubae6b3c60c",
+        "name": "Justyn Mutts",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 58,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8095,7 +10234,17 @@
        },
        "delta_war": 3.2,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pa5d4a8fef6",
+        "name": "Matas Buzelis",
+        "war": 1.8,
+        "was_drafted": 1,
+        "actual_pick": 11,
+        "source": "early_entry",
+        "model_rank": 23,
+        "same_as_team": false
+       }
       },
       {
        "pick": 33,
@@ -8129,7 +10278,17 @@
        },
        "delta_war": -0.2,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pd3d2fde686",
+        "name": "Isaiah Crawford",
+        "war": -0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 33,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8169,7 +10328,17 @@
        },
        "delta_war": -3.1,
        "verdict": "team",
-       "slot_value": 3.1
+       "slot_value": 3.1,
+       "open_pool_choice": {
+        "pid": "P3651ab0a99",
+        "name": "Bogoljub Marković",
+        "war": 0.0,
+        "was_drafted": 1,
+        "actual_pick": 47,
+        "source": "early_entry",
+        "model_rank": 47,
+        "same_as_team": true
+       }
       }
      ]
     }
@@ -8191,6 +10360,10 @@
     "slot_value_total": 79.3,
     "war_actual_surplus": -25.8,
     "war_model_surplus": -54.5,
+    "open_pool_war_total": 11.8,
+    "open_pool_cards": 14,
+    "open_pool_undrafted_picks": 9,
+    "open_pool_undrafted_war": -1.9,
     "first_round_only": {
      "war_actual_total": 54.9,
      "war_model_total": 24.0,
@@ -8238,7 +10411,17 @@
        },
        "delta_war": -14.9,
        "verdict": "team",
-       "slot_value": 7.62
+       "slot_value": 7.62,
+       "open_pool_choice": {
+        "pid": "P4ebfdd4833",
+        "name": "Tyler Herro",
+        "war": 12.5,
+        "was_drafted": 1,
+        "actual_pick": 13,
+        "source": "early_entry",
+        "model_rank": 11,
+        "same_as_team": false
+       }
       },
       {
        "pick": 43,
@@ -8272,7 +10455,17 @@
        },
        "delta_war": -1.2,
        "verdict": "team",
-       "slot_value": 3.79
+       "slot_value": 3.79,
+       "open_pool_choice": {
+        "pid": "Ucc35295333",
+        "name": "Jakeenan Gant",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 43,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8312,7 +10505,17 @@
        },
        "delta_war": -22.0,
        "verdict": "team",
-       "slot_value": 20.92
+       "slot_value": 20.92,
+       "open_pool_choice": {
+        "pid": "Pba698d642d",
+        "name": "James Wiseman",
+        "war": -4.2,
+        "was_drafted": 1,
+        "actual_pick": 2,
+        "source": "early_entry",
+        "model_rank": 1,
+        "same_as_team": false
+       }
       },
       {
        "pick": 17,
@@ -8346,7 +10549,17 @@
        },
        "delta_war": 4.5,
        "verdict": "model",
-       "slot_value": 6.18
+       "slot_value": 6.18,
+       "open_pool_choice": {
+        "pid": "P076dcdb147",
+        "name": "Devon Dotson",
+        "war": 0.4,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 17,
+        "same_as_team": false
+       }
       },
       {
        "pick": 33,
@@ -8380,7 +10593,17 @@
        },
        "delta_war": 0.4,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Ufde68c27f2",
+        "name": "Scottie James",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 33,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8425,7 +10648,17 @@
        },
        "delta_war": -0.8,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P97df826a61",
+        "name": "Jake LaRavia",
+        "war": 3.5,
+        "was_drafted": 1,
+        "actual_pick": 19,
+        "source": "early_entry",
+        "model_rank": 19,
+        "same_as_team": true
+       }
       },
       {
        "pick": 40,
@@ -8459,7 +10692,17 @@
        },
        "delta_war": 4.6,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Ufdcad14754",
+        "name": "Thomas Kithier",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 40,
+        "same_as_team": false
+       }
       },
       {
        "pick": 48,
@@ -8493,7 +10736,17 @@
        },
        "delta_war": 0.6,
        "verdict": "model",
-       "slot_value": 2.75
+       "slot_value": 2.75,
+       "open_pool_choice": {
+        "pid": "U549a15451a",
+        "name": "Isaiah Whaley",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 48,
+        "same_as_team": false
+       }
       },
       {
        "pick": 50,
@@ -8527,7 +10780,17 @@
        },
        "delta_war": -2.3,
        "verdict": "team",
-       "slot_value": 1.91
+       "slot_value": 1.91,
+       "open_pool_choice": {
+        "pid": "P98f4c6dfa5",
+        "name": "Justin Minaya",
+        "war": -0.8,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 50,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8567,7 +10830,17 @@
        },
        "delta_war": -1.7,
        "verdict": "team",
-       "slot_value": 1.12
+       "slot_value": 1.12,
+       "open_pool_choice": {
+        "pid": "P5d94de4385",
+        "name": "Colin Castleton",
+        "war": -0.7,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 53,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8607,7 +10880,17 @@
        },
        "delta_war": 3.1,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P2c7c71307b",
+        "name": "Reece Beekman",
+        "war": -0.8,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 27,
+        "same_as_team": false
+       }
       },
       {
        "pick": 37,
@@ -8641,7 +10924,17 @@
        },
        "delta_war": 1.3,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U6275a07428",
+        "name": "Laolu Oke",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 37,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8681,7 +10974,17 @@
        },
        "delta_war": -0.6,
        "verdict": "team",
-       "slot_value": 6.18
+       "slot_value": 6.18,
+       "open_pool_choice": {
+        "pid": "Pa29e5f68db",
+        "name": "Ryan Kalkbrenner",
+        "war": 3.3,
+        "was_drafted": 1,
+        "actual_pick": 34,
+        "source": "senior",
+        "model_rank": 17,
+        "same_as_team": false
+       }
       },
       {
        "pick": 31,
@@ -8715,7 +11018,17 @@
        },
        "delta_war": 0.4,
        "verdict": "model",
-       "slot_value": 4.81
+       "slot_value": 4.81,
+       "open_pool_choice": {
+        "pid": "P8048267828",
+        "name": "Walter Clayton Jr.",
+        "war": -1.4,
+        "was_drafted": 1,
+        "actual_pick": 18,
+        "source": "senior",
+        "model_rank": 31,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -8737,6 +11050,10 @@
     "slot_value_total": 100.1,
     "war_actual_surplus": -55.7,
     "war_model_surplus": -28.5,
+    "open_pool_war_total": 57.7,
+    "open_pool_cards": 15,
+    "open_pool_undrafted_picks": 9,
+    "open_pool_undrafted_war": 0.1,
     "first_round_only": {
      "war_actual_total": 34.2,
      "war_model_total": 38.6,
@@ -8784,7 +11101,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 20.92
+       "slot_value": 20.92,
+       "open_pool_choice": {
+        "pid": "P00e7133fc6",
+        "name": "Zion Williamson",
+        "war": 22.1,
+        "was_drafted": 1,
+        "actual_pick": 1,
+        "source": "early_entry+senior",
+        "model_rank": 1,
+        "same_as_team": true
+       }
       },
       {
        "pick": 39,
@@ -8818,7 +11145,17 @@
        },
        "delta_war": -0.5,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U70febb1cb4",
+        "name": "Elijah Thomas",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 39,
+        "same_as_team": false
+       }
       },
       {
        "pick": 57,
@@ -8852,7 +11189,17 @@
        },
        "delta_war": -0.2,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "P18facb688d",
+        "name": "Terance Mann",
+        "war": 11.8,
+        "was_drafted": 1,
+        "actual_pick": 48,
+        "source": "senior",
+        "model_rank": 57,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -8892,7 +11239,17 @@
        },
        "delta_war": 5.6,
        "verdict": "model",
-       "slot_value": 6.53
+       "slot_value": 6.53,
+       "open_pool_choice": {
+        "pid": "U3336c47692",
+        "name": "Dwayne Sutton",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 13,
+        "same_as_team": false
+       }
       },
       {
        "pick": 39,
@@ -8926,7 +11283,17 @@
        },
        "delta_war": 21.3,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Uf04631c7b6",
+        "name": "Kyrin Galloway",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 39,
+        "same_as_team": false
+       }
       },
       {
        "pick": 42,
@@ -8960,7 +11327,17 @@
        },
        "delta_war": 13.1,
        "verdict": "model",
-       "slot_value": 3.84
+       "slot_value": 3.84,
+       "open_pool_choice": {
+        "pid": "U30c4f5dcab",
+        "name": "Tahjai Teague",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 42,
+        "same_as_team": false
+       }
       },
       {
        "pick": 60,
@@ -8979,7 +11356,17 @@
        "best_hindsight": null,
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U9d1e33df6c",
+        "name": "Cletrell Pope",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 60,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9019,7 +11406,17 @@
        },
        "delta_war": 2.7,
        "verdict": "model",
-       "slot_value": 8.16
+       "slot_value": 8.16,
+       "open_pool_choice": {
+        "pid": "P392363bcf2",
+        "name": "Jalen Johnson",
+        "war": 17.0,
+        "was_drafted": 1,
+        "actual_pick": 20,
+        "source": "early_entry",
+        "model_rank": 10,
+        "same_as_team": false
+       }
       },
       {
        "pick": 35,
@@ -9053,7 +11450,17 @@
        },
        "delta_war": -15.5,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pc9a85d9349",
+        "name": "Aaron Henry",
+        "war": -0.2,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 35,
+        "same_as_team": false
+       }
       },
       {
        "pick": 43,
@@ -9087,7 +11494,17 @@
        },
        "delta_war": 2.2,
        "verdict": "model",
-       "slot_value": 3.79
+       "slot_value": 3.79,
+       "open_pool_choice": {
+        "pid": "P64527f643b",
+        "name": "Ruot Monyyong",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 43,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9127,7 +11544,17 @@
        },
        "delta_war": -7.9,
        "verdict": "team",
-       "slot_value": 10.22
+       "slot_value": 10.22,
+       "open_pool_choice": {
+        "pid": "P76f8234113",
+        "name": "Josh Minott",
+        "war": 3.2,
+        "was_drafted": 1,
+        "actual_pick": 45,
+        "source": "early_entry",
+        "model_rank": 8,
+        "same_as_team": false
+       }
       },
       {
        "pick": 41,
@@ -9161,7 +11588,17 @@
        },
        "delta_war": 2.4,
        "verdict": "model",
-       "slot_value": 3.9
+       "slot_value": 3.9,
+       "open_pool_choice": {
+        "pid": "U6bbb6c3366",
+        "name": "Nick Muszynski",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 41,
+        "same_as_team": false
+       }
       },
       {
        "pick": 52,
@@ -9186,7 +11623,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 1.32
+       "slot_value": 1.32,
+       "open_pool_choice": {
+        "pid": "U44cc14c8cd",
+        "name": "Matthias Tass",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 52,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9226,7 +11673,17 @@
        },
        "delta_war": 4.0,
        "verdict": "model",
-       "slot_value": 6.27
+       "slot_value": 6.27,
+       "open_pool_choice": {
+        "pid": "Pe8ffde2213",
+        "name": "Oscar Tshiebwe",
+        "war": 0.3,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 14,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9266,7 +11723,17 @@
        },
        "delta_war": -0.2,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P1ccfa6c1ee",
+        "name": "Zach Edey",
+        "war": 3.1,
+        "was_drafted": 1,
+        "actual_pick": 9,
+        "source": "early_entry+senior",
+        "model_rank": 21,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9306,7 +11773,17 @@
        },
        "delta_war": 0.7,
        "verdict": "model",
-       "slot_value": 11.44
+       "slot_value": 11.44,
+       "open_pool_choice": {
+        "pid": "Pcb16689c6c",
+        "name": "Asa Newell",
+        "war": 0.3,
+        "was_drafted": 1,
+        "actual_pick": 23,
+        "source": "early_entry+senior",
+        "model_rank": 7,
+        "same_as_team": false
+       }
       },
       {
        "pick": 23,
@@ -9340,7 +11817,17 @@
        },
        "delta_war": -0.5,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Ub979082e86",
+        "name": "Joe Charles",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 23,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -9362,6 +11849,10 @@
     "slot_value_total": 82.6,
     "war_actual_surplus": -67.4,
     "war_model_surplus": -39.7,
+    "open_pool_war_total": 25.5,
+    "open_pool_cards": 14,
+    "open_pool_undrafted_picks": 10,
+    "open_pool_undrafted_war": -0.1,
     "first_round_only": {
      "war_actual_total": 12.2,
      "war_model_total": 19.5,
@@ -9409,7 +11900,17 @@
        },
        "delta_war": -4.1,
        "verdict": "team",
-       "slot_value": 17.5
+       "slot_value": 17.5,
+       "open_pool_choice": {
+        "pid": "P273938bb97",
+        "name": "Bol Bol",
+        "war": 1.9,
+        "was_drafted": 1,
+        "actual_pick": 44,
+        "source": "early_entry",
+        "model_rank": 3,
+        "same_as_team": false
+       }
       },
       {
        "pick": 55,
@@ -9443,7 +11944,17 @@
        },
        "delta_war": 7.3,
        "verdict": "model",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U642a930614",
+        "name": "Romone Saunders",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 55,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9483,7 +11994,17 @@
        },
        "delta_war": -3.5,
        "verdict": "team",
-       "slot_value": 10.22
+       "slot_value": 10.22,
+       "open_pool_choice": {
+        "pid": "P170284fab5",
+        "name": "Paul Reed",
+        "war": 6.7,
+        "was_drafted": 1,
+        "actual_pick": 58,
+        "source": "early_entry",
+        "model_rank": 8,
+        "same_as_team": false
+       }
       },
       {
        "pick": 23,
@@ -9517,7 +12038,17 @@
        },
        "delta_war": 0.6,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P716f6175e4",
+        "name": "Tre Jones",
+        "war": 9.4,
+        "was_drafted": 1,
+        "actual_pick": 41,
+        "source": "early_entry",
+        "model_rank": 23,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9557,7 +12088,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P64263ced9d",
+        "name": "Jalen Green",
+        "war": 7.5,
+        "was_drafted": 1,
+        "actual_pick": 2,
+        "source": "drafted_outside_rule",
+        "model_rank": 19,
+        "same_as_team": false
+       }
       },
       {
        "pick": 21,
@@ -9591,7 +12132,17 @@
        },
        "delta_war": 9.9,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P130d4826ef",
+        "name": "McKinley Wright IV",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 21,
+        "same_as_team": false
+       }
       },
       {
        "pick": 32,
@@ -9625,7 +12176,17 @@
        },
        "delta_war": 12.4,
        "verdict": "model",
-       "slot_value": 4.37
+       "slot_value": 4.37,
+       "open_pool_choice": {
+        "pid": "P40d023c55e",
+        "name": "Terry Taylor",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 32,
+        "same_as_team": false
+       }
       },
       {
        "pick": 58,
@@ -9650,7 +12211,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U322bfecbd8",
+        "name": "Corey Douglas Jr.",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 58,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9690,7 +12261,17 @@
        },
        "delta_war": 1.4,
        "verdict": "model",
-       "slot_value": 7.62
+       "slot_value": 7.62,
+       "open_pool_choice": {
+        "pid": "Ud159837f14",
+        "name": "Trevion Williams",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 11,
+        "same_as_team": false
+       }
       },
       {
        "pick": 42,
@@ -9724,7 +12305,17 @@
        },
        "delta_war": 6.2,
        "verdict": "model",
-       "slot_value": 3.84
+       "slot_value": 3.84,
+       "open_pool_choice": {
+        "pid": "U63426174ea",
+        "name": "Anthony Polite",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 42,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9769,7 +12360,17 @@
        },
        "delta_war": 3.1,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U4206d2e629",
+        "name": "Tyreek Smith",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 24,
+        "same_as_team": false
+       }
       },
       {
        "pick": 25,
@@ -9803,7 +12404,17 @@
        },
        "delta_war": -0.5,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U748566ea64",
+        "name": "Drew Pember",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 25,
+        "same_as_team": false
+       }
       },
       {
        "pick": 38,
@@ -9837,7 +12448,17 @@
        },
        "delta_war": -4.7,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P66484e16cb",
+        "name": "Jalen Bridges",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 38,
+        "same_as_team": false
+       }
       },
       {
        "pick": 51,
@@ -9871,7 +12492,17 @@
        },
        "delta_war": -0.6,
        "verdict": "team",
-       "slot_value": 1.51
+       "slot_value": 1.51,
+       "open_pool_choice": {
+        "pid": "U4dfae9d8cb",
+        "name": "Quentin Millora-Brown",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 51,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -9911,7 +12542,17 @@
        },
        "delta_war": -0.2,
        "verdict": "team",
-       "slot_value": 1.91
+       "slot_value": 1.91,
+       "open_pool_choice": {
+        "pid": "Uf3c7204555",
+        "name": "Zakai Zeigler",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 50,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -9933,6 +12574,10 @@
     "slot_value_total": 118.8,
     "war_actual_surplus": 29.2,
     "war_model_surplus": -22.0,
+    "open_pool_war_total": 47.5,
+    "open_pool_cards": 20,
+    "open_pool_undrafted_picks": 7,
+    "open_pool_undrafted_war": 5.8,
     "first_round_only": {
      "war_actual_total": 126.6,
      "war_model_total": 89.9,
@@ -9980,7 +12625,17 @@
        },
        "delta_war": -11.3,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pe19880ee92",
+        "name": "Dean Wade",
+        "war": 5.4,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 21,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -10020,7 +12675,17 @@
        },
        "delta_war": -12.4,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U4c6b71e80b",
+        "name": "AJ Brodeur",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 25,
+        "same_as_team": false
+       }
       },
       {
        "pick": 53,
@@ -10054,7 +12719,17 @@
        },
        "delta_war": 6.4,
        "verdict": "model",
-       "slot_value": 1.12
+       "slot_value": 1.12,
+       "open_pool_choice": {
+        "pid": "P272ac40c3c",
+        "name": "Patrick Williams",
+        "war": 1.2,
+        "was_drafted": 1,
+        "actual_pick": 4,
+        "source": "early_entry+senior",
+        "model_rank": 53,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -10094,7 +12769,17 @@
        },
        "delta_war": 9.9,
        "verdict": "model",
-       "slot_value": 12.67
+       "slot_value": 12.67,
+       "open_pool_choice": {
+        "pid": "P87ada0d006",
+        "name": "Isaiah Jackson",
+        "war": 3.7,
+        "was_drafted": 1,
+        "actual_pick": 22,
+        "source": "early_entry",
+        "model_rank": 6,
+        "same_as_team": false
+       }
       },
       {
        "pick": 16,
@@ -10128,7 +12813,17 @@
        },
        "delta_war": -28.7,
        "verdict": "team",
-       "slot_value": 6.21
+       "slot_value": 6.21,
+       "open_pool_choice": {
+        "pid": "P854a3a23a2",
+        "name": "Josh Giddey",
+        "war": 19.6,
+        "was_drafted": 1,
+        "actual_pick": 6,
+        "source": "early_entry",
+        "model_rank": 16,
+        "same_as_team": false
+       }
       },
       {
        "pick": 18,
@@ -10162,7 +12857,17 @@
        },
        "delta_war": 10.9,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P82dc635a40",
+        "name": "Jared Butler",
+        "war": 0.7,
+        "was_drafted": 1,
+        "actual_pick": 40,
+        "source": "early_entry",
+        "model_rank": 18,
+        "same_as_team": false
+       }
       },
       {
        "pick": 34,
@@ -10196,7 +12901,17 @@
        },
        "delta_war": -0.5,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P30169adef4",
+        "name": "Jason Preston",
+        "war": 0.0,
+        "was_drafted": 1,
+        "actual_pick": 33,
+        "source": "early_entry",
+        "model_rank": 34,
+        "same_as_team": false
+       }
       },
       {
        "pick": 36,
@@ -10230,7 +12945,17 @@
        },
        "delta_war": -6.7,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P8379cd574e",
+        "name": "Steffon Mitchell",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 36,
+        "same_as_team": false
+       }
       },
       {
        "pick": 55,
@@ -10264,7 +12989,17 @@
        },
        "delta_war": -6.9,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Pbfadf35dca",
+        "name": "Isaiah Livers",
+        "war": -0.5,
+        "was_drafted": 1,
+        "actual_pick": 42,
+        "source": "early_entry+senior",
+        "model_rank": 55,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -10304,7 +13039,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 19.21
+       "slot_value": 19.21,
+       "open_pool_choice": {
+        "pid": "P86df290cda",
+        "name": "Keegan Murray",
+        "war": 8.4,
+        "was_drafted": 1,
+        "actual_pick": 4,
+        "source": "early_entry",
+        "model_rank": 2,
+        "same_as_team": false
+       }
       },
       {
        "pick": 12,
@@ -10338,7 +13083,17 @@
        },
        "delta_war": -5.3,
        "verdict": "team",
-       "slot_value": 7.07
+       "slot_value": 7.07,
+       "open_pool_choice": {
+        "pid": "P821b19c2a1",
+        "name": "Kenneth Lofton Jr.",
+        "war": 0.3,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 12,
+        "same_as_team": false
+       }
       },
       {
        "pick": 30,
@@ -10372,7 +13127,17 @@
        },
        "delta_war": -3.0,
        "verdict": "team",
-       "slot_value": 5.26
+       "slot_value": 5.26,
+       "open_pool_choice": {
+        "pid": "Ub96a2cc36b",
+        "name": "Brison Gresham",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 30,
+        "same_as_team": false
+       }
       },
       {
        "pick": 34,
@@ -10406,7 +13171,17 @@
        },
        "delta_war": -8.9,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P6876f611cb",
+        "name": "Vince Williams Jr.",
+        "war": 2.5,
+        "was_drafted": 1,
+        "actual_pick": 47,
+        "source": "early_entry+senior",
+        "model_rank": 34,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -10446,7 +13221,17 @@
        },
        "delta_war": -1.1,
        "verdict": "team",
-       "slot_value": 7.07
+       "slot_value": 7.07,
+       "open_pool_choice": {
+        "pid": "P3dd06c5ebd",
+        "name": "Jaime Jaquez Jr.",
+        "war": 5.7,
+        "was_drafted": 1,
+        "actual_pick": 18,
+        "source": "early_entry+senior",
+        "model_rank": 12,
+        "same_as_team": false
+       }
       },
       {
        "pick": 37,
@@ -10480,7 +13265,17 @@
        },
        "delta_war": 2.2,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pa6029bb5a6",
+        "name": "Jaylen Clark",
+        "war": 1.0,
+        "was_drafted": 1,
+        "actual_pick": 53,
+        "source": "early_entry",
+        "model_rank": 37,
+        "same_as_team": false
+       }
       },
       {
        "pick": 50,
@@ -10514,7 +13309,17 @@
        },
        "delta_war": -0.3,
        "verdict": "team",
-       "slot_value": 1.91
+       "slot_value": 1.91,
+       "open_pool_choice": {
+        "pid": "Ua0872ad07f",
+        "name": "Isaiah Wilkins",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 50,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -10554,7 +13359,17 @@
        },
        "delta_war": 3.6,
        "verdict": "model",
-       "slot_value": 7.07
+       "slot_value": 7.07,
+       "open_pool_choice": {
+        "pid": "Pe083952d4c",
+        "name": "Ronald Holland II",
+        "war": 1.1,
+        "was_drafted": 1,
+        "actual_pick": 5,
+        "source": "drafted_outside_rule",
+        "model_rank": 12,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -10594,7 +13409,17 @@
        },
        "delta_war": 0.6,
        "verdict": "model",
-       "slot_value": 6.24
+       "slot_value": 6.24,
+       "open_pool_choice": {
+        "pid": "P318e86822c",
+        "name": "Nique Clifford",
+        "war": -2.7,
+        "was_drafted": 1,
+        "actual_pick": 24,
+        "source": "senior",
+        "model_rank": 15,
+        "same_as_team": false
+       }
       },
       {
        "pick": 24,
@@ -10628,7 +13453,17 @@
        },
        "delta_war": 0.1,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pf54bd6bbc8",
+        "name": "Kasparas Jakučionis",
+        "war": 1.0,
+        "was_drafted": 1,
+        "actual_pick": 20,
+        "source": "early_entry",
+        "model_rank": 24,
+        "same_as_team": false
+       }
       },
       {
        "pick": 44,
@@ -10662,7 +13497,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 3.73
+       "slot_value": 3.73,
+       "open_pool_choice": {
+        "pid": "U8efa665e40",
+        "name": "Jared Billups",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 44,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -10684,6 +13529,10 @@
     "slot_value_total": 112.6,
     "war_actual_surplus": -39.9,
     "war_model_surplus": -50.0,
+    "open_pool_war_total": 69.9,
+    "open_pool_cards": 15,
+    "open_pool_undrafted_picks": 7,
+    "open_pool_undrafted_war": 0.0,
     "first_round_only": {
      "war_actual_total": 70.7,
      "war_model_total": 61.1,
@@ -10731,7 +13580,17 @@
        },
        "delta_war": 3.8,
        "verdict": "model",
-       "slot_value": 6.21
+       "slot_value": 6.21,
+       "open_pool_choice": {
+        "pid": "Ud295966fde",
+        "name": "Cameron Jackson",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 16,
+        "same_as_team": false
+       }
       },
       {
        "pick": 46,
@@ -10765,7 +13624,17 @@
        },
        "delta_war": -2.4,
        "verdict": "team",
-       "slot_value": 3.45
+       "slot_value": 3.45,
+       "open_pool_choice": {
+        "pid": "Ub6a1ba67a3",
+        "name": "Isaiah Martin",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 46,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -10805,7 +13674,17 @@
        },
        "delta_war": -6.2,
        "verdict": "team",
-       "slot_value": 6.24
+       "slot_value": 6.24,
+       "open_pool_choice": {
+        "pid": "P7699b7f669",
+        "name": "Isaac Okoro",
+        "war": 6.3,
+        "was_drafted": 1,
+        "actual_pick": 5,
+        "source": "early_entry",
+        "model_rank": 15,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -10845,7 +13724,17 @@
        },
        "delta_war": 19.2,
        "verdict": "model",
-       "slot_value": 14.22
+       "slot_value": 14.22,
+       "open_pool_choice": {
+        "pid": "Pc97a1282a3",
+        "name": "Jalen Suggs",
+        "war": 12.8,
+        "was_drafted": 1,
+        "actual_pick": 5,
+        "source": "early_entry",
+        "model_rank": 5,
+        "same_as_team": true
+       }
       },
       {
        "pick": 8,
@@ -10879,7 +13768,17 @@
        },
        "delta_war": -17.9,
        "verdict": "team",
-       "slot_value": 10.22
+       "slot_value": 10.22,
+       "open_pool_choice": {
+        "pid": "Pb3cfb2c388",
+        "name": "Alperen Sengun",
+        "war": 29.5,
+        "was_drafted": 1,
+        "actual_pick": 16,
+        "source": "early_entry",
+        "model_rank": 8,
+        "same_as_team": false
+       }
       },
       {
        "pick": 33,
@@ -10913,7 +13812,17 @@
        },
        "delta_war": 5.5,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Uf6e246bec0",
+        "name": "Brad Greene",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 33,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -10953,7 +13862,17 @@
        },
        "delta_war": -10.1,
        "verdict": "team",
-       "slot_value": 20.92
+       "slot_value": 20.92,
+       "open_pool_choice": {
+        "pid": "Pbfdaa31fd0",
+        "name": "Chet Holmgren",
+        "war": 19.9,
+        "was_drafted": 1,
+        "actual_pick": 2,
+        "source": "early_entry",
+        "model_rank": 1,
+        "same_as_team": false
+       }
       },
       {
        "pick": 32,
@@ -10987,7 +13906,17 @@
        },
        "delta_war": -2.0,
        "verdict": "team",
-       "slot_value": 4.37
+       "slot_value": 4.37,
+       "open_pool_choice": {
+        "pid": "U6fa959992b",
+        "name": "Jalyn Hinton",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 32,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -11027,7 +13956,17 @@
        },
        "delta_war": 1.5,
        "verdict": "model",
-       "slot_value": 12.67
+       "slot_value": 12.67,
+       "open_pool_choice": {
+        "pid": "Pc4ba85a58f",
+        "name": "Jalen Pickett",
+        "war": 0.5,
+        "was_drafted": 1,
+        "actual_pick": 32,
+        "source": "senior",
+        "model_rank": 6,
+        "same_as_team": false
+       }
       },
       {
        "pick": 11,
@@ -11061,7 +14000,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 7.62
+       "slot_value": 7.62,
+       "open_pool_choice": {
+        "pid": "P9a144a10c5",
+        "name": "Noah Clowney",
+        "war": -1.1,
+        "was_drafted": 1,
+        "actual_pick": 21,
+        "source": "early_entry",
+        "model_rank": 11,
+        "same_as_team": false
+       }
       },
       {
        "pick": 36,
@@ -11095,7 +14044,17 @@
        },
        "delta_war": -2.1,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U49faded30f",
+        "name": "Terrion Murdix",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 36,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -11135,7 +14094,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P4bbcd3bc18",
+        "name": "DaRon Holmes II",
+        "war": 0.2,
+        "was_drafted": 1,
+        "actual_pick": 22,
+        "source": "early_entry",
+        "model_rank": 18,
+        "same_as_team": false
+       }
       },
       {
        "pick": 47,
@@ -11169,7 +14138,17 @@
        },
        "delta_war": 0.5,
        "verdict": "model",
-       "slot_value": 3.1
+       "slot_value": 3.1,
+       "open_pool_choice": {
+        "pid": "P13f5a8ca49",
+        "name": "Tristan da Silva",
+        "war": 1.7,
+        "was_drafted": 1,
+        "actual_pick": 18,
+        "source": "early_entry+senior",
+        "model_rank": 47,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -11209,7 +14188,17 @@
        },
        "delta_war": -0.2,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U2630bfdede",
+        "name": "Kobe Johnson",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 25,
+        "same_as_team": false
+       }
       },
       {
        "pick": 46,
@@ -11243,7 +14232,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 3.45
+       "slot_value": 3.45,
+       "open_pool_choice": {
+        "pid": "Uf966bbcbed",
+        "name": "Stevie Mitchell",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 46,
+        "same_as_team": false
+       }
       },
       {
        "pick": 57,
@@ -11268,7 +14267,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U125e2ddeb5",
+        "name": "Jack Clark",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 57,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -11290,6 +14299,10 @@
     "slot_value_total": 82.0,
     "war_actual_surplus": -52.6,
     "war_model_surplus": -34.7,
+    "open_pool_war_total": 42.6,
+    "open_pool_cards": 17,
+    "open_pool_undrafted_picks": 9,
+    "open_pool_undrafted_war": -0.9,
     "first_round_only": {
      "war_actual_total": 26.0,
      "war_model_total": 25.1,
@@ -11337,7 +14350,17 @@
        },
        "delta_war": -1.6,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P7c5888ec9d",
+        "name": "Chuma Okeke",
+        "war": 2.3,
+        "was_drafted": 1,
+        "actual_pick": 16,
+        "source": "early_entry",
+        "model_rank": 24,
+        "same_as_team": false
+       }
       },
       {
        "pick": 33,
@@ -11371,7 +14394,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P5a277fef0e",
+        "name": "DaQuan Jeffries",
+        "war": -0.5,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 33,
+        "same_as_team": false
+       }
       },
       {
        "pick": 34,
@@ -11405,7 +14438,17 @@
        },
        "delta_war": 8.0,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pca926e63d0",
+        "name": "Josh Reaves",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 34,
+        "same_as_team": false
+       }
       },
       {
        "pick": 42,
@@ -11439,7 +14482,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 3.84
+       "slot_value": 3.84,
+       "open_pool_choice": {
+        "pid": "Pe661d7acde",
+        "name": "Nicolas Claxton",
+        "war": 16.3,
+        "was_drafted": 1,
+        "actual_pick": 31,
+        "source": "early_entry+senior",
+        "model_rank": 42,
+        "same_as_team": false
+       }
       },
       {
        "pick": 54,
@@ -11473,7 +14526,17 @@
        },
        "delta_war": -2.0,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U89e06083dd",
+        "name": "Daishon Smith",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 54,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -11513,7 +14576,17 @@
        },
        "delta_war": -28.2,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P98391b949f",
+        "name": "Killian Tillie",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 21,
+        "same_as_team": false
+       }
       },
       {
        "pick": 34,
@@ -11547,7 +14620,17 @@
        },
        "delta_war": 24.4,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Uf192c076bf",
+        "name": "James Dickey",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 34,
+        "same_as_team": false
+       }
       },
       {
        "pick": 36,
@@ -11581,7 +14664,17 @@
        },
        "delta_war": 0.4,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pd3cfd798be",
+        "name": "Kaleb Wesson",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 36,
+        "same_as_team": false
+       }
       },
       {
        "pick": 49,
@@ -11615,7 +14708,17 @@
        },
        "delta_war": -11.0,
        "verdict": "team",
-       "slot_value": 2.4
+       "slot_value": 2.4,
+       "open_pool_choice": {
+        "pid": "U57987045c4",
+        "name": "Justinian Jessup",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 49,
+        "same_as_team": false
+       }
       },
       {
        "pick": 58,
@@ -11640,7 +14743,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Pf46613d969",
+        "name": "Payton Pritchard",
+        "war": 14.7,
+        "was_drafted": 1,
+        "actual_pick": 26,
+        "source": "senior",
+        "model_rank": 58,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -11680,7 +14793,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P88205fde52",
+        "name": "Quentin Grimes",
+        "war": 9.5,
+        "was_drafted": 1,
+        "actual_pick": 25,
+        "source": "early_entry",
+        "model_rank": 28,
+        "same_as_team": false
+       }
       },
       {
        "pick": 50,
@@ -11714,7 +14837,17 @@
        },
        "delta_war": -1.1,
        "verdict": "team",
-       "slot_value": 1.91
+       "slot_value": 1.91,
+       "open_pool_choice": {
+        "pid": "P60da7b4537",
+        "name": "Luka Garza",
+        "war": 3.7,
+        "was_drafted": 1,
+        "actual_pick": 52,
+        "source": "early_entry+senior",
+        "model_rank": 50,
+        "same_as_team": false
+       }
       },
       {
        "pick": 53,
@@ -11748,7 +14881,17 @@
        },
        "delta_war": -2.9,
        "verdict": "team",
-       "slot_value": 1.12
+       "slot_value": 1.12,
+       "open_pool_choice": {
+        "pid": "Pa8621489c8",
+        "name": "DeJon Jarreau",
+        "war": -0.4,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 53,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -11788,7 +14931,17 @@
        },
        "delta_war": 24.8,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P3b1e823247",
+        "name": "Christian Braun",
+        "war": 8.1,
+        "was_drafted": 1,
+        "actual_pick": 21,
+        "source": "early_entry",
+        "model_rank": 23,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -11833,7 +14986,17 @@
        },
        "delta_war": 4.1,
        "verdict": "model",
-       "slot_value": 6.21
+       "slot_value": 6.21,
+       "open_pool_choice": {
+        "pid": "P0d7bcc4d57",
+        "name": "Ryan Dunn",
+        "war": 0.2,
+        "was_drafted": 1,
+        "actual_pick": 28,
+        "source": "early_entry",
+        "model_rank": 16,
+        "same_as_team": false
+       }
       },
       {
        "pick": 41,
@@ -11867,7 +15030,17 @@
        },
        "delta_war": 1.8,
        "verdict": "model",
-       "slot_value": 3.9
+       "slot_value": 3.9,
+       "open_pool_choice": {
+        "pid": "P9fc884bebd",
+        "name": "Oso Ighodaro",
+        "war": 3.3,
+        "was_drafted": 1,
+        "actual_pick": 40,
+        "source": "early_entry+senior",
+        "model_rank": 41,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -11907,7 +15080,17 @@
        },
        "delta_war": 0.0,
        "verdict": "tie",
-       "slot_value": 17.5
+       "slot_value": 17.5,
+       "open_pool_choice": {
+        "pid": "P3f654a33fe",
+        "name": "Thomas Sorber",
+        "war": 0.0,
+        "was_drafted": 1,
+        "actual_pick": 15,
+        "source": "early_entry",
+        "model_rank": 3,
+        "same_as_team": false
+       }
       },
       {
        "pick": 35,
@@ -11941,7 +15124,17 @@
        },
        "delta_war": 0.6,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U90b6f3d980",
+        "name": "Bent Leuchten",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 35,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -11963,6 +15156,10 @@
     "slot_value_total": 45.4,
     "war_actual_surplus": -28.8,
     "war_model_surplus": -25.3,
+    "open_pool_war_total": 11.5,
+    "open_pool_cards": 8,
+    "open_pool_undrafted_picks": 4,
+    "open_pool_undrafted_war": 0.3,
     "first_round_only": {
      "war_actual_total": 10.9,
      "war_model_total": 20.3,
@@ -12010,7 +15207,17 @@
        },
        "delta_war": 20.7,
        "verdict": "model",
-       "slot_value": 12.67
+       "slot_value": 12.67,
+       "open_pool_choice": {
+        "pid": "Pbc4309c829",
+        "name": "Jarrett Culver",
+        "war": -1.4,
+        "was_drafted": 1,
+        "actual_pick": 6,
+        "source": "early_entry",
+        "model_rank": 6,
+        "same_as_team": true
+       }
       },
       {
        "pick": 32,
@@ -12044,7 +15251,17 @@
        },
        "delta_war": 4.9,
        "verdict": "model",
-       "slot_value": 4.37
+       "slot_value": 4.37,
+       "open_pool_choice": {
+        "pid": "P3e9c3ca3d7",
+        "name": "Jeremiah Martin",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 32,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12084,7 +15301,17 @@
        },
        "delta_war": -3.4,
        "verdict": "team",
-       "slot_value": 8.16
+       "slot_value": 8.16,
+       "open_pool_choice": {
+        "pid": "Pe6009787c4",
+        "name": "Freddie Gillespie",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 10,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12124,7 +15351,17 @@
        },
        "delta_war": -6.1,
        "verdict": "team",
-       "slot_value": 5.7
+       "slot_value": 5.7,
+       "open_pool_choice": {
+        "pid": "P2c8aa67899",
+        "name": "Davion Mitchell",
+        "war": 5.8,
+        "was_drafted": 1,
+        "actual_pick": 9,
+        "source": "early_entry",
+        "model_rank": 29,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12169,7 +15406,17 @@
        },
        "delta_war": -8.4,
        "verdict": "team",
-       "slot_value": 1.32
+       "slot_value": 1.32,
+       "open_pool_choice": {
+        "pid": "P0e1f032d1f",
+        "name": "Jalen Slawson",
+        "war": 0.3,
+        "was_drafted": 1,
+        "actual_pick": 54,
+        "source": "senior",
+        "model_rank": 52,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12209,7 +15456,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pada60a9da7",
+        "name": "Kel'el Ware",
+        "war": 6.5,
+        "was_drafted": 1,
+        "actual_pick": 15,
+        "source": "early_entry",
+        "model_rank": 22,
+        "same_as_team": false
+       }
       },
       {
        "pick": 56,
@@ -12234,7 +15491,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Ue266541d21",
+        "name": "KiAndre Gaddy",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 56,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12274,7 +15541,17 @@
        },
        "delta_war": -1.6,
        "verdict": "team",
-       "slot_value": 5.7
+       "slot_value": 5.7,
+       "open_pool_choice": {
+        "pid": "Uda96da0af3",
+        "name": "Ben Gregg",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 29,
+        "same_as_team": false
+       }
       },
       {
        "pick": 52,
@@ -12308,7 +15585,17 @@
        },
        "delta_war": -2.4,
        "verdict": "team",
-       "slot_value": 1.32
+       "slot_value": 1.32,
+       "open_pool_choice": {
+        "pid": "U69ea3aeab5",
+        "name": "Michael Graham",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 52,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -12330,6 +15617,10 @@
     "slot_value_total": 91.8,
     "war_actual_surplus": -79.8,
     "war_model_surplus": -51.0,
+    "open_pool_war_total": 19.9,
+    "open_pool_cards": 13,
+    "open_pool_undrafted_picks": 4,
+    "open_pool_undrafted_war": 0.0,
     "first_round_only": {
      "war_actual_total": 12.7,
      "war_model_total": 43.9,
@@ -12377,7 +15668,17 @@
        },
        "delta_war": -3.3,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pf1b3205a09",
+        "name": "Dylan Windler",
+        "war": 1.0,
+        "was_drafted": 1,
+        "actual_pick": 26,
+        "source": "senior",
+        "model_rank": 25,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12417,7 +15718,17 @@
        },
        "delta_war": 8.8,
        "verdict": "model",
-       "slot_value": 6.21
+       "slot_value": 6.21,
+       "open_pool_choice": {
+        "pid": "U6fae0eb6f9",
+        "name": "Dennis Tunstall",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 16,
+        "same_as_team": false
+       }
       },
       {
        "pick": 46,
@@ -12451,7 +15762,17 @@
        },
        "delta_war": -0.2,
        "verdict": "team",
-       "slot_value": 3.45
+       "slot_value": 3.45,
+       "open_pool_choice": {
+        "pid": "Pa430d00e1f",
+        "name": "Deni Avdija",
+        "war": 13.4,
+        "was_drafted": 1,
+        "actual_pick": 9,
+        "source": "early_entry",
+        "model_rank": 46,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12496,7 +15817,17 @@
        },
        "delta_war": 5.7,
        "verdict": "model",
-       "slot_value": 11.44
+       "slot_value": 11.44,
+       "open_pool_choice": {
+        "pid": "P14882ceff6",
+        "name": "Tari Eason",
+        "war": 8.6,
+        "was_drafted": 1,
+        "actual_pick": 17,
+        "source": "early_entry",
+        "model_rank": 7,
+        "same_as_team": false
+       }
       },
       {
        "pick": 36,
@@ -12530,7 +15861,17 @@
        },
        "delta_war": -1.3,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pa408da26a2",
+        "name": "TyTy Washington Jr.",
+        "war": -0.9,
+        "was_drafted": 1,
+        "actual_pick": 29,
+        "source": "early_entry",
+        "model_rank": 36,
+        "same_as_team": false
+       }
       },
       {
        "pick": 57,
@@ -12549,7 +15890,17 @@
        "best_hindsight": null,
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U7d5892814f",
+        "name": "John Fulkerson",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 57,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12589,7 +15940,17 @@
        },
        "delta_war": 15.6,
        "verdict": "model",
-       "slot_value": 17.5
+       "slot_value": 17.5,
+       "open_pool_choice": {
+        "pid": "Pe60cc64195",
+        "name": "Taylor Hendricks",
+        "war": -0.2,
+        "was_drafted": 1,
+        "actual_pick": 9,
+        "source": "early_entry",
+        "model_rank": 3,
+        "same_as_team": false
+       }
       },
       {
        "pick": 23,
@@ -12623,7 +15984,17 @@
        },
        "delta_war": -0.6,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U0c036fd430",
+        "name": "Jack Nunge",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 23,
+        "same_as_team": false
+       }
       },
       {
        "pick": 43,
@@ -12657,7 +16028,17 @@
        },
        "delta_war": 3.5,
        "verdict": "model",
-       "slot_value": 3.79
+       "slot_value": 3.79,
+       "open_pool_choice": {
+        "pid": "U0f7b0a7b8f",
+        "name": "Manny Bates",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 43,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12697,7 +16078,17 @@
        },
        "delta_war": -9.0,
        "verdict": "team",
-       "slot_value": 11.44
+       "slot_value": 11.44,
+       "open_pool_choice": {
+        "pid": "Pd018d62aee",
+        "name": "Nikola Topić",
+        "war": -0.4,
+        "was_drafted": 1,
+        "actual_pick": 12,
+        "source": "early_entry",
+        "model_rank": 7,
+        "same_as_team": false
+       }
       },
       {
        "pick": 14,
@@ -12731,7 +16122,17 @@
        },
        "delta_war": 13.1,
        "verdict": "model",
-       "slot_value": 6.27
+       "slot_value": 6.27,
+       "open_pool_choice": {
+        "pid": "U6274a9925f",
+        "name": "Max Fiedler",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 14,
+        "same_as_team": false
+       }
       },
       {
        "pick": 34,
@@ -12765,7 +16166,17 @@
        },
        "delta_war": -2.8,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P3bedf956bf",
+        "name": "Harrison Ingram",
+        "war": 0.1,
+        "was_drafted": 1,
+        "actual_pick": 48,
+        "source": "early_entry",
+        "model_rank": 34,
+        "same_as_team": false
+       }
       },
       {
        "pick": 40,
@@ -12799,7 +16210,17 @@
        },
        "delta_war": -1.6,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P367a636ba4",
+        "name": "KJ Simpson",
+        "war": -1.4,
+        "was_drafted": 1,
+        "actual_pick": 42,
+        "source": "early_entry+senior",
+        "model_rank": 40,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -12839,7 +16260,17 @@
        },
        "delta_war": 1.0,
        "verdict": "model",
-       "slot_value": 7.62
+       "slot_value": 7.62,
+       "open_pool_choice": {
+        "pid": "Pad9c27fcb6",
+        "name": "Johni Broome",
+        "war": -0.3,
+        "was_drafted": 1,
+        "actual_pick": 35,
+        "source": "senior",
+        "model_rank": 11,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -12861,6 +16292,10 @@
     "slot_value_total": 84.3,
     "war_actual_surplus": -19.3,
     "war_model_surplus": -22.9,
+    "open_pool_war_total": 19.0,
+    "open_pool_cards": 17,
+    "open_pool_undrafted_picks": 11,
+    "open_pool_undrafted_war": 1.0,
     "first_round_only": {
      "war_actual_total": 53.5,
      "war_model_total": 25.3,
@@ -12908,7 +16343,17 @@
        },
        "delta_war": 1.1,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P6f1d3c64d2",
+        "name": "Nickeil Alexander-Walker",
+        "war": 4.8,
+        "was_drafted": 1,
+        "actual_pick": 17,
+        "source": "early_entry",
+        "model_rank": 40,
+        "same_as_team": false
+       }
       },
       {
        "pick": 47,
@@ -12942,7 +16387,17 @@
        },
        "delta_war": 0.7,
        "verdict": "model",
-       "slot_value": 3.1
+       "slot_value": 3.1,
+       "open_pool_choice": {
+        "pid": "U4426833ef4",
+        "name": "Jordan Murphy",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 47,
+        "same_as_team": false
+       }
       },
       {
        "pick": 60,
@@ -12961,7 +16416,17 @@
        "best_hindsight": null,
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U317d1cc89e",
+        "name": "Alex Peacock",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 60,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13001,7 +16466,17 @@
        },
        "delta_war": -28.3,
        "verdict": "team",
-       "slot_value": 7.07
+       "slot_value": 7.07,
+       "open_pool_choice": {
+        "pid": "P80eaeaa85d",
+        "name": "Nate Hinton",
+        "war": -0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 12,
+        "same_as_team": false
+       }
       },
       {
        "pick": 35,
@@ -13035,7 +16510,17 @@
        },
        "delta_war": 31.2,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U20ee50c479",
+        "name": "David Bell",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 35,
+        "same_as_team": false
+       }
       },
       {
        "pick": 43,
@@ -13069,7 +16554,17 @@
        },
        "delta_war": 0.6,
        "verdict": "model",
-       "slot_value": 3.79
+       "slot_value": 3.79,
+       "open_pool_choice": {
+        "pid": "P173da90181",
+        "name": "CJ Elleby",
+        "war": -1.7,
+        "was_drafted": 1,
+        "actual_pick": 46,
+        "source": "early_entry",
+        "model_rank": 43,
+        "same_as_team": false
+       }
       },
       {
        "pick": 52,
@@ -13103,7 +16598,17 @@
        },
        "delta_war": -0.7,
        "verdict": "team",
-       "slot_value": 1.32
+       "slot_value": 1.32,
+       "open_pool_choice": {
+        "pid": "U7f61ebae1e",
+        "name": "Tre Scott",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 52,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13143,7 +16648,17 @@
        },
        "delta_war": -3.8,
        "verdict": "team",
-       "slot_value": 9.29
+       "slot_value": 9.29,
+       "open_pool_choice": {
+        "pid": "P0057628fa2",
+        "name": "Corey Kispert",
+        "war": 2.0,
+        "was_drafted": 1,
+        "actual_pick": 15,
+        "source": "early_entry+senior",
+        "model_rank": 9,
+        "same_as_team": false
+       }
       },
       {
        "pick": 39,
@@ -13177,7 +16692,17 @@
        },
        "delta_war": -11.5,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Pd0398785b7",
+        "name": "Micah Potter",
+        "war": 1.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 39,
+        "same_as_team": false
+       }
       },
       {
        "pick": 40,
@@ -13211,7 +16736,17 @@
        },
        "delta_war": 5.4,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Ue75301d738",
+        "name": "Michael Hughes",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 40,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13251,7 +16786,17 @@
        },
        "delta_war": 4.4,
        "verdict": "model",
-       "slot_value": 15.17
+       "slot_value": 15.17,
+       "open_pool_choice": {
+        "pid": "P3a3a5bbbef",
+        "name": "Jalen Duren",
+        "war": 17.1,
+        "was_drafted": 1,
+        "actual_pick": 13,
+        "source": "early_entry",
+        "model_rank": 4,
+        "same_as_team": false
+       }
       },
       {
        "pick": 37,
@@ -13285,7 +16830,17 @@
        },
        "delta_war": 1.3,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Ub4d523d5df",
+        "name": "Payton Willis",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 37,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13325,7 +16880,17 @@
        },
        "delta_war": -1.4,
        "verdict": "team",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pa4e79c2199",
+        "name": "Bilal Coulibaly",
+        "war": -2.9,
+        "was_drafted": 1,
+        "actual_pick": 7,
+        "source": "early_entry",
+        "model_rank": 24,
+        "same_as_team": false
+       }
       },
       {
        "pick": 38,
@@ -13359,7 +16924,17 @@
        },
        "delta_war": -1.2,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U074705f07d",
+        "name": "Josh Roberts",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 38,
+        "same_as_team": false
+       }
       },
       {
        "pick": 54,
@@ -13393,7 +16968,17 @@
        },
        "delta_war": -3.4,
        "verdict": "team",
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "U7d08cbdbe0",
+        "name": "Nelson Phillips",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 54,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13433,7 +17018,17 @@
        },
        "delta_war": 0.9,
        "verdict": "model",
-       "slot_value": 6.53
+       "slot_value": 6.53,
+       "open_pool_choice": {
+        "pid": "U71637ff555",
+        "name": "DJ Burns Jr.",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 13,
+        "same_as_team": false
+       }
       },
       {
        "pick": 45,
@@ -13467,7 +17062,17 @@
        },
        "delta_war": 0.6,
        "verdict": "model",
-       "slot_value": 3.63
+       "slot_value": 3.63,
+       "open_pool_choice": {
+        "pid": "Ud285a1bc56",
+        "name": "Luis Rodriguez",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 45,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13507,7 +17112,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 3.84
+       "slot_value": 3.84,
+       "open_pool_choice": {
+        "pid": "P495dd3afc8",
+        "name": "Kam Jones",
+        "war": -1.3,
+        "was_drafted": 1,
+        "actual_pick": 38,
+        "source": "senior",
+        "model_rank": 42,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -13529,6 +17144,10 @@
     "slot_value_total": 152.3,
     "war_actual_surplus": -101.6,
     "war_model_surplus": -90.7,
+    "open_pool_war_total": 60.4,
+    "open_pool_cards": 21,
+    "open_pool_undrafted_picks": 10,
+    "open_pool_undrafted_war": 0.0,
     "first_round_only": {
      "war_actual_total": 44.9,
      "war_model_total": 54.8,
@@ -13576,7 +17195,17 @@
        },
        "delta_war": 16.3,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Ufe98800a6d",
+        "name": "Kevarrius Hayes",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 19,
+        "same_as_team": false
+       }
       },
       {
        "pick": 29,
@@ -13610,7 +17239,17 @@
        },
        "delta_war": -8.0,
        "verdict": "team",
-       "slot_value": 5.7
+       "slot_value": 5.7,
+       "open_pool_choice": {
+        "pid": "P846172a369",
+        "name": "De'Andre Hunter",
+        "war": 2.4,
+        "was_drafted": 1,
+        "actual_pick": 4,
+        "source": "early_entry",
+        "model_rank": 29,
+        "same_as_team": false
+       }
       },
       {
        "pick": 49,
@@ -13644,7 +17283,17 @@
        },
        "delta_war": -0.0,
        "verdict": "tie",
-       "slot_value": 2.4
+       "slot_value": 2.4,
+       "open_pool_choice": {
+        "pid": "Ue0acea3f70",
+        "name": "Jacquil Taylor",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 49,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13684,7 +17333,17 @@
        },
        "delta_war": -2.1,
        "verdict": "team",
-       "slot_value": 7.62
+       "slot_value": 7.62,
+       "open_pool_choice": {
+        "pid": "P3ff36ffdc1",
+        "name": "LaMelo Ball",
+        "war": 18.1,
+        "was_drafted": 1,
+        "actual_pick": 3,
+        "source": "drafted_outside_rule",
+        "model_rank": 11,
+        "same_as_team": false
+       }
       },
       {
        "pick": 41,
@@ -13718,7 +17377,17 @@
        },
        "delta_war": -9.4,
        "verdict": "team",
-       "slot_value": 3.9
+       "slot_value": 3.9,
+       "open_pool_choice": {
+        "pid": "Uf4b3340f4d",
+        "name": "Mike Watkins",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 41,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13758,7 +17427,17 @@
        },
        "delta_war": 1.7,
        "verdict": "model",
-       "slot_value": 7.07
+       "slot_value": 7.07,
+       "open_pool_choice": {
+        "pid": "Pc4eb6bb8ac",
+        "name": "Cameron Krutwig",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 12,
+        "same_as_team": false
+       }
       },
       {
        "pick": 41,
@@ -13792,7 +17471,17 @@
        },
        "delta_war": 7.0,
        "verdict": "model",
-       "slot_value": 3.9
+       "slot_value": 3.9,
+       "open_pool_choice": {
+        "pid": "P02bad696ed",
+        "name": "Isaiah Miller",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 41,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13832,7 +17521,17 @@
        },
        "delta_war": 18.6,
        "verdict": "model",
-       "slot_value": 9.29
+       "slot_value": 9.29,
+       "open_pool_choice": {
+        "pid": "Pfa7a6f2536",
+        "name": "Paolo Banchero",
+        "war": 18.5,
+        "was_drafted": 1,
+        "actual_pick": 1,
+        "source": "early_entry",
+        "model_rank": 9,
+        "same_as_team": false
+       }
       },
       {
        "pick": 20,
@@ -13866,7 +17565,17 @@
        },
        "delta_war": 13.8,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P9345155d6a",
+        "name": "Christian Koloko",
+        "war": -0.3,
+        "was_drafted": 1,
+        "actual_pick": 33,
+        "source": "early_entry",
+        "model_rank": 20,
+        "same_as_team": false
+       }
       },
       {
        "pick": 25,
@@ -13900,7 +17609,17 @@
        },
        "delta_war": 2.8,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P63014948f5",
+        "name": "David Roddy",
+        "war": -2.4,
+        "was_drafted": 1,
+        "actual_pick": 23,
+        "source": "early_entry",
+        "model_rank": 25,
+        "same_as_team": false
+       }
       },
       {
        "pick": 38,
@@ -13934,7 +17653,17 @@
        },
        "delta_war": 3.9,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U6c8a09dc6c",
+        "name": "Tevin Brown",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 38,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -13974,7 +17703,17 @@
        },
        "delta_war": -28.0,
        "verdict": "team",
-       "slot_value": 20.92
+       "slot_value": 20.92,
+       "open_pool_choice": {
+        "pid": "Pf0ef0714b6",
+        "name": "Cason Wallace",
+        "war": 13.7,
+        "was_drafted": 1,
+        "actual_pick": 10,
+        "source": "early_entry",
+        "model_rank": 1,
+        "same_as_team": false
+       }
       },
       {
        "pick": 33,
@@ -14008,7 +17747,17 @@
        },
        "delta_war": -1.3,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U054e87fc5a",
+        "name": "Nathaniel Pollard Jr.",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 33,
+        "same_as_team": false
+       }
       },
       {
        "pick": 44,
@@ -14042,7 +17791,17 @@
        },
        "delta_war": 0.8,
        "verdict": "model",
-       "slot_value": 3.73
+       "slot_value": 3.73,
+       "open_pool_choice": {
+        "pid": "U7b92babcdc",
+        "name": "Darius McGhee",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 44,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14082,7 +17841,17 @@
        },
        "delta_war": -3.1,
        "verdict": "team",
-       "slot_value": 15.17
+       "slot_value": 15.17,
+       "open_pool_choice": {
+        "pid": "P2a77fa93f7",
+        "name": "Stephon Castle",
+        "war": 5.5,
+        "was_drafted": 1,
+        "actual_pick": 4,
+        "source": "early_entry",
+        "model_rank": 4,
+        "same_as_team": true
+       }
       },
       {
        "pick": 8,
@@ -14116,7 +17885,17 @@
        },
        "delta_war": 2.4,
        "verdict": "model",
-       "slot_value": 10.22
+       "slot_value": 10.22,
+       "open_pool_choice": {
+        "pid": "P35654567c0",
+        "name": "Johnny Furphy",
+        "war": -0.2,
+        "was_drafted": 1,
+        "actual_pick": 35,
+        "source": "early_entry",
+        "model_rank": 8,
+        "same_as_team": false
+       }
       },
       {
        "pick": 35,
@@ -14150,7 +17929,17 @@
        },
        "delta_war": 0.4,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P65b97df144",
+        "name": "Alex Sarr",
+        "war": 0.9,
+        "was_drafted": 1,
+        "actual_pick": 2,
+        "source": "drafted_outside_rule",
+        "model_rank": 35,
+        "same_as_team": false
+       }
       },
       {
        "pick": 48,
@@ -14184,7 +17973,17 @@
        },
        "delta_war": -0.5,
        "verdict": "team",
-       "slot_value": 2.75
+       "slot_value": 2.75,
+       "open_pool_choice": {
+        "pid": "U7cffb63f34",
+        "name": "Qudus Wahab",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 48,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14224,7 +18023,17 @@
        },
        "delta_war": -1.7,
        "verdict": "team",
-       "slot_value": 19.21
+       "slot_value": 19.21,
+       "open_pool_choice": {
+        "pid": "P4e09db2338",
+        "name": "VJ Edgecombe",
+        "war": 4.3,
+        "was_drafted": 1,
+        "actual_pick": 3,
+        "source": "drafted_outside_rule",
+        "model_rank": 2,
+        "same_as_team": false
+       }
       },
       {
        "pick": 14,
@@ -14258,7 +18067,17 @@
        },
        "delta_war": -2.8,
        "verdict": "team",
-       "slot_value": 6.27
+       "slot_value": 6.27,
+       "open_pool_choice": {
+        "pid": "U3a04c2457c",
+        "name": "Taye Fields",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 14,
+        "same_as_team": false
+       }
       },
       {
        "pick": 38,
@@ -14292,7 +18111,17 @@
        },
        "delta_war": 0.2,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P95c84fe799",
+        "name": "Max Shulga",
+        "war": -0.1,
+        "was_drafted": 1,
+        "actual_pick": 57,
+        "source": "senior",
+        "model_rank": 38,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -14314,6 +18143,10 @@
     "slot_value_total": 62.0,
     "war_actual_surplus": -25.3,
     "war_model_surplus": -8.8,
+    "open_pool_war_total": 24.8,
+    "open_pool_cards": 10,
+    "open_pool_undrafted_picks": 6,
+    "open_pool_undrafted_war": 0.1,
     "first_round_only": {
      "war_actual_total": 34.8,
      "war_model_total": 38.1,
@@ -14346,7 +18179,17 @@
        "best_hindsight": null,
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Uffbff0995c",
+        "name": "Grady Eifert",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 59,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14386,7 +18229,17 @@
        },
        "delta_war": 9.5,
        "verdict": "model",
-       "slot_value": 5.7
+       "slot_value": 5.7,
+       "open_pool_choice": {
+        "pid": "Pe0b660d280",
+        "name": "Isaiah Stewart",
+        "war": 6.0,
+        "was_drafted": 1,
+        "actual_pick": 16,
+        "source": "early_entry",
+        "model_rank": 29,
+        "same_as_team": false
+       }
       },
       {
        "pick": 59,
@@ -14411,7 +18264,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Ue197d0537f",
+        "name": "Donnell Gresham Jr.",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 59,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14451,7 +18314,17 @@
        },
        "delta_war": -9.4,
        "verdict": "team",
-       "slot_value": 15.17
+       "slot_value": 15.17,
+       "open_pool_choice": {
+        "pid": "P90932c4b0a",
+        "name": "Neemias Queta",
+        "war": 7.8,
+        "was_drafted": 1,
+        "actual_pick": 39,
+        "source": "early_entry",
+        "model_rank": 4,
+        "same_as_team": false
+       }
       },
       {
        "pick": 46,
@@ -14485,7 +18358,17 @@
        },
        "delta_war": -3.0,
        "verdict": "team",
-       "slot_value": 3.45
+       "slot_value": 3.45,
+       "open_pool_choice": {
+        "pid": "P9fd480084b",
+        "name": "Ayo Dosunmu",
+        "war": 6.6,
+        "was_drafted": 1,
+        "actual_pick": 38,
+        "source": "early_entry",
+        "model_rank": 46,
+        "same_as_team": false
+       }
       },
       {
        "pick": 47,
@@ -14519,7 +18402,17 @@
        },
        "delta_war": 0.9,
        "verdict": "model",
-       "slot_value": 3.1
+       "slot_value": 3.1,
+       "open_pool_choice": {
+        "pid": "Pe77b8e73a4",
+        "name": "Anthony Tarke",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 47,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14559,7 +18452,17 @@
        },
        "delta_war": 15.8,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Ubb7554867d",
+        "name": "Ike Obiagu",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 33,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14599,7 +18502,17 @@
        },
        "delta_war": 2.8,
        "verdict": "model",
-       "slot_value": 6.53
+       "slot_value": 6.53,
+       "open_pool_choice": {
+        "pid": "Uc4a3e7ec4f",
+        "name": "Charles Bediako",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry",
+        "model_rank": 13,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14639,7 +18552,17 @@
        },
        "delta_war": 0.8,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P816913601a",
+        "name": "N'Faly Dante",
+        "war": 0.1,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 19,
+        "same_as_team": false
+       }
       },
       {
        "pick": 31,
@@ -14673,7 +18596,17 @@
        },
        "delta_war": -0.5,
        "verdict": "team",
-       "slot_value": 4.81
+       "slot_value": 4.81,
+       "open_pool_choice": {
+        "pid": "Ua7c1c60232",
+        "name": "Josiah-Jordan James",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 31,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14713,7 +18646,17 @@
        },
        "delta_war": -0.4,
        "verdict": "team",
-       "slot_value": 9.29
+       "slot_value": 9.29,
+       "open_pool_choice": {
+        "pid": "Pf3b62cae3c",
+        "name": "Dylan Harper",
+        "war": 4.4,
+        "was_drafted": 1,
+        "actual_pick": 2,
+        "source": "early_entry",
+        "model_rank": 9,
+        "same_as_team": false
+       }
       },
       {
        "pick": 39,
@@ -14747,7 +18690,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "U49d112156b",
+        "name": "Caleb Grill",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 39,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -14769,6 +18722,10 @@
     "slot_value_total": 84.0,
     "war_actual_surplus": -86.2,
     "war_model_surplus": -66.9,
+    "open_pool_war_total": 10.1,
+    "open_pool_cards": 14,
+    "open_pool_undrafted_picks": 8,
+    "open_pool_undrafted_war": 0.0,
     "first_round_only": {
      "war_actual_total": -4.4,
      "war_model_total": 26.0,
@@ -14816,7 +18773,17 @@
        },
        "delta_war": 14.1,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Pa9cae64430",
+        "name": "RJ Barrett",
+        "war": 6.1,
+        "was_drafted": 1,
+        "actual_pick": 3,
+        "source": "early_entry",
+        "model_rank": 23,
+        "same_as_team": false
+       }
       },
       {
        "pick": 53,
@@ -14850,7 +18817,17 @@
        },
        "delta_war": -0.4,
        "verdict": "team",
-       "slot_value": 1.12
+       "slot_value": 1.12,
+       "open_pool_choice": {
+        "pid": "U1aad84a3ac",
+        "name": "Kavell Bigby-Williams",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 53,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14890,7 +18867,17 @@
        },
        "delta_war": 5.5,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U7189466f8d",
+        "name": "Chris Harris Jr.",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 27,
+        "same_as_team": false
+       }
       },
       {
        "pick": 38,
@@ -14924,7 +18911,17 @@
        },
        "delta_war": 0.3,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Ub4348b0a93",
+        "name": "Dantez Walton",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 38,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -14964,7 +18961,17 @@
        },
        "delta_war": -12.8,
        "verdict": "team",
-       "slot_value": 5.26
+       "slot_value": 5.26,
+       "open_pool_choice": {
+        "pid": "Pd74e65b4cd",
+        "name": "Mark Vital",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+senior",
+        "model_rank": 30,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -15009,7 +19016,17 @@
        },
        "delta_war": 0.5,
        "verdict": "model",
-       "slot_value": 9.29
+       "slot_value": 9.29,
+       "open_pool_choice": {
+        "pid": "U94a287c38b",
+        "name": "Jake Stephens",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 9,
+        "same_as_team": false
+       }
       },
       {
        "pick": 16,
@@ -15043,7 +19060,17 @@
        },
        "delta_war": 3.1,
        "verdict": "model",
-       "slot_value": 6.21
+       "slot_value": 6.21,
+       "open_pool_choice": {
+        "pid": "P6b4a74f110",
+        "name": "Kobe Bufkin",
+        "war": -0.6,
+        "was_drafted": 1,
+        "actual_pick": 15,
+        "source": "early_entry",
+        "model_rank": 16,
+        "same_as_team": false
+       }
       },
       {
        "pick": 28,
@@ -15077,7 +19104,17 @@
        },
        "delta_war": 1.3,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U858637fbec",
+        "name": "Myles Burns",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 28,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -15117,7 +19154,17 @@
        },
        "delta_war": 5.4,
        "verdict": "model",
-       "slot_value": 8.16
+       "slot_value": 8.16,
+       "open_pool_choice": {
+        "pid": "Pbdde11b624",
+        "name": "Jamal Shead",
+        "war": -0.7,
+        "was_drafted": 1,
+        "actual_pick": 45,
+        "source": "early_entry+senior",
+        "model_rank": 10,
+        "same_as_team": false
+       }
       },
       {
        "pick": 29,
@@ -15151,7 +19198,17 @@
        },
        "delta_war": 3.1,
        "verdict": "model",
-       "slot_value": 5.7
+       "slot_value": 5.7,
+       "open_pool_choice": {
+        "pid": "Pfd3b474513",
+        "name": "Baylor Scheierman",
+        "war": 3.2,
+        "was_drafted": 1,
+        "actual_pick": 30,
+        "source": "senior",
+        "model_rank": 29,
+        "same_as_team": false
+       }
       },
       {
        "pick": 32,
@@ -15185,7 +19242,17 @@
        },
        "delta_war": -9.0,
        "verdict": "team",
-       "slot_value": 4.37
+       "slot_value": 4.37,
+       "open_pool_choice": {
+        "pid": "P1a8fd8dc98",
+        "name": "Dillon Jones",
+        "war": -0.1,
+        "was_drafted": 1,
+        "actual_pick": 26,
+        "source": "early_entry",
+        "model_rank": 32,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -15225,7 +19292,17 @@
        },
        "delta_war": 9.8,
        "verdict": "model",
-       "slot_value": 14.22
+       "slot_value": 14.22,
+       "open_pool_choice": {
+        "pid": "P7ba2fa977b",
+        "name": "Cedric Coward",
+        "war": 2.3,
+        "was_drafted": 1,
+        "actual_pick": 11,
+        "source": "early_entry",
+        "model_rank": 5,
+        "same_as_team": false
+       }
       },
       {
        "pick": 21,
@@ -15259,7 +19336,17 @@
        },
        "delta_war": 0.6,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "Ua19f517857",
+        "name": "Jeff Woodward",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 21,
+        "same_as_team": false
+       }
       },
       {
        "pick": 53,
@@ -15293,7 +19380,17 @@
        },
        "delta_war": -1.9,
        "verdict": "team",
-       "slot_value": 1.12
+       "slot_value": 1.12,
+       "open_pool_choice": {
+        "pid": "U6f2ea36831",
+        "name": "UBAL, AGUSTIN",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "intl_22",
+        "model_rank": 53,
+        "same_as_team": false
+       }
       }
      ]
     }
@@ -15315,6 +19412,10 @@
     "slot_value_total": 102.8,
     "war_actual_surplus": -91.4,
     "war_model_surplus": -65.3,
+    "open_pool_war_total": 62.1,
+    "open_pool_cards": 13,
+    "open_pool_undrafted_picks": 3,
+    "open_pool_undrafted_war": 0.0,
     "first_round_only": {
      "war_actual_total": 11.4,
      "war_model_total": 38.3,
@@ -15362,7 +19463,17 @@
        },
        "delta_war": 12.2,
        "verdict": "model",
-       "slot_value": 9.29
+       "slot_value": 9.29,
+       "open_pool_choice": {
+        "pid": "P4832cf3ea3",
+        "name": "Matisse Thybulle",
+        "war": 15.6,
+        "was_drafted": 1,
+        "actual_pick": 20,
+        "source": "senior",
+        "model_rank": 9,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -15402,7 +19513,17 @@
        },
        "delta_war": -4.0,
        "verdict": "team",
-       "slot_value": 9.29
+       "slot_value": 9.29,
+       "open_pool_choice": {
+        "pid": "P90a7395cb0",
+        "name": "Jalen Smith",
+        "war": 5.6,
+        "was_drafted": 1,
+        "actual_pick": 10,
+        "source": "early_entry",
+        "model_rank": 9,
+        "same_as_team": false
+       }
       },
       {
        "pick": 37,
@@ -15436,7 +19557,17 @@
        },
        "delta_war": -0.4,
        "verdict": "team",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "P04526b8576",
+        "name": "Saddiq Bey",
+        "war": 7.1,
+        "was_drafted": 1,
+        "actual_pick": 19,
+        "source": "early_entry",
+        "model_rank": 37,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -15476,7 +19607,17 @@
        },
        "delta_war": 3.6,
        "verdict": "model",
-       "slot_value": 6.24
+       "slot_value": 6.24,
+       "open_pool_choice": {
+        "pid": "Pe728a39ea0",
+        "name": "Day'Ron Sharpe",
+        "war": 6.3,
+        "was_drafted": 1,
+        "actual_pick": 29,
+        "source": "early_entry",
+        "model_rank": 15,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -15516,7 +19657,17 @@
        },
        "delta_war": 5.5,
        "verdict": "model",
-       "slot_value": 8.16
+       "slot_value": 8.16,
+       "open_pool_choice": {
+        "pid": "P12c0373e62",
+        "name": "Jabari Smith Jr.",
+        "war": 7.5,
+        "was_drafted": 1,
+        "actual_pick": 3,
+        "source": "early_entry",
+        "model_rank": 10,
+        "same_as_team": false
+       }
       },
       {
        "pick": 54,
@@ -15541,7 +19692,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Ua726b7b670",
+        "name": "George Conditt IV",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "early_entry+intl_22+senior",
+        "model_rank": 54,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -15581,7 +19742,17 @@
        },
        "delta_war": -3.8,
        "verdict": "team",
-       "slot_value": 10.22
+       "slot_value": 10.22,
+       "open_pool_choice": {
+        "pid": "P664a2ede66",
+        "name": "Brandon Miller",
+        "war": 6.0,
+        "was_drafted": 1,
+        "actual_pick": 2,
+        "source": "early_entry",
+        "model_rank": 8,
+        "same_as_team": false
+       }
       },
       {
        "pick": 42,
@@ -15615,7 +19786,17 @@
        },
        "delta_war": -2.2,
        "verdict": "team",
-       "slot_value": 3.84
+       "slot_value": 3.84,
+       "open_pool_choice": {
+        "pid": "P26ad072598",
+        "name": "Marcus Sasser",
+        "war": 0.7,
+        "was_drafted": 1,
+        "actual_pick": 25,
+        "source": "early_entry+senior",
+        "model_rank": 42,
+        "same_as_team": false
+       }
       },
       {
        "pick": 57,
@@ -15640,7 +19821,17 @@
        },
        "delta_war": null,
        "verdict": null,
-       "slot_value": 0.93
+       "slot_value": 0.93,
+       "open_pool_choice": {
+        "pid": "Uf66eb8b1a6",
+        "name": "Taylor Funk",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 57,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -15680,7 +19871,17 @@
        },
        "delta_war": 7.7,
        "verdict": "model",
-       "slot_value": 19.21
+       "slot_value": 19.21,
+       "open_pool_choice": {
+        "pid": "P473649a3ff",
+        "name": "Reed Sheppard",
+        "war": 5.9,
+        "was_drafted": 1,
+        "actual_pick": 3,
+        "source": "early_entry",
+        "model_rank": 2,
+        "same_as_team": false
+       }
       },
       {
        "pick": 26,
@@ -15714,7 +19915,17 @@
        },
        "delta_war": 2.3,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "P84e9dcbb3e",
+        "name": "Adem Bona",
+        "war": -0.1,
+        "was_drafted": 1,
+        "actual_pick": 41,
+        "source": "early_entry+senior",
+        "model_rank": 26,
+        "same_as_team": false
+       }
       }
      ]
     },
@@ -15754,7 +19965,17 @@
        },
        "delta_war": 2.0,
        "verdict": "model",
-       "slot_value": 12.67
+       "slot_value": 12.67,
+       "open_pool_choice": {
+        "pid": "P07268bf0e1",
+        "name": "Kon Knueppel",
+        "war": 7.4,
+        "was_drafted": 1,
+        "actual_pick": 4,
+        "source": "early_entry",
+        "model_rank": 6,
+        "same_as_team": false
+       }
       },
       {
        "pick": 18,
@@ -15788,7 +20009,17 @@
        },
        "delta_war": 1.6,
        "verdict": "model",
-       "slot_value": 6.15
+       "slot_value": 6.15,
+       "open_pool_choice": {
+        "pid": "U63030a3c21",
+        "name": "Mitchell Saxen",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 18,
+        "same_as_team": false
+       }
       },
       {
        "pick": 40,
@@ -15822,7 +20053,17 @@
        },
        "delta_war": 1.8,
        "verdict": "model",
-       "slot_value": 3.92
+       "slot_value": 3.92,
+       "open_pool_choice": {
+        "pid": "Uff4de69602",
+        "name": "Oumar Ballo",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 40,
+        "same_as_team": false
+       }
       },
       {
        "pick": 43,
@@ -15856,7 +20097,17 @@
        },
        "delta_war": -0.1,
        "verdict": "team",
-       "slot_value": 3.79
+       "slot_value": 3.79,
+       "open_pool_choice": {
+        "pid": "U5ba808cac2",
+        "name": "KJ Adams",
+        "war": 0.0,
+        "was_drafted": 0,
+        "actual_pick": null,
+        "source": "senior",
+        "model_rank": 43,
+        "same_as_team": false
+       }
       }
      ]
     }

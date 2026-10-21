@@ -50,7 +50,7 @@
     <div class="container">
       <div class="team-hero__eyebrow"><span class="team-swatch"></span>30 teams &middot; 2019&ndash;2025 drafts</div>
       <h1 class="team-hero__title">Every team&rsquo;s draft, re-run.</h1>
-      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order with each player taken once. The model&rsquo;s pick out-produced the team&rsquo;s selection on <b>173 of 385 cards</b> and the team&rsquo;s pick did better on <b>198</b>. At the same slots the model&rsquo;s picks have <b>1129.2 WAR</b> to date against <b>1113.3</b> for the teams&rsquo; picks. Open a team to see the pick-by-pick cards.</p>
+      <p class="team-verdict">Across the 2019&ndash;2025 drafts the real draft was replayed in pick order with each player taken once. The model&rsquo;s pick out-produced the team&rsquo;s selection on <b>173 of 385 cards</b> and the team&rsquo;s pick did better on <b>198</b>. At the same slots the model&rsquo;s picks have <b>1129.2 WAR</b> to date against <b>1113.3</b> for the teams&rsquo; picks. Allowed to pick from the whole pre-draft pool, the model would have spent <b>216 of 385</b> picks on players nobody drafted, for <b>995.5 WAR</b>. Open a team to see the pick-by-pick cards.</p>
       <div class="tstat-grid">
         <div class="tstat">
           <div class="tstat__k">WAR to date &middot; team picks</div>
@@ -66,6 +66,11 @@
           <div class="tstat__k">Comparison cards</div>
           <div class="tstat__v">173<span class="sl">/</span>198<span class="sl">/</span>4</div>
           <div class="tstat__sub">won by the model / by the team / ties</div>
+        </div>
+        <div class="tstat">
+          <div class="tstat__k">Open-pool model picks</div>
+          <div class="tstat__v">995.5</div>
+          <div class="tstat__sub">if the model could take anyone in the pre-draft pool: 216 of 385 picks on undrafted players</div>
         </div>
       </div>
       <p class="team-foot-note">WAR to date is counted over at most a player&rsquo;s first five NBA seasons, so the 2022&ndash;2025 classes are still accruing and are only comparable within their own year. Boards used: <b>expanding</b>. Model: <b>EVO gen11 + international-line mask + NBADraft.net grades + Torvik league context + ridge on top columns</b><br>Realized WAR to date: y_early_war from the answers files, summed over the player&#x27;s NBA seasons scored so far, at most five (2019-2021 classes have complete five-season windows; 2022-2025 are partial and still accruing, so compare within a draft year, not across). Players who never appeared in the NBA score 0. A handful of draft-and-stash picks have no pre-draft or outcome record in our data at all; they are shown with WAR 0 and flagged in team_cards_audit.csv (war_note).</p>
@@ -422,7 +427,7 @@
         <a class="link" href="index.html">Teams</a>
       </div>
       <div style="margin-top:26px;font-size:14px;color:var(--text-2)">&copy; 2026 DraftDB Labs, Inc</div>
-      <div class="footer__gen">Generated from data/team_cards.json on 2026-10-19</div>
+      <div class="footer__gen">Generated from data/team_cards.json on 2026-10-20</div>
     </div>
   </div>
   <div class="footer__end"></div>
