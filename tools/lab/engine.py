@@ -69,6 +69,30 @@ def load_tests():
 
 TRAIN = load_train()
 TESTS = load_tests()
+_BLOCKS_LOADED = set()
+
+
+def load_blocks(names):
+    """Merge pid-keyed feature blocks that are not part of data v4.22 (DATA/novel/<name>/features.csv, or an
+    absolute path) into TRAIN and TESTS, and register their numeric columns as inputs so families() can pick
+    them up by prefix. A block is merged once per process. Columns must be numeric; pid must be unique."""
+    global TRAIN, TESTS
+    for nm in names:
+        if nm in _BLOCKS_LOADED:
+            continue
+        path = nm if os.path.isabs(nm) else f"{C.DATA}/novel/{nm}/features.csv"
+        b = pd.read_csv(path)
+        assert b.pid.is_unique, path
+        cols = [c for c in b.columns if c != "pid"]
+        for c in cols:
+            b[c] = pd.to_numeric(b[c], errors="coerce")
+            assert not c.startswith(BANNED) and c not in BANNED, c
+        TRAIN = TRAIN.drop(columns=[c for c in cols if c in TRAIN.columns]).merge(b, on="pid", how="left")
+        TESTS = {y: d.drop(columns=[c for c in cols if c in d.columns]).merge(b, on="pid", how="left") for y, d in TESTS.items()}
+        _INPUTS.extend([c for c in cols if c not in _INPUTS])
+        _BLOCKS_LOADED.add(nm)
+        print(f"block {nm}: {len(cols)} columns, train rows filled {int(TRAIN[cols].notna().any(axis=1).sum())}, "
+              + ", ".join(f"{y}: {int(d[cols].notna().any(axis=1).sum())}" for y, d in TESTS.items()), flush=True)
 
 
 # ------------------------------------------------------------------ labels
@@ -413,6 +437,8 @@ def blind(g, cols, wts, mode="strict", verbose=True):
 
 
 def run(name, g, do_blind=True, weight_objective="spearman", extra=("sc_", "tc_")):
+    if g.get("blocks"):
+        load_blocks(g["blocks"])
     cols = families(tuple(g.get("extra", list(extra))))
     t0 = time.time()
     print(f"== {name}: {g}  ({len(cols)} input cols)", flush=True)
