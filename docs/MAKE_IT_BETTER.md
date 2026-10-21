@@ -62,7 +62,7 @@ Each entry: the claim, the evidence, the change, how it is judged, what counts a
 - Change: README and site show per-class results beside their horizon, mark 2023–2025 provisional, add the "teams at k" curve, and headline the three complete classes separately. Keep the discounted label (uniform, late and back-weighted labels all lost on the folds today, as they did on the box), but say why the discount is there.
 - Success: a reader like Kirk cannot mistake a one-season class for a verdict.
 
-### H3. Retest the XGBoost objective inside the full recipe (one GPU run)
+### H3. Retest the XGBoost objective inside the full recipe (done 2026-10-21: same-sign gain under three seed sets, 4–5 of 7 folds, expanding +0.03 to +0.05 blind; below the 6-of-7 rule, recommended for the expanding recipe, see EXPERIMENTS)
 - Claim: squared error beats quantile 0.25 for the member (+0.020 folds, +0.017 expanding Spearman, +1.8 expanding pick-value here).
 - Change: `risk=mean` on the gen99 genome, three seed sets through the vault, with the stack weights re-learned so XGBoost can take weight.
 - Judge: the existing gate. It won only 3 of 7 folds here, so it may fail the 6-of-7 rule; if it does, drop the XGBoost member rather than keep a zero-weight one.
