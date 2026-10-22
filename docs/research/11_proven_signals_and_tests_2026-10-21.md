@@ -27,3 +27,7 @@ Nothing published in 2025–2026 adds a predictor to this list: the 2026 public 
 4. **Projected labels**: scaling a truncated value to its expected five-season value is a per-class linear map and is invisible to a within-class rank label; dropped after the check (correlation 1.000 with the plain label).
 
 Not built: teammate pre-draft consensus sums (Kuehn 2023; needs roster-to-pid joins, teammate BPM proxies exist in tc_/f50_); an explicit international flag (trivial, queued for the next round if anything above moves).
+
+## Result (queue R, 2026-10-21)
+
+Base 0.399 / 65.7 on the folds. Differential shrinkage 0.378 / 66.2 (1 of 7 / 4 of 7); interactions 0.378 / 64.8; both 0.365 / 64.9; hzw 1: 0.396 / 65.6; hzw 2: 0.390 / 67.8 (4 of 7); hzw 1 + squared-error objective 0.406 / 66.0 (no better than the objective alone). None passes. Full numbers in docs/EXPERIMENTS.md and on lab.html.
