@@ -103,7 +103,7 @@ HW = {"uniform": [1, 1, 1, 1, 1], "disc85": [.85 ** i for i in range(5)], "disc7
 MIN = [f"y_s{i}_minutes" for i in range(1, 6)]
 
 
-def discounted(df, k_by_year, hw="disc85", clip=40, floor0=0, minw=0.0):
+def discounted(df, k_by_year, hw="disc85", clip=40, floor0=0, minw=0.0, proj=0):
     """Discounted, clipped k-season WAR per row, using for class c only its first k_by_year[c] seasons.
     floor0: clip each season's WAR at 0 before discounting (negative WAR = played a lot, badly, often on a
     bad team). minw: add minw * minutes/1000 per season (a value label that credits playing time)."""
@@ -114,16 +114,25 @@ def discounted(df, k_by_year, hw="disc85", clip=40, floor0=0, minw=0.0):
         Mn = df[[c for c in MIN]].apply(pd.to_numeric, errors="coerce").fillna(0).values.astype(float) if all(c in df.columns for c in MIN) else np.zeros_like(X)
         X = X + minw * Mn / 1000.0
     w = np.array(HW[hw], float)
-    v = np.zeros(len(df))
+    v = np.zeros(len(df)); kk = np.zeros(len(df), int)
     for i, (c) in enumerate(df.draft_year.values):
-        k = int(k_by_year.get(int(c), 5))
+        k = int(k_by_year.get(int(c), 5)); kk[i] = k
         v[i] = (X[i, :k] * w[:k]).sum()
+    if proj:   # projected 5-season value: regress the full value on the k-season value among complete rows, apply to truncated rows
+        full = kk == 5
+        if full.sum() > 100:
+            v5 = (X[full, :5] * w[:5]).sum(1)
+            for k in range(1, 5):
+                m = kk == k
+                if m.any():
+                    vk = (X[full, :k] * w[:k]).sum(1); b = np.polyfit(vk, v5, 1)
+                    v[m] = b[0] * v[m] + b[1]
     return np.clip(v, -clip, clip)
 
 
-def label(df, k_by_year, hw="disc85", clip=40, kind="gaussrank", floor0=0, minw=0.0):
+def label(df, k_by_year, hw="disc85", clip=40, kind="gaussrank", floor0=0, minw=0.0, proj=0):
     """Within-class Gaussian-rank of the discounted WAR (see discounted())."""
-    v = discounted(df, k_by_year, hw=hw, clip=clip, floor0=floor0, minw=minw)
+    v = discounted(df, k_by_year, hw=hw, clip=clip, floor0=floor0, minw=minw, proj=proj)
     o = np.zeros(len(df))
     for y in df.draft_year.unique():
         m = (df.draft_year == y).values; r = pd.Series(v[m]).rank(pct=True).values
@@ -158,8 +167,18 @@ def build(d, prior, cq, cols, g):
             d.loc[college, c] = np.nan
     mins = _num(d, "col_minutes_total").fillna(_num(d, "col_gp") * 20.0)
     r = (mins / (mins + g.get("M", 400.0))).clip(0, 1).fillna(0.0); d["sample_reliability"] = r
+    prof = g.get("shrink_profile", 0)      # 1: 3P% shrunk hard toward an FT%-implied prior, steals/blocks/ORB barely shrunk
     for c in SHRINK:
-        d["shr_" + c] = r * _num(d, c).fillna(prior[c]) + (1 - r) * prior[c]
+        if prof and c == "col_fg3_pct":
+            ft = _num(d, "col_ft_pct").fillna(prior["_stats"]["ft"][0])
+            pr3 = prior["_stats"]["fg3_on_ft"][0] + prior["_stats"]["fg3_on_ft"][1] * ft
+            rr = (mins / (mins + 1500.0)).clip(0, 1).fillna(0.0)
+            d["shr_" + c] = rr * _num(d, c).fillna(pr3) + (1 - rr) * pr3
+        elif prof and c in ("col_stl_pct", "col_blk_pct", "col_stl36", "col_blk36", "col_orb_pct"):
+            rr = (mins / (mins + 100.0)).clip(0, 1).fillna(0.0)
+            d["shr_" + c] = rr * _num(d, c).fillna(prior[c]) + (1 - rr) * prior[c]
+        else:
+            d["shr_" + c] = r * _num(d, c).fillna(prior[c]) + (1 - r) * prior[c]
     lv = _num(d, "intl_level"); d["intl_strength"] = lv.map(LEVEL)
     for c in INTL_VOL:
         d["adj_" + c] = _num(d, c) * d["intl_strength"]
@@ -178,6 +197,17 @@ def build(d, prior, cq, cols, g):
     d["x_rim_prot"] = blk * ht
     d["x_young_prod"] = imp * (age < 20.0).astype(float)
     d["x_old_prod"] = imp * (age >= 22.0).astype(float)
+    if g.get("lucario", 0):         # interaction terms from the public models (Nylon Calculus LUCARIO, ESPN S&I)
+        ast_pct, tov_pct, reb36, wt = _num(d, "col_ast_pct"), _num(d, "col_tov_pct"), _num(d, "col_reb36"), _num(d, "bio_weight_lb")
+        pos = _num(d, "bio_pos_code")
+        guard = (pos <= 2).astype(float).where(pos.notna()); big = (pos >= 4).astype(float).where(pos.notna())
+        d["x_ast_tov"] = ast_pct / (tov_pct.clip(lower=3.0))
+        d["x_body_density"] = wt / (ht.clip(lower=60) ** 3) * 1e5
+        d["x_ast_x_reb"] = ast_pct * reb36
+        d["x_stl_guard"] = _num(d, "col_stl_pct") * guard
+        d["x_orb_big"] = _num(d, "col_orb_pct") * big
+        d["x_blk_big"] = _num(d, "col_blk_pct") * big
+        d["x_ft_x_age"] = ft * (23.0 - age)
     if g.get("cons_value", 0):      # novel: consensus mapped through the empirical pick-value curve
         cr = _num(d, "cons_mock_consensus_rank")
         d["x_cons_value"] = cr.apply(lambda r: V[int(min(max(r, 1), 60))] if pd.notna(r) else np.nan)
@@ -194,6 +224,8 @@ def fit_prior(tr, cols):
     st = {k: (float(_num(tr, c).mean()), float(_num(tr, c).std())) for k, c in [("ft", "col_ft_pct"), ("vol", "col_fg3a_per40"), ("proj", "col_shot_proj_3p"), ("age", "bio_age_at_draft")]}
     a, i = _num(tr, "bio_age_at_draft"), _num(tr, "col_impact"); ok = a.notna() & i.notna()
     st["impact_age_slope"] = float(np.polyfit(a[ok], i[ok], 1)[0]) if ok.sum() > 50 else 0.0
+    f3, ft = _num(tr, "col_fg3_pct"), _num(tr, "col_ft_pct"); ok3 = f3.notna() & ft.notna() & (_num(tr, "col_fg3a_per40") >= 2)
+    st["fg3_on_ft"] = tuple(float(x) for x in np.polyfit(ft[ok3], f3[ok3], 1)[::-1]) if ok3.sum() > 50 else (0.33, 0.0)
     pr["_stats"] = st
     base = [c for c in cols if c.startswith(FAMILIES_BASE)]
     cq = tr[base].apply(pd.to_numeric, errors="coerce").notna().mean(axis=1).quantile([0.05, 0.95]).values
@@ -203,6 +235,7 @@ def fit_prior(tr, cols):
 def feature_cols(cols, g):
     c = list(cols) + ["sample_reliability"] + ["shr_" + x for x in SHRINK] + ["intl_strength"] + ["adj_" + x for x in INTL_VOL] + ["feat_coverage"]
     c += ["x_ft_vol", "x_proj_vol", "x_ft_gap", "x_shoot_score", "x_prod_over_age", "x_usg_x_ts", "x_rim_prot", "x_young_prod", "x_old_prod"]
+    if g.get("lucario", 0): c += ["x_ast_tov", "x_body_density", "x_ast_x_reb", "x_stl_guard", "x_orb_big", "x_blk_big", "x_ft_x_age"]
     if g.get("cons_value", 0): c += ["x_cons_value", "x_cons_value_log"]
     if g.get("combine_flags", 0): c += ["x_cmb_measured", "x_cmb_measured_no_drills"]
     for x in c:
@@ -262,6 +295,9 @@ def star_member(Xtr, ytop, Xte, g):
                     for s in range(31, 31 + g.get("bag", 3))], axis=0)
 
 
+HZ_AGREE = {1: 0.60, 2: 0.82, 3: 0.91, 4: 0.97, 5: 1.0}   # Spearman of the k-season WAR rank with the 5-season rank, 2007-2018 classes
+
+
 def sample_weights(ylab, g, years=None):
     """Optional training-row weights. topw: weight by the pick-value of the label's rank. recency: half-life in years of
     an exponential decay by class age (the class before the fold's draft weighs 1, one half-life earlier 0.5): a soft
@@ -275,7 +311,10 @@ def sample_weights(ylab, g, years=None):
     if g.get("recency", 0) and years is not None:
         age = years.max() - years          # 0 for the newest training class
         w = w * 0.5 ** (age / float(g["recency"]))
-    if not g.get("topw", 0) and not g.get("recency", 0):
+    if g.get("hzw", 0) and years is not None and g.get("_kby"):
+        kby = g["_kby"]
+        w = w * np.array([HZ_AGREE[int(min(max(kby.get(int(y), 5), 1), 5))] ** float(g["hzw"]) for y in years])
+    if not g.get("topw", 0) and not g.get("recency", 0) and not g.get("hzw", 0):
         return None
     return w / w.mean()
 
@@ -340,11 +379,12 @@ def walk_forward(g, cols, fold_years=range(2012, 2019), verbose=True):
         trm = (W.draft_year < y).values; tem = (W.draft_year == y).values
         assert (W.draft_year.values[trm] < y).all() and not (set(W.pid[trm]) & set(W.pid[tem]))
         kby = {int(c): int(min(5, y - c)) for c in W.draft_year.unique()}        # season-consistent labels
+        g["_kby"] = kby
         tr, te = W[trm], W[tem]
         pr, cq = fit_prior(tr, cols)
         Btr, Bte = build(tr, pr, cq, cols, g), build(te, pr, cq, cols, g)
         fc = feature_cols(cols, g)
-        ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0))
+        ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0), proj=g.get("proj", 0))
         ytop = top_label(tr, kby, top=g.get("star_k", 3), hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0)) if "star" in g else None
         if g.get("consres", 0):
             ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
@@ -398,9 +438,9 @@ def blind(g, cols, wts, mode="strict", verbose=True):
     win = g.get("win", 2007)
     base_tr = TRAIN[(TRAIN.draft_year >= win) & (TRAIN.draft_year <= 2018)]
     if mode == "strict":
-        tr = base_tr.reset_index(drop=True); kby = {int(c): 5 for c in tr.draft_year.unique()}
+        tr = base_tr.reset_index(drop=True); kby = {int(c): 5 for c in tr.draft_year.unique()}; g["_kby"] = kby
         pr, cq = fit_prior(tr, cols); Btr = build(tr, pr, cq, cols, g); fc = feature_cols(cols, g)
-        ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0))
+        ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0), proj=g.get("proj", 0))
         if g.get("consres", 0): ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
         ytop = top_label(tr, kby, top=g.get("star_k", 3), hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0)) if "star" in g else None
         fitted = (Btr, fc, ylab, ytop)
@@ -409,9 +449,9 @@ def blind(g, cols, wts, mode="strict", verbose=True):
         if mode == "expanding":
             parts = [base_tr] + [TESTS[c] for c in C.TEST_YEARS if c < Y]
             tr = pd.concat(parts, ignore_index=True)
-            kby = {int(c): int(min(5, Y - c)) for c in tr.draft_year.unique()}
+            kby = {int(c): int(min(5, Y - c)) for c in tr.draft_year.unique()}; g["_kby"] = kby
             pr, cq = fit_prior(tr, cols); Btr = build(tr, pr, cq, cols, g); fc = feature_cols(cols, g)
-            ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0))
+            ylab = label(tr, kby, hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0), proj=g.get("proj", 0))
             if g.get("consres", 0): ylab = ylab - norm.ppf(np.clip(_prior_rank(tr), 0.01, 0.99)) * g["consres"]
             ytop = top_label(tr, kby, top=g.get("star_k", 3), hw=g.get("hw", "disc85"), clip=g.get("clip", 40), floor0=g.get("floor0", 0), minw=g.get("minw", 0.0)) if "star" in g else None
         else:
@@ -445,7 +485,7 @@ def run(name, g, do_blind=True, weight_objective="spearman", extra=("sc_", "tc_"
     F = walk_forward(g, cols)
     wts = learn_weights(g, F, g.get("wobj", weight_objective))
     fs = fold_scores(g, F, wts)
-    summary = dict(name=name, genome=g, weights=wts, folds={int(y): v for y, v in fs.items()},
+    summary = dict(name=name, genome={k: v for k, v in g.items() if not str(k).startswith("_")}, weights=wts, folds={int(y): v for y, v in fs.items()},
                    wf_spearman=float(np.mean([v["spearman_avg"] for v in fs.values()])),
                    wf_spearman_k5=float(np.mean([v["spearman_k5"] for v in fs.values()])),
                    wf_vo_pick=float(np.mean([v["vo_pick_avg"] for v in fs.values()])),

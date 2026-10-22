@@ -108,6 +108,14 @@ QUEUES = {
   ("n2_prep_pathway", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "blocks": ["prep_games", "pathway"], "extra": ["sc_", "tc_", "pg_", "pw_"]}),
   ("n2_prep_risk_mean", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "blocks": ["prep_games"], "extra": ["sc_", "tc_", "pg_"], "risk": "mean"}),
  ],
+ "R": [  # 2026-10-21 research-driven tests: differential shrinkage, public-model interactions, label-reliability weights, projected labels
+  ("r_shrink_profile", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "shrink_profile": 1}),
+  ("r_lucario", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "lucario": 1}),
+  ("r_hzw1", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "hzw": 1.0}),
+  ("r_hzw2", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "hzw": 2.0}),
+  ("r_hzw1_risk_mean", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "hzw": 1.0, "risk": "mean"}),
+  ("r_lucario_shrink", {"members": ["xgb", "ridge", "tabicl"], "icl_n": 32, "icl_bag": 3, "lucario": 1, "shrink_profile": 1}),
+ ],
  "B": [
   ("base_tabicl", {"members": ["xgb", "ridge", "tabicl"]}),
  ],
